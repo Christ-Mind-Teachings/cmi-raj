@@ -1,0 +1,29 @@
+{
+  "bid": "sg2016",
+  "base": "/sg2016",
+  "image": "/public/img/raj/sg2016-toc.jpg",
+  "title": "ACIM Study Group: 2016",
+  "contents": [
+    {
+      "desc": "T15.4 Practicing the Holy Instant",
+      "audio": "/2016/2016-07-03.mp3",
+      "timing": "/sg2016/070316.json",
+      "url": "/070316/",
+      "title": "Jul 3, 2016"
+    },
+    {
+      "desc": "W12 I am upset because I see a meaningless world",
+      "audio": "/2016/2016-07-16.mp3",
+      "timing": "/sg2016/071616.json",
+      "url": "/071616/",
+      "title": "Jul 16, 2016"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2016/2016-08-02.mp3",
+      "timing": "/sg2016/080216.json",
+      "url": "/080216/",
+      "title": "Aug 2, 2016"
+    }
+  ]
+}

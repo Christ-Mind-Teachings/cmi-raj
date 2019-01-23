@@ -1,0 +1,36 @@
+{% comment %}
+usage: {% include form/annotation.html %}
+{% endcomment %}
+<form name="annotation" id="annotation-form" class="ui form">
+  <input class="hidden-field" type="text" readonly="" name="creationDate">
+  <input class="hidden-field" type="text" name="textId" readonly>
+  <div class="fields">
+    <div class="three wide field">
+      <label>Start</label>
+      <input tabindex="-1" type="text" readonly="" name="rangeStart" maxlength="4" placeholder="Start">
+    </div>
+    <div class="three wide field">
+      <label>End</label>
+      <input id="rangeEnd" type="text" name="rangeEnd" maxlength="4" placeholder="End">
+    </div>
+    <div id="topic-select" class="ten wide field">
+    </div>
+  </div>
+  <div class="field">
+    <label>Comment</label>
+    <textarea name="Comment" rows="2"></textarea>
+  </div>
+  <div class="field">
+    <label>New Topics? Enter them here.</label>
+    <input type="text" name="newTopics" placeholder="Comma delimited list">
+  </div>
+  <div class="fields">
+    <button class="ui button" type="submit">Submit</button>
+    <button class="annotation-reset ui button">Reset</button>
+    <div class="highlite-toggle hidden-field ui toggle checkbox">
+      <input name="hasAnnotation" type="checkbox" tabindex="0" class="hidden">
+      <label>Toggle</label>
+    </div>
+  </div>
+</form>
+

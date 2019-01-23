@@ -1,0 +1,240 @@
+{
+  "bid": "sg2008",
+  "base": "/sg2008",
+  "image": "/public/img/raj/sg2008-toc.jpg",
+  "title": "ACIM Study Group: 2008",
+  "contents": [
+    {
+      "desc": "T13.4 The Guarantee of Heaven",
+      "timing": "/sg2008/012008.json",
+      "audio": "/2008/2008-01-20.mp3",
+      "url": "/012008/",
+      "title": "Jan 20, 2008"
+    },
+    {
+      "desc": "T13.4 The Guarantee of Heaven",
+      "timing": "/sg2008/012708.json",
+      "audio": "/2008/2008-01-27.mp3",
+      "url": "/012708/",
+      "title": "Jan 27, 2008"
+    },
+    {
+      "desc": "T13.4 The Guarantee of Heaven",
+      "timing": "/sg2008/021008.json",
+      "audio": "/2008/2008-02-10.mp3",
+      "url": "/021008/",
+      "title": "Feb 10, 2008"
+    },
+    {
+      "desc": "T13.5 The Testimony of Miracles",
+      "timing": "/sg2008/021708.json",
+      "audio": "/2008/2008-02-17.mp3",
+      "url": "/021708/",
+      "title": "Feb 17, 2008"
+    },
+    {
+      "desc": "T13.6 The Happy Learner",
+      "timing": "/sg2008/022408.json",
+      "audio": "/2008/2008-02-24.mp3",
+      "url": "/022408/",
+      "title": "Feb 24, 2008"
+    },
+    {
+      "desc": "T13.6 The Happy Learner",
+      "timing": "/sg2008/030208.json",
+      "audio": "/2008/2008-03-02.mp3",
+      "url": "/030208/",
+      "title": "Mar 2, 2008"
+    },
+    {
+      "desc": "T13.7 The Decision for Guiltlessness",
+      "timing": "/sg2008/030908.json",
+      "audio": "/2008/2008-03-09.mp3",
+      "url": "/030908/",
+      "title": "Mar 9, 2008"
+    },
+    {
+      "desc": "T13.7 The Decision for Guiltlessness",
+      "timing": "/sg2008/032508.json",
+      "audio": "/2008/2008-03-25.mp3",
+      "url": "/032508/",
+      "title": "Mar 25, 2008"
+    },
+    {
+      "desc": "T13.7 The Decision for Guiltlessness",
+      "timing": "/sg2008/033008.json",
+      "audio": "/2008/2008-03-30.mp3",
+      "url": "/033008/",
+      "title": "Mar 30, 2008"
+    },
+    {
+      "desc": "T13.7 The Decision for Guiltlessness",
+      "timing": "/sg2008/040608.json",
+      "audio": "/2008/2008-04-06.mp3",
+      "url": "/040608/",
+      "title": "Apr 6, 2008"
+    },
+    {
+      "desc": "T13.8 The Way of Salvation",
+      "timing": "/sg2008/041308.json",
+      "audio": "/2008/2008-04-13.mp3",
+      "url": "/041308/",
+      "title": "Apr 13, 2008"
+    },
+    {
+      "desc": "T14 Introduction",
+      "timing": "/sg2008/042008.json",
+      "audio": "/2008/2008-04-20.mp3",
+      "url": "/042008/",
+      "title": "Apr 20, 2008"
+    },
+    {
+      "desc": "T14.1 Guilt and Guiltlessness",
+      "timing": "/sg2008/050408.json",
+      "audio": "/2008/2008-05-04.mp3",
+      "url": "/050408/",
+      "title": "May 4, 2008"
+    },
+    {
+      "desc": "T14.1 Guilt and Guiltlessness",
+      "timing": "/sg2008/051808.json",
+      "audio": "/2008/2008-05-18.mp3",
+      "url": "/051808/",
+      "title": "May 18, 2008"
+    },
+    {
+      "desc": "T14.1 Guilt and Guiltlessness",
+      "timing": "/sg2008/052508.json",
+      "audio": "/2008/2008-05-25.mp3",
+      "url": "/052508/",
+      "title": "May 25, 2008"
+    },
+    {
+      "desc": "T14.1 Guilt and Guiltlessness",
+      "timing": "/sg2008/060108.json",
+      "audio": "/2008/2008-06-01.mp3",
+      "url": "/060108/",
+      "title": "Jun 1, 2008"
+    },
+    {
+      "desc": "T14.2 Out of the Darkness",
+      "timing": "/sg2008/060808.json",
+      "audio": "/2008/2008-06-08.mp3",
+      "url": "/060808/",
+      "title": "Jun 8, 2008"
+    },
+    {
+      "desc": "T14.3 Perception without Deceit",
+      "timing": "/sg2008/061508.json",
+      "audio": "/2008/2008-06-15.mp3",
+      "url": "/061508/",
+      "title": "Jun 15, 2008"
+    },
+    {
+      "desc": "T14.3 Perception without Deceit",
+      "timing": "/sg2008/062208.json",
+      "audio": "/2008/2008-06-22.mp3",
+      "url": "/062208/",
+      "title": "Jun 22, 2008"
+    },
+    {
+      "desc": "T14.3 Perception without Deceit",
+      "timing": "/sg2008/070608.json",
+      "audio": "/2008/2008-07-06.mp3",
+      "url": "/070608/",
+      "title": "Jul 6, 2008"
+    },
+    {
+      "desc": "T14.3 Perception without Deceit",
+      "timing": "/sg2008/071308.json",
+      "audio": "/2008/2008-07-13.mp3",
+      "url": "/071308/",
+      "title": "Jul 13, 2008"
+    },
+    {
+      "desc": "T14.4 The Recognition of Holiness",
+      "timing": "/sg2008/072708.json",
+      "audio": "/2008/2008-07-27.mp3",
+      "url": "/072708/",
+      "title": "Jul 27, 2008"
+    },
+    {
+      "desc": "T14.5 The Shift to Miracles",
+      "timing": "/sg2008/081708.json",
+      "audio": "/2008/2008-08-17.mp3",
+      "url": "/081708/",
+      "title": "Aug 17, 2008"
+    },
+    {
+      "desc": "T14.5 The Shift to Miracles",
+      "timing": "/sg2008/083108.json",
+      "audio": "/2008/2008-08-31.mp3",
+      "url": "/083108/",
+      "title": "Aug 31, 2008"
+    },
+    {
+      "desc": "T14.5 The Shift to Miracles",
+      "timing": "/sg2008/090708.json",
+      "audio": "/2008/2008-09-07.mp3",
+      "url": "/090708/",
+      "title": "Sep 7, 2008"
+    },
+    {
+      "desc": "T14.6 The Test of Truth",
+      "timing": "/sg2008/091408.json",
+      "audio": "/2008/2008-09-14.mp3",
+      "url": "/091408/",
+      "title": "Sep 14, 2008"
+    },
+    {
+      "desc": "T14.6 The Test of Truth",
+      "timing": "/sg2008/092108.json",
+      "audio": "/2008/2008-09-21.mp3",
+      "url": "/092108/",
+      "title": "Sep 21, 2008"
+    },
+    {
+      "desc": "T14.6 The Test of Truth",
+      "timing": "/sg2008/100508.json",
+      "audio": "/2008/2008-10-05.mp3",
+      "url": "/100508/",
+      "title": "Oct 5, 2008"
+    },
+    {
+      "desc": "T14.6 The Test of Truth",
+      "timing": "/sg2008/101908.json",
+      "audio": "/2008/2008-10-19.mp3",
+      "url": "/101908/",
+      "title": "Oct 19, 2008"
+    },
+    {
+      "desc": "T15.0 The Purpose of Time: Introduction",
+      "audio": "/2008/2008-10-26.mp3",
+      "timing": "/sg2008/102608.json",
+      "url": "/102608/",
+      "title": "Oct 26, 2008"
+    },
+    {
+      "desc": "T15.1 The Uses of Time",
+      "audio": "/2008/2008-11-02.mp3",
+      "timing": "/sg2008/110208.json",
+      "url": "/110208/",
+      "title": "Nov 2, 2008"
+    },
+    {
+      "desc": "T15.1 The Uses of Time",
+      "timing": "/sg2008/110908.json",
+      "audio": "/2008/2008-11-09.mp3",
+      "url": "/110908/",
+      "title": "Nov 9, 2008"
+    },
+    {
+      "desc": "T15.2 Time and Eternity",
+      "note": "audio link on celestialrealm is messed up but got it from rajcast",
+      "timing": "/sg2008/112308.json",
+      "audio": "/2008/2008-11-23.mp3",
+      "url": "/112308/",
+      "title": "Nov 23, 2008"
+    }
+  ]
+}

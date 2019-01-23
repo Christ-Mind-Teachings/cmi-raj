@@ -1,0 +1,281 @@
+{
+  "bid": "sg2010",
+  "base": "/sg2010",
+  "image": "/public/img/raj/sg2010-toc.jpg",
+  "title": "ACIM Study Group: 2010",
+  "contents": [
+        {
+      "desc": "T16.1 True Empathy",
+      "summary": "Mother May I?",
+      "audio": "/2010/2010-01-02.mp3",
+      "timing": "/sg2010/010210.json",
+      "url": "/010210/",
+      "title": "Jan 2, 2010"
+    },
+    {
+      "desc": "T16.2 The Magnitude of Holiness",
+      "audio": "/2010/2010-01-16.mp3",
+      "timing": "/sg2010/011610.json",
+      "url": "/011610/",
+      "title": "Jan 16, 2010"
+    },
+    {
+      "desc": "T16.2 The Magnitude of Holiness",
+      "summary": "You Will Feel Your Way",
+      "timing": "/sg2010/013010.json",
+      "audio": "/2010/2010-01-30.mp3",
+      "url": "/013010/",
+      "title": "Jan 30, 2010"
+    },
+    {
+      "desc": "T16.2 The Magnitude of Holiness",
+      "summary": "You Were the Cause of a Miracle",
+      "timing": "/sg2010/020610.json",
+      "audio": "/2010/2010-02-06.mp3",
+      "url": "/020610/",
+      "title": "Feb 6, 2010"
+    },
+    {
+      "desc": "T16.2 The Magnitude of Holiness",
+      "summary": "This is a Year of Joy",
+      "timing": "/sg2010/021310.json",
+      "audio": "/2010/2010-02-13.mp3",
+      "url": "/021310/",
+      "title": "Feb 13, 2010"
+    },
+    {
+      "desc": "T16.3 The Reward of Teaching",
+      "timing": "/sg2010/030610.json",
+      "audio": "/2010/2010-03-06.mp3",
+      "url": "/030610/",
+      "title": "Mar 6, 2010"
+    },
+    {
+      "desc": "T16.3 The Reward of Teaching",
+      "timing": "/sg2010/032010.json",
+      "audio": "/2010/2010-03-20.mp3",
+      "url": "/032010/",
+      "title": "Mar 20, 2010"
+    },
+    {
+      "desc": "T16.4 Illusion and Reality of Love",
+      "timing": "/sg2010/032710.json",
+      "audio": "/2010/2010-03-27.mp3",
+      "url": "/032710/",
+      "title": "Mar 27, 2010"
+    },
+    {
+      "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "My Easter Message",
+      "timing": "/sg2010/040310.json",
+      "audio": "/2010/2010-04-03.mp3",
+      "url": "/040310/",
+      "title": "Apr 3, 2010"
+    },
+    {
+      "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "You're Not the Visibility and Tangibility",
+      "timing": "/sg2010/041010.json",
+      "audio": "/2010/2010-04-10.mp3",
+      "url": "/041010/",
+      "title": "Apr 10, 2010"
+    },
+    {
+      "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "When One is Thinking",
+      "timing": "/sg2010/050110.json",
+      "audio": "/2010/2010-05-01.mp3",
+      "url": "/050110/",
+      "title": "May 1, 2010"
+    },
+    {
+      "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "The Concept of Intimacy",
+      "timing": "/sg2010/051510.json",
+      "audio": "/2010/2010-05-15.mp3",
+      "url": "/051510/",
+      "title": "May 15, 2010"
+    },
+    {
+      "desc": "T16.4 Illusion and Reality of Love",
+      "summary": "An Experience of Intimacy",
+      "timing": "/sg2010/052910.json",
+      "audio": "/2010/2010-05-29.mp3",
+      "url": "/052910/",
+      "title": "May 29, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "timing": "/sg2010/060510.json",
+      "audio": "/2010/2010-06-05.mp3",
+      "url": "/060510/",
+      "title": "Jun 5, 2010"
+    },
+    {
+      "desc": "T16.5 Specialness and Guilt",
+      "timing": "/sg2010/061210.json",
+      "audio": "/2010/2010-06-12.mp3",
+      "url": "/061210/",
+      "title": "Jun 12, 2010"
+    },
+    {
+      "desc": "T16.5 Specialness and Guilt",
+      "summary": "To Everyone Heaven is Completion",
+      "timing": "/sg2010/061910.json",
+      "audio": "/2010/2010-06-19.mp3",
+      "url": "/061910/",
+      "title": "Jun 19, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "A Night for Gratitude",
+      "timing": "/sg2010/070310.json",
+      "audio": "/2010/2010-07-03.mp3",
+      "url": "/070310/",
+      "title": "Jul 3, 2010"
+    },
+    {
+      "desc": "T31.4 Self-Concept versus Self",
+      "summary": "Letting God's Love In",
+      "timing": "/sg2010/071010.json",
+      "audio": "/2010/2010-07-10.mp3",
+      "url": "/071010/",
+      "title": "Jul 10, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "God's Laws Prevail",
+      "timing": "/sg2010/071710.json",
+      "audio": "/2010/2010-07-17.mp3",
+      "url": "/071710/",
+      "title": "Jul 17, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "A Night to be Glad",
+      "timing": "/sg2010/072410.json",
+      "audio": "/2010/2010-07-24.mp3",
+      "url": "/072410/",
+      "title": "Jul 24, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "The Movement Continues",
+      "timing": "/sg2010/080710.json",
+      "audio": "/2010/2010-08-07.mp3",
+      "url": "/080710/",
+      "title": "Aug 7, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "The Movement Continues",
+      "timing": "/sg2010/082810.json",
+      "audio": "/2010/2010-08-28.mp3",
+      "url": "/082810/",
+      "title": "Aug 28, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "The Two Step Solution to Everything",
+      "timing": "/sg2010/090410.json",
+      "audio": "/2010/2010-09-04.mp3",
+      "url": "/090410/",
+      "title": "Sep 4, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "The Meaning of Religion is Love",
+      "timing": "/sg2010/091110.json",
+      "audio": "/2010/2010-09-11.mp3",
+      "url": "/091110/",
+      "title": "Sep 11, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "Paul Shares",
+      "timing": "/sg2010/092510.json",
+      "audio": "/2010/2010-09-25.mp3",
+      "url": "/092510/",
+      "title": "Sep 25, 2010"
+    },
+    {
+      "desc": "T16.5 Specialness and Guilt",
+      "summary": "The Only Way to Lose Joy",
+      "timing": "/sg2010/100210.json",
+      "audio": "/2010/2010-10-02.mp3",
+      "url": "/100210/",
+      "title": "Oct 2, 2010"
+    },
+    {
+      "desc": "Discussion",
+      "summary": "Nullifying the Special Relationship",
+      "timing": "/sg2010/100910.json",
+      "audio": "/2010/2010-10-09.mp3",
+      "url": "/100910/",
+      "title": "Oct 9, 2010"
+    },
+    {
+      "desc": "T16.5 Specialness and Guilt",
+      "summary": "The Purpose of a Special Relationship",
+      "timing": "/sg2010/101610.json",
+      "audio": "/2010/2010-10-16.mp3",
+      "url": "/101610/",
+      "title": "Oct 16, 2010"
+    },
+    {
+      "desc": "T16.5 Specialness and Guilt",
+      "summary": "Father, I'd Rather Do It My Way",
+      "timing": "/sg2010/102310.json",
+      "audio": "/2010/2010-10-23.mp3",
+      "url": "/102310/",
+      "title": "Oct 23, 2010"
+    },
+    {
+      "desc": "T16.5 Specialness and Guilt",
+      "summary": "The Second Creation",
+      "timing": "/sg2010/110610.json",
+      "audio": "/2010/2010-11-06.mp3",
+      "url": "/110610/",
+      "title": "Nov 6, 2010"
+    },
+    {
+      "desc": "T16.6 The Bridge to the Real World",
+      "timing": "/sg2010/111310.json",
+      "audio": "/2010/2010-11-13.mp3",
+      "url": "/111310/",
+      "title": "Nov 13, 2010"
+    },
+    {
+      "desc": "T16.6 The Bridge to the Real World",
+      "summary": "A Thanksgiving Recipe",
+      "timing": "/sg2010/112010.json",
+      "audio": "/2010/2010-11-20.mp3",
+      "url": "/112010/",
+      "title": "Nov 20, 2010"
+    },
+    {
+      "desc": "T16.6 The Bridge to the Real World",
+      "summary": "Agreements of Special Relationships",
+      "timing": "/sg2010/112710.json",
+      "audio": "/2010/2010-11-27.mp3",
+      "url": "/112710/",
+      "title": "Nov 27, 2010"
+    },
+    {
+      "desc": "T16.6 The Bridge to the Real World",
+      "summary": "Concocted Definitions",
+      "timing": "/sg2010/120410.json",
+      "audio": "/2010/2010-12-04.mp3",
+      "url": "/120410/",
+      "title": "Dec 4, 2010"
+    },
+    {
+      "desc": "Disucssion",
+      "summary": "The First Gift of Christmas",
+      "timing": "/sg2010/121810.json",
+      "audio": "/2010/2010-12-18.mp3",
+      "url": "/121810/",
+      "title": "Dec 18, 2010"
+    }
+  ]
+}

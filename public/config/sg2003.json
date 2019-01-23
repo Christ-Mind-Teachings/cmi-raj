@@ -1,0 +1,337 @@
+{
+  "bid": "sg2003",
+  "base": "/sg2003",
+  "image": "/public/img/raj/sg2003-toc.jpg",
+  "title": "ACIM Study Group: 2003",
+  "contents": [
+    {
+      "audio": "/2003/2003-01-02.mp3",
+      "timing": "/sg2003/010203.json",
+      "desc": "T2.V The Function of the Miracle Worker",
+      "url": "/010203/",
+      "title": "Jan 2, 2003"
+    },
+    {
+      "audio": "/2003/2003-01-09.mp3",
+      "timing": "/sg2003/010903.json",
+      "desc": "T2.VI Fear and Conflict",
+      "url": "/010903/",
+      "title": "Jan 9, 2003"
+    },
+    {
+      "audio": "/2003/2003-01-16.mp3",
+      "timing": "/sg2003/011603.json",
+      "desc": "T2.VI Fear and Conflict",
+      "url": "/011603/",
+      "title": "Jan 16, 2003"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "012303.mp3",
+      "timing": "/sg2003/012303.json",
+      "url": "/012303/",
+      "title": "Jan 23, 2003"
+    },
+    {
+      "audio": "/2003/2003-02-06.mp3",
+      "timing": "/sg2003/020603.json",
+      "desc": "T2.VII Cause and Effect",
+      "url": "/020603/",
+      "title": "Feb 6, 2003"
+    },
+    {
+      "audio": "/2003/2003-02-13.mp3",
+      "timing": "/sg2003/021303.json",
+      "desc": "Discussion",
+      "url": "/021303/",
+      "title": "Feb 13, 2003"
+    },
+    {
+      "audio": "/2003/2003-02-20.mp3",
+      "timing": "/sg2003/022003.json",
+      "desc": "T2.VII Cause and Effect",
+      "url": "/022003/",
+      "title": "Feb 20, 2003"
+    },
+    {
+      "audio": "/2003/2003-02-27.mp3",
+      "timing": "/sg2003/022703.json",
+      "desc": "T2.VII Cause and Effect",
+      "url": "/022703/",
+      "title": "Feb 27, 2003"
+    },
+    {
+      "audio": "/2003/2003-03-06.mp3",
+      "timing": "/sg2003/030603.json",
+      "desc": "T2.VIII The Meaning of the Last Judgment",
+      "url": "/030603/",
+      "title": "Mar 6, 2003"
+    },
+    {
+      "audio": "/2003/2003-03-13.mp3",
+      "timing": "/sg2003/031303.json",
+      "desc": "T2.V.A Special Principles for Miracle Workers",
+      "url": "/031303/",
+      "title": "Mar 13, 2003"
+    },
+    {
+      "audio": "/2003/2003-03-20.mp3",
+      "timing": "/sg2003/032003.json",
+      "desc": "T3.I Atonement without Sacrifice",
+      "url": "/032003/",
+      "title": "Mar 20, 2003"
+    },
+    {
+      "audio": "/2003/2003-03-27.mp3",
+      "timing": "/sg2003/032703.json",
+      "desc": "T3.I Atonement without Sacrifice",
+      "url": "/032703/",
+      "title": "Mar 27, 2003"
+    },
+    {
+      "audio": "/2003/2003-04-03.mp3",
+      "timing": "/sg2003/040303.json",
+      "desc": "T3.I Atonement without Sacrifice",
+      "url": "/040303/",
+      "title": "Apr 3, 2003"
+    },
+    {
+      "timing": "/sg2003/041003.json",
+      "audio": "/2003/2003-04-10.mp3",
+      "desc": "T3.II Miracles as True Perception",
+      "url": "/041003/",
+      "title": "Apr 10, 2003"
+    },
+    {
+      "timing": "/sg2003/042403.json",
+      "audio": "/2003/2003-04-24.mp3",
+      "desc": "T3.II Miracles as True Perception",
+      "url": "/042403/",
+      "title": "Apr 24, 2003"
+    },
+    {
+      "timing": "/sg2003/050103.json",
+      "audio": "/2003/2003-05-01.mp3",
+      "desc": "T3.III Perception vs Knowledge",
+      "url": "/050103/",
+      "title": "May 1, 2003"
+    },
+    {
+      "timing": "/sg2003/051103.json",
+      "audio": "/2003/2003-05-11.mp3",
+      "desc": "T3.IV Error and the Ego",
+      "url": "/051103/",
+      "title": "May 11, 2003"
+    },
+    {
+      "timing": "/sg2003/051803.json",
+      "audio": "/2003/2003-05-18.mp3",
+      "desc": "T3.IV Error and the Ego",
+      "url": "/051803/",
+      "title": "May 18, 2003"
+    },
+    {
+      "audio": "/2003/2003-05-25.mp3",
+      "timing": "/sg2003/052503.json",
+      "desc": "T3.IV Error and the Ego",
+      "url": "/052503/",
+      "title": "May 25, 2003"
+    },
+    {
+      "timing": "/sg2003/060103.json",
+      "audio": "/2003/2003-06-01.mp3",
+      "desc": "T3.IV Error and the Ego",
+      "url": "/060103/",
+      "title": "Jun 1, 2003"
+    },
+    {
+      "timing": "/sg2003/060803.json",
+      "audio": "/2003/2003-06-08.mp3",
+      "desc": "T3.V Beyond Pereception",
+      "url": "/060803/",
+      "title": "Jun 8, 2003"
+    },
+    {
+      "timing": "/sg2003/061503.json",
+      "audio": "/2003/2003-06-15.mp3",
+      "desc": "T3.VI Judgement and the Authority Problem",
+      "url": "/061503/",
+      "title": "Jun 15, 2003"
+    },
+    {
+      "timing": "/sg2003/062203.json",
+      "audio": "/2003/2003-06-22.mp3",
+      "desc": "T3.VI Judgement and the Authority Problem",
+      "url": "/062203/",
+      "title": "Jun 22, 2003"
+    },
+    {
+      "timing": "/sg2003/062903.json",
+      "audio": "/2003/2003-06-29.mp3",
+      "desc": "T4.In Introduction",
+      "url": "/062903/",
+      "title": "Jun 29, 2003"
+    },
+    {
+      "timing": "/sg2003/070603.json",
+      "audio": "/2003/2003-07-06.mp3",
+      "desc": "<small>Begin reading from the Sparkly Edition</small><br/>T4.1 Right Teaching and Right Learning",
+      "url": "/070603/",
+      "title": "Jul 6, 2003"
+    },
+    {
+      "timing": "/sg2003/071303.json",
+      "audio": "/2003/2003-07-13.mp3",
+      "desc": "T4.1 Right Teaching and Right Learning",
+      "url": "/071303/",
+      "title": "Jul 13, 2003"
+    },
+    {
+      "timing": "/sg2003/072003.json",
+      "audio": "/2003/2003-07-20.mp3",
+      "desc": "T4.2 The Ego and False Autonomy",
+      "url": "/072003/",
+      "title": "Jul 20, 2003"
+    },
+    {
+      "timing": "/sg2003/072703.json",
+      "audio": "/2003/2003-07-27.mp3",
+      "desc": "T4.2 The Ego and False Autonomy",
+      "url": "/072703/",
+      "title": "Jul 27, 2003"
+    },
+    {
+      "timing": "/sg2003/080303.json",
+      "audio": "/2003/2003-08-03.mp3",
+      "desc": "T4.3 Love without Conflict",
+      "url": "/080303/",
+      "title": "Aug 3, 2003"
+    },
+    {
+      "timing": "/sg2003/081003.json",
+      "audio": "/2003/2003-08-10.mp3",
+      "desc": "T4.4 The Escape from Fear",
+      "url": "/081003/",
+      "title": "Aug 10, 2003"
+    },
+    {
+      "timing": "/sg2003/081703.json",
+      "audio": "/2003/2003-08-17.mp3",
+      "desc": "T4.5 The Ego-Body Illusion",
+      "url": "/081703/",
+      "title": "Aug 17, 2003"
+    },
+    {
+      "timing": "/sg2003/082403.json",
+      "audio": "/2003/2003-08-24.mp3",
+      "desc": "T4.5 The Ego-Body Illusion",
+      "url": "/082403/",
+      "title": "Aug 24, 2003"
+    },
+    {
+      "timing": "/sg2003/083103.json",
+      "audio": "/2003/2003-08-31.mp3",
+      "desc": "T4.7 Creation and Communication",
+      "url": "/083103/",
+      "title": "Aug 31, 2003"
+    },
+    {
+      "timing": "/sg2003/090703.json",
+      "audio": "/2003/2003-09-07.mp3",
+      "desc": "T4.8 True Rehabilitation",
+      "url": "/090703/",
+      "title": "Sep 7, 2003"
+    },
+    {
+      "timing": "/sg2003/091403.json",
+      "audio": "/2003/2003-09-14.mp3",
+      "desc": "T5.1 Healing as Joining",
+      "url": "/091403/",
+      "title": "Sep 14, 2003"
+    },
+    {
+      "timing": "/sg2003/092103.json",
+      "audio": "/2003/2003-09-21.mp3",
+      "desc": "T5.3 The Voice for God",
+      "url": "/092103/",
+      "title": "Sep 21, 2003"
+    },
+    {
+      "timing": "/sg2003/092803.json",
+      "audio": "/2003/2003-09-28.mp3",
+      "desc": "T5.4 The Guide to Salvation",
+      "url": "/092803/",
+      "title": "Sep 28, 2003"
+    },
+    {
+      "audio": "/2003/2003-10-12.mp3",
+      "timing": "/sg2003/101203.json",
+      "desc": "Discussion",
+      "url": "/101203/",
+      "title": "Oct 12, 2003"
+    },
+    {
+      "timing": "/sg2003/101903.json",
+      "audio": "/2003/2003-10-19.mp3",
+      "desc": "T5.4 The Guide to Salvation",
+      "url": "/101903/",
+      "title": "Oct 19, 2003"
+    },
+    {
+      "timing": "/sg2003/102603.json",
+      "audio": "/2003/2003-10-26.mp3",
+      "desc": "T5.5 Therapy and Teaching",
+      "url": "/102603/",
+      "title": "Oct 26, 2003"
+    },
+    {
+      "timing": "/sg2003/110203.json",
+      "audio": "/2003/2003-11-02.mp3",
+      "desc": "T5.6 The Two Decisions",
+      "url": "/110203/",
+      "title": "Nov 2, 2003"
+    },
+    {
+      "timing": "/sg2003/110903.json",
+      "audio": "/2003/2003-11-09.mp3",
+      "desc": "T5.6 The Two Decisions",
+      "url": "/110903/",
+      "title": "Nov 9, 2003"
+    },
+    {
+      "audio": "/2003/2003-11-16.mp3",
+      "timing": "/sg2003/111603.json",
+      "desc": "T5.7 Time and Eternity",
+      "url": "/111603/",
+      "title": "Nov 16, 2003"
+    },
+    {
+      "timing": "/sg2003/112303.json",
+      "audio": "/2003/2003-11-23.mp3",
+      "desc": "T5.8 The Eternal Fixation",
+      "url": "/112303/",
+      "title": "Nov 23, 2003"
+    },
+    {
+      "timing": "/sg2003/120703.json",
+      "audio": "/2003/2003-12-07.mp3",
+      "desc": "T6.1 The Message of the Crucifixion",
+      "url": "/120703/",
+      "title": "Dec 7, 2003"
+    },
+    {
+      "timing": "/sg2003/121403.json",
+      "audio": "/2003/2003-12-14.mp3",
+      "desc": "T6.1 The Message of the Crucifixion",
+      "url": "/121403/",
+      "title": "Dec 14, 2003"
+    },
+    {
+      "timing": "/sg2003/122103.json",
+      "audio": "/2003/2003-12-21.mp3",
+      "desc": "T6.1 The Message of the Crucifixion",
+      "url": "/122103/",
+      "title": "Dec 21, 2003"
+    }
+  ]
+}

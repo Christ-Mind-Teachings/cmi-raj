@@ -1,0 +1,78 @@
+{
+  "bid": "sg2014",
+  "base": "/sg2014",
+  "image": "/public/img/raj/sg2014-toc.jpg",
+  "title": "ACIM Study Group: 2014",
+  "contents": [
+    {
+      "desc": "Discussion",
+      "audio": "/2014/2014-01-06.mp3",
+      "timing": "/sg2014/010614.json",
+      "url": "/010614/",
+      "title": "Jan 6, 2014"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2014/2014-01-14.mp3",
+      "timing": "/sg2014/011414.json",
+      "url": "/011414/",
+      "title": "Jan 14, 2014"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2014/2014-01-28.mp3",
+      "timing": "/sg2014/012814.json",
+      "url": "/012814/",
+      "title": "Jan 28, 2014"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2014/2014-02-09.mp3",
+      "timing": "/sg2014/020914.json",
+      "url": "/020914/",
+      "title": "Feb 9, 2014"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2014/2014-02-24.mp3",
+      "timing": "/sg2014/022414.json",
+      "url": "/022414/",
+      "title": "Feb 24, 2014"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2014/2014-03-09.mp3",
+      "timing": "/sg2014/030914.json",
+      "url": "/030914/",
+      "title": "Mar 9, 2014"
+    },
+    {
+      "desc": "T15.4 Practicing the Holy Instant",
+      "audio": "/2014/2014-04-13.mp3",
+      "timing": "/sg2014/041314.json",
+      "url": "/041314/",
+      "title": "Apr 13, 2014"
+    },
+    {
+      "desc": "Disucssion",
+      "audio": "/2014/2014-06-16.mp3",
+      "timing": "/sg2014/061614.json",
+      "url": "/061614/",
+      "title": "Jun 16, 2014"
+    },
+    {
+      "desc": "Disucssion",
+      "audio": "/2014/2014-06-29.mp3",
+      "timing": "/sg2014/062914.json",
+      "url": "/062914/",
+      "title": "Jun 29, 2014"
+    },
+    {
+      "desc": "Disucssion",
+      "audio": "/2014/2014-09-15.mp3",
+      "timing": "/sg2014/091514.json",
+      "url": "/091514/",
+      "title": "Sep 15, 2014"
+    }
+  ]
+}

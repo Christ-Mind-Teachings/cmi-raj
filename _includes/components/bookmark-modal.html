@@ -1,0 +1,31 @@
+<div class="bookmark ui modal">
+  <i class="close icon"></i>
+  <div class="ui large header">
+    <div id="bookmark-modal-loading" class="ui active inline loader"></div>
+    Bookmarks
+  </div>
+  <div class="content">
+    <form name="bookmark-filter" id="bookmark-filter-form" class="ui form">
+      <div class="fields">
+        <div class="ten wide field">
+          <div id="bookmark-modal-topic-select" class="cmi right floated content"></div>
+        </div>
+        <div class="three wide">
+          <button class="bookmark-filter-submit ui button">Filter</button>
+        </div>
+        <div class="three wide">
+          <button class="bookmark-filter-reset ui button">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="image scrolling content">
+    <div class="image">
+      <img src="/public/img/cmi/bookmark_modal.png" alt="Bookmark">
+    </div>
+    <div content="container">
+      <div class="ui list cmi-bookmark-list">
+      </div> <!-- ui list -->
+    </div> <!-- container -->
+  </div>
+</div>

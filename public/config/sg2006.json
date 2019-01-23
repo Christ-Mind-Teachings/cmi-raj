@@ -1,0 +1,253 @@
+{
+  "bid": "sg2006",
+  "base": "/sg2006",
+  "image": "/public/img/raj/sg2006-toc.jpg",
+  "title": "ACIM Study Group: 2006",
+  "contents": [
+    {
+      "desc": "T11.2 The Mechanism for Miracles",
+      "audio": "/2006/2006-01-08.mp3",
+      "timing": "/sg2006/010806.json",
+      "url": "/010806/",
+      "title": "Jan 8, 2006"
+    },
+    {
+      "desc": "T11.3 The Investment in Reality",
+      "audio": "/2006/2006-01-15.mp3",
+      "timing": "/sg2006/011506.json",
+      "url": "/011506/",
+      "title": "Jan 15, 2006"
+    },
+    {
+      "desc": "T11.3 The Investment in Reality",
+      "audio": "/2006/2006-01-22.mp3",
+      "timing": "/sg2006/012206.json",
+      "url": "/012206/",
+      "title": "Jan 22, 2006"
+    },
+    {
+      "desc": "T11.4 Seeking and Finding",
+      "audio": "/2006/2006-01-29.mp3",
+      "timing": "/sg2006/012906.json",
+      "url": "/012906/",
+      "title": "Jan 29, 2006"
+    },
+    {
+      "desc": "T11.5 The Sane Curriculum",
+      "audio": "/2006/2006-02-12.mp3",
+      "timing": "/sg2006/021206.json",
+      "url": "/021206/",
+      "title": "Feb 12, 2006"
+    },
+    {
+      "desc": "T11.6 The Vision of Christ",
+      "audio": "/2006/2006-02-26.mp3",
+      "timing": "/sg2006/022606.json",
+      "url": "/022606/",
+      "title": "Feb 26, 2006"
+    },
+    {
+      "desc": "T11.6 The Vision of Christ",
+      "audio": "/2006/2006-03-04.mp3",
+      "timing": "/sg2006/030406.json",
+      "url": "/030406/",
+      "title": "Mar 4, 2006"
+    },
+    {
+      "desc": "T11.7 The Guide for Miracles",
+      "audio": "/2006/2006-03-11.mp3",
+      "timing": "/sg2006/031106.json",
+      "url": "/031106/",
+      "title": "Mar 11, 2006"
+    },
+    {
+      "desc": "T11.7 The Guide for Miracles",
+      "audio": "/2006/2006-03-19.mp3",
+      "timing": "/sg2006/031906.json",
+      "url": "/031906/",
+      "title": "Mar 19, 2006"
+    },
+    {
+      "desc": "Disucssion",
+      "audio": "/2006/2006-04-01.mp3",
+      "timing": "/sg2006/040106.json",
+      "url": "/040106/",
+      "title": "Apr 1, 2006"
+    },
+    {
+      "desc": "T11.7 The Guide for Miracles",
+      "audio": "/2006/2006-04-15.mp3",
+      "timing": "/sg2006/041506.json",
+      "url": "/041506/",
+      "title": "Apr 15, 2006"
+    },
+    {
+      "desc": "T11.7 The Guide for Miracles",
+      "audio": "/2006/2006-04-29.mp3",
+      "timing": "/sg2006/042906.json",
+      "url": "/042906/",
+      "title": "Apr 29, 2006"
+    },
+    {
+      "desc": "T11.8 Reality and Redemption",
+      "audio": "/2006/2006-05-06.mp3",
+      "timing": "/sg2006/050606.json",
+      "url": "/050606/",
+      "title": "May 6, 2006"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2006/2006-05-20.mp3",
+      "timing": "/sg2006/052006.json",
+      "url": "/052006/",
+      "title": "May 20, 2006"
+    },
+    {
+      "desc": "T11.8 Reality and Redemption",
+      "audio": "/2006/2006-05-27.mp3",
+      "timing": "/sg2006/052706.json",
+      "url": "/052706/",
+      "title": "May 27, 2006"
+    },
+    {
+      "desc": "T11.9 Guiltlessness and Invulnerability",
+      "audio": "/2006/2006-06-03.mp3",
+      "timing": "/sg2006/060306.json",
+      "url": "/060306/",
+      "title": "Jun 3, 2006"
+    },
+    {
+      "desc": "T11.9 Guiltlessness and Invulnerability",
+      "audio": "/2006/2006-06-10.mp3",
+      "timing": "/sg2006/061006.json",
+      "url": "/061006/",
+      "title": "Jun 10, 2006"
+    },
+    {
+      "desc": "T11.9 Guiltlessness and Invulnerability",
+      "audio": "/2006/2006-06-18.mp3",
+      "timing": "/sg2006/061806.json",
+      "url": "/061806/",
+      "title": "Jun 18, 2006"
+    },
+    {
+      "desc": "T11.9 Guiltlessness and Invulnerability",
+      "audio": "/2006/2006-06-24.mp3",
+      "timing": "/sg2006/062406.json",
+      "url": "/062406/",
+      "title": "Jun 24, 2006"
+    },
+    {
+      "desc": "T11.9 Guiltlessness and Invulnerability",
+      "audio": "/2006/2006-07-01.mp3",
+      "timing": "/sg2006/070106.json",
+      "url": "/070106/",
+      "title": "Jul 1, 2006"
+    },
+    {
+      "desc": "T11.9 Guiltlessness and Invulnerability",
+      "audio": "/2006/2006-07-15.mp3",
+      "timing": "/sg2006/071506.json",
+      "url": "/071506/",
+      "title": "Jul 15, 2006"
+    },
+    {
+      "desc": "T12.1 Crucifixion by Guilt",
+      "audio": "/2006/2006-07-30.mp3",
+      "timing": "/sg2006/073006.json",
+      "url": "/073006/",
+      "title": "Jul 30, 2006"
+    },
+    {
+      "desc": "T12.1 Crucifixion by Guilt",
+      "audio": "/2006/2006-08-05.mp3",
+      "timing": "/sg2006/080506.json",
+      "url": "/080506/",
+      "title": "Aug 5, 2006"
+    },
+    {
+      "desc": "T12.2 The Fear of Redemption",
+      "audio": "/2006/2006-08-12.mp3",
+      "timing": "/sg2006/081206.json",
+      "url": "/081206/",
+      "title": "Aug 12, 2006"
+    },
+    {
+      "desc": "T12.2 The Fear of Redemption",
+      "audio": "/2006/2006-08-20.mp3",
+      "timing": "/sg2006/082006.json",
+      "url": "/082006/",
+      "title": "Aug 20, 2006"
+    },
+    {
+      "desc": "T12.3 Healing and Time",
+      "audio": "/2006/2006-09-02.mp3",
+      "timing": "/sg2006/090206.json",
+      "url": "/090206/",
+      "title": "Sep 2, 2006"
+    },
+    {
+      "desc": "T12.4 The Two Emotions",
+      "audio": "/2006/2006-09-09.mp3",
+      "timing": "/sg2006/090906.json",
+      "url": "/090906/",
+      "title": "Sep 9, 2006"
+    },
+    {
+      "desc": "T12.4 The Two Emotions",
+      "audio": "/2006/2006-09-23.mp3",
+      "timing": "/sg2006/092306.json",
+      "url": "/092306/",
+      "title": "Sep 23, 2006"
+    },
+    {
+      "audio": "/2006/2006-10-07.mp3",
+      "timing": "/sg2006/100706.json",
+      "desc": "T12.5 Finding the Present",
+      "url": "/100706/",
+      "title": "Oct 7, 2006"
+    },
+    {
+      "desc": "T12.5 Finding the Present",
+      "audio": "/2006/2006-10-14.mp3",
+      "timing": "/sg2006/101406.json",
+      "url": "/101406/",
+      "title": "Oct 14, 2006"
+    },
+    {
+      "desc": "T12.5 Finding the Present",
+      "audio": "/2006/2006-10-21.mp3",
+      "timing": "/sg2006/102106.json",
+      "url": "/102106/",
+      "title": "Oct 21, 2006"
+    },
+    {
+      "desc": "T12.5 Finding the Present",
+      "audio": "/2006/2006-10-28.mp3",
+      "timing": "/sg2006/102806.json",
+      "url": "/102806/",
+      "title": "Oct 28, 2006"
+    },
+    {
+      "desc": "T12.6 Attainment of the Real World",
+      "audio": "/2006/2006-11-11.mp3",
+      "timing": "/sg2006/111106.json",
+      "url": "/111106/",
+      "title": "Nov 11, 2006"
+    },
+    {
+      "desc": "T12.6 Attainment of the Real World",
+      "audio": "/2006/2006-11-18.mp3",
+      "timing": "/sg2006/111806.json",
+      "url": "/111806/",
+      "title": "Nov 18, 2006"
+    },
+    {
+      "desc": "T12.6 Attainment of the Real World",
+      "audio": "/2006/2006-12-02.mp3",
+      "timing": "/sg2006/120206.json",
+      "url": "/120206/",
+      "title": "Dec 2, 2006"
+    }
+  ]
+}

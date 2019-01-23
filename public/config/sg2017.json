@@ -1,0 +1,92 @@
+{
+  "bid": "sg2017",
+  "base": "/sg2017",
+  "image": "/public/img/raj/sg2017-toc.jpg",
+  "title": "ACIM Study Group: 2017",
+  "contents": [
+    {
+      "desc": "W59, W60, and W61 I Am the Light of the World",
+      "timing": "/sg2017/040817.json",
+      "audio": "/2017/2017-04-09.mp3",
+      "url": "/040817/",
+      "title": "Apr 8, 2017"
+    },
+    {
+      "desc": "Discussion",
+      "timing": "/sg2017/041617.json",
+      "audio": "/2017/2017-04-16.mp3",
+      "url": "/041617/",
+      "title": "Apr 16, 2017"
+    },
+    {
+      "desc": "T10.1 Projection versus Extension",
+      "timing": "/sg2017/042317.json",
+      "audio": "/2017/2017-04-23.mp3",
+      "url": "/042317/",
+      "title": "Apr 23, 2017"
+    },
+    {
+      "desc": "M30 As for the Rest...",
+      "timing": "/sg2017/043017.json",
+      "audio": "/2017/2017-04-30.mp3",
+      "url": "/043017/",
+      "title": "Apr 30, 2017"
+    },
+    {
+      "desc": "Discussion",
+      "timing": "/sg2017/051217.json",
+      "audio": "/2017/2017-05-12.mp3",
+      "url": "/051217/",
+      "title": "May 12, 2017"
+    },
+    {
+      "desc": "T17.8 Conditions of Forgiveness",
+      "timing": "/sg2017/060917.json",
+      "audio": "/2017/2017-06-09.mp3",
+      "url": "/060917/",
+      "title": "Jun 9, 2017"
+    },
+    {
+      "desc": "Discussion",
+      "timing": "/sg2017/071117.json",
+      "audio": "/2017/2017-07-11.mp3",
+      "url": "/071117/",
+      "title": "Jul 11, 2017"
+    },
+    {
+      "desc": "T14.5 The Shift to Miracles",
+      "timing": "/sg2017/072317.json",
+      "audio": "/2017/2017-07-23.mp3",
+      "url": "/072317/",
+      "title": "Jul 23, 2017"
+    },
+    {
+      "desc": "T14.6 The Test of Truth",
+      "timing": "/sg2017/092317.json",
+      "audio": "/2017/2017-09-23.mp3",
+      "url": "/092317/",
+      "title": "Sep 23, 2017"
+    },
+    {
+      "desc": "T14.6 The Test of Truth",
+      "timing": "/sg2017/100117.json",
+      "audio": "/2017/2017-10-01.mp3",
+      "url": "/100117/",
+      "title": "Oct 1, 2017"
+    },
+    {
+      "desc": "Discussion",
+      "timing": "/sg2017/101717.json",
+      "audio": "/2017/2017-10-17.mp3",
+      "url": "/101717/",
+      "title": "Oct 17, 2017"
+    },
+    {
+      "desc": "Discussion",
+      "timing": "/sg2017/120417.json",
+      "audio": "/2017/2017-12-04.mp3",
+      "url": "/120417/",
+      "title": "Dec 4, 2017"
+    }
+  ]
+}

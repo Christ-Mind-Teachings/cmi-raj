@@ -1,0 +1,31 @@
+{% comment %}
+usage: {% include form/time-capture.html %}
+{% endcomment %}
+<form name="audio-data" honeypot-field="message" id="audio-data-form" action="/audio/" class="ui form" netlify>
+  <div class="ui message">
+    <div class="header">Please enter your name and email address.</div>
+    <p id="timing-data-message"></p>
+  </div>
+  <div class="honeypot-field inline field">
+    <label>Message</label>
+    <input name="message" placeholder="Message" type="text">
+  </div>
+  <div class="inline field">
+    <label>Name</label>
+    <input id="captured-audio-name" name="name" placeholder="Name" type="text">
+  </div>
+  <div class="inline field">
+    <label>E-mail</label>
+    <input id="captured-audio-email" name="email" type="email" placeholder="E-mail address">
+  </div>
+  <div class="inline field">
+    <label>Comments</label>
+    <input id="captured-audio-comments" name="comments" type="text" placeholder="Your comments">
+  </div>
+  <div class="disabled field">
+    <label>Timing Data</label>
+    <textarea rows="2" readonly id="captured-audio-data" name="data"></textarea>
+  </div>
+  <button id="audio-form-submit" class="ui button" type="submit">Submit</button>
+</form>
+

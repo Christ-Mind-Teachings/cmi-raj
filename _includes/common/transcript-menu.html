@@ -1,0 +1,73 @@
+<!-- _includes/common/transcript-menu.html -->
+<div class="ui borderless main menu">
+  <div id="transcript-menu" class="ui text container">
+    <a id="bookmark-dropdown-menu" href="#" class="ui dropdown item">
+      <span data-xposition="left center" data-xtooltip="Show/Set Bookmarks">
+        <i class="red bookmark icon"></i>
+      </span>
+      <div class="menu">
+        <div id="bookmark-modal-open" class="bookmark-modal-open item">Show Bookmarks</div>
+        <div id="bookmark-toggle-highlight" class="toggle-bookmark-highlight item">Hide Highlighted Text</div>
+        <div class="divider"></div>
+        <div data-filter="none" class="header">Topic Filter: None</div>
+        <div id="topic-menu-item" class="item">
+          <i class="dropdown icon"></i>
+          Page Topic List
+          <div id="topic-menu-select" class="menu transition hidden">
+          </div>
+        </div>
+      </div>
+    </a>
+    <a href="#" id="search-modal-open" class="item search-modal-open">
+      <span data-position="bottom center" data-tooltip="Search {{site.title}}">
+        <i class="search icon"></i>
+      </span>
+    </a>
+    <a class="audio-player-toggle hide item" >
+      <span data-position="bottom center" data-tooltip="Play Audio">
+        <i class="volume up icon"></i></a>
+      </span>
+    </a>
+    <a href="#" class="toggle-paragraph-markers item">
+      <span data-position="bottom center" data-tooltip="Toggle Display of Paragraph Numbers">
+        <i class="paragraph icon"></i>
+      </span>
+    </a>
+    <a href="#" class="top-of-page item">
+      <span data-position="bottom center" data-tooltip="Top of Page">
+        <i class="level up icon"></i>
+      </span>
+    </a>
+    {% unless page.restricted-menu %}
+    <a href="#" id="contents-modal-open" data-book="{{page.bid | downcase}}" class="item toc-modal-open">
+      <span data-position="bottom center" data-tooltip="Show Contents">
+        <i class="align justify icon"></i>
+      </span>
+    </a>
+    <a id="previous-page-menu-item" href="#" class="item">
+      <span data-position="bottom center" data-tooltip="Previous Page">
+        <i class="arrow circle left icon"></i>
+      </span>
+    </a>
+    <a id="next-page-menu-item" href="#" class="item">
+      <span data-position="bottom center" data-tooltip="Next Page">
+        <i class="arrow circle right icon"></i>
+      </span>
+    </a>
+    {% endunless %}
+    <a id="about-dropdown-menu" href="#" class="ui dropdown item">
+      <i class="question icon"></i>
+      <div id="help-menu" class="menu">
+        <div class="transcript-tour item">Learn About This Page</div>
+        <div class="about-src item">About This Teaching</div>
+        <div class="read-documentation item">Read Documentation</div>
+        <div class="view-documentation item">Watch Video Instruction</div>
+      </div>
+    </a>
+    <a href="#" class="login-menu-option ui right floated item">
+      <span data-position="bottom center" data-tooltip="Sign In">
+        <i class="red sign in icon"></i>
+      </span>
+    </a>
+  </div>
+</div>

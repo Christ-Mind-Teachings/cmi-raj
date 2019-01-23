@@ -1,0 +1,52 @@
+<div class="annotation ui small modal">
+  <i class="close icon"></i>
+  <div class="content">
+    <button tabindex="-1" class="annotate-prev-paragraph ui labeled icon left floated button">
+      <i class="left chevron icon"></i>
+      Back
+    </button>
+    <button tabindex="-1" class="annotate-play disabled ui button">
+      <i class="play icon"></i>
+      Play
+    </button>
+    <button class="annotate-follow ui green disabled button" tabindex="-1">
+      Follow
+    </button>
+    <button tabindex="-1" class="hide-annotation-form-button ui labeled icon button">
+      <i class="edit icon"></i>
+      Hide Form
+    </button>
+    <button tabindex="-1" class="annotate-next-paragraph ui right labeled icon right floated button">
+      <i class="right chevron icon"></i>
+      Next
+    </button>
+  </div>
+
+  <div class="content">
+    <div content="container">
+      <div class="annotation-list ui middle aligned divided list">
+      </div>
+      <div class="annotation-form" id="new-annotation">
+        <h4 class="ui horizontal divider header">
+          <i class="edit icon"></i>
+          Annotation
+        </h4>
+        {% include form/annotation.html %}
+      </div>
+      <h4 class="ui horizontal divider header">
+        <i class="paragraph icon"></i>
+        Paragraph
+      </h4>
+    </div> <!-- container -->
+    <div class="progress-bar hide-progress-bar content">
+      <div id="paragraph-progress" class="ui small green progress">
+        <div class="bar">
+          <div class="progress"></div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="ui segment" id="bookmark-paragraph"></div>
+    </div>
+  </div>
+</div>

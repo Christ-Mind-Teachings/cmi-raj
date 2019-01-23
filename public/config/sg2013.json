@@ -1,0 +1,197 @@
+{
+  "bid": "sg2013",
+  "base": "/sg2013",
+  "image": "/public/img/raj/sg2013-toc.jpg",
+  "title": "ACIM Study Group: 2013",
+  "contents": [
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-04-27.mp3",
+      "timing": "/sg2013/042713.json",
+      "url": "/042713/",
+      "title": "Apr 27, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-05-04.mp3",
+      "timing": "/sg2013/050413.json",
+      "url": "/050413/",
+      "title": "May 4, 2013"
+    },
+    {
+      "desc": "T19.6 The Obstacles to Peace, The Second Obstacle",
+      "audio": "/2013/2013-05-11.mp3",
+      "timing": "/sg2013/051113.json",
+      "url": "/051113/",
+      "title": "May 11, 2013"
+    },
+    {
+      "desc": "T19.7 Pleasure and Pain",
+      "audio": "/2013/2013-05-20.mp3",
+      "timing": "/sg2013/052013.json",
+      "url": "/052013/",
+      "title": "May 20, 2013"
+    },
+    {
+      "desc": "T19.7 Pleasure and Pain",
+      "audio": "/2013/2013-05-28.mp3",
+      "timing": "/sg2013/052813.json",
+      "url": "/052813/",
+      "title": "May 28, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-06-02.mp3",
+      "timing": "/sg2013/060213.json",
+      "url": "/060213/",
+      "title": "Jun 2, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-06-09.mp3",
+      "timing": "/sg2013/060913.json",
+      "url": "/060913/",
+      "title": "Jun 9, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-06-25.mp3",
+      "timing": "/sg2013/062513.json",
+      "url": "/062513/",
+      "title": "Jun 25, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-06-30.mp3",
+      "timing": "/sg2013/063913.json",
+      "url": "/063013/",
+      "title": "Jun 30, 2013"
+    },
+    {
+      "desc": "T13.8 The Way of Salvation",
+      "audio": "/2013/2013-07-07.mp3",
+      "timing": "/sg2013/070713.json",
+      "url": "/070713/",
+      "title": "Jul 7, 2013"
+    },
+    {
+      "desc": "T27.5 The Healing Example",
+      "audio": "/2013/2013-07-15.mp3",
+      "timing": "/sg2013/071413.json",
+      "url": "/071413/",
+      "title": "Jul 14, 2013"
+    },
+    {
+      "desc": "T27.5 The Healing Example",
+      "audio": "/2013/2013-07-21.mp3",
+      "timing": "/sg2013/072113.json",
+      "url": "/072113/",
+      "title": "Jul 21, 2013"
+    },
+    {
+      "desc": "T27.5 The Healing Example",
+      "audio": "/2013/2013-08-04.mp3",
+      "timing": "/sg2013/080413.json",
+      "url": "/080413/",
+      "title": "Aug 4, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-08-11.mp3",
+      "timing": "/sg2013/081113.json",
+      "url": "/081113/",
+      "title": "Aug 11, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-08-25.mp3",
+      "timing": "/sg2013/082513.json",
+      "url": "/082513/",
+      "title": "Aug 25, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-09-01.mp3",
+      "timing": "/sg2013/090113.json",
+      "url": "/090113/",
+      "title": "Sep 1, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-09-08.mp3",
+      "timing": "/sg2013/090813.json",
+      "url": "/090813/",
+      "title": "Sep 8, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-09-15.mp3",
+      "timing": "/sg2013/091513.json",
+      "url": "/091513/",
+      "title": "Sep 15, 2013"
+    },
+    {
+      "desc": "T30.1 Rules for Decision",
+      "audio": "/2013/2013-09-23.mp3",
+      "timing": "/sg2013/092313.json",
+      "url": "/092313/",
+      "title": "Sep 23, 2013"
+    },
+    {
+      "desc": "T30.2 Freedom of Will",
+      "audio": "/2013/2013-10-06.mp3",
+      "timing": "/sg2013/100613.json",
+      "url": "/100613/",
+      "title": "Oct 6, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-10-15.mp3",
+      "timing": "/sg2013/101513.json",
+      "url": "/101513/",
+      "title": "Oct 15, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-10-20.mp3",
+      "timing": "/sg2013/102013.json",
+      "url": "/102013/",
+      "title": "Oct 20, 2013"
+    },
+    {
+      "desc": "T11.7 The Guide for Miracles",
+      "audio": "/2013/2013-10-27.mp3",
+      "timing": "/sg2013/102713.json",
+      "url": "/102713/",
+      "title": "Oct 27, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-11-03.mp3",
+      "timing": "/sg2013/110313.json",
+      "url": "/110313/",
+      "title": "Nov 3, 2013"
+    },
+    {
+      "desc": "T15.1 The Uses of Time",
+      "audio": "/2013/2013-11-24.mp3",
+      "timing": "/sg2013/112413.json",
+      "url": "/112413/",
+      "title": "Nov 24, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-12-22.mp3",
+      "timing": "/sg2013/122213.json",
+      "url": "/122213/",
+      "title": "Dec 22, 2013"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2013/2013-12-30.mp3",
+      "timing": "/sg2013/123013.json",
+      "url": "/123013/",
+      "title": "Dec 30, 2013"
+    }
+  ]
+}

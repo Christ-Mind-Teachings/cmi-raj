@@ -1,0 +1,253 @@
+{
+  "bid": "sg2009",
+  "base": "/sg2009",
+  "image": "/public/img/raj/sg2009-toc.jpg",
+  "title": "ACIM Study Group, 2009",
+  "contents": [
+        {
+      "desc": "T15.2 Time and Eternity",
+      "timing": "/sg2009/010309.json",
+      "audio": "/2009/2009-01-03.mp3",
+      "url": "/010309/",
+      "title": "Jan 3, 2009"
+    },
+    {
+      "desc": "T15.2 Time and Eternity",
+      "timing": "/sg2009/011009.json",
+      "audio": "/2009/2009-01-10.mp3",
+      "url": "/011009/",
+      "title": "Jan 10, 2009"
+    },
+    {
+      "desc": "T15.2 Time and Eternity",
+      "audio": "/2009/2009-01-17.mp3",
+      "timing": "/sg2009/011709.json",
+      "url": "/011709/",
+      "title": "Jan 17, 2009"
+    },
+    {
+      "desc": "T15.3 Littleness versus Magnitude",
+      "timing": "/sg2009/012409.json",
+      "audio": "/2009/2009-01-24.mp3",
+      "url": "/012409/",
+      "title": "Jan 24, 2009"
+    },
+    {
+      "desc": "T15.3 Littleness versus Magnitude",
+      "timing": "/sg2009/020709.json",
+      "audio": "/2009/2009-02-07.mp3",
+      "url": "/020709/",
+      "title": "Feb 7, 2009"
+    },
+    {
+      "desc": "T15.3 Littleness versus Magnitude",
+      "timing": "/sg2009/022809.json",
+      "audio": "/2009/2009-02-28.mp3",
+      "url": "/022809/",
+      "title": "Feb 28, 2009"
+    },
+    {
+      "desc": "T15.3 Littleness versus Magnitude",
+      "timing": "/sg2009/031409.json",
+      "audio": "/2009/2009-03-14.mp3",
+      "url": "/031409/",
+      "title": "Mar 14, 2009"
+    },
+    {
+      "desc": "T15.4 Practicing the Holy Instant",
+      "timing": "/sg2009/032809.json",
+      "audio": "/2009/2009-03-28.mp3",
+      "url": "/032809/",
+      "title": "Mar 28, 2009"
+    },
+    {
+      "desc": "T15.4 Practicing the Holy Instant",
+      "timing": "/sg2009/040409.json",
+      "audio": "/2009/2009-04-04.mp3",
+      "url": "/040409/",
+      "title": "Apr 4, 2009"
+    },
+    {
+      "desc": "T15.3 Littleness versus Magnitude",
+      "timing": "/sg2009/041209.json",
+      "audio": "/2009/2009-04-12.mp3",
+      "url": "/041209/",
+      "title": "Apr 12, 2009"
+    },
+    {
+      "desc": "T15.5 The Holy Instant and Special Relationships",
+      "timing": "/sg2009/042509.json",
+      "audio": "/2009/2009-04-25.mp3",
+      "url": "/042509/",
+      "title": "Apr 25, 2009"
+    },
+    {
+      "desc": "T15.5 The Holy Instant and Special Relationships",
+      "timing": "/sg2009/050909.json",
+      "audio": "/2009/2009-05-09.mp3",
+      "url": "/050909/",
+      "title": "May 9, 2009"
+    },
+    {
+      "desc": "T15.5 The Holy Instant and Special Relationships",
+      "timing": "/sg2009/052409.json",
+      "audio": "/2009/2009-05-24.mp3",
+      "url": "/052409/",
+      "title": "May 24, 2009"
+    },
+    {
+      "desc": "T15.5 The Holy Instant and Special Relationships",
+      "timing": "/sg2009/053109.json",
+      "audio": "/2009/2009-05-31.mp3",
+      "url": "/053109/",
+      "title": "May 31, 2009"
+    },
+    {
+      "desc": "T15.5 The Holy Instant and Special Relationships",
+      "timing": "/sg2009/060709.json",
+      "audio": "/2009/2009-06-07.mp3",
+      "url": "/060709/",
+      "title": "Jun 7, 2009"
+    },
+    {
+      "desc": "T15.6 The Holy Instant and the Laws of God",
+      "timing": "/sg2009/061309.json",
+      "audio": "/2009/2009-06-13.mp3",
+      "url": "/061309/",
+      "title": "Jun 13, 2009"
+    },
+    {
+      "desc": "T15.6 The Holy Instant and the Laws of God",
+      "timing": "/sg2009/062009.json",
+      "audio": "/2009/2009-06-20.mp3",
+      "url": "/062009/",
+      "title": "Jun 20, 2009"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2009/2009-07-11.mp3",
+      "timing": "/sg2009/071109.json",
+      "url": "/071109/",
+      "title": "Jul 11, 2009"
+    },
+    {
+      "desc": "Discussion before moving to T15.7 The Holy Instant and Communication",
+      "audio": "/2009/2009-07-18.mp3",
+      "timing": "/sg2009/071809.json",
+      "url": "/071809/",
+      "title": "Jul 18, 2009"
+    },
+    {
+      "desc": "T15.7 The Holy Instant and Communication",
+      "timing": "/sg2009/072509.json",
+      "audio": "/2009/2009-07-25.mp3",
+      "url": "/072509/",
+      "title": "Jul 25, 2009"
+    },
+    {
+      "desc": "T15.7 The Holy Instant and Communication",
+      "timing": "/sg2009/080109.json",
+      "audio": "/2009/2009-08-01.mp3",
+      "url": "/080109/",
+      "title": "Aug 1, 2009"
+    },
+    {
+      "desc": "T15.7 The Holy Instant and Communication",
+      "timing": "/sg2009/080809.json",
+      "audio": "/2009/2009-08-08.mp3",
+      "url": "/080809/",
+      "title": "Aug 8, 2009"
+    },
+    {
+      "desc": "T15.7 The Holy Instant and Communication",
+      "timing": "/sg2009/082909.json",
+      "audio": "/2009/2009-08-29.mp3",
+      "url": "/082909/",
+      "title": "Aug 29, 2009"
+    },
+    {
+      "desc": "T15.7 The Holy Instant and Communication",
+      "timing": "/sg2009/090509.json",
+      "audio": "/2009/2009-09-05.mp3",
+      "url": "/090509/",
+      "title": "Sep 5, 2009"
+    },
+    {
+      "desc": "T15.8 The Holy Instant and Real Relationships",
+      "timing": "/sg2009/091209.json",
+      "audio": "/2009/2009-09-12.mp3",
+      "url": "/091209/",
+      "title": "Sep 12, 2009"
+    },
+    {
+      "desc": "T15.8 The Holy Instant and Real Relationships",
+      "timing": "/sg2009/091909.json",
+      "audio": "/2009/2009-09-19.mp3",
+      "url": "/091909/",
+      "title": "Sep 19, 2009"
+    },
+    {
+      "desc": "T15.8 The Holy Instant and Real Relationships",
+      "timing": "/sg2009/092709.json",
+      "audio": "/2009/2009-09-27.mp3",
+      "url": "/092709/",
+      "title": "Sep 27, 2009"
+    },
+    {
+      "desc": "T15.8 The Holy Instant and Real Relationships",
+      "timing": "/sg2009/101009.json",
+      "audio": "/2009/2009-10-10.mp3",
+      "url": "/101009/",
+      "title": "Oct 10, 2009"
+    },
+    {
+      "desc": "T15.9 The Time of Christ",
+      "timing": "/sg2009/102409.json",
+      "audio": "/2009/2009-10-24.mp3",
+      "url": "/102409/",
+      "title": "Oct 24, 2009"
+    },
+    {
+      "desc": "T15.9 The Time of Christ",
+      "timing": "/sg2009/103109.json",
+      "audio": "/2009/2009-10-31.mp3",
+      "url": "/103109/",
+      "title": "Oct 31, 2009"
+    },
+    {
+      "desc": "T15.9 The Time of Christ",
+      "timing": "/sg2009/111409.json",
+      "audio": "/2009/2009-11-14.mp3",
+      "url": "/111409/",
+      "title": "Nov 14, 2009"
+    },
+    {
+      "desc": "T15.10 The End of Sacrifice",
+      "timing": "/sg2009/112209.json",
+      "audio": "/2009/2009-11-22.mp3",
+      "url": "/112209/",
+      "title": "Nov 22, 2009"
+    },
+    {
+      "desc": "T15.10 The End of Sacrifice",
+      "timing": "/sg2009/112809.json",
+      "audio": "/2009/2009-11-28.mp3",
+      "url": "/112809/",
+      "title": "Nov 28, 2009"
+    },
+    {
+      "desc": "T16.1 True Empathy",
+      "timing": "/sg2009/120509.json",
+      "audio": "/2009/2009-12-05.mp3",
+      "url": "/120509/",
+      "title": "Dec 5, 2009"
+    },
+    {
+      "desc": "T16.1 True Empathy",
+      "timing": "/sg2009/121909.json",
+      "audio": "/2009/2009-12-19.mp3",
+      "url": "/121909/",
+      "title": "Dec 19, 2009"
+    }
+  ]
+}

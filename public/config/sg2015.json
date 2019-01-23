@@ -1,0 +1,134 @@
+{
+  "bid": "sg2015",
+  "base": "/sg2015",
+  "image": "/public/img/raj/sg2015-toc.jpg",
+  "title": "ACIM Study Group: 2015",
+  "contents": [
+    {
+      "desc": "Discussion",
+      "audio": "/2015/2015-04-18.mp3",
+      "timing": "/sg2015/041815.json",
+      "url": "/041815/",
+      "title": "Apr 18, 2015"
+    },
+    {
+      "desc": "T19.6 Obstacles to Peace; Belief the Body is Valuable&hellip;",
+      "audio": "/2015/2015-04-25.mp3",
+      "timing": "/sg2015/042515.json",
+      "url": "/042515/",
+      "title": "Apr 25, 2015"
+    },
+    {
+      "desc": "T19.7 Pleasure and Pain",
+      "audio": "/2015/2015-05-03.mp3",
+      "timing": "/sg2015/050315.json",
+      "url": "/050315/",
+      "title": "May 3, 2015"
+    },
+    {
+      "desc": "T19.7 Pleasure and Pain",
+      "audio": "/2015/2015-05-09.mp3",
+      "timing": "/sg2015/050915.json",
+      "url": "/050915/",
+      "title": "May 9, 2015"
+    },
+    {
+      "desc": "T19.8 Obstacles to Peace; The Attraction of Death",
+      "audio": "/2015/2015-05-17.mp3",
+      "timing": "/sg2015/051715.json",
+      "url": "/051715/",
+      "title": "May 17, 2015"
+    },
+    {
+      "desc": "T19.8 Obstacles to Peace; The Attraction of Death",
+      "audio": "/2015/2015-06-07.mp3",
+      "timing": "/sg2015/060715.json",
+      "url": "/060715/",
+      "title": "Jun 7, 2015"
+    },
+    {
+      "desc": "T19.10 Obstacles to Peace; The Fear of God",
+      "audio": "/2015/2015-06-14.mp3",
+      "timing": "/sg2015/061415.json",
+      "url": "/061415/",
+      "title": "Jun 14, 2015"
+    },
+    {
+      "desc": "T19.10 Obstacles to Peace; The Fear of God",
+      "audio": "/2015/2015-06-21.mp3",
+      "timing": "/sg2015/062115.json",
+      "url": "/062115/",
+      "title": "Jun 21, 2015"
+    },
+    {
+      "desc": "T19.11 The Lifting of the Veil",
+      "audio": "/2015/2015-06-28.mp3",
+      "timing": "/sg2015/062815.json",
+      "url": "/062815/",
+      "title": "Jun 28, 2015"
+    },
+    {
+      "desc": "T20 The Promise of the Resurrection",
+      "audio": "/2015/2015-07-05.mp3",
+      "timing": "/sg2015/070515.json",
+      "url": "/070515/",
+      "title": "Jul 5, 2015"
+    },
+    {
+      "desc": "T20.2 Thorns and Lilies",
+      "audio": "/2015/2015-07-13.mp3",
+      "timing": "/sg2015/071315.json",
+      "url": "/071315/",
+      "title": "Jul 13, 2015"
+    },
+    {
+      "desc": "T20.2 Thorns and Lilies",
+      "audio": "/2015/2015-07-21.mp3",
+      "timing": "/sg2015/072115.json",
+      "url": "/072115/",
+      "title": "Jul 21, 2015"
+    },
+    {
+      "desc": "T20.2 Thorns and Lilies",
+      "audio": "/2015/2015-08-01.mp3",
+      "timing": "/sg2015/080115.json",
+      "url": "/080115/",
+      "title": "Aug 1, 2015"
+    },
+    {
+      "desc": "T20.3 Sin as an Adjustment",
+      "audio": "/2015/2015-08-23.mp3",
+      "timing": "/sg2015/082315.json",
+      "url": "/082315/",
+      "title": "Aug 23, 2015"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2015/2015-09-13.mp3",
+      "timing": "/sg2015/091315.json",
+      "url": "/091315/",
+      "title": "Sep 13, 2015"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2015/2015-10-02.mp3",
+      "timing": "/sg2015/100215.json",
+      "url": "/100215/",
+      "title": "Oct 2, 2015"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2015/2015-10-21.mp3",
+      "timing": "/sg2015/102115.json",
+      "url": "/102115/",
+      "title": "Oct 21, 2015"
+    },
+    {
+      "desc": "T20.3 Sin as an Adjustment",
+      "audio": "/2015/2015-11-01.mp3",
+      "timing": "/sg2015/110115.json",
+      "url": "/110115/",
+      "title": "Nov 1, 2015"
+    }
+  ]
+}

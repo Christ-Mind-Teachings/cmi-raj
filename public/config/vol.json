@@ -1,0 +1,22 @@
+{
+  "bid": "vol",
+  "title": "Volume Title",
+  "image": "/public/img/src/vol-toc.jpg",
+  "contents": [
+    {
+      "title": "Example Chapter",
+      "url": "/vol/chap01/",
+      "audio": "/vol/chap01.mp3",
+      "timing": "/vol/chap01.json",
+      "timer": "julief8@me.com",
+      "questions": [
+        {
+          "title": "Q1. Example Question",
+          "url": "/vol/chap01/q1/",
+          "audio": "/questions/Q01.01.mp3",
+          "timing": "/questions/h01q1.json"
+        }
+      ]
+    }
+  ]
+}

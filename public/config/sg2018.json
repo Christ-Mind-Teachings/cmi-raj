@@ -1,0 +1,36 @@
+{
+  "bid": "sg2018",
+  "base": "/sg2018",
+  "image": "/public/img/raj/sg2018-toc.jpg",
+  "title": "ACIM Study Group: 2018",
+  "contents": [
+    {
+      "desc": "Discussion",
+      "audio": "/2018/2018-01-31.mp3",
+      "timing": "/sg2018/013118.json",
+      "url": "/013118/",
+      "title": "Jan 31, 2018"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2018/2018-03-11.mp3",
+      "timing": "/sg2018/031118.json",
+      "url": "/031118/",
+      "title": "Mar 11, 2018"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2018/2018-08-19.mp3",
+      "timing": "/sg2018/081918.json",
+      "url": "/081918/",
+      "title": "Aug 19, 2018"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2018/2018-08-29.mp3",
+      "timing": "/sg2018/082918.json",
+      "url": "/082918/",
+      "title": "Aug 29, 2018"
+    }
+  ]
+}

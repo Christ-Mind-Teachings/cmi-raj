@@ -1,0 +1,310 @@
+{
+  "bid": "sg2004",
+  "base": "/sg2004",
+  "image": "/public/img/raj/sg2004-toc.jpg",
+  "title": "ACIM Study Group: 2004",
+  "contents": [
+    {
+      "audio": "/2004/2004-01-11.mp3",
+      "timing": "/sg2004/011104.json",
+      "desc": "T6.2 The Uses of Projection",
+      "url": "/011104/",
+      "title": "Jan 11, 2004"
+    },
+    {
+      "audio": "/2004/2004-01-18.mp3",
+      "timing": "/sg2004/011804.json",
+      "desc": "T6.2 The Uses of Projection",
+      "url": "/011804/",
+      "title": "Jan 18, 2004"
+    },
+    {
+      "audio": "/2004/2004-01-25.mp3",
+      "timing": "/sg2004/012504.json",
+      "desc": "T6.2 The Uses of Projection",
+      "url": "/012504/",
+      "title": "Jan 25, 2004"
+    },
+    {
+      "timing": "/sg2004/020104.json",
+      "audio": "/2004/2004-02-01.mp3",
+      "desc": "T6.3 The Relinquishment of Attack",
+      "url": "/020104/",
+      "title": "Feb 1, 2004"
+    },
+    {
+      "timing": "/sg2004/020804.json",
+      "audio": "/2004/2004-02-08.mp3",
+      "desc": "T6.4 The Only Answer",
+      "url": "/020804/",
+      "title": "Feb 8, 2004"
+    },
+    {
+      "timing": "/sg2004/021504.json",
+      "audio": "/2004/2004-02-15.mp3",
+      "desc": "T6.5 'To Have, Give All to All'",
+      "url": "/021504/",
+      "title": "Feb 15, 2004"
+    },
+    {
+      "timing": "/sg2004/022204.json",
+      "audio": "/2004/2004-02-22.mp3",
+      "desc": "T6.5 'To Have, Give All to All'",
+      "note": "Empty audio section begins at: 41:46 and ends at: 59:22",
+      "url": "/022204/",
+      "title": "Feb 22, 2004"
+    },
+    {
+      "timing": "/sg2004/030704.json",
+      "audio": "/2004/2004-03-07.mp3",
+      "desc": "T6.6 'To Have Peace, Teach Peace to Learn It'",
+      "url": "/030704/",
+      "title": "Mar 7, 2004"
+    },
+    {
+      "timing": "/sg2004/031404.json",
+      "audio": "/2004/2004-03-14.mp3",
+      "desc": "T6.7 'Be Vigilant Only for God and His Kingdom'",
+      "url": "/031404/",
+      "title": "Mar 14, 2004"
+    },
+    {
+      "timing": "/sg2004/032804.json",
+      "audio": "/2004/2004-03-28.mp3",
+      "desc": "T7 Introduction",
+      "url": "/032804/",
+      "title": "Mar 28, 2004"
+    },
+    {
+      "timing": "/sg2004/040404.json",
+      "audio": "/2004/2004-04-04.mp3",
+      "desc": "T7.1 Bargaining versus Healing",
+      "url": "/040404/",
+      "title": "Apr 4, 2004"
+    },
+    {
+      "timing": "/sg2004/041104.json",
+      "audio": "/2004/2004-04-11.mp3",
+      "desc": "T7.3 The Unified Curriculum",
+      "url": "/041104/",
+      "title": "Apr 11, 2004"
+    },
+    {
+      "timing": "/sg2004/041804.json",
+      "audio": "/2004/2004-04-18.mp3",
+      "desc": "T7.3 The Unified Curriculum",
+      "url": "/041804/",
+      "title": "Apr 18, 2004"
+    },
+    {
+      "timing": "/sg2004/042504.json",
+      "audio": "/2004/2004-04-25.mp3",
+      "desc": "T7.4 The Recognition of Truth",
+      "url": "/042504/",
+      "title": "Apr 25, 2004"
+    },
+    {
+      "timing": "/sg2004/050204.json",
+      "audio": "/2004/2004-05-02.mp3",
+      "desc": "T7.5 Healing and the Changelessness of Mind",
+      "url": "/050204/",
+      "title": "May 2, 2004"
+    },
+    {
+      "timing": "/sg2004/050904.json",
+      "audio": "/2004/2004-05-09.mp3",
+      "desc": "T7.6 From Vigilance to Peace",
+      "url": "/050904/",
+      "title": "May 9, 2004"
+    },
+    {
+      "desc": "T7.6 From Vigilance to Peace",
+      "audio": "051604.mp3",
+      "timing": "/sg2004/051604.json",
+      "url": "/051604/",
+      "title": "May 16, 2004"
+    },
+    {
+      "timing": "/sg2004/052304.json",
+      "audio": "/2004/2004-05-23.mp3",
+      "desc": "T7.6 From Vigilance to Peace",
+      "url": "/052304/",
+      "title": "May 23, 2004"
+    },
+    {
+      "timing": "/sg2004/053004.json",
+      "audio": "/2004/2004-05-30.mp3",
+      "desc": "T7.7 The Total Commitment",
+      "url": "/053004/",
+      "title": "May 30, 2004"
+    },
+    {
+      "timing": "/sg2004/061304.json",
+      "audio": "/2004/2004-06-13.mp3",
+      "desc": "T7.7 The Total Commitment",
+      "url": "/061304/",
+      "title": "Jun 13, 2004"
+    },
+    {
+      "desc": "T7.7 The Total Commitment",
+      "timing": "/sg2004/062004.json",
+      "audio": "/2004/2004-06-20.mp3",
+      "url": "/062004/",
+      "title": "Jun 20, 2004"
+    },
+    {
+      "desc": "T7.8 The Defense of Conflict",
+      "timing": "/sg2004/062704.json",
+      "audio": "/2004/2004-06-27.mp3",
+      "url": "/062704/",
+      "title": "Jun 27, 2004"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2004/2004-07-11.mp3",
+      "timing": "/sg2004/071104.json",
+      "url": "/071104/",
+      "title": "Jul 11, 2004"
+    },
+    {
+      "timing": "/sg2004/071804.json",
+      "audio": "/2004/2004-07-18.mp3",
+      "desc": "T7.9 The Extension of the Kingdom",
+      "url": "/071804/",
+      "title": "Jul 18, 2004"
+    },
+    {
+      "desc": "T7.10 The Confusion of Strength and Weakness",
+      "timing": "/sg2004/072504.json",
+      "audio": "/2004/2004-07-25.mp3",
+      "url": "/072504/",
+      "title": "Jul 25, 2004"
+    },
+    {
+      "timing": "/sg2004/080104.json",
+      "audio": "/2004/2004-08-01.mp3",
+      "desc": "T7.11 The State of Grace",
+      "url": "/080104/",
+      "title": "Aug 1, 2004"
+    },
+    {
+      "timing": "/sg2004/080804.json",
+      "audio": "/2004/2004-08-08.mp3",
+      "desc": "T8 The Journey Back",
+      "url": "/080804/",
+      "title": "Aug 8, 2004"
+    },
+    {
+      "desc": "T8.1 The Direction of the Curriculum",
+      "timing": "/sg2004/081504.json",
+      "audio": "/2004/2004-08-15.mp3",
+      "url": "/081504/",
+      "title": "Aug 15, 2004"
+    },
+    {
+      "timing": "/sg2004/082204.json",
+      "audio": "/2004/2004-08-22.mp3",
+      "desc": "T8.2 The Rationale for Choice",
+      "url": "/082204/",
+      "title": "Aug 22, 2004"
+    },
+    {
+      "audio": "/2004/2004-09-05.mp3",
+      "timing": "/sg2004/090504.json",
+      "desc": "T8.3 The Holy Encounter",
+      "url": "/090504/",
+      "title": "Sep 5, 2004"
+    },
+    {
+      "audio": "/2004/2004-09-12.mp3",
+      "timing": "/sg2004/091204.json",
+      "desc": "T8.3 The Holy Encounter",
+      "url": "/091204/",
+      "title": "Sep 12, 2004"
+    },
+    {
+      "audio": "/2004/2004-09-19.mp3",
+      "timing": "/sg2004/091904.json",
+      "desc": "T8.4 The Light of the World",
+      "url": "/091904/",
+      "title": "Sep 19, 2004"
+    },
+    {
+      "desc": "T8.4 The Light of the World",
+      "audio": "/2004/2004-09-26.mp3",
+      "timing": "/sg2004/092604.json",
+      "url": "/092604/",
+      "title": "Sep 26, 2004"
+    },
+    {
+      "audio": "/2004/2004-10-03.mp3",
+      "timing": "/sg2004/100304.json",
+      "desc": "T8.4 The Light of the World",
+      "url": "/100304/",
+      "title": "Oct 3, 2004"
+    },
+    {
+      "audio": "/2004/2004-10-10.mp3",
+      "timing": "/sg2004/101004.json",
+      "desc": "T8.5 The Power of Joint Decision",
+      "url": "/101004/",
+      "title": "Oct 10, 2004"
+    },
+    {
+      "desc": "T8.5 The Power of Joint Decision",
+      "audio": "/2004/2004-10-17.mp3",
+      "timing": "/sg2004/101704.json",
+      "url": "/101704/",
+      "title": "Oct 17, 2004"
+    },
+    {
+      "audio": "/2004/2004-10-24.mp3",
+      "timing": "/sg2004/102404.json",
+      "desc": "T8.6 Communication and the Ego-Body Equation",
+      "url": "/102404/",
+      "title": "Oct 24, 2004"
+    },
+    {
+      "desc": "T8.6 Communication and the Ego-Body Equation",
+      "audio": "/2004/2004-11-07.mp3",
+      "timing": "/sg2004/110704.json",
+      "url": "/110704/",
+      "title": "Nov 7, 2004"
+    },
+    {
+      "desc": "T8.8 Healing as Corrected Perception",
+      "audio": "/2004/2004-11-21.mp3",
+      "timing": "/sg2004/112104.json",
+      "url": "/112104/",
+      "title": "Nov 21, 2004"
+    },
+    {
+      "desc": "T8.8 Healing as Corrected Perception",
+      "audio": "/2004/2004-11-28.mp3",
+      "timing": "/sg2004/112804.json",
+      "url": "/112804/",
+      "title": "Nov 28, 2004"
+    },
+    {
+      "desc": "T8.9 The Acceptance of Reality",
+      "audio": "/2004/2004-12-05.mp3",
+      "timing": "/sg2004/120504.json",
+      "url": "/120504/",
+      "title": "Dec 5, 2004"
+    },
+    {
+      "desc": "T8.9 The Acceptance of Reality",
+      "audio": "/2004/2004-12-12.mp3",
+      "timing": "/sg2004/121204.json",
+      "url": "/121204/",
+      "title": "Dec 12, 2004"
+    },
+    {
+      "audio": "/2004/2004-12-19.mp3",
+      "timing": "/sg2004/121904.json",
+      "desc": "T8.10 The Answer to Prayer",
+      "url": "/121904/",
+      "title": "Dec 19, 2004"
+    }
+  ]
+}

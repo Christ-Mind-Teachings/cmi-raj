@@ -1,0 +1,23 @@
+{% comment %}
+usage: {% include form/contact.html name="form-name" %}
+{% endcomment %}
+<div class="contact-form-message ui message">
+  <p>What's on your mind?</p>
+</div>
+<form name="{{include.name}}" id="contact-form" action="/contact/" class="ui form" netlify>
+  <div class="required inline field">
+    <label>Name</label>
+    <input name="name" placeholder="Name" type="text">
+  </div>
+  <div class="required inline field">
+    <label>E-mail</label>
+    <input name="email" type="email" placeholder="E-mail address">
+  </div>
+  <div class="required field">
+    <label>Message</label>
+    <textarea name="message" rows="8" placeholder="Your message">
+    </textarea>
+  </div>
+  <button id="contact-form-submit" class="ui button" type="submit">Submit</button>
+</form>
+

@@ -1,0 +1,220 @@
+{
+  "bid": "sg2012",
+  "base": "/sg2012",
+  "image": "/public/img/raj/sg2012-toc.jpg",
+  "title": "ACIM Study Group: 2012",
+  "contents": [
+    {
+      "desc": "T18.3 Light in the Dream",
+      "audio": "/2012/2012-01-07.mp3",
+      "timing": "/sg2012/010712.json",
+      "url": "/010712/",
+      "title": "Jan 7, 2012"
+    },
+    {
+      "desc": "T18.3 Light in the Dream",
+      "note": "got audio from Rajcast",
+      "audio": "/2012/2012-01-22.mp3",
+      "timing": "/sg2012/012212.json",
+      "url": "/012212/",
+      "title": "Jan 22, 2012"
+    },
+    {
+      "desc": "T18.4 The Little Willingness",
+      "audio": "/2012/2012-02-05.mp3",
+      "timing": "/sg2012/020512.json",
+      "url": "/020512/",
+      "title": "Feb 5, 2012"
+    },
+    {
+      "desc": "T18.5 The Happy Dream",
+      "audio": "/2012/2012-02-12.mp3",
+      "timing": "/sg2012/021212.json",
+      "url": "/021212/",
+      "title": "Feb 12, 2012"
+    },
+    {
+      "desc": "T18.6 Dreams and the Body",
+      "audio": "/2012/2012-02-18.mp3",
+      "timing": "/sg2012/021812.json",
+      "url": "/021812/",
+      "title": "Feb 18, 2012"
+    },
+    {
+      "desc": "T18.6 Dreams and the Body",
+      "audio": "/2012/2012-03-24.mp3",
+      "timing": "/sg2012/032412.json",
+      "url": "/032412/",
+      "title": "Mar 24, 2012"
+    },
+    {
+      "desc": "T18.6 Dreams and the Body",
+      "audio": "/2012/2012-03-31.mp3",
+      "timing": "/sg2012/033112.json",
+      "url": "/033112/",
+      "title": "Mar 31, 2012"
+    },
+    {
+      "desc": "T18.7 I Need do Nothing",
+      "audio": "/2012/2012-04-08.mp3",
+      "timing": "/sg2012/040812.json",
+      "url": "/040812/",
+      "title": "Apr 8, 2012"
+    },
+    {
+      "desc": "T18.8 The Purpose of the Body",
+      "audio": "/2012/2012-04-15.mp3",
+      "timing": "/sg2012/041512.json",
+      "url": "/041512/",
+      "title": "Apr 15, 2012"
+    },
+    {
+      "desc": "T18.8 The Purpose of the Body",
+      "audio": "/2012/2012-04-22.mp3",
+      "timing": "/sg2012/042212.json",
+      "url": "/042212/",
+      "title": "Apr 22, 2012"
+    },
+    {
+      "desc": "T18.9 The Delusional Thought System",
+      "audio": "/2012/2012-04-29.mp3",
+      "timing": "/sg2012/042912.json",
+      "url": "/042912/",
+      "title": "Apr 29, 2012"
+    },
+    {
+      "desc": "T18.10 The Passing of the Dream",
+      "audio": "/2012/2012-05-12.mp3",
+      "timing": "/sg2012/051212.json",
+      "url": "/051212/",
+      "title": "May 12, 2012"
+    },
+    {
+      "desc": "T19.1 Healing and the Mind",
+      "audio": "/2012/2012-05-20.mp3",
+      "timing": "/sg2012/052012.json",
+      "url": "/052012/",
+      "title": "May 20, 2012"
+    },
+    {
+      "desc": "T19.1 Healing and the Mind",
+      "audio": "/2012/2012-06-03.mp3",
+      "timing": "/sg2012/060312.json",
+      "url": "/060312/",
+      "title": "Jun 3, 2012"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2012/2012-06-17.mp3",
+      "timing": "/sg2012/061712.json",
+      "url": "/061712/",
+      "title": "Jun 17, 2012"
+    },
+    {
+      "desc": "T19.1 Healing and the Mind",
+      "audio": "/2012/2012-07-22.mp3",
+      "timing": "/sg2012/072212.json",
+      "url": "/072212/",
+      "title": "Jul 22, 2012"
+    },
+    {
+      "desc": "T19.1 Healing and the Mind",
+      "audio": "/2012/2012-07-29.mp3",
+      "timing": "/sg2012/072912.json",
+      "url": "/072912/",
+      "title": "Jul 29, 2012"
+    },
+    {
+      "desc": "T19.2 Sin vs Error",
+      "note": "Audio abruptly ends at 51:20",
+      "audio": "/2012/2012-08-04.mp3",
+      "timing": "/sg2012/080412.json",
+      "url": "/080412/",
+      "title": "Aug 4, 2012"
+    },
+    {
+      "desc": "T19.2 Sin vs Error",
+      "audio": "/2012/2012-08-11.mp3",
+      "timing": "/sg2012/081112.json",
+      "url": "/081112/",
+      "title": "Aug 11, 2012"
+    },
+    {
+      "desc": "T19.3 The Unreality of Sin",
+      "audio": "/2012/2012-08-18.mp3",
+      "timing": "/sg2012/081812.json",
+      "url": "/081812/",
+      "title": "Aug 18, 2012"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2012/2012-08-27.mp3",
+      "timing": "/sg2012/082712.json",
+      "url": "/082712/",
+      "title": "Aug 27, 2012"
+    },
+    {
+      "desc": "Discussion",
+      "audio": "/2012/2012-09-08.mp3",
+      "timing": "/sg2012/090812.json",
+      "url": "/090812/",
+      "title": "Sep 8, 2012"
+    },
+    {
+      "desc": "T19.3 The Unreality of Sin",
+      "audio": "/2012/2012-09-16.mp3",
+      "timing": "/sg2012/091612.json",
+      "url": "/091612/",
+      "title": "Sep 16, 2012"
+    },
+    {
+      "desc": "T19.3 The Unreality of Sin",
+      "audio": "/2012/2012-09-23.mp3",
+      "timing": "/sg2012/092312.json",
+      "url": "/092312/",
+      "title": "Sep 23, 2012"
+    },
+    {
+      "desc": "T19.4 The Obstacles to Peace",
+      "audio": "/2012/2012-09-30.mp3",
+      "timing": "/sg2012/093012.json",
+      "url": "/093012/",
+      "title": "Sep 30, 2012"
+    },
+    {
+      "desc": "T19.5 The Attraction of Guilt",
+      "audio": "/2012/2012-10-08.mp3",
+      "timing": "/sg2012/100812.json",
+      "url": "/100812/",
+      "title": "Oct 8, 2012"
+    },
+    {
+      "desc": "T19.5 The Attraction of Guilt",
+      "audio": "/2012/2012-10-14.mp3",
+      "timing": "/sg2012/101412.json",
+      "url": "/101412/",
+      "title": "Oct 14, 2012"
+    },
+    {
+      "desc": "T19.5 The Attraction of Guilt",
+      "audio": "/2012/2012-10-21.mp3",
+      "timing": "/sg2012/102112.json",
+      "url": "/102112/",
+      "title": "Oct 21, 2012"
+    },
+    {
+      "desc": "Disucssion",
+      "audio": "/2012/2012-11-05.mp3",
+      "timing": "/sg2012/110512.json",
+      "url": "/110512/",
+      "title": "Nov 5, 2012"
+    },
+    {
+      "desc": "T19.6 Obstacles to Peace, The Second Obstacle",
+      "audio": "/2012/2012-11-12.mp3",
+      "timing": "/sg2012/111212.json",
+      "url": "/111212/",
+      "title": "Nov 12, 2012"
+    }
+  ]
+}

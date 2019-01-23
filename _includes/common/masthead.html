@@ -1,0 +1,18 @@
+<!-- _include/common/masthead.html -->
+<div class="cmi-header ui main text container">
+  <a href="https://www.christmind.info/library/">
+    <h1 id="masthead-title" class="ui centered header">
+      {{site.cmiTitle}}<br/>
+    </h1>
+  </a>
+
+  {% if page.masthead == "home" %}
+  <h2 id="source-homepage" class="ui centered header">{{site.title}}</h2>
+  {% else %}
+  <div class="cmi-header-breadcrumb ui big breadcrumb">
+    <a id="src-title" href="/" class="section">{{site.title}}</a>
+    <span class="divider">/</span>
+    <div id="book-title" class="active section">{{page.book}}: {{page.title}}</div>
+  </div>
+  {% endif %}
+</div>

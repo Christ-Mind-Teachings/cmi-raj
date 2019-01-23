@@ -1,0 +1,40 @@
+<!-- _includes/components/search-modal.html -->
+<div class="search ui modal">
+  <i class="close icon"></i>
+  <div class="ui large header">
+    Search the Library
+  </div>
+  <div class="image content">
+    <div class="image">
+      <img src="/public/img/cmi/search_modal.png" alt="Search">
+    </div>
+    <div content="container">
+      <div class="ui search positive message">
+        <div class="content">
+          <div class="search-message header">
+            Welcome to [SOURCE] Search&hellip;
+          </div>
+          <div class="search-message-body">
+            <p>Enter your search and press enter to begin.</p>
+          </div>
+        </div>
+      </div>
+      <form id="search" class="">
+        <div class="field">
+          <!-- <div class="ui right labeled left icon input"> -->
+          <div class="ui icon fluid input">
+            <input id="search-input-field" type="search" placeholder="Enter search">
+            <i class="inverted circular search link icon"></i>
+          </div>
+        </div>
+      </form>
+      <h4 class="ui horizontal divider header">
+        <i class="search icon"></i>
+        Search Results
+        <span id="search-results-header"></span>
+      </h4>
+      <div class="cmi-search-list">
+      </div> <!-- ui list -->
+    </div> <!-- container -->
+  </div>
+</div>

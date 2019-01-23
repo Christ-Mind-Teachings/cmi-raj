@@ -1,0 +1,103 @@
+/* wom css */
+
+.transcript blockquote {
+  font-style: italic;
+}
+
+.transcript.tjl .date { 
+    font-style: bold;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    font-variant: small-caps;
+    text-align: right;
+ }
+
+.transcript.tjl .small { 
+  font-size: small;
+ }
+
+.transcript.tjl .chHead { 
+  text-align: center;
+  font-style: italic;
+ }
+
+.transcript.tjl .capital { 
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3.33em;
+  line-height: 0.42em;
+ }
+
+.transcript.tjl .quote { 
+  margin-left: 20px;
+ }
+
+.transcript.tjl blockquote,
+.transcript.tjl p.indent,
+.transcript.tjl div.indent p { 
+  font-style: italic;
+  margin-left: 3%;
+ }
+
+.transcript.tjl img { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.transcript.wos img { 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.transcript.wos .center { 
+  text-align: center;
+ }
+
+.transcript.wos p.top { 
+  padding-top: 4%;
+ }
+
+.transcript.wos span.dropcaps { 
+  font-size: 4em;
+  float: left;
+  margin-top: -.2em;
+  margin-bottom: -0.3254em;
+  margin-right: .1em;
+  line-height: 1.2em;
+ }
+
+.transcript.wos div.indent p, .transcript.wos p.indent { 
+  font-style: italic;
+  margin-left: 3%;
+ }
+
+.transcript.wos p { 
+  line-height: 1.3;
+ }
+
+.transcript.wos .iam { 
+  font-size: 6em;
+  text-align: center;
+  padding-top: 20%;
+ }
+
+.transcript.wos .i1 { 
+  margin-left: 40%;
+  font-size: 1.5em;
+ }
+
+.transcript.wos .i2 { 
+  margin-left: 47%;
+  font-size: 1.5em;
+ }
+
+.transcript.wos .i3 { 
+  margin-left: 54%;
+  font-size: 1.5em;
+ }
+
+.transcript.wos .quote { 
+  margin-left: 20px;
+ }

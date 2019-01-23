@@ -1,0 +1,57 @@
+{% comment %}
+add footer.donate true to display donate button
+{% endcomment %}
+
+<div class="ui black inverted vertical footer segment">
+  <div class="ui center aligned container">
+    <div class="ui stackable inverted grid">
+      <div class="three wide column">
+        <a href="/">
+          <img src="/public/img/favicon/cmi/apple-icon-76x76.png">
+        </a>
+        <div class="ui horizontal inverted small divided link list">
+          <a class="item" href="#" target="_blank">Open Source (MIT)</a>
+        </div>
+      </div>
+      <div class="three wide column">
+        <h4 class="ui inverted header">CMI-SRC</h4>
+        <div class="ui inverted link list">
+          <a class="item" href="https://github.com/rmercer33/cmi-src" target="_blank">GitHub Repo</a>
+          <a class="item">Project Info</a>
+          {% if page.url != "/about/" %}
+            <a class="item">About CMI</a>
+          {% endif %}
+          {% comment %}
+          <a class="item" href="https://docs.christmind.info" target="_blank">Documentation</a>
+          {% endcomment %}
+        </div>
+      </div>
+      <div class="three wide column">
+        <a href="https://www.netlify.com">
+          <img target="_blank" src="https://www.netlify.com/img/global/badges/netlify-light.svg">
+        </a>
+      </div>
+      {% if page.footer.donate == true %}
+        <div class="seven wide right floated column">
+          <h4 class="ui inverted teal header">Help Preserve This Project</h4>
+          <p> Support for the continued development of the Library comes directly from you.</p>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="7PTZ47KMJZLX6">
+            <button type="submit" class="ui large teal button">Donate Today</button>
+          </form>
+        </div>
+      {% endif %}
+        {% if page.footer.source == "nwffacim" %}
+        <div class="three wide column">
+          <h4 class="ui inverted header">NWFFACIM</h4>
+          <div class="ui inverted link list">
+            <a class="item" href="http://nwffacim.org" target="_blank">Website</a>
+            <a class="item" href="http://nwffacim.wordpress.com" target="_blank">Raj Materials Website</a>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+

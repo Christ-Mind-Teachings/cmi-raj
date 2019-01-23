@@ -1,0 +1,99 @@
+{
+  "bid": "sg2007",
+  "base": "/sg2007",
+  "image": "/public/img/raj/sg2007-toc.jpg",
+  "title": "ACIM Study Group: 2007",
+  "contents": [
+    {
+      "desc": "Discussion",
+      "audio": "/2007/2007-08-18.mp3",
+      "timing": "/sg2007/081807.json",
+      "url": "/081807/",
+      "title": "Aug 18, 2007"
+    },
+    {
+      "desc": "T13 Introduction",
+      "audio": "/2007/2007-08-25.mp3",
+      "timing": "/sg2007/082507.json",
+      "url": "/082507/",
+      "title": "Aug 25, 2007"
+    },
+    {
+      "desc": "T13.1 The Role of Healing",
+      "audio": "/2007/2007-09-09.mp3",
+      "timing": "/sg2007/090907.json",
+      "url": "/090907/",
+      "title": "Sep 9, 2007"
+    },
+    {
+      "desc": "T13.1 The Role of Healing",
+      "audio": "/2007/2007-09-16.mp3",
+      "timing": "/sg2007/091607.json",
+      "url": "/091607/",
+      "title": "Sep 16, 2007"
+    },
+    {
+      "desc": "T13.1 The Role of Healing",
+      "audio": "/2007/2007-09-22.mp3",
+      "timing": "/sg2007/092207.json",
+      "url": "/092207/",
+      "title": "Sep 22, 2007"
+    },
+    {
+      "desc": "T13.2 The Shadow of Guilt",
+      "audio": "/2007/2007-10-06.mp3",
+      "timing": "/sg2007/100607.json",
+      "url": "/100607/",
+      "title": "Oct 6, 2007"
+    },
+    {
+      "desc": "T13.2 The Shadow of Guilt",
+      "timing": "/sg2007/101407.json",
+      "audio": "/2007/2007-10-14.mp3",
+      "url": "/101407/",
+      "title": "Oct 14, 2007"
+    },
+    {
+      "desc": "T13.3 Release and Restoration",
+      "timing": "/sg2007/102707.json",
+      "audio": "/2007/2007-10-27.mp3",
+      "url": "/102707/",
+      "title": "Oct 27, 2007"
+    },
+    {
+      "desc": "T13.3 Release and Restoration",
+      "timing": "/sg2007/110307.json",
+      "audio": "/2007/2007-11-03.mp3",
+      "url": "/110307/",
+      "title": "Nov 3, 2007"
+    },
+    {
+      "desc": "T13.3 Release and Restoration",
+      "timing": "/sg2007/111007.json",
+      "audio": "/2007/2007-11-10.mp3",
+      "url": "/111007/",
+      "title": "Nov 10, 2007"
+    },
+    {
+      "desc": "T13.3 Release and Restoration",
+      "timing": "/sg2007/111807.json",
+      "audio": "/2007/2007-11-18.mp3",
+      "url": "/111807/",
+      "title": "Nov 18, 2007"
+    },
+    {
+      "desc": "T13.3 Release and Restoration",
+      "timing": "/sg2007/120807.json",
+      "audio": "/2007/2007-12-08.mp3",
+      "url": "/120807/",
+      "title": "Dec 8, 2007"
+    },
+    {
+      "desc": "T13.3 Release and Restoration",
+      "timing": "/sg2007/121607.json",
+      "audio": "/2007/2007-12-16.mp3",
+      "url": "/121607/",
+      "title": "Dec 16, 2007"
+    }
+  ]
+}

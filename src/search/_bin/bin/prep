@@ -1,0 +1,62 @@
+#!/bin/bash
+
+workingDir=`pwd`
+scriptDir=`dirname $0`
+scriptName=`basename $0`
+
+unitDir="/Users/rmercer/Projects/cmi/site/cmi-wom"
+awkFile="wom.awk"
+debug=0
+
+source="wom"
+
+function syntax {
+  echo "prep -b <book> file"
+  echo " ex: prep -b tjl chap01"
+  exit 1
+}
+
+while getopts db: args; do
+    case $args in
+        b) book=$OPTARG;;
+        d) debug=1;;
+        *) syntax;;
+    esac
+done
+
+shift $(($OPTIND -1))
+
+if [[ -z $1 ]]; then
+  syntax
+fi
+
+if [ $book == "tjl" ]; then
+  awkFile="tjl.awk"
+elif [ $book == "wos" ]; then
+  awkFile="wos.awk"
+fi
+
+unit=$1
+# convert "/" to "." for output filename
+outputFile=${1/\//.}
+
+unitDirName="${unitDir}/_${book}"
+unitFileName=${unitDirName}/${unit}.md
+
+if [ $debug == 1 ]; then
+  outputFile=${outputFile}.json.debug
+  (gawk -f ${scriptDir}/${awkFile} -v debug=1 -v source=$source -v book=$book -v section=$section -v idx=$idx -v unit=$unit ${unitFileName} > $outputFile)
+else
+  outputFile=${outputFile}.json
+  #echo "gawk -f ${scriptDir}/${awkFile} -v debug=0 -v source=$source -v book=$book -v section=$section -v idx=$idx -v unit=$unit ${unitFileName} > $outputFile"
+  (gawk -f ${scriptDir}/${awkFile} -v debug=0 -v source=$source -v book=$book -v section=$section -v idx=$idx -v unit=$unit ${unitFileName} > $outputFile)
+fi
+
+rc="$?"
+
+if [ "$rc" == "0" ]; then
+  echo "$outputFile created."
+else
+  echo "conversion to json failed"
+fi
+

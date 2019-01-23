@@ -1,0 +1,139 @@
+{
+  "bid": "sg2002",
+  "base": "/sg2002",
+  "title": "ACIM Study Group: 2002",
+  "image": "/public/img/raj/sg2002-toc.jpg",
+  "contents": [
+    {
+      "desc": "T31.II Walking with Christ",
+      "audio": "/2002/2002-06-12.mp3",
+      "timing": "/sg2002/061202.json",
+      "url": "/061202/",
+      "title": "Jun 12, 2002"
+    },
+    {
+      "desc": "T31.VIII Choose Once Again",
+      "audio": "/2002/2002-07-31.mp3",
+      "timing": "/sg2002/073102.json",
+      "url": "/073102/",
+      "title": "Jul 31, 2002"
+    },
+    {
+      "desc": "T1.In Introduction and Meaning of Miracles",
+      "audio": "/2002/2002-08-07.mp3",
+      "timing": "/sg2002/080702.json",
+      "url": "/080702/",
+      "title": "Aug 7, 2002"
+    },
+    {
+      "desc": "*No transcript available for this session*",
+      "url": "/081402/",
+      "title": "Aug 14, 2002"
+    },
+    {
+      "desc": "T1.I Principles of Miracles, Principle 33-41",
+      "audio": "/2002/2002-08-28.mp3",
+      "timing": "/sg2002/082802.json",
+      "url": "/082802/",
+      "title": "Aug 28, 2002"
+    },
+    {
+      "desc": "T1.I Principles of Miracles, Principle 42-46",
+      "audio": "/2002/2002-09-04.mp3",
+      "timing": "/sg2002/090402.json",
+      "url": "/090402/",
+      "title": "Sep 4, 2002"
+    },
+    {
+      "desc": "T1.I Principles of Miracles, Principle 47",
+      "audio": "/2002/2002-09-11.mp3",
+      "timing": "/sg2002/091102.json",
+      "url": "/091102/",
+      "title": "Sep 11, 2002"
+    },
+    {
+      "desc": "T1.II Revelation, Time and Miracles",
+      "audio": "/2002/2002-09-18.mp3",
+      "timing": "/sg2002/091802.json",
+      "url": "/091802/",
+      "title": "Sep 18, 2002"
+    },
+    {
+      "desc": "T1.III Atonement and Miracles",
+      "audio": "/2002/2002-09-25.mp3",
+      "timing": "/sg2002/092502.json",
+      "url": "/092502/",
+      "title": "Sep 25, 2002"
+    },
+    {
+      "desc": "T1.IV The Escape from Darkness",
+      "audio": "/2002/2002-10-02.mp3",
+      "timing": "/sg2002/100202.json",
+      "url": "/100202/",
+      "title": "Oct 2, 2002"
+    },
+    {
+      "desc": "T1.V Wholeness and Spirit",
+      "audio": "/2002/2002-10-10.mp3",
+      "timing": "/sg2002/101002.json",
+      "url": "/101002/",
+      "title": "Oct 10, 2002"
+    },
+    {
+      "desc": "T1.VI The Illusion of Needs",
+      "audio": "/2002/2002-10-17.mp3",
+      "timing": "/sg2002/101702.json",
+      "url": "/101702/",
+      "title": "Oct 17, 2002"
+    },
+    {
+      "desc": "T1.VII Distortions of Miracle Impulses",
+      "audio": "/2002/2002-10-24.mp3",
+      "timing": "/sg2002/102402.json",
+      "url": "/102402/",
+      "title": "Oct 24, 2002"
+    },
+    {
+      "desc": "T2.I The Origins of Separation",
+      "audio": "/2002/2002-10-31.mp3",
+      "timing": "/sg2002/103102.json",
+      "url": "/103102/",
+      "title": "Oct 31, 2002"
+    },
+    {
+      "desc": "T2.II The Atonement as Defense",
+      "audio": "/2002/2002-11-07.mp3",
+      "timing": "/sg2002/110702.json",
+      "url": "/110702/",
+      "title": "Nov 7, 2002"
+    },
+    {
+      "desc": "It's All About Gift",
+      "audio": "/2002/2002-11-21.mp3",
+      "timing": "/sg2002/112102.json",
+      "url": "/112102/",
+      "title": "Nov 21, 2002"
+    },
+    {
+      "desc": "T2.III The Alter of God",
+      "audio": "/2002/2002-12-05.mp3",
+      "timing": "/sg2002/120502.json",
+      "url": "/120502/",
+      "title": "Dec 5, 2002"
+    },
+    {
+      "desc": "T2.IV Healing as Release from Fear",
+      "audio": "/2002/2002-12-12.mp3",
+      "timing": "/sg2002/121202.json",
+      "url": "/121202/",
+      "title": "Dec 12, 2002"
+    },
+    {
+      "desc": "T2.V The Function of the Miracle Worker",
+      "audio": "/2002/2002-12-19.mp3",
+      "timing": "/sg2002/121902.json",
+      "url": "/121902/",
+      "title": "Dec 19, 2002"
+    }
+  ]
+}
