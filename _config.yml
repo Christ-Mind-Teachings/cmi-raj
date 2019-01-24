@@ -37,10 +37,10 @@ plugins:
 collections:
   yaa:
     output: true
-    title: "You ARE the Answer: A Journey of Awakening"
+    title: "You ARE the Answer"
   grad:
     output: true
-    title: "Graduation: The End of Illusions"
+    title: "Graduation"
   sg2002:
     output: true
     title: "ACIM Study Group: 2002"
@@ -119,7 +119,7 @@ defaults:
       type: sg2002
     values:
       layout: transcript
-      book: "ACIM Study Group: 2002"
+      book: "ACIM Study Group 2002"
       image: "/public/img/raj/sg2002-big.jpg"
       image-width: 612
       image-height: 792
@@ -129,7 +129,7 @@ defaults:
       type: sg2003
     values:
       layout: transcript
-      book: "ACIM Study Group: 2003"
+      book: "ACIM Study Group 2003"
       image: "/public/img/raj/sg2003-big.jpg"
       image-width: 612
       image-height: 792
@@ -139,7 +139,7 @@ defaults:
       type: sg2004
     values:
       layout: transcript
-      book: "ACIM Study Group: 2004"
+      book: "ACIM Study Group 2004"
       image: "/public/img/raj/sg2004-big.jpg"
       image-width: 612
       image-height: 792
@@ -149,7 +149,7 @@ defaults:
       type: sg2005
     values:
       layout: transcript
-      book: "ACIM Study Group: 2005"
+      book: "ACIM Study Group 2005"
       image: "/public/img/raj/sg2005-big.jpg"
       image-width: 612
       image-height: 792
@@ -159,7 +159,7 @@ defaults:
       type: sg2006
     values:
       layout: transcript
-      book: "ACIM Study Group: 2006"
+      book: "ACIM Study Group 2006"
       image: "/public/img/raj/sg2006-big.jpg"
       image-width: 612
       image-height: 792
@@ -169,7 +169,7 @@ defaults:
       type: sg2007
     values:
       layout: transcript
-      book: "ACIM Study Group: 2007"
+      book: "ACIM Study Group 2007"
       image: "/public/img/raj/sg2007-big.jpg"
       image-width: 612
       image-height: 792
@@ -179,7 +179,7 @@ defaults:
       type: sg2008
     values:
       layout: transcript
-      book: "ACIM Study Group: 2008"
+      book: "ACIM Study Group 2008"
       image: "/public/img/raj/sg2008-big.jpg"
       image-width: 612
       image-height: 792
@@ -189,7 +189,7 @@ defaults:
       type: sg2009
     values:
       layout: transcript
-      book: "ACIM Study Group: 2009"
+      book: "ACIM Study Group 2009"
       image: "/public/img/raj/sg2009-big.jpg"
       image-width: 612
       image-height: 792
@@ -199,7 +199,7 @@ defaults:
       type: sg2010
     values:
       layout: transcript
-      book: "ACIM Study Group: 2010"
+      book: "ACIM Study Group 2010"
       image: "/public/img/raj/sg2010-big.jpg"
       image-width: 612
       image-height: 792
@@ -209,7 +209,7 @@ defaults:
       type: sg2011
     values:
       layout: transcript
-      book: "ACIM Study Group: 2011"
+      book: "ACIM Study Group 2011"
       image: "/public/img/raj/sg2011-big.jpg"
       image-width: 612
       image-height: 792
@@ -219,7 +219,7 @@ defaults:
       type: sg2012
     values:
       layout: transcript
-      book: "ACIM Study Group: 2012"
+      book: "ACIM Study Group 2012"
       image: "/public/img/raj/sg2012-big.jpg"
       image-width: 612
       image-height: 792
@@ -229,7 +229,7 @@ defaults:
       type: sg2013
     values:
       layout: transcript
-      book: "ACIM Study Group: 2013"
+      book: "ACIM Study Group 2013"
       image: "/public/img/raj/sg2013-big.jpg"
       image-width: 612
       image-height: 792
@@ -239,7 +239,7 @@ defaults:
       type: sg2014
     values:
       layout: transcript
-      book: "ACIM Study Group: 2014"
+      book: "ACIM Study Group 2014"
       image: "/public/img/raj/sg2014-big.jpg"
       image-width: 612
       image-height: 792
@@ -249,17 +249,27 @@ defaults:
       type: sg2015
     values:
       layout: transcript
-      book: "ACIM Study Group: 2015"
+      book: "ACIM Study Group 2015"
       image: "/public/img/raj/sg2015-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2015"
   - scope:
       path: ""
+      type: sg2016
+    values:
+      layout: transcript
+      book: "ACIM Study Group 2016"
+      image: "/public/img/raj/sg2016-big.jpg"
+      image-width: 612
+      image-height: 792
+      bid: "sg2016"
+  - scope:
+      path: ""
       type: sg2017
     values:
       layout: transcript
-      book: "ACIM Study Group: 2017"
+      book: "ACIM Study Group 2017"
       image: "/public/img/raj/sg2017-big.jpg"
       image-width: 612
       image-height: 792
@@ -269,7 +279,7 @@ defaults:
       type: sg2018
     values:
       layout: transcript
-      book: "ACIM Study Group: 2018"
+      book: "ACIM Study Group 2018"
       image: "/public/img/raj/sg2018-big.jpg"
       image-width: 612
       image-height: 792

@@ -97,7 +97,7 @@ function highlightCurrentTranscript(bid) {
 
 //called for transcript pages
 function loadTOC() {
-  console.log("transcript page: loading toc");
+  //console.log("transcript page: loading toc");
   let book = $("#contents-modal-open").attr("data-book").toLowerCase();
 
   getConfig(book)

@@ -223,7 +223,7 @@ export function getPageInfo(pageKey, data = false) {
       .then((data) => {
         info.bookTitle = data.title;
         info.title = data.contents[decodedKey.uid].title;
-        info.url = data.contents[decodedKey.uid].url;
+        info.url = `${data.base}${data.contents[decodedKey.uid].url}`;
 
         resolve(info);
       })
