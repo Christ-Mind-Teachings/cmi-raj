@@ -7,7 +7,7 @@ import store from "store";
 import notify from "toastr";
 const page = require("../_config/key");
 
-const queryResultName = "query-result-wom";
+const queryResultName = "query-result-raj";
 const SCROLL_INTERVAL = 250;
 
 function scrollComplete(message, type) {

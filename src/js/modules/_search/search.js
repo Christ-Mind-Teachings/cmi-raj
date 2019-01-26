@@ -1,5 +1,5 @@
 
-const searchEndpoint = "https://d9lsdwxpfg.execute-api.us-east-1.amazonaws.com/latest/wom";
+const searchEndpoint = "https://d9lsdwxpfg.execute-api.us-east-1.amazonaws.com/latest/raj";
 import axios from "axios";
 import { showSavedQuery, showSearchResults } from "./show";
 import {showSearchMatch} from "../_util/url"; 

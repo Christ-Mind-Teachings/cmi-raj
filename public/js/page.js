@@ -35180,7 +35180,7 @@ module.exports = noop;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_toastr__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_toastr__);
 
-const searchEndpoint = "https://d9lsdwxpfg.execute-api.us-east-1.amazonaws.com/latest/wom";
+const searchEndpoint = "https://d9lsdwxpfg.execute-api.us-east-1.amazonaws.com/latest/raj";
 
 
 
@@ -35361,8 +35361,8 @@ function initSearchModal() {
 
 
 //this needs to use require because it is also used by a node app and node doesn't support import
-const womInfo = __webpack_require__(14);
-const queryResultName = "query-result-wom";
+const rajInfo = __webpack_require__(14);
+const queryResultName = "query-result-raj";
 
 function getUnitName(pageInfo, unitInfo) {
   return pageInfo[unitInfo.pageKey].title;
@@ -35405,7 +35405,7 @@ function makeList(bid, title, pageInfo, matchArray) {
   for a given page, combine all matches into an array
 */
 function munge(bookMatches) {
-  let keyLength = womInfo.getKeyInfo().keyLength;
+  let keyLength = rajInfo.getKeyInfo().keyLength;
   let combined = [];
   let count = 0;
 
@@ -35434,13 +35434,13 @@ function munge(bookMatches) {
 
 //get unique pageKeys from query results and 
 function getPageKeys(data) {
-  let keyLength = womInfo.getKeyInfo().keyLength;
+  let keyLength = rajInfo.getKeyInfo().keyLength;
   let keys = data.map(m => m.key.substr(0, keyLength));
   return __WEBPACK_IMPORTED_MODULE_1_lodash_uniq___default()(keys);
 }
 
 function showSearchResults(data, query) {
-  const books = womInfo.getBooks();
+  const books = rajInfo.getBooks();
   let pageInfoPromises = [];
 
   //get array of all unique page info - promises
@@ -35495,8 +35495,8 @@ function showSearchResults(data, query) {
 
 //save the query result so it can be available until replaced by another query
 function saveQueryResults(queryString, matchCount, titleArray, pageInfo, data, originalResult) {
-  const books = womInfo.getBooks();
-  let keyLength = womInfo.getKeyInfo().keyLength;
+  const books = rajInfo.getBooks();
+  let keyLength = rajInfo.getKeyInfo().keyLength;
 
   //don't save if there were no matches
   if (matchCount === 0) {
@@ -35533,7 +35533,7 @@ function showSavedQuery() {
     return;
   }
 
-  const books = womInfo.getBooks();
+  const books = rajInfo.getBooks();
   let html = "";
 
   //generate html for search hits
@@ -35571,7 +35571,7 @@ function showSavedQuery() {
 
 const page = __webpack_require__(14);
 
-const queryResultName = "query-result-wom";
+const queryResultName = "query-result-raj";
 const SCROLL_INTERVAL = 250;
 
 function scrollComplete(message, type) {

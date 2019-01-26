@@ -1,0 +1,19 @@
+#!/bin/bash
+
+if [ "$1" == "" ]; then
+  echo "Enter directory as first argument"
+  echo " - directory must contain a file called 'error' containing the files to be rerun"
+  exit 1
+fi
+
+book=$1
+logfile="logs/$book.log"
+
+echo "+--- Re-running: $book ---------" >> $logfile
+
+for i in `cat ../$book/error`; do
+  infile="../$book/$i.json"
+  echo "Loading $infile"
+  (node src/load -e remote $infile >> $logfile)
+done
+

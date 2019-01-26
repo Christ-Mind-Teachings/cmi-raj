@@ -4,15 +4,15 @@ workingDir=`pwd`
 scriptDir=`dirname $0`
 scriptName=`basename $0`
 
-unitDir="/Users/rmercer/Projects/cmi/site/cmi-wom"
-awkFile="wom.awk"
+unitDir="/Users/rmercer/Projects/cmi/site/cmi-raj"
+awkFile="nwffacim.awk"
 debug=0
 
-source="wom"
+source="raj"
 
 function syntax {
   echo "prep -b <book> file"
-  echo " ex: prep -b tjl chap01"
+  echo " ex: prep -b grad chap01"
   exit 1
 }
 
@@ -44,7 +44,7 @@ unitDirName="${unitDir}/_${book}"
 unitFileName=${unitDirName}/${unit}.md
 
 if [ $debug == 1 ]; then
-  outputFile=${outputFile}.json.debug
+  outputFile=${outputFile}.d.json
   (gawk -f ${scriptDir}/${awkFile} -v debug=1 -v source=$source -v book=$book -v section=$section -v idx=$idx -v unit=$unit ${unitFileName} > $outputFile)
 else
   outputFile=${outputFile}.json

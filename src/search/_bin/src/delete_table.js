@@ -13,12 +13,20 @@ var awsConfig = {
 program
   .version('0.0.1')
   .option('-e, --endpoint <dblocation>', "Db location, either local or remote")
+  .option('-t, --table <table>', "Name of table to delete")
   .parse(process.argv);
 
 if (!program.endpoint) {
   console.log("specify endpoint of either '-e local' or '-e remote'");
   process.exit(1);
 }
+
+if (!program.table) {
+  console.log("enter name of the table to describe");
+  process.exit(1);
+}
+
+table = program.table;
 
 if (program.endpoint === "remote") {
   awsConfig.endpoint = remote;

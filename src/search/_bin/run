@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ "$1" == "" ]; then
+  echo "Enter directory as first argument"
+  exit 1
+fi
+
+book=$1
+logfile="logs/$book.log"
+
+echo "+--- Running: $book ---------" >> $logfile
+
+for i in ../$book/*.json; do
+  echo "Loading $i"
+  (node src/load -e remote $i >> $logfile)
+done
+

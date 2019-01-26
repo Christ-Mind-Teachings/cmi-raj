@@ -6,7 +6,7 @@ const key = require("../../../js/modules/_config/key");
 var local = "http://localhost:8000";
 var remote = "https://dynamodb.us-east-1.amazonaws.com";
 
-var table = "wom2";
+var table = "raj";
 
 var awsConfig = {
   region: "us-east-1"
