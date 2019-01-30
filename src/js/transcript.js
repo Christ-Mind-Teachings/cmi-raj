@@ -17,6 +17,20 @@ import fb from "./modules/_util/facebook";
 import share from "./modules/_share/share";
 import about from "./modules/_about/about";
 
+const ports = {
+  acim: 9912,
+  wom: 9910,
+  raj: 9913,
+  jsb: 9911,
+  www: 9999
+}
+
+function setLinks() {
+  if (location.hostname === "localhost") {
+    $("#www-christmind-info").attr("href", `http://localhost:${ports.www}/`);
+  }
+}
+
 /*
  * For all transcript paragraphs -
  *   That are not footnotes and that don't have class .omit
@@ -102,6 +116,7 @@ function createParagraphNumberToggleListener() {
 $(document).ready(() => {
 
   initStickyMenu();
+  setLinks();
   labelParagraphs();
   createParagraphNumberToggleListener();
   auth.initialize();

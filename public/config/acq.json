@@ -1,0 +1,24 @@
+{
+  "bid": "acq",
+  "base": "/acq",
+  "title": "Get Acquainted",
+  "image": "/public/img/raj/acq-toc.jpg",
+  "contents": [
+    {
+      "title": "Welcome",
+      "url": "/welcome/"
+    },
+    {
+      "title": "About Raj",
+      "url": "/raj/"
+    },
+    {
+      "title": "Download Ebooks",
+      "url": "/download/"
+    },
+    {
+      "title": "Related Sites",
+      "url": "/web/"
+    }
+  ]
+}

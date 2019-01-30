@@ -35,10 +35,11 @@ const keyLength = 7;
 const books = [
   "yaa", "grad", "sg2002", "sg2003", "sg2004", "sg2005", "sg2006", "sg2007", "sg2008",
   "sg2009", "sg2010", "sg2011", "sg2012", "sg2013", "sg2014", "sg2015", "sg2016",
-  "sg2017", "sg2018"
+  "sg2017", "sg2018", "acq"
 ];
 
 const bookIds = ["xxx", ...books];
+const acq = ["xxx", "welcome", "raj", "download", "web"];
 const grad = [
   "xxx", "g000002", "g000003", "g010491", "g010591", "g011491", "g011591", "g011691", "g011891",
   "g012091", "g012591", "g012791", "g020291", "g020591", "g020691", "g021291", "g021391", "g021491",
@@ -159,6 +160,7 @@ const yaa = [
 ];
 
 const contents = {
+  acq: acq,
   yaa: yaa,
   grad: grad,
   sg2002: sg2002,

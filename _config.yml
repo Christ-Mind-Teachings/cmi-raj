@@ -10,7 +10,7 @@ url:          'https://raj.christmind.info'
 baseurl:      ''
 keywords:     "Christ Mind, Jesus, Paul Tuttle, Raj, NWFFACIM, ACIM, ACIM Sparkly Edition"
 src-url:      'https://nwffacim.org'
-port:         2013
+port:         9913
 
 # About/contact
 author:
@@ -35,6 +35,9 @@ plugins:
 
 # Collections for transcripts
 collections:
+  acq:
+    output: true
+    title: "Get Acquainted"
   yaa:
     output: true
     title: "You ARE the Answer"
@@ -94,6 +97,16 @@ collections:
     title: "ACIM Study Group: 2018"
 
 defaults:
+  - scope:
+      path: ""
+      type: acq
+    values:
+      layout: transcript
+      book: "Get Acquainted"
+      image: "/public/img/raj/acq-big.jpg"
+      image-width: 612
+      image-height: 792
+      bid: "acq"
   - scope:
       path: ""
       type: yaa

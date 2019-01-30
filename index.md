@@ -6,8 +6,18 @@ footer:
   display: true
 ---
 
-<h2 class="ui header">Paul's Books</h2>
-<div id="page-contents" class="ui two cards">
+<div id="page-contents" class="ui three cards">
+  <div class="card">
+    <a href="#" data-book="acq" class="toc-modal-open image">
+      <img src="/public/img/raj/acq-big.jpg">
+    </a>
+    <div class="content">
+      <div class="header">Get Acquainted</div>
+      <div class="description">
+        Learn about Paul Tuttle and The Raj Material
+      </div>
+    </div>
+  </div>
   <div class="card">
     <a href="#" data-book="yaa" class="toc-modal-open image">
       <img src="/public/img/raj/yaa-big.jpg">
