@@ -2,7 +2,7 @@
 {% if page.layout == "transcript" %}
   {% assign type = "article" %}
   {% assign description = page.fb.desc | default: "The Raj Material: " | append: page.book | append: " " | append: page.title %}
-  {% assign title = "Way of Mastery: " | append: page.title %}
+  {% assign title = "The Raj Material: " | append: page.title %}
 {% else %}
   {% assign type = "website" %}
   {% assign description = page.fb.desc | default: site.description %}

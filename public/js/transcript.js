@@ -36056,7 +36056,7 @@ function createClickHandlers() {
     }
 
     if ($(this).hasClass("read-documentation")) {
-      location.href = "https://docs.christmind.info";
+      location.href = "https://www.christmind.info/acq/quick/";
     }
 
     if ($(this).hasClass("view-documentation")) {
