@@ -178,7 +178,7 @@ function generateBookmarkList(books) {
         <li>Clicking on the paragraph number, eg: (p21)</li>
       </ul>
       <p>
-        See <a href="">the Bookmark documentation</a> for more information.
+        See <a href="https://www.christmind.info/acq/bookmark/">the Bookmark documentation</a> for more information.
       </p>
     `;
   }
