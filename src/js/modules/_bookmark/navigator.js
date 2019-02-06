@@ -542,8 +542,8 @@ function initClickListeners() {
     pid = $(".selected-annotation-wrapper p").attr("id");
     aid = annotation.data("aid");
     text = annotation.text().replace(/\n/," ");
-    
-    let url = `https://acim.christmind.info${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
+
+    let url = `https://raj.christmind.info${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
     let channel = $(this).hasClass("facebook")?"facebook":"email";
 
     // console.log("url: %s", url);
@@ -553,10 +553,11 @@ function initClickListeners() {
     if (channel === "facebook") {
       let options = {
         method: "share",
-        hashtag: "#christmind",
+        hashtag: "#christmind, #TheRajMaterial, #ACIM",
         quote: text,
         href: url
       };
+      console.log("Fb share options: %o", options);
       FB.ui(options, function(){});
     }
     else if (channel === "email") {
