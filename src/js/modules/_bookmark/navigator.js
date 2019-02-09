@@ -39,6 +39,10 @@ function generateHorizontalList(listArray) {
 function generateAnnotation(annotation, topics = []) {
   let match;
 
+  if (!annotation.topicList) {
+    annotation.topicList = [];
+  }
+
   //convert annotation topics list into string array
   let topicList = annotation.topicList.map((topic) => {
     if (typeof topic === "object") {
@@ -97,17 +101,26 @@ function generateBookmark(actualPid, bkmk, topics) {
   returns the url for the first annotation of the arg bookmark
   Note: deleted annotations are empty arrays so skip over them.
 */
-function getBookmarkUrl(bookmark) {
+function getBookmarkUrl(bookmarks, pageKey) {
   let url;
+  let bookmark = bookmarks[pageKey];
   for (let prop in bookmark) {
     if (bookmark.hasOwnProperty(prop)) {
       if (bookmark[prop][0]) {
-        url = `${bookmark[prop][0].selectedText.url}?bkmk=${bookmark[prop][0].rangeStart}`;
+        let selectedText = bookmark[prop][0].selectedText;
+        if (selectedText) {
+          url = `${bookmark[prop][0].selectedText.url}?bkmk=${bookmark[prop][0].rangeStart}`;
+        }
+        else {
+          //we have a bookmark with no selected text, have to get the url in another way
+          url = `${transcript.getUrl(pageKey)}?bkmk=${bookmark[prop][0].rangeStart}`;
+        }
         break;
       }
     }
   }
 
+  //console.log("url: %s", url);
   return url;
 }
 
@@ -143,7 +156,7 @@ function getNextPageUrl(pos, pageList, filterList, bookmarks) {
   return new Promise((resolve) => {
     if (found) {
       let pageKey = pageList[pagePos];
-      let url = getBookmarkUrl(bookmarks[pageKey]);
+      let url = getBookmarkUrl(bookmarks, pageKey);
 
       //it's possible the url was not found so check for that
       if (url) {
@@ -192,7 +205,7 @@ function getPrevPageUrl(pos, pageList, filterList, bookmarks) {
   return new Promise((resolve) => {
     if (found) {
       let pageKey = pageList[pagePos];
-      let url = getBookmarkUrl(bookmarks[pageKey]);
+      let url = getBookmarkUrl(bookmarks, pageKey);
       //console.log("prev url is %s", url);
       resolve(url);
     }
@@ -528,11 +541,6 @@ function initClickListeners() {
     let userInfo;
     let pid, aid, text;
 
-    //no highlighted text
-    if (annotation.length === 0) {
-      return;
-    }
-
     userInfo = getUserInfo();
     if (!userInfo) {
       notify.info("You must be signed in to share selected text");
@@ -540,10 +548,18 @@ function initClickListeners() {
     }
 
     pid = $(".selected-annotation-wrapper p").attr("id");
-    aid = annotation.data("aid");
-    text = annotation.text().replace(/\n/," ");
 
-    let url = `https://raj.christmind.info${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
+    //no highlighted text so grab the whole paragraph
+    if (annotation.length === 0) {
+      aid = $(`#${pid} > span.pnum`).attr("data-aid");
+      text = $(`#${pid}`).text().replace(/\n/," ");
+    }
+    else {
+      aid = annotation.data("aid");
+      text = annotation.text().replace(/\n/," ");
+    }
+
+    let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
     let channel = $(this).hasClass("facebook")?"facebook":"email";
 
     // console.log("url: %s", url);
@@ -553,11 +569,10 @@ function initClickListeners() {
     if (channel === "facebook") {
       let options = {
         method: "share",
-        hashtag: "#christmind, #TheRajMaterial, #ACIM",
+        hashtag: "#christmind",
         quote: text,
         href: url
       };
-      console.log("Fb share options: %o", options);
       FB.ui(options, function(){});
     }
     else if (channel === "email") {

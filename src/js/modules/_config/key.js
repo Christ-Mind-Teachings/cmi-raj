@@ -371,9 +371,28 @@ function getNumberOfUnits(bid) {
   }
 }
 
+/*
+ * Convert page key to url
+ */
+function getUrl(key) {
+  let decodedKey = decodeKey(key);
+  let unit = "invalid";
+
+  if (decodedKey.error) {
+    return "/invalid/key/";
+  }
+
+  if (contents[decodedKey.bookId]) {
+    unit = contents[decodedKey.bookId][decodedKey.uid + 1];
+  }
+
+  return `/${decodedKey.bookId}/${unit}/`;
+}
+
 module.exports = {
   getNumberOfUnits: getNumberOfUnits,
   getBooks: getBooks,
+  getUrl: getUrl,
   getSourceId: getSourceId,
   getKeyInfo: getKeyInfo,
   parseKey: parseKey,
@@ -382,3 +401,4 @@ module.exports = {
   genParagraphKey: genParagraphKey,
   decodeKey: decodeKey
 };
+

@@ -58,6 +58,7 @@ function getPageBookmarks(sharePid) {
               hasBookmark = true;
             }
             else {
+              $(`#p${pid} > span.pnum`).attr("data-aid", bm.creationDate);
               hasAnnotation = true;
             }
           }

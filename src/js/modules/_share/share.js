@@ -31,7 +31,9 @@ function clearSharedAnnotation() {
   console.log("clearSharedAnnotation");
 
   //unwrap shared annotation
-  sharedAnnotation.selectedText.wrap.unwrap();
+  if (sharedAnnotation.selectedText) {
+    sharedAnnotation.selectedText.wrap.unwrap();
+  }
 
   //remove wrapper
   $("#shared-annotation-wrapper > .header").remove();
@@ -127,7 +129,11 @@ function showAnnotation() {
       // console.log("annotation: %o", annotation);
 
       let node = document.getElementById(annotation.rangeStart);
-      highlight(annotation.selectedText, node);
+
+      if (annotation.selectedText) {
+        highlight(annotation.selectedText, node);
+      }
+
       $(`[data-aid="${aid}"]`).addClass("shared");
 
       wrapRange(annotation);
