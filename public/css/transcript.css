@@ -1,5 +1,6 @@
 /* transcript css */
-.transcript.ui.text.container {
+.transcript.ui.text.container, 
+.transcript.ui.text.container .ui.segment {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 60px;

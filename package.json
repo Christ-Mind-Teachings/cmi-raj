@@ -6,7 +6,8 @@
   "scripts": {
     "test": "jest",
     "watch": "webpack --watch",
-    "jekyll": "bundle exec jekyll s"
+    "jekyll": "bundle exec jekyll s",
+    "start": "npm run jekyll & npm run watch"
   },
   "keywords": [
     "cmi"

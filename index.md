@@ -6,13 +6,17 @@ footer:
   display: true
 ---
 
+## Welcome to The Raj Material
+{: .ui.header}
+
+Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the ground approach to living *A Course In Miracles*. For over 15 years Raj patiently explains the meaning of the Course through the *ACIM Study Group*.
+
 <div id="page-contents" class="ui three cards">
   <div class="card">
     <a href="#" data-book="acq" class="toc-modal-open image">
       <img src="/public/img/raj/acq-big.jpg">
     </a>
     <div class="content">
-      <div class="header">Get Acquainted</div>
       <div class="description">
         Learn about Paul Tuttle and The Raj Material
       </div>
@@ -23,9 +27,8 @@ footer:
       <img src="/public/img/raj/yaa-big.jpg">
     </a>
     <div class="content">
-      <div class="header">You ARE the Answer</div>
       <div class="description">
-        A Journey of Awakening
+        Paul's book about first meeting Raj in 1982. 
       </div>
     </div>
   </div>
@@ -34,14 +37,16 @@ footer:
       <img src="/public/img/raj/grad-big.jpg">
     </a>
     <div class="content">
-      <div class="header">Graduation</div>
       <div class="description">
-        The End of Illusions
+        After nine years with Raj this book is about Paul's continued relatinship with Raj.
       </div>
     </div>
   </div>
 </div>
 <h2 class="ui header">A Course In Miracles Study Group with Raj</h2>
+<p>
+  Starting in 2002 the ACIM Study Group contains over 440 recorded sessions of Raj speaking about the Course. These sessions are grouped by year in the books below.
+</p>
 <div id="page-contents2" class="ui three cards">
   <div class="card">
     <a href="#" data-book="sg2002" class="toc-modal-open image">

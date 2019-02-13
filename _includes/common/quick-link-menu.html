@@ -1,0 +1,17 @@
+<a id="quick-links-dropdown-menu" href="#" class="ui dropdown item">
+  <i class="book icon"></i>
+  <div id="quick-links" class="menu">
+    {% unless include.name == "acim" %}
+    <div class="item" data-href="https://acim.christmind.info">ACIM Sparkly Edition</div>
+    {% endunless %}
+    {% unless include.name == "raj" %}
+    <div class="item" data-href="https://raj.christmind.info">The Raj Material</div>
+    {% endunless %}
+    {% unless include.name == "wom" %}
+    <div class="item" data-href="https://wom.christmind.info">The Way of Mastery</div>
+    {% endunless %}
+    {% unless include.name == "jsb" %}
+    <div class="item" data-href="https://jsb.christmind.info">The Impersonal Life</div>
+    {% endunless %}
+  </div>
+</a>

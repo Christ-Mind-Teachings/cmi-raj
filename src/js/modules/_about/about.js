@@ -1,6 +1,7 @@
 import {pageDriver, pageNavigationDriver, transcriptDriver} from "../_util/driver";
 
 function createClickHandlers() {
+  //help menu
   $("#help-menu").on("click", "div.item", function(e) {
     e.preventDefault();
 
@@ -31,6 +32,15 @@ function createClickHandlers() {
       console.log("video documentation not ready yet");
       //location.href = "";
     }
+  });
+
+  //quick links
+  $("#quick-links").on("click", "div.item", function(e) {
+    e.preventDefault();
+
+    let href = $(this).attr("data-href");
+    //console.log("quick links href: %s", href);
+    location.href = href;
   });
 }
 
