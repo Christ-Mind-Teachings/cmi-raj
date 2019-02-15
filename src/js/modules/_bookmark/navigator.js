@@ -6,6 +6,7 @@ import store from "store";
 import scroll from "scroll-into-view";
 import {getUserInfo} from "../_user/netlify";
 import notify from "toastr";
+import {shareByEmail} from "./shareByEmail";
 
 //import {getSourceId, genPageKey} from "../_config/key";
 const transcript = require("../_config/key");
@@ -561,10 +562,8 @@ function initClickListeners() {
 
     let srcTitle = $("#src-title").text();
     let bookTitle = $("#book-title").text();
+    let citation = `~ ${srcTitle}: ${bookTitle}`;
     
-    //add document reference
-    text = `${text}\n~${srcTitle}: ${bookTitle}`;
-
     let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
     let channel = $(this).hasClass("facebook")?"facebook":"email";
 
@@ -576,13 +575,13 @@ function initClickListeners() {
       let options = {
         method: "share",
         hashtag: "#christmind",
-        quote: text,
+        quote: `${text}\n${citation}`,
         href: url
       };
       FB.ui(options, function(){});
     }
     else if (channel === "email") {
-      notify.info("Sharing by email is not ready yet.");
+      shareByEmail(text, citation, url);
     }
   });
 

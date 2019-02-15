@@ -8,6 +8,7 @@ import "../vendor/semantic/semantic.min.js";
 
 import {showParagraph} from "./modules/_util/url";
 import {loadConfig} from "./modules/_config/config";
+import {initShareByEmail} from "./modules/_bookmark/shareByEmail";
 import bookmark from "./modules/_bookmark/bookmark";
 import search from "./modules/_search/search";
 import auth from "./modules/_user/netlify";
@@ -138,6 +139,7 @@ $(document).ready(() => {
       //until the share window is closed
       let pid = share.initialize();
       bookmark.initialize(pid);
+      initShareByEmail();
 
       if ($(".disable-paragraph-marker").length > 0) {
         console.log("disable paragraph markers");

@@ -96,6 +96,7 @@
 }
 
 /* bookmark and search navigator */
+.email-share-dialog-wrapper,
 .search-navigator-wrapper,
 .bookmark-navigator-wrapper {
   position: fixed;
@@ -104,12 +105,14 @@
   width: 60%;
 }
 
+.email-share-dialog,
 .search-navigator,
 .bookmark-navigator {
   position: relative;
   left: -50%;
 }
 
+.hide.email-share-dialog-wrapper,
 .hide-search-navigator.search-navigator-wrapper,
 .hide-bookmark-navigator.bookmark-navigator-wrapper {
   display: none;

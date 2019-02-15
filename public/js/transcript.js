@@ -33780,8 +33780,10 @@ module.exports = unicodeToArray;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__user_netlify__ = __webpack_require__(43);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_toastr__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_toastr__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shareByEmail__ = __webpack_require__(457);
 
 //import {getPageInfo} from "../_config/config";
+
 
 
 
@@ -34326,9 +34328,7 @@ function initClickListeners() {
 
     let srcTitle = $("#src-title").text();
     let bookTitle = $("#book-title").text();
-
-    //add document reference
-    text = `${text}\n~${srcTitle}: ${bookTitle}`;
+    let citation = `~ ${srcTitle}: ${bookTitle}`;
 
     let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
     let channel = $(this).hasClass("facebook") ? "facebook" : "email";
@@ -34341,12 +34341,12 @@ function initClickListeners() {
       let options = {
         method: "share",
         hashtag: "#christmind",
-        quote: text,
+        quote: `${text}\n${citation}`,
         href: url
       };
       FB.ui(options, function () {});
     } else if (channel === "email") {
-      __WEBPACK_IMPORTED_MODULE_5_toastr___default.a.info("Sharing by email is not ready yet.");
+      Object(__WEBPACK_IMPORTED_MODULE_6__shareByEmail__["b" /* shareByEmail */])(text, citation, url);
     }
   });
 
@@ -37396,20 +37396,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vendor_semantic_semantic_min_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__vendor_semantic_semantic_min_js__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_util_url__ = __webpack_require__(42);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_config_config__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_bookmark_bookmark__ = __webpack_require__(136);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_search_search__ = __webpack_require__(392);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modules_user_netlify__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modules_contents_toc__ = __webpack_require__(395);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__modules_audio_audio__ = __webpack_require__(404);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__modules_util_facebook__ = __webpack_require__(433);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__modules_share_share__ = __webpack_require__(434);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__modules_about_about__ = __webpack_require__(396);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_bookmark_shareByEmail__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_bookmark_bookmark__ = __webpack_require__(136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modules_search_search__ = __webpack_require__(392);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__modules_user_netlify__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__modules_contents_toc__ = __webpack_require__(395);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__modules_audio_audio__ = __webpack_require__(404);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__modules_util_facebook__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__modules_share_share__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__modules_about_about__ = __webpack_require__(396);
 /* eslint no-console: off */
 
 /*
   semantic requires jquery which is loaded used
   webpack.ProvidePlugin
 */
+
 
 
 
@@ -37515,29 +37517,30 @@ $(document).ready(() => {
   setLinks();
   labelParagraphs();
   createParagraphNumberToggleListener();
-  __WEBPACK_IMPORTED_MODULE_5__modules_user_netlify__["a" /* default */].initialize();
-  __WEBPACK_IMPORTED_MODULE_8__modules_util_facebook__["a" /* default */].initialize();
-  __WEBPACK_IMPORTED_MODULE_10__modules_about_about__["a" /* default */].initialize();
+  __WEBPACK_IMPORTED_MODULE_6__modules_user_netlify__["a" /* default */].initialize();
+  __WEBPACK_IMPORTED_MODULE_9__modules_util_facebook__["a" /* default */].initialize();
+  __WEBPACK_IMPORTED_MODULE_11__modules_about_about__["a" /* default */].initialize();
 
   //load config file and do initializations that depend on a loaded config file
-  Object(__WEBPACK_IMPORTED_MODULE_2__modules_config_config__["f" /* loadConfig */])(Object(__WEBPACK_IMPORTED_MODULE_6__modules_contents_toc__["b" /* getBookId */])()).then(result => {
-    __WEBPACK_IMPORTED_MODULE_4__modules_search_search__["a" /* default */].initialize();
+  Object(__WEBPACK_IMPORTED_MODULE_2__modules_config_config__["f" /* loadConfig */])(Object(__WEBPACK_IMPORTED_MODULE_7__modules_contents_toc__["b" /* getBookId */])()).then(result => {
+    __WEBPACK_IMPORTED_MODULE_5__modules_search_search__["a" /* default */].initialize();
 
     /*
       result of 0 indicates no contents config found
       - toc, and audio depend on config file
     */
     if (result !== 0) {
-      __WEBPACK_IMPORTED_MODULE_6__modules_contents_toc__["a" /* default */].initialize("transcript");
-      __WEBPACK_IMPORTED_MODULE_7__modules_audio_audio__["a" /* default */].initialize();
+      __WEBPACK_IMPORTED_MODULE_7__modules_contents_toc__["a" /* default */].initialize("transcript");
+      __WEBPACK_IMPORTED_MODULE_8__modules_audio_audio__["a" /* default */].initialize();
     }
     Object(__WEBPACK_IMPORTED_MODULE_1__modules_util_url__["d" /* showParagraph */])();
 
     //get pid of shared annotation and pass it to bookmark.initizalize
     //so any bookmarks defined on the shared paragraph won't be highlighted
     //until the share window is closed
-    let pid = __WEBPACK_IMPORTED_MODULE_9__modules_share_share__["a" /* default */].initialize();
-    __WEBPACK_IMPORTED_MODULE_3__modules_bookmark_bookmark__["b" /* default */].initialize(pid);
+    let pid = __WEBPACK_IMPORTED_MODULE_10__modules_share_share__["a" /* default */].initialize();
+    __WEBPACK_IMPORTED_MODULE_4__modules_bookmark_bookmark__["b" /* default */].initialize(pid);
+    Object(__WEBPACK_IMPORTED_MODULE_3__modules_bookmark_shareByEmail__["a" /* initShareByEmail */])();
 
     if ($(".disable-paragraph-marker").length > 0) {
       console.log("disable paragraph markers");
@@ -47717,6 +47720,122 @@ function showAnnotation() {
     return showAnnotation();
   }
 });
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
+
+/***/ }),
+/* 435 */,
+/* 436 */,
+/* 437 */,
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+const local_ports = {
+  acim: 9912,
+  wom: 9910,
+  raj: 9913,
+  jsb: 9911,
+  www: 9999
+};
+
+const shareEndpoint = "https://rcd7l4adth.execute-api.us-east-1.amazonaws.com/latest/share";
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  ports: local_ports,
+  share: shareEndpoint
+});
+
+/***/ }),
+/* 457 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (immutable) */ __webpack_exports__["a"] = initShareByEmail;
+/* harmony export (immutable) */ __webpack_exports__["b"] = shareByEmail;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__constants__ = __webpack_require__(456);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__user_netlify__ = __webpack_require__(43);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(72);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_toastr__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_toastr__);
+
+
+
+
+
+let shareInfo = {};
+
+//setup submit and cancel listeners
+function initShareByEmail() {
+  //submit
+  $("form[name='emailshare']").on("submit", function (e) {
+    e.preventDefault();
+
+    let formData = $("#email-share-form").form("get values");
+
+    if (formData.emailAddresses.length === 0) {
+      __WEBPACK_IMPORTED_MODULE_3_toastr___default.a.info("Please enter at least one email address.");
+      return;
+    }
+
+    const userInfo = Object(__WEBPACK_IMPORTED_MODULE_1__user_netlify__["b" /* getUserInfo */])();
+    if (!userInfo) {
+      __WEBPACK_IMPORTED_MODULE_3_toastr___default.a.warning("You must be signed in to share bookmarks.");
+      $(".email-share-dialog-wrapper").addClass("hide");
+      return;
+    }
+
+    shareInfo.to = formData.emailAddresses;
+    shareInfo.senderName = userInfo.name;
+    shareInfo.senderEmail = userInfo.email;
+    console.log("shareInfo: %o", shareInfo);
+
+    //hide form not sure if this will work
+    $(".email-share-dialog-wrapper").addClass("hide");
+
+    __WEBPACK_IMPORTED_MODULE_2_axios___default.a.post(__WEBPACK_IMPORTED_MODULE_0__constants__["a" /* default */].share, shareInfo).then(response => {
+      __WEBPACK_IMPORTED_MODULE_3_toastr___default.a.info(response.data.message);
+    }).catch(error => {
+      console.error("share error: %s", error);
+    });
+  });
+
+  //cancel
+  $("form[name='emailshare'] .email-share-cancel").on("click", function (e) {
+    e.preventDefault();
+
+    //hide form
+    $(".email-share-dialog-wrapper").addClass("hide");
+  });
+}
+
+/*
+*/
+function shareByEmail(quote, citation, url) {
+  shareInfo = { citation, quote, url };
+
+  //show input form
+  $(".hide.email-share-dialog-wrapper").removeClass("hide");
+}
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ })

@@ -20,13 +20,13 @@
   border-radius: 8px;
 }
 
-.person {
+.transcript .person {
   border-left: 5px solid #ea56f7;
   padding: 10px;
   margin-bottom: 20px;
 }
 
-.book {
+.transcript .book:not(.icon) {
   border-left: 5px solid #39cdfd;
   padding: 10px;
   margin-bottom: 20px;
