@@ -6,6 +6,10 @@
   margin-bottom: 60px;
 }
 
+.clearBoth {
+  clear: both;
+}
+
 /* bookmarks: */
 
 /* show pointer cursor for bookmark icon */

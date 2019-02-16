@@ -565,7 +565,16 @@ function initClickListeners() {
     let citation = `~ ${srcTitle}: ${bookTitle}`;
     
     let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
-    let channel = $(this).hasClass("facebook")?"facebook":"email";
+    let channel;
+    if ($(this).hasClass("facebook")) {
+      channel = "facebook";
+    }
+    else if ($(this).hasClass("envelope")) {
+      channel = "email";
+    }
+    else if ($(this).hasClass("close")) {
+      channel = "close";
+    }
 
     // console.log("url: %s", url);
     // console.log("quote: %s", text);
@@ -582,6 +591,10 @@ function initClickListeners() {
     }
     else if (channel === "email") {
       shareByEmail(text, citation, url);
+    }
+    else if (channel === "close") {
+      //when close window icon is present - when window created from annotation edit dialog
+      clearSelectedAnnotation();
     }
   });
 

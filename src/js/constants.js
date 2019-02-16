@@ -10,6 +10,7 @@ const local_ports = {
 const shareEndpoint = "https://rcd7l4adth.execute-api.us-east-1.amazonaws.com/latest/share";
 
 export default {
+  sid: "Raj",
   ports: local_ports,
   share: shareEndpoint
 };

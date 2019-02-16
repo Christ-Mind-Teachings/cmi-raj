@@ -24,7 +24,7 @@ const ports = {
   raj: 9913,
   jsb: 9911,
   www: 9999
-}
+};
 
 function setLinks() {
   if (location.hostname === "localhost") {

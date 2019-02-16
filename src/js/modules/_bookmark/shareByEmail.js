@@ -28,6 +28,7 @@ export function initShareByEmail() {
     shareInfo.to = formData.emailAddresses;
     shareInfo.senderName = userInfo.name;
     shareInfo.senderEmail = userInfo.email;
+    shareInfo.sid = constants.sid;
     console.log("shareInfo: %o", shareInfo);
 
     //hide form not sure if this will work
@@ -35,7 +36,12 @@ export function initShareByEmail() {
 
     axios.post(constants.share, shareInfo)
       .then((response) => {
-        notify.info(response.data.message);
+        if (response.status === 200) {
+          notify.info("Email Sent!");
+        }
+        else {
+          notify.info(response.data.message);
+        }
       })
       .catch((error) => {
         console.error("share error: %s", error);
