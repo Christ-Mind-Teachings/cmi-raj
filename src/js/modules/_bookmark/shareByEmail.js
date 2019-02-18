@@ -2,21 +2,17 @@ import constants from "../../constants";
 import {getUserInfo} from "../_user/netlify";
 import axios from "axios";
 import notify from "toastr";
+import { loadEmailListTable } from "../_user/email";
 
 let shareInfo = {};
 
-//setup submit and cancel listeners
+//load email list and setup submit and cancel listeners
 export function initShareByEmail() {
+  loadEmailList();
+
   //submit
   $("form[name='emailshare']").on("submit", function(e) {
     e.preventDefault();
-
-    let formData = $("#email-share-form").form("get values");
-
-    if (formData.emailAddresses.length === 0) {
-      notify.info("Please enter at least one email address.");
-      return;
-    }
 
     const userInfo = getUserInfo();
     if (!userInfo) {
@@ -25,11 +21,31 @@ export function initShareByEmail() {
       return;
     }
 
-    shareInfo.to = formData.emailAddresses;
+    let formData = $("#email-share-form").form("get values");
+
+    if (formData.mailList.length === 0 && formData.emailAddresses.length === 0) {
+      notify.info("Please enter at least one email address.");
+      return;
+    }
+
+    shareInfo.to = "";
+    if (formData.mailList.length > 0) {
+      shareInfo.to = formData.mailList.join(",");
+    }
+
+    if (formData.emailAddresses.length > 0) {
+      if (shareInfo.to.length > 0) {
+        shareInfo.to = `${shareInfo.to}, ${formData.emailAddresses}`;
+      }
+      else {
+        shareInfo.to = formData.emailAddresses;
+      }
+    }
+
     shareInfo.senderName = userInfo.name;
     shareInfo.senderEmail = userInfo.email;
     shareInfo.sid = constants.sid;
-    console.log("shareInfo: %o", shareInfo);
+    //console.log("shareInfo: %o", shareInfo);
 
     //hide form not sure if this will work
     $(".email-share-dialog-wrapper").addClass("hide");
@@ -55,6 +71,48 @@ export function initShareByEmail() {
     //hide form
     $(".email-share-dialog-wrapper").addClass("hide");
   });
+}
+
+//generate the option element of a select statement
+function generateOption(item) {
+  return `<option value="${item.address}">${item.first} ${item.last}</option>`;
+}
+
+function makeMaillistSelect(maillist) {
+  return (`
+    <label>Mail List Names</label>
+    <select name="mailList" id="maillist-address-list" multiple="" class="search ui dropdown">
+      <option value="">Select Email Address(es)</option>
+      ${maillist.map(item => `${generateOption(item)}`).join("")}
+    </select>
+  `);
+}
+
+/*
+  Called by initShareByEmail()
+  - load only when user signed in, fail silently, it's not an error
+*/
+function loadEmailList() {
+  const userInfo = getUserInfo();
+
+  if (!userInfo) {
+    return;
+  }
+
+  let maillist = [];
+  let api = `${userInfo.userId}/maillist`;
+
+  axios(`${constants.user}/${api}`)
+    .then(response => {
+      maillist = response.data.maillist;
+      let selectHtml = makeMaillistSelect(maillist);
+
+      $("#maillist-select").html(selectHtml);
+      $("#maillist-address-list.dropdown").dropdown();
+    })
+    .catch(err => {
+      notify.error("Error getting email list: ", err);
+    });
 }
 
 /*

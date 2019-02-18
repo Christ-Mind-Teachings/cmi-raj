@@ -32,6 +32,10 @@ function createClickHandlers() {
       console.log("video documentation not ready yet");
       //location.href = "";
     }
+
+    if ($(this).hasClass("profile-management")) {
+      location.href = "https://www.christmind.info/profile/email/";
+    }
   });
 
   //quick links

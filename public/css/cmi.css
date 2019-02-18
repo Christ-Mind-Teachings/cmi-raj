@@ -73,6 +73,11 @@ body {
   color: var(--signed-in-color);
 }
 
+/* hide profile mgt menu option when not signed in */
+.hide.profile-management.item {
+  display: none;
+}
+
 .toc-list .item > a.current-unit,
 .toc-list .list > .item.current-unit {
   background-color: var(--masthead-color);

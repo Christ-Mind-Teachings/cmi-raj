@@ -8,9 +8,11 @@ const local_ports = {
 };
 
 const shareEndpoint = "https://rcd7l4adth.execute-api.us-east-1.amazonaws.com/latest/share";
+const userEndpoint = "https://93e93isn03.execute-api.us-east-1.amazonaws.com/latest/user";
 
 export default {
   sid: "Raj",
   ports: local_ports,
-  share: shareEndpoint
+  share: shareEndpoint,
+  user: userEndpoint
 };

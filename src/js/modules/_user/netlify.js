@@ -89,6 +89,9 @@ function setAsSignedIn() {
 
   //add color to menu background to further indicate signed in status
   $(".main.menu .ui.text.container").addClass("signed-in");
+
+  //reveal profile-management menu option
+  $(".hide.profile-management.item").removeClass("hide");
 }
 
 /*
@@ -108,6 +111,9 @@ function setAsSignedOut() {
 
   //removed signed-in class
   $(".main.menu .ui.text.container").removeClass("signed-in");
+
+  //hide profile-management menu option
+  $(".profile-management.item").addClass("hide");
 }
 
 export default {
