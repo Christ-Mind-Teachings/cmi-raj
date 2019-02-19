@@ -6966,10 +6966,12 @@ return jQuery;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["d"] = showParagraph;
-/* harmony export (immutable) */ __webpack_exports__["c"] = showBookmark;
-/* harmony export (immutable) */ __webpack_exports__["e"] = showSearchMatch;
-/* harmony export (immutable) */ __webpack_exports__["b"] = showAnnotation;
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (immutable) */ __webpack_exports__["b"] = loadComplete;
+/* harmony export (immutable) */ __webpack_exports__["c"] = loadStart;
+/* harmony export (immutable) */ __webpack_exports__["f"] = showParagraph;
+/* harmony export (immutable) */ __webpack_exports__["e"] = showBookmark;
+/* harmony export (immutable) */ __webpack_exports__["g"] = showSearchMatch;
+/* harmony export (immutable) */ __webpack_exports__["d"] = showAnnotation;
 /* harmony export (immutable) */ __webpack_exports__["a"] = getUser;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_scroll_into_view__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_scroll_into_view___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_scroll_into_view__);
@@ -7000,13 +7002,27 @@ function getQueryString(key, qString) {
 }
 
 function scrollComplete(message, type) {
-  console.log(`${message}: ${type}`);
+  //console.log(`${message}: ${type}`);
 }
 
 function scrollIntoView(id, caller) {
   __WEBPACK_IMPORTED_MODULE_0_scroll_into_view___default()(document.getElementById(id), { align: { top: 0.2 } }, type => {
     scrollComplete(`scroll from url.js ${caller}(${id})`, type);
   });
+}
+
+//called when query request is complete
+function loadComplete() {
+  $("#transcript-page-loading").removeClass("active");
+}
+
+//show loading for long loading steps - like showing annotations
+function loadStart() {
+  let aInfo = getQueryString("as");
+
+  if (aInfo) {
+    $("#transcript-page-loading").addClass("active");
+  }
 }
 
 /*
@@ -7026,7 +7042,6 @@ function showBookmark() {
   let pId = getQueryString("bkmk");
 
   if (pId) {
-    //setTimeout(scrollIntoView, INTERVAL, pId, "showBookmark");
     return pId;
   }
   return null;
@@ -7063,6 +7078,7 @@ function getUser() {
 
   return null;
 }
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
 /* 45 */
@@ -12632,7 +12648,7 @@ function initTranscriptPage(sharePid) {
   highlightHandler();
 
   //setup bookmark navigator if requested
-  let pid = Object(__WEBPACK_IMPORTED_MODULE_5__util_url__["c" /* showBookmark */])();
+  let pid = Object(__WEBPACK_IMPORTED_MODULE_5__util_url__["e" /* showBookmark */])();
   if (pid) {
     Object(__WEBPACK_IMPORTED_MODULE_6__navigator__["a" /* initNavigator */])(pid);
   }
@@ -35593,7 +35609,7 @@ function search(query) {
 }
 
 function initTranscriptPage() {
-  let displayPid = Object(__WEBPACK_IMPORTED_MODULE_2__util_url__["e" /* showSearchMatch */])();
+  let displayPid = Object(__WEBPACK_IMPORTED_MODULE_2__util_url__["g" /* showSearchMatch */])();
   if (displayPid) {
     Object(__WEBPACK_IMPORTED_MODULE_3__navigator__["a" /* initNavigator */])(displayPid);
   }

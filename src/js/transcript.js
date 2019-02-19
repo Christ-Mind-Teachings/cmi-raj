@@ -6,7 +6,7 @@
 */
 import "../vendor/semantic/semantic.min.js";
 
-import {showParagraph} from "./modules/_util/url";
+import {showParagraph, loadStart} from "./modules/_util/url";
 import {loadConfig} from "./modules/_config/config";
 import {initShareByEmail} from "./modules/_bookmark/shareByEmail";
 import bookmark from "./modules/_bookmark/bookmark";
@@ -112,6 +112,7 @@ function createParagraphNumberToggleListener() {
 $(document).ready(() => {
 
   initStickyMenu();
+  loadStart();
   setLinks();
   labelParagraphs();
   createParagraphNumberToggleListener();

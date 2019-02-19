@@ -28,6 +28,14 @@
   {% include common/masthead.html %}
   {% include common/transcript-menu.html %}
 
+  <div id="transcript-page-loading" class="ui dimmer">
+    <div class="ui text loader">
+      Library of Christ Mind Teachings<br/>
+      The Raj Material<br/><br/>
+      Hang on a sec&hellip;
+    </div>
+  </div>
+
   {% if page.bid %}
   <div class="{{page.bid | downcase }} transcript ui text container">
   {% else %}

@@ -26,13 +26,27 @@ function getQueryString(key, qString) {
 }
 
 function scrollComplete(message, type) {
-  console.log(`${message}: ${type}`);
+  //console.log(`${message}: ${type}`);
 }
 
 function scrollIntoView(id, caller) {
   scroll(document.getElementById(id), {align: {top: 0.2}}, (type) => {
     scrollComplete(`scroll from url.js ${caller}(${id})`, type);
   });
+}
+
+//called when query request is complete
+export function loadComplete() {
+  $("#transcript-page-loading").removeClass("active");
+}
+
+//show loading for long loading steps - like showing annotations
+export function loadStart() {
+  let aInfo = getQueryString("as");
+
+  if (aInfo) {
+    $("#transcript-page-loading").addClass("active");
+  }
 }
 
 /*
@@ -52,7 +66,6 @@ export function showBookmark() {
   let pId = getQueryString("bkmk");
 
   if (pId) {
-    //setTimeout(scrollIntoView, INTERVAL, pId, "showBookmark");
     return pId;
   }
   return null;

@@ -11,7 +11,7 @@
         When the close button is pressed then add the omitted bookmark
 
 */
-import {showAnnotation as showAnnotationRequest} from "../_util/url";
+import {showAnnotation as showAnnotationRequest, loadComplete} from "../_util/url";
 import {fetchBookmark} from "../_bookmark/bmnet";
 import {highlightSkippedAnnotations, highlight} from "../_bookmark/selection";
 import range from "lodash/range";
@@ -140,9 +140,15 @@ function showAnnotation() {
       sharedAnnotation = annotation;
 
       initCloseHandler();
-      console.log("sharing pid: %s", pid);
+      //console.log("sharing pid: %s", pid);
+
+      //stop page loading indicator
+      loadComplete();
     })
     .catch((err) => {
+      //stop page loading indicator
+      loadComplete();
+
       console.error(err);
     });
 
