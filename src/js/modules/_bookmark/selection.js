@@ -8,7 +8,6 @@ const uuid = require("uuid/v4");
 import {getUserInput, initialize as initAnnotation} from "./annotate";
 import isFinite from "lodash/isFinite";
 import difference from "lodash/difference";
-
 import topics from "./topics";
 
 //all annotations on the page

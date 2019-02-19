@@ -11,6 +11,7 @@ import {shareByEmail} from "./shareByEmail";
 //import {getSourceId, genPageKey} from "../_config/key";
 const transcript = require("../_config/key");
 
+let shareEventListenerCreated = false;
 let gPageKey;
 
 function generateHorizontalList(listArray) {
@@ -494,46 +495,18 @@ function scrollIntoView(id, caller) {
   });
 }
 
-function initClickListeners() {
-  //previous bookmark
-  $(".bookmark-navigator .previous-bookmark").on("click", function(e) {
-    e.preventDefault();
-    clearSelectedAnnotation();
+/*
+  Click handler for FB and email share dialog. This can be called from this
+  module when the bookmark navigator is active or from annotate.js when
+  the share button is clicked from the annotation edit dialog.
+*/
+export function initShareDialog(source) {
 
-    let actualPid = $(this).attr("data-pid");
-    scroll(document.getElementById(actualPid), {align: {top: 0.2}}, (type) => {
-      scrollComplete(`bookmark navigator previous-bookmark(${actualPid})`, type);
-    });
-    updateNavigator(actualPid, "previous");
-  });
+  if (shareEventListenerCreated) {
+    return;
+  }
 
-  $(".bookmark-navigator .next-bookmark").on("click", function(e) {
-    e.preventDefault();
-    clearSelectedAnnotation();
-
-    let actualPid = $(this).attr("data-pid");
-    scroll(document.getElementById(actualPid), {align: {top: 0.2}}, (type) => {
-      scrollComplete(`bookmark navigator next-bookmark(${actualPid})`, type);
-    });
-    updateNavigator(actualPid, "next");
-  });
-
-  $(".bookmark-navigator .current-bookmark").on("click", function(e) {
-    e.preventDefault();
-
-    let actualPid = $(this).attr("data-pid");
-    scroll(document.getElementById(actualPid), {align: {top: 0.2}}, (type) => {
-      scrollComplete(`bookmark navigator current-bookmark(${actualPid})`, type);
-    });
-  });
-
-  $(".bookmark-navigator .close-window").on("click", function(e) {
-    e.preventDefault();
-    clearSelectedAnnotation();
-
-    $(".bookmark-navigator-wrapper").addClass("hide-bookmark-navigator");
-    $(".transcript").removeClass("bookmark-navigator-active");
-  });
+  console.log("initShareDialog(%s)", source);
 
   //share icon click handler
   $(".transcript").on("click", ".selected-annotation-wrapper .share-annotation", function(e) {
@@ -598,6 +571,50 @@ function initClickListeners() {
     }
   });
 
+  shareEventListenerCreated = true;
+}
+
+function initClickListeners() {
+  //previous bookmark
+  $(".bookmark-navigator .previous-bookmark").on("click", function(e) {
+    e.preventDefault();
+    clearSelectedAnnotation();
+
+    let actualPid = $(this).attr("data-pid");
+    scroll(document.getElementById(actualPid), {align: {top: 0.2}}, (type) => {
+      scrollComplete(`bookmark navigator previous-bookmark(${actualPid})`, type);
+    });
+    updateNavigator(actualPid, "previous");
+  });
+
+  $(".bookmark-navigator .next-bookmark").on("click", function(e) {
+    e.preventDefault();
+    clearSelectedAnnotation();
+
+    let actualPid = $(this).attr("data-pid");
+    scroll(document.getElementById(actualPid), {align: {top: 0.2}}, (type) => {
+      scrollComplete(`bookmark navigator next-bookmark(${actualPid})`, type);
+    });
+    updateNavigator(actualPid, "next");
+  });
+
+  $(".bookmark-navigator .current-bookmark").on("click", function(e) {
+    e.preventDefault();
+
+    let actualPid = $(this).attr("data-pid");
+    scroll(document.getElementById(actualPid), {align: {top: 0.2}}, (type) => {
+      scrollComplete(`bookmark navigator current-bookmark(${actualPid})`, type);
+    });
+  });
+
+  $(".bookmark-navigator .close-window").on("click", function(e) {
+    e.preventDefault();
+    clearSelectedAnnotation();
+
+    $(".bookmark-navigator-wrapper").addClass("hide-bookmark-navigator");
+    $(".transcript").removeClass("bookmark-navigator-active");
+  });
+
   //highlights an annotation by wrapping it in a segment
   $(".bookmark-navigator").on("click", ".annotation-item", function(e) {
     e.preventDefault();
@@ -629,6 +646,9 @@ function initClickListeners() {
       $(`[data-annotation-id="${aid}"]`).addClass("show");
     }
   });
+
+  //init click events for FB and email sharing
+  initShareDialog("bookmark/navigator.js");
 }
 
 /*

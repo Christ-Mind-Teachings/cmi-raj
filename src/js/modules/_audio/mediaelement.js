@@ -167,7 +167,7 @@ function getUserStatus() {
   if (!user) {
     return "LISTENER";
   }
-  console.log("userInfo: ", user);
+  //console.log("userInfo: ", user);
 
   //not all users have a role defined
   if (!user.roles) {

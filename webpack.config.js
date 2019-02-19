@@ -11,7 +11,7 @@ module.exports = {
   resolve: {
     alias: {
       "jquery": "jquery/src/jquery",
-      "me-plugin": path.resolve(__dirname, "../mediaelement-plugins/dist")
+      "me-plugin": path.resolve(__dirname, "../cmi-audio/dist")
     }
   },
 

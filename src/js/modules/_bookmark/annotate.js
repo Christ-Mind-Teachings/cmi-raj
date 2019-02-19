@@ -3,6 +3,7 @@ import notify from "toastr";
 import {annotation} from "./bookmark";
 import {getBookmark} from "./bmnet";
 import range from "lodash/range";
+import {initShareDialog} from "./navigator";
 
 const form = `
   <form name="annotation" id="annotation-form" class="ui form">
@@ -388,6 +389,9 @@ function shareHandler() {
       $(`[data-annotation-id="${aid}"]`).addClass("show");
     }
   });
+
+  //init click handler for FB and email share dialog
+  initShareDialog("annotate.js");
 }
 
 function deleteHandler() {

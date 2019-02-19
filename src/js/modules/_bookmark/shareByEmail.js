@@ -2,7 +2,7 @@ import constants from "../../constants";
 import {getUserInfo} from "../_user/netlify";
 import axios from "axios";
 import notify from "toastr";
-import { loadEmailListTable } from "../_user/email";
+//import { loadEmailListTable } from "../_user/email";
 
 let shareInfo = {};
 
