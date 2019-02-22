@@ -17,20 +17,7 @@ import audio from "./modules/_audio/audio";
 import fb from "./modules/_util/facebook";
 import share from "./modules/_share/share";
 import about from "./modules/_about/about";
-
-const ports = {
-  acim: 9912,
-  wom: 9910,
-  raj: 9913,
-  jsb: 9911,
-  www: 9999
-};
-
-function setLinks() {
-  if (location.hostname === "localhost") {
-    $("#www-christmind-info").attr("href", `http://localhost:${ports.www}/`);
-  }
-}
+import constants from "./constants";
 
 /*
  * For all transcript paragraphs -
@@ -113,7 +100,7 @@ $(document).ready(() => {
 
   initStickyMenu();
   loadStart();
-  setLinks();
+  constants.setLinks();
   labelParagraphs();
   createParagraphNumberToggleListener();
   auth.initialize();

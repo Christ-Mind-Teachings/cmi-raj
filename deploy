@@ -1,0 +1,39 @@
+#!/bin/bash
+
+#
+# You must run this each time a config file in /public/config has changed. It generates
+# status.js in src/js/modules/_config and is used to determine when a config file needs
+# to be fetched from the server rather than used from local storage
+#
+# Run ./deploy and make sure npm start is running, if not start it so the js bundles will
+# be updated with the new version of status.js created by this script.
+#
+
+configDir="public/config"
+
+# source location
+statusFileName="src/js/modules/_config/status.js"
+
+# name of all book config files
+#
+# CHANGE THIS LIST TO REFLECT ALL CONFIG FILES IN PUBLIC/CONFIG
+configFiles="acq grad sg2002 sg2003 sg2004 sg2005 sg2006 sg2007 sg2008 sg2009 sg2010 sg2011 sg2012 sg2013 sg2014 sg2015 sg2016 sg2017 sg2018 yaa"
+
+((cnt=0))
+status="export const status = {"
+
+for i in $configFiles; do
+  dt=`date -r ${configDir}/${i}.json`
+  if (( cnt > 0 )); then
+    status="${status}, ${i}: \"${dt}\""
+  else
+    status="${status}${i}: \"${dt}\""
+  fi
+  ((cnt = cnt + 1))
+done
+
+status="${status}};"
+
+echo $status
+echo $status > ${statusFileName}
+

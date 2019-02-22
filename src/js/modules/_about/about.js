@@ -34,7 +34,12 @@ function createClickHandlers() {
     }
 
     if ($(this).hasClass("profile-management")) {
-      location.href = "https://www.christmind.info/profile/email/";
+      if (location.hostname === "localhost") {
+        location.href = "http://localhost:9999/profile/email/";
+      }
+      else {
+        location.href = "https://www.christmind.info/profile/email/";
+      }
     }
   });
 

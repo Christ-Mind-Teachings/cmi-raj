@@ -54,8 +54,6 @@ function createEventHandlers() {
     //remove item from table
     parent.remove();
     enableSave();
-
-    console.log("after delete: maillist %o", maillist);
   });
 
   //edit
@@ -100,8 +98,6 @@ function createEventHandlers() {
       //append row to table
       $("#email-list-table").append(row);
       enableSave();
-
-      console.log("after Add: maillist: %o", maillist);
     }
     //update
     else {
@@ -118,7 +114,6 @@ function createEventHandlers() {
       //close form
       $(".addto-maillist-dialog-wrapper").addClass("hide");
       enableSave();
-      console.log("after Update: maillist: %o", maillist);
     }
 
     $("#addto-maillist-form").form("clear");
@@ -168,8 +163,6 @@ function saveChanges() {
   let userInfo = getUserInfo();
   let api = "maillist";
   let newList = maillist.filter(item => !item.deleted);
-
-  console.log("newList: %o", newList);
 
   let body = {
     userId: userInfo.userId,

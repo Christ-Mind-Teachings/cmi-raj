@@ -8,12 +8,6 @@ import auth from "./modules/_user/netlify";
 import about from "./modules/_about/about";
 import constants from "./constants";
 
-function setLinks() {
-  if (location.hostname === "localhost") {
-    $("#www-christmind-info").attr("href", `http://localhost:${constants.ports.www}/`);
-  }
-}
-
 /*
   Fix main menu to top of page when scrolled
 */
@@ -31,7 +25,7 @@ function initStickyMenu() {
 
 $(document).ready(() => {
   initStickyMenu();
-  setLinks();
+  constants.setLinks();
 
   bookmark.initialize();
   search.initialize();
