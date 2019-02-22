@@ -1,7 +1,7 @@
 {
-  "name": "cmi-start",
+  "name": "cmi-raj",
   "version": "0.1.0",
-  "description": "Start project for adding a source to the Library of Christ Mind Teachings",
+  "description": "Teachings of Christ Mind: The Raj Material",
   "main": "index.js",
   "scripts": {
     "test": "jest",
