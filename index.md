@@ -4,6 +4,10 @@ masthead: home
 title: "The Raj Material"
 footer:
   display: true
+  donate: true
+  source: "nwffacim"
+  id: "CMI-RAJ"
+  repohref: "https://github.com/rmercer33/cmi-raj"
 ---
 
 ## Welcome to The Raj Material

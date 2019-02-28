@@ -13,6 +13,8 @@
     "cmi"
   ],
   "author": "Rick Mercer",
+  "homepage": "https://raj.christmind.info/",
+  "repository": "github:rmercer33/cmi-raj",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.0",

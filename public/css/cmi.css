@@ -75,7 +75,7 @@ body {
 
 /* hide profile mgt menu option when not signed in */
 .hide.profile-management.item {
-  display: none;
+  display: none !important;
 }
 
 .toc-list .item > a.current-unit,
