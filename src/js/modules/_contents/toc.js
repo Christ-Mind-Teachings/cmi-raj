@@ -6,6 +6,46 @@ const uiTocModal = ".toc.ui.modal";
 const uiOpenTocModal = ".toc-modal-open";
 const uiModalOpacity = 0.5;
 
+
+/*
+  format links to Raj ACIM Sessions
+*/
+function renderRaj(links) {
+  return `
+    <div class="list raj-list hide">
+      ${links.map(l => `<a class="item" href="${l.url}">${l.title}</a>`).join("")}
+    </div>
+  `;
+}
+
+/*
+  generate html for acim text sections for Raj Cross Reference
+*/
+function renderRajSections(base, sections, cidx) {
+  return `
+    <div id="chapter${cidx + 1}" data-sections="${sections.length - 1}" class="list">
+      ${sections.map((q, qidx) => `
+        <div class="item">${q.ref?q.ref+" ":""}${q.title}</div>
+        ${q.nwffacim ? renderRaj(q.nwffacim) : ""}
+      `).join("")}
+    </div>
+  `;
+}
+
+//generate html for TOC for Raj Cross Reference
+function makeRajContents(contents) {
+  return (`
+    <div class="ui relaxed list">
+      ${contents.map((unit, cidx) => `
+        <div class="item"> 
+          <div class="header">Chapter ${unit.id}: ${unit.title}</div>
+          ${unit.sections ? renderRajSections(unit.base, unit.sections, cidx) : "" } 
+        </div>
+      `).join("")}
+    </div>
+  `);
+}
+
 /*
   generate toc html for flat config file
 */
@@ -72,9 +112,9 @@ function nextPrev(bid, $el) {
   Args:
     bid: bookId, 'text', 'workbook', 'manual'
 
-    Bid is needed in case next and previous are determinded differently depending on book
+    Bid is needed in case next and previous are determined differently depending on book
 */
-function highlightCurrentTranscript(bid) {
+function highlightCurrentTranscript(bid, setNextPrev = true) {
   if ($(".transcript").length > 0) {
     let page = location.pathname;
     let $el = $(`.toc-list a[href='${page}']`);
@@ -83,6 +123,10 @@ function highlightCurrentTranscript(bid) {
     //scroll into middle of viewport
     $el.addClass("current-unit").removeAttr("href");
     scroll($el.get(0));
+
+    if (!setNextPrev) {
+      return;
+    }
 
     switch(bid) {
       case "vol":
@@ -95,17 +139,56 @@ function highlightCurrentTranscript(bid) {
   }
 }
 
-//called for transcript pages
-function loadTOC() {
-  //console.log("transcript page: loading toc");
+/*
+  Loads TOC for current transcript page, marks current page in toc, and sets
+  next/prev menu links
+
+  On pages where the toc is created for items other than the menu toc the toc may need to be
+  reset, this is done by checking for toc.init === true. To work correctly, page elements with
+  .toc-modal-open must also have .combined, otherwise the toc will get messed up.
+*/
+function loadTOC(toc) {
+
+  //check if previously initialized
+  if (toc.init) {
+    //toc refresh not needed if not combined
+    if (!toc.combined) {
+      return;
+    }
+
+    //console.log("toc previously initialized, toc: %o", toc);
+    $(".toc-image").attr("src", `${toc.image}`);
+    $(".toc-title").html(`Table of Contents: <em>${toc.title}</em>`);
+    $(".toc-list").html(toc.html);
+
+    //set current-item, don't setNextPrev since it was already done.
+    highlightCurrentTranscript(toc.bid, false);
+
+    return;
+  }
+
   let book = $("#contents-modal-open").attr("data-book").toLowerCase();
+  toc.book = book;
 
   getConfig(book)
     .then((contents) => {
       $(".toc-image").attr("src", `${contents.image}`);
       $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
-      $(".toc-list").html(makeContents(contents.base, contents.contents));
+      toc["image"] = contents.image;
+      toc["title"] = contents.title;
+      toc["bid"] = contents.bid;
 
+      switch(contents.bid) {
+        case "acim":
+          toc.html = makeRajContents(contents.contents);
+          break;
+        default:
+          toc.html = makeContents(contents.base, contents.contents);
+          break;
+      }
+
+      toc.init = true;
+      $(".toc-list").html(toc.html);
       highlightCurrentTranscript(contents.bid);
     })
     .catch((error) => {
@@ -131,6 +214,8 @@ export default {
    * or local storage
    */
   initialize: function(env) {
+    let toc = {init: false, book: "", html: ""};
+
     //dialog settings
     $(uiTocModal).modal({
       dimmerSettings: {opacity: uiModalOpacity},
@@ -139,7 +224,7 @@ export default {
 
     //load toc once for transcript pages
     if (env === "transcript") {
-      loadTOC();
+      loadTOC(toc);
     }
 
     /*
@@ -152,14 +237,29 @@ export default {
     $(uiOpenTocModal).on("click", (e) => {
       e.preventDefault();
       let book = $(e.currentTarget).attr("data-book").toLowerCase();
+      let combined = $(e.currentTarget).hasClass("combined");
 
       //load the TOC if we're not on a transcript page
-      if (env !== "transcript") {
+      if (env !== "transcript" || (env === "transcript" && combined)) {
         getConfig(book)
           .then((contents) => {
             $(".toc-image").attr("src", `${contents.image}`);
             $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
             $(".toc-list").html(makeContents(contents.base, contents.contents));
+
+            switch(contents.bid) {
+              case "acim":
+                $(".toc-list").html(makeRajContents(contents.contents));
+                break;
+              default:
+                $(".toc-list").html(makeContents(contents.base, contents.contents));
+                break;
+            }
+
+            //mark toc as combined
+            if (env === "transcript" && combined) {
+              toc["combined"] = true;
+            }
 
             $(uiTocModal).modal("show");
           })
@@ -172,6 +272,7 @@ export default {
           });
       }
       else {
+        loadTOC(toc);
         $(uiTocModal).modal("show");
       }
     });

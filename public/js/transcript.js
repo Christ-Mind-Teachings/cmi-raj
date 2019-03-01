@@ -1671,7 +1671,7 @@ const keyLength = 7;
 const books = ["yaa", "grad", "sg2002", "sg2003", "sg2004", "sg2005", "sg2006", "sg2007", "sg2008", "sg2009", "sg2010", "sg2011", "sg2012", "sg2013", "sg2014", "sg2015", "sg2016", "sg2017", "sg2018", "acq"];
 
 const bookIds = ["xxx", ...books];
-const acq = ["xxx", "welcome", "raj", "download", "web"];
+const acq = ["xxx", "welcome", "raj", "download", "acim", "web"];
 const grad = ["xxx", "g000002", "g000003", "g010491", "g010591", "g011491", "g011591", "g011691", "g011891", "g012091", "g012591", "g012791", "g020291", "g020591", "g020691", "g021291", "g021391", "g021491", "g022091", "g022591", "g030291", "g030891", "g031491", "g031991", "g032091", "g032191", "g032291", "g032591", "g032991"];
 
 const sg2002 = ["xxx", "061202", "073102", "080702", "081402", "082802", "090402", "091102", "091802", "092502", "100202", "101002", "101702", "102402", "103102", "110702", "112102", "120502", "121202", "121902"];
@@ -26410,7 +26410,7 @@ module.exports = function spread(callback) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const status = { acq: "Tue Jan 29 19:34:15 WITA 2019", grad: "Mon Jan 21 21:00:51 WITA 2019", sg2002: "Wed Jan 23 15:56:11 WITA 2019", sg2003: "Wed Jan 23 15:57:10 WITA 2019", sg2004: "Sat Jan 26 21:07:37 WITA 2019", sg2005: "Wed Jan 23 16:03:18 WITA 2019", sg2006: "Wed Jan 23 16:03:58 WITA 2019", sg2007: "Wed Jan 23 16:04:26 WITA 2019", sg2008: "Wed Jan 23 16:04:59 WITA 2019", sg2009: "Wed Jan 23 16:05:50 WITA 2019", sg2010: "Wed Jan 23 16:16:15 WITA 2019", sg2011: "Wed Jan 23 16:16:41 WITA 2019", sg2012: "Wed Jan 23 16:17:16 WITA 2019", sg2013: "Wed Jan 23 16:17:41 WITA 2019", sg2014: "Wed Jan 23 16:18:14 WITA 2019", sg2015: "Wed Jan 23 16:18:39 WITA 2019", sg2016: "Wed Jan 23 16:19:08 WITA 2019", sg2017: "Wed Jan 23 16:19:43 WITA 2019", sg2018: "Wed Jan 23 16:20:18 WITA 2019", yaa: "Wed Jan 23 21:37:16 WITA 2019" };
+const status = { acq: "Fri Mar 1 13:51:19 WITA 2019", grad: "Mon Jan 21 21:00:51 WITA 2019", sg2002: "Wed Jan 23 15:56:11 WITA 2019", sg2003: "Wed Jan 23 15:57:10 WITA 2019", sg2004: "Sat Jan 26 21:07:37 WITA 2019", sg2005: "Wed Jan 23 16:03:18 WITA 2019", sg2006: "Wed Jan 23 16:03:58 WITA 2019", sg2007: "Wed Jan 23 16:04:26 WITA 2019", sg2008: "Wed Jan 23 16:04:59 WITA 2019", sg2009: "Wed Jan 23 16:05:50 WITA 2019", sg2010: "Wed Jan 23 16:16:15 WITA 2019", sg2011: "Wed Jan 23 16:16:41 WITA 2019", sg2012: "Wed Jan 23 16:17:16 WITA 2019", sg2013: "Wed Jan 23 16:17:41 WITA 2019", sg2014: "Wed Jan 23 16:18:14 WITA 2019", sg2015: "Wed Jan 23 16:18:39 WITA 2019", sg2016: "Wed Jan 23 16:19:08 WITA 2019", sg2017: "Wed Jan 23 16:19:43 WITA 2019", sg2018: "Wed Jan 23 16:20:18 WITA 2019", yaa: "Wed Jan 23 21:37:16 WITA 2019" };
 /* harmony export (immutable) */ __webpack_exports__["a"] = status;
 
 
@@ -36236,6 +36236,45 @@ const uiOpenTocModal = ".toc-modal-open";
 const uiModalOpacity = 0.5;
 
 /*
+  format links to Raj ACIM Sessions
+*/
+function renderRaj(links) {
+  return `
+    <div class="list raj-list hide">
+      ${links.map(l => `<a class="item" href="${l.url}">${l.title}</a>`).join("")}
+    </div>
+  `;
+}
+
+/*
+  generate html for acim text sections for Raj Cross Reference
+*/
+function renderRajSections(base, sections, cidx) {
+  return `
+    <div id="chapter${cidx + 1}" data-sections="${sections.length - 1}" class="list">
+      ${sections.map((q, qidx) => `
+        <div class="item">${q.ref ? q.ref + " " : ""}${q.title}</div>
+        ${q.nwffacim ? renderRaj(q.nwffacim) : ""}
+      `).join("")}
+    </div>
+  `;
+}
+
+//generate html for TOC for Raj Cross Reference
+function makeRajContents(contents) {
+  return `
+    <div class="ui relaxed list">
+      ${contents.map((unit, cidx) => `
+        <div class="item"> 
+          <div class="header">Chapter ${unit.id}: ${unit.title}</div>
+          ${unit.sections ? renderRajSections(unit.base, unit.sections, cidx) : ""} 
+        </div>
+      `).join("")}
+    </div>
+  `;
+}
+
+/*
   generate toc html for flat config file
 */
 function makeContents(base, contents) {
@@ -36302,9 +36341,9 @@ function nextPrev(bid, $el) {
   Args:
     bid: bookId, 'text', 'workbook', 'manual'
 
-    Bid is needed in case next and previous are determinded differently depending on book
+    Bid is needed in case next and previous are determined differently depending on book
 */
-function highlightCurrentTranscript(bid) {
+function highlightCurrentTranscript(bid, setNextPrev = true) {
   if ($(".transcript").length > 0) {
     let page = location.pathname;
     let $el = $(`.toc-list a[href='${page}']`);
@@ -36313,6 +36352,10 @@ function highlightCurrentTranscript(bid) {
     //scroll into middle of viewport
     $el.addClass("current-unit").removeAttr("href");
     __WEBPACK_IMPORTED_MODULE_0_scroll_into_view___default()($el.get(0));
+
+    if (!setNextPrev) {
+      return;
+    }
 
     switch (bid) {
       case "vol":
@@ -36325,16 +36368,55 @@ function highlightCurrentTranscript(bid) {
   }
 }
 
-//called for transcript pages
-function loadTOC() {
-  //console.log("transcript page: loading toc");
+/*
+  Loads TOC for current transcript page, marks current page in toc, and sets
+  next/prev menu links
+
+  On pages where the toc is created for items other than the menu toc the toc may need to be
+  reset, this is done by checking for toc.init === true. To work correctly, page elements with
+  .toc-modal-open must also have .combined, otherwise the toc will get messed up.
+*/
+function loadTOC(toc) {
+
+  //check if previously initialized
+  if (toc.init) {
+    //toc refresh not needed if not combined
+    if (!toc.combined) {
+      return;
+    }
+
+    //console.log("toc previously initialized, toc: %o", toc);
+    $(".toc-image").attr("src", `${toc.image}`);
+    $(".toc-title").html(`Table of Contents: <em>${toc.title}</em>`);
+    $(".toc-list").html(toc.html);
+
+    //set current-item, don't setNextPrev since it was already done.
+    highlightCurrentTranscript(toc.bid, false);
+
+    return;
+  }
+
   let book = $("#contents-modal-open").attr("data-book").toLowerCase();
+  toc.book = book;
 
   Object(__WEBPACK_IMPORTED_MODULE_1__config_config__["c" /* getConfig */])(book).then(contents => {
     $(".toc-image").attr("src", `${contents.image}`);
     $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
-    $(".toc-list").html(makeContents(contents.base, contents.contents));
+    toc["image"] = contents.image;
+    toc["title"] = contents.title;
+    toc["bid"] = contents.bid;
 
+    switch (contents.bid) {
+      case "acim":
+        toc.html = makeRajContents(contents.contents);
+        break;
+      default:
+        toc.html = makeContents(contents.base, contents.contents);
+        break;
+    }
+
+    toc.init = true;
+    $(".toc-list").html(toc.html);
     highlightCurrentTranscript(contents.bid);
   }).catch(error => {
     console.error(error);
@@ -36359,6 +36441,8 @@ function getBookId() {
    * or local storage
    */
   initialize: function (env) {
+    let toc = { init: false, book: "", html: "" };
+
     //dialog settings
     $(uiTocModal).modal({
       dimmerSettings: { opacity: uiModalOpacity },
@@ -36367,7 +36451,7 @@ function getBookId() {
 
     //load toc once for transcript pages
     if (env === "transcript") {
-      loadTOC();
+      loadTOC(toc);
     }
 
     /*
@@ -36380,13 +36464,28 @@ function getBookId() {
     $(uiOpenTocModal).on("click", e => {
       e.preventDefault();
       let book = $(e.currentTarget).attr("data-book").toLowerCase();
+      let combined = $(e.currentTarget).hasClass("combined");
 
       //load the TOC if we're not on a transcript page
-      if (env !== "transcript") {
+      if (env !== "transcript" || env === "transcript" && combined) {
         Object(__WEBPACK_IMPORTED_MODULE_1__config_config__["c" /* getConfig */])(book).then(contents => {
           $(".toc-image").attr("src", `${contents.image}`);
           $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
           $(".toc-list").html(makeContents(contents.base, contents.contents));
+
+          switch (contents.bid) {
+            case "acim":
+              $(".toc-list").html(makeRajContents(contents.contents));
+              break;
+            default:
+              $(".toc-list").html(makeContents(contents.base, contents.contents));
+              break;
+          }
+
+          //mark toc as combined
+          if (env === "transcript" && combined) {
+            toc["combined"] = true;
+          }
 
           $(uiTocModal).modal("show");
         }).catch(error => {
@@ -36397,6 +36496,7 @@ function getBookId() {
           $(uiTocModal).modal("show");
         });
       } else {
+        loadTOC(toc);
         $(uiTocModal).modal("show");
       }
     });

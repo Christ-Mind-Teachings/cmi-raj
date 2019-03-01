@@ -49,16 +49,25 @@
     {% include common/footer.html %}
   {% endif %}
 
-  {% include components/audio-player.html %}
-  {% include components/bookmark-modal.html %}
-  {% include components/search-modal.html %}
   {% include components/toc-modal.html %}
-  {% include components/timecapture-modal.html %}
-  {% include components/time-edit-modal.html %}
-  {% include components/bookmark-navigator.html %}
-  {% include components/annotation-popup.html %}
-  {% include components/search-navigator.html %}
-  {% include components/email-share-dialog.html %}
+  {% if page.search != false %}
+    <!-- include search support -->
+    {% include components/search-modal.html %}
+    {% include components/search-navigator.html %}
+  {% endif %}
+  {% if page.audio != false %}
+    <!-- include audio support -->
+    {% include components/audio-player.html %}
+    {% include components/timecapture-modal.html %}
+    {% include components/time-edit-modal.html %}
+  {% endif %}
+  {% if page.bookmark != false %}
+    <!-- include bookmark support -->
+    {% include components/bookmark-modal.html %}
+    {% include components/bookmark-navigator.html %}
+    {% include components/annotation-popup.html %}
+    {% include components/email-share-dialog.html %}
+  {% endif %}
   <div class="fixed" id="netlify-modal"></div>
 
   {% include common/javascript.html %}

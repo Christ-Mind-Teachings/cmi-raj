@@ -107,26 +107,29 @@ defaults:
       image-width: 612
       image-height: 792
       bid: "acq"
+      audio: false
   - scope:
       path: ""
       type: yaa
     values:
       layout: transcript
-      book: "You ARE the Answer: A Journey of Awakening"
+      book: "You ARE the Answer"
       image: "/public/img/raj/yaa-big.jpg"
       image-width: 612
       image-height: 792
       bid: "yaa"
+      audio: false
   - scope:
       path: ""
       type: grad
     values:
       layout: transcript
-      book: "Graduation: The End of Illusions"
+      book: "Graduation"
       image: "/public/img/raj/grad-big.jpg"
       image-width: 612
       image-height: 792
       bid: "grad"
+      audio: false
   - scope:
       path: ""
       type: sg2002
