@@ -11,12 +11,12 @@ function createClickHandlers() {
     }
 
     if ($(this).hasClass("page-navtour")) {
-      console.log("page Nav Driver");
+      //console.log("page Nav Driver");
       pageNavigationDriver();
     }
 
     if ($(this).hasClass("transcript-tour")) {
-      console.log("transcriptDriver");
+      //console.log("transcriptDriver");
       transcriptDriver();
     }
 
@@ -25,12 +25,30 @@ function createClickHandlers() {
     }
 
     if ($(this).hasClass("read-documentation")) {
-      location.href = "https://www.christmind.info/acq/quick/";
+      if (location.hostname === "localhost") {
+        location.href = "http://localhost:9999/acq/quick/";
+      }
+      else {
+        location.href = "https://www.christmind.info/acq/quick/";
+      }
     }
 
     if ($(this).hasClass("view-documentation")) {
-      console.log("video documentation not ready yet");
-      //location.href = "";
+      if (location.hostname === "localhost") {
+        location.href = "http://localhost:9999/acq/video/";
+      }
+      else {
+        location.href = "https://www.christmind.info/acq/video/";
+      }
+    }
+
+    if ($(this).hasClass("contact-me")) {
+      if (location.hostname === "localhost") {
+        location.href = "http://localhost:9999/acq/contact/";
+      }
+      else {
+        location.href = "https://www.christmind.info/acq/contact/";
+      }
     }
 
     if ($(this).hasClass("profile-management")) {
@@ -48,7 +66,6 @@ function createClickHandlers() {
     e.preventDefault();
 
     let href = $(this).attr("data-href");
-    //console.log("quick links href: %s", href);
     location.href = href;
   });
 }
