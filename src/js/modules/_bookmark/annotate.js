@@ -5,7 +5,7 @@ import {getBookmark} from "./bmnet";
 import range from "lodash/range";
 import {initShareDialog} from "./navigator";
 import {getUserInfo} from "../_user/netlify";
-import Clipboard from "clipboard";
+import clipboard from "./clipboard";
 
 const form = `
   <form name="annotation" id="annotation-form" class="ui form">
@@ -353,15 +353,19 @@ function shareHandler() {
       userInfo = {userId: "xxx"};
     }
     
-    let aid = formData.aid;
+    //this is really the annotation-id not the aid
+    let annotation_id = formData.aid;
+    let aid;
+
     let rangeArray = [formData.rangeStart, formData.rangeEnd];
     let numericRange = rangeArray.map((r) => parseInt(r.substr(1),10));
 
     let pid = rangeArray[0];
 
-    //if (aid 0 !== "undefined") {
-    if (aid.length > 0) {
-      $(`[data-annotation-id="${aid}"]`).addClass("show");
+    //get the real aid
+    if (annotation_id.length > 0) {
+      aid = $(`[data-annotation-id="${annotation_id}"]`).attr("data-aid");
+      $(`[data-annotation-id="${annotation_id}"]`).addClass("show");
     }
     else {
       aid = $(`#${pid} > span.pnum`).attr("data-aid");
@@ -414,14 +418,7 @@ function shareHandler() {
     $(".selected-annotation-wrapper").prepend(header2);
 
     if (userInfo.userId !== "xxx") {
-      let clipboard = new Clipboard(".share-annotation.linkify");
-
-      clipboard.on("success", (e) => {
-        notify.info("Url Copied to Clipboard");
-        e.clearSelection();
-      });
-
-      clipboard.on("error", () => {notify.info("Error coping to Clipboard");});
+      clipboard.register(".share-annotation.linkify");
     }
   });
 

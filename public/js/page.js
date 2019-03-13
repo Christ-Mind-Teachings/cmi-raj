@@ -12969,8 +12969,7 @@ module.exports = toFinite;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_toastr__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_toastr__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__shareByEmail__ = __webpack_require__(172);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_clipboard__ = __webpack_require__(459);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_clipboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_clipboard__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__clipboard__ = __webpack_require__(460);
 
 //import {getPageInfo} from "../_config/config";
 
@@ -13479,6 +13478,19 @@ function initShareDialog(source) {
       return;
     }
 
+    let channel;
+    if ($(this).hasClass("facebook")) {
+      channel = "facebook";
+    } else if ($(this).hasClass("envelope")) {
+      channel = "email";
+    } else if ($(this).hasClass("linkify")) {
+      //work is already done
+      channel = "clipboard";
+      return;
+    } else if ($(this).hasClass("close")) {
+      channel = "close";
+    }
+
     pid = $(".selected-annotation-wrapper p").attr("id");
 
     //no highlighted text so grab the whole paragraph
@@ -13495,20 +13507,6 @@ function initShareDialog(source) {
     let citation = `~ ${srcTitle}: ${bookTitle}`;
 
     let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
-    let channel;
-    if ($(this).hasClass("facebook")) {
-      channel = "facebook";
-    } else if ($(this).hasClass("envelope")) {
-      channel = "email";
-    } else if ($(this).hasClass("linkify")) {
-      channel = "clipboard";
-    } else if ($(this).hasClass("close")) {
-      channel = "close";
-    }
-
-    // console.log("url: %s", url);
-    // console.log("quote: %s", text);
-    // console.log("share to: %s", channel);
 
     if (channel === "facebook") {
       let options = {
@@ -13520,8 +13518,6 @@ function initShareDialog(source) {
       FB.ui(options, function () {});
     } else if (channel === "email") {
       Object(__WEBPACK_IMPORTED_MODULE_6__shareByEmail__["b" /* shareByEmail */])(text, citation, url);
-    } else if (channel === "clipboard") {
-      console.log("copy link to clipboard selected");
     } else if (channel === "close") {
       //when close window icon is present - when window created from annotation edit dialog
       clearSelectedAnnotation();
@@ -13582,15 +13578,21 @@ function initClickListeners() {
       userInfo = { userId: "xxx" };
     }
 
-    let aid = $(this).attr("data-aid");
+    //this is the annotation-id on the bookmark in the navigator
+    let annotation_id = $(this).attr("data-aid");
+    let aid;
+
     let dataRange = $(this).attr("data-range");
     let rangeArray = dataRange.split("/");
 
     let pid = rangeArray[0];
 
-    if (aid !== "undefined") {
+    //get the aid from the highlight if it exists, won't exist for note level bookmark
+    if (annotation_id !== "undefined") {
+      aid = $(`[data-annotation-id='${annotation_id}']`).attr("data-aid");
       $(`[data-annotation-id="${aid}"]`).addClass("show");
     } else {
+      //this is a note level bookmark, get aid from the pid
       aid = $(`#${pid} > span.pnum`).attr("data-aid");
     }
 
@@ -13630,16 +13632,7 @@ function initClickListeners() {
     $(".selected-annotation-wrapper").prepend(header);
 
     if (userInfo.userId !== "xxx") {
-      let clipboard = new __WEBPACK_IMPORTED_MODULE_7_clipboard___default.a(".share-annotation.linkify");
-
-      clipboard.on("success", e => {
-        __WEBPACK_IMPORTED_MODULE_5_toastr___default.a.info("Url Copied to Clipboard");
-        e.clearSelection();
-      });
-
-      clipboard.on("error", () => {
-        __WEBPACK_IMPORTED_MODULE_5_toastr___default.a.info("Error coping to Clipboard");
-      });
+      __WEBPACK_IMPORTED_MODULE_7__clipboard__["a" /* default */].register(".share-annotation.linkify");
     }
   });
 
@@ -30117,8 +30110,7 @@ module.exports = bytesToUuid;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_lodash_range___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_lodash_range__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__navigator__ = __webpack_require__(145);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_netlify__ = __webpack_require__(33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_clipboard__ = __webpack_require__(459);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_clipboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_clipboard__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__clipboard__ = __webpack_require__(460);
 
 
 
@@ -30469,15 +30461,19 @@ function shareHandler() {
       userInfo = { userId: "xxx" };
     }
 
-    let aid = formData.aid;
+    //this is really the annotation-id not the aid
+    let annotation_id = formData.aid;
+    let aid;
+
     let rangeArray = [formData.rangeStart, formData.rangeEnd];
     let numericRange = rangeArray.map(r => parseInt(r.substr(1), 10));
 
     let pid = rangeArray[0];
 
-    //if (aid 0 !== "undefined") {
-    if (aid.length > 0) {
-      $(`[data-annotation-id="${aid}"]`).addClass("show");
+    //get the real aid
+    if (annotation_id.length > 0) {
+      aid = $(`[data-annotation-id="${annotation_id}"]`).attr("data-aid");
+      $(`[data-annotation-id="${annotation_id}"]`).addClass("show");
     } else {
       aid = $(`#${pid} > span.pnum`).attr("data-aid");
     }
@@ -30527,16 +30523,7 @@ function shareHandler() {
     $(".selected-annotation-wrapper").prepend(header2);
 
     if (userInfo.userId !== "xxx") {
-      let clipboard = new __WEBPACK_IMPORTED_MODULE_6_clipboard___default.a(".share-annotation.linkify");
-
-      clipboard.on("success", e => {
-        __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.info("Url Copied to Clipboard");
-        e.clearSelection();
-      });
-
-      clipboard.on("error", () => {
-        __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.info("Error coping to Clipboard");
-      });
+      __WEBPACK_IMPORTED_MODULE_6__clipboard__["a" /* default */].register(".share-annotation.linkify");
     }
   });
 
@@ -38064,6 +38051,51 @@ module.exports = closest;
 
 /***/ })
 /******/ ]);
+});
+
+/***/ }),
+/* 460 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_clipboard__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_clipboard___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_clipboard__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_toastr___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_toastr__);
+
+
+
+var clipboard;
+
+function setEvents(clip) {
+  clip.on("success", e => {
+    __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.info("Url Copied to Clipboard");
+    e.clearSelection();
+  });
+
+  clip.on("error", () => {
+    __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.info("Error coping to Clipboard");
+  });
+}
+
+function createInstance(selector) {
+  var object = new __WEBPACK_IMPORTED_MODULE_0_clipboard___default.a(selector);
+  setEvents(object);
+  return object;
+}
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  register: function (selector) {
+    if (!clipboard) {
+      clipboard = createInstance(selector);
+    }
+    return clipboard;
+  },
+  destroy: function () {
+    if (clipboard) {
+      clipboard.destroy();
+    }
+  }
 });
 
 /***/ })

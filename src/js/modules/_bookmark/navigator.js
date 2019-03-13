@@ -7,7 +7,7 @@ import scroll from "scroll-into-view";
 import {getUserInfo} from "../_user/netlify";
 import notify from "toastr";
 import {shareByEmail} from "./shareByEmail";
-import Clipboard from "clipboard";
+import clipboard from "./clipboard";
 
 //import {getSourceId, genPageKey} from "../_config/key";
 const transcript = require("../_config/key");
@@ -522,6 +522,22 @@ export function initShareDialog(source) {
       return;
     }
 
+    let channel;
+    if ($(this).hasClass("facebook")) {
+      channel = "facebook";
+    }
+    else if ($(this).hasClass("envelope")) {
+      channel = "email";
+    }
+    else if ($(this).hasClass("linkify")) {
+      //work is already done
+      channel = "clipboard";
+      return;
+    }
+    else if ($(this).hasClass("close")) {
+      channel = "close";
+    }
+
     pid = $(".selected-annotation-wrapper p").attr("id");
 
     //no highlighted text so grab the whole paragraph
@@ -539,23 +555,6 @@ export function initShareDialog(source) {
     let citation = `~ ${srcTitle}: ${bookTitle}`;
     
     let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
-    let channel;
-    if ($(this).hasClass("facebook")) {
-      channel = "facebook";
-    }
-    else if ($(this).hasClass("envelope")) {
-      channel = "email";
-    }
-    else if ($(this).hasClass("linkify")) {
-      channel = "clipboard";
-    }
-    else if ($(this).hasClass("close")) {
-      channel = "close";
-    }
-
-    // console.log("url: %s", url);
-    // console.log("quote: %s", text);
-    // console.log("share to: %s", channel);
 
     if (channel === "facebook") {
       let options = {
@@ -568,9 +567,6 @@ export function initShareDialog(source) {
     }
     else if (channel === "email") {
       shareByEmail(text, citation, url);
-    }
-    else if (channel === "clipboard") {
-      console.log("copy link to clipboard selected");
     }
     else if (channel === "close") {
       //when close window icon is present - when window created from annotation edit dialog
@@ -632,16 +628,22 @@ function initClickListeners() {
       userInfo = {userId: "xxx"};
     }
 
-    let aid = $(this).attr("data-aid");
+    //this is the annotation-id on the bookmark in the navigator
+    let annotation_id = $(this).attr("data-aid");
+    let aid;
+
     let dataRange = $(this).attr("data-range");
     let rangeArray = dataRange.split("/");
 
     let pid = rangeArray[0];
 
-    if (aid !== "undefined") {
+    //get the aid from the highlight if it exists, won't exist for note level bookmark
+    if (annotation_id !== "undefined") {
+      aid = $(`[data-annotation-id='${annotation_id}']`).attr("data-aid");
       $(`[data-annotation-id="${aid}"]`).addClass("show");
     }
     else {
+      //this is a note level bookmark, get aid from the pid
       aid = $(`#${pid} > span.pnum`).attr("data-aid");
     }
 
@@ -682,14 +684,7 @@ function initClickListeners() {
     $(".selected-annotation-wrapper").prepend(header);
 
     if (userInfo.userId !== "xxx") {
-      let clipboard = new Clipboard(".share-annotation.linkify");
-
-      clipboard.on("success", (e) => {
-        notify.info("Url Copied to Clipboard");
-        e.clearSelection();
-      });
-
-      clipboard.on("error", () => {notify.info("Error coping to Clipboard");});
+      clipboard.register(".share-annotation.linkify");
     }
   });
 
