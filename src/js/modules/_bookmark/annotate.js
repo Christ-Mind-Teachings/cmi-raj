@@ -4,6 +4,8 @@ import {annotation} from "./bookmark";
 import {getBookmark} from "./bmnet";
 import range from "lodash/range";
 import {initShareDialog} from "./navigator";
+import {getUserInfo} from "../_user/netlify";
+import Clipboard from "clipboard";
 
 const form = `
   <form name="annotation" id="annotation-form" class="ui form">
@@ -345,33 +347,59 @@ function shareHandler() {
 
     //now, wrap annotation for display
     //console.log("share formData: %o", formData);
+
+    let userInfo = getUserInfo();
+    if (!userInfo) {
+      userInfo = {userId: "xxx"};
+    }
     
     let aid = formData.aid;
     let rangeArray = [formData.rangeStart, formData.rangeEnd];
     let numericRange = rangeArray.map((r) => parseInt(r.substr(1),10));
+
+    let pid = rangeArray[0];
+
+    //if (aid 0 !== "undefined") {
+    if (aid.length > 0) {
+      $(`[data-annotation-id="${aid}"]`).addClass("show");
+    }
+    else {
+      aid = $(`#${pid} > span.pnum`).attr("data-aid");
+    }
+
+    let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
+
     let annotationRange = range(numericRange[0], numericRange[1] + 1);
-    let header = `
-      <h4 class="ui header">
-        <i title="Share to Facebook" class="share-annotation facebook small icon"></i>
-        <i title="Share via email" class="share-annotation envelope outline small icon"></i>
-        <div class="content">
-          ${formData.Comment}
-        </div>
-        <i title="Close Window" class="share-annotation window close small icon"></i>
-      </h4>
-    `;
-    let header2 = `
-      <h4 class="ui left floated header">
-        <i title="Share to Facebook" class="share-annotation facebook small icon"></i>
-        <i title="Share via email" class="share-annotation envelope outline small icon"></i>
-        <div class="content">
-          ${formData.Comment}
-        </div>
-      </h4>
-      <h4 class="ui right floated header">
-        <i title="Close Window" class="share-annotation window close small icon"></i>
-      </h4>
-    `;
+    let header2;
+
+    if (userInfo.userId === "xxx") {
+      header2 = `
+        <h4 class="ui left floated header">
+          <i title="Must be logged in to share" class="red window close outline small icon"></i>
+          <div class="content">
+            ${formData.Comment}
+          </div>
+        </h4>
+        <h4 class="ui right floated header">
+          <i title="Close Window" class="share-annotation window close small icon"></i>
+        </h4>
+      `;
+    }
+    else {
+      header2 = `
+        <h4 class="ui left floated header">
+          <i title="Share to Facebook" class="share-annotation facebook small icon"></i>
+          <i title="Share via email" class="share-annotation envelope outline small icon"></i>
+          <i data-clipboard-text="${url}" title="Copy Url to Clipboard" class="share-annotation linkify small icon"></i>
+          <div class="content">
+            ${formData.Comment}
+          </div>
+        </h4>
+        <h4 class="ui right floated header">
+          <i title="Close Window" class="share-annotation window close small icon"></i>
+        </h4>
+      `;
+    }
 
     for (let i = 0; i < annotationRange.length; i++) {
       if (i === 0) {
@@ -385,8 +413,15 @@ function shareHandler() {
     $(".selected-annotation").wrapAll("<div class='selected-annotation-wrapper ui clearing raised segment'></div>");
     $(".selected-annotation-wrapper").prepend(header2);
 
-    if (aid !== "undefined") {
-      $(`[data-annotation-id="${aid}"]`).addClass("show");
+    if (userInfo.userId !== "xxx") {
+      let clipboard = new Clipboard(".share-annotation.linkify");
+
+      clipboard.on("success", (e) => {
+        notify.info("Url Copied to Clipboard");
+        e.clearSelection();
+      });
+
+      clipboard.on("error", () => {notify.info("Error coping to Clipboard");});
     }
   });
 

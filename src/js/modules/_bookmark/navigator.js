@@ -7,6 +7,7 @@ import scroll from "scroll-into-view";
 import {getUserInfo} from "../_user/netlify";
 import notify from "toastr";
 import {shareByEmail} from "./shareByEmail";
+import Clipboard from "clipboard";
 
 //import {getSourceId, genPageKey} from "../_config/key";
 const transcript = require("../_config/key");
@@ -506,7 +507,7 @@ export function initShareDialog(source) {
     return;
   }
 
-  console.log("initShareDialog(%s)", source);
+  //console.log("initShareDialog(%s)", source);
 
   //share icon click handler
   $(".transcript").on("click", ".selected-annotation-wrapper .share-annotation", function(e) {
@@ -545,6 +546,9 @@ export function initShareDialog(source) {
     else if ($(this).hasClass("envelope")) {
       channel = "email";
     }
+    else if ($(this).hasClass("linkify")) {
+      channel = "clipboard";
+    }
     else if ($(this).hasClass("close")) {
       channel = "close";
     }
@@ -564,6 +568,9 @@ export function initShareDialog(source) {
     }
     else if (channel === "email") {
       shareByEmail(text, citation, url);
+    }
+    else if (channel === "clipboard") {
+      console.log("copy link to clipboard selected");
     }
     else if (channel === "close") {
       //when close window icon is present - when window created from annotation edit dialog
@@ -620,20 +627,52 @@ function initClickListeners() {
     e.preventDefault();
     clearSelectedAnnotation();
 
+    let userInfo = getUserInfo();
+    if (!userInfo) {
+      userInfo = {userId: "xxx"};
+    }
+
     let aid = $(this).attr("data-aid");
     let dataRange = $(this).attr("data-range");
     let rangeArray = dataRange.split("/");
+
+    let pid = rangeArray[0];
+
+    if (aid !== "undefined") {
+      $(`[data-annotation-id="${aid}"]`).addClass("show");
+    }
+    else {
+      aid = $(`#${pid} > span.pnum`).attr("data-aid");
+    }
+
+    let url = `https://${location.hostname}${location.pathname}?as=${pid}:${aid}:${userInfo.userId}`;
+
     let numericRange = rangeArray.map((r) => parseInt(r.substr(1),10));
     let annotationRange = range(numericRange[0], numericRange[1] + 1);
-    let header = `
-      <h4 class="ui header">
-        <i title="Share to Facebook" class="share-annotation facebook small icon"></i>
-        <i title="Share via email" class="share-annotation envelope outline small icon"></i>
-        <div class="content">
-          ${$(this).text()}
-        </div>
-      </h4>
-    `;
+    let header;
+
+    if (userInfo.userId === "xxx") {
+      header = `
+        <h4 class="ui header">
+          <i title="Must be logged in to share" class="red window close outline small icon"></i>
+          <div class="content">
+            ${$(this).text()}
+          </div>
+        </h4>
+      `;
+    }
+    else {
+      header = `
+        <h4 class="ui header">
+          <i title="Share to Facebook" class="share-annotation facebook small icon"></i>
+          <i title="Share via email" class="share-annotation envelope outline small icon"></i>
+          <i data-clipboard-text="${url}" title="Copy link to clipboard" class="share-annotation linkify small icon"></i>
+          <div class="content">
+            ${$(this).text()}
+          </div>
+        </h4>
+      `;
+    }
 
     for (let i = 0; i < annotationRange.length; i++) {
       $(`#p${annotationRange[i]}`).addClass("selected-annotation");
@@ -642,14 +681,22 @@ function initClickListeners() {
     $(".selected-annotation").wrapAll("<div class='selected-annotation-wrapper ui raised segment'></div>");
     $(".selected-annotation-wrapper").prepend(header);
 
-    if (aid !== "undefined") {
-      $(`[data-annotation-id="${aid}"]`).addClass("show");
+    if (userInfo.userId !== "xxx") {
+      let clipboard = new Clipboard(".share-annotation.linkify");
+
+      clipboard.on("success", (e) => {
+        notify.info("Url Copied to Clipboard");
+        e.clearSelection();
+      });
+
+      clipboard.on("error", () => {notify.info("Error coping to Clipboard");});
     }
   });
 
   //init click events for FB and email sharing
   initShareDialog("bookmark/navigator.js");
 }
+
 
 /*
   User clicked a bookmark link in the bookmark list modal.

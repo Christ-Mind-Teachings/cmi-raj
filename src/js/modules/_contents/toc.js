@@ -245,7 +245,7 @@ export default {
           .then((contents) => {
             $(".toc-image").attr("src", `${contents.image}`);
             $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
-            $(".toc-list").html(makeContents(contents.base, contents.contents));
+            //$(".toc-list").html(makeContents(contents.base, contents.contents));
 
             switch(contents.bid) {
               case "acim":
