@@ -535,7 +535,8 @@ export function initShareDialog(source) {
       return;
     }
     else if ($(this).hasClass("close")) {
-      channel = "close";
+      clearSelectedAnnotation();
+      return;
     }
 
     pid = $(".selected-annotation-wrapper p").attr("id");
@@ -567,10 +568,6 @@ export function initShareDialog(source) {
     }
     else if (channel === "email") {
       shareByEmail(text, citation, url);
-    }
-    else if (channel === "close") {
-      //when close window icon is present - when window created from annotation edit dialog
-      clearSelectedAnnotation();
     }
   });
 

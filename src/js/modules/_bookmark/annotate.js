@@ -379,7 +379,7 @@ function shareHandler() {
     if (userInfo.userId === "xxx") {
       header2 = `
         <h4 class="ui left floated header">
-          <i title="Must be logged in to share" class="red window close outline small icon"></i>
+          <i title="Sign in or create and account to share." class="red window close outline small icon"></i>
           <div class="content">
             ${formData.Comment}
           </div>

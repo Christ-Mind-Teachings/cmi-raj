@@ -13488,7 +13488,8 @@ function initShareDialog(source) {
       channel = "clipboard";
       return;
     } else if ($(this).hasClass("close")) {
-      channel = "close";
+      clearSelectedAnnotation();
+      return;
     }
 
     pid = $(".selected-annotation-wrapper p").attr("id");
@@ -13518,9 +13519,6 @@ function initShareDialog(source) {
       FB.ui(options, function () {});
     } else if (channel === "email") {
       Object(__WEBPACK_IMPORTED_MODULE_6__shareByEmail__["b" /* shareByEmail */])(text, citation, url);
-    } else if (channel === "close") {
-      //when close window icon is present - when window created from annotation edit dialog
-      clearSelectedAnnotation();
     }
   });
 
@@ -30486,7 +30484,7 @@ function shareHandler() {
     if (userInfo.userId === "xxx") {
       header2 = `
         <h4 class="ui left floated header">
-          <i title="Must be logged in to share" class="red window close outline small icon"></i>
+          <i title="Sign in or create and account to share." class="red window close outline small icon"></i>
           <div class="content">
             ${formData.Comment}
           </div>
