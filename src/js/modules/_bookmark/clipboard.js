@@ -5,7 +5,7 @@ var clipboard;
 
 function setEvents(clip) {
   clip.on("success", (e) => {
-    notify.info("Url Copied to Clipboard");
+    notify.info("Link Copied to Clipboard");
     e.clearSelection();
   });
 

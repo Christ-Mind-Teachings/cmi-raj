@@ -653,7 +653,7 @@ function initClickListeners() {
     if (userInfo.userId === "xxx") {
       header = `
         <h4 class="ui header">
-          <i title="Must be logged in to share" class="red window close outline small icon"></i>
+          <i title="Sign into your account to share this bookmark to FB by email or to copy a link." class="red window close outline small icon"></i>
           <div class="content">
             ${$(this).text()}
           </div>

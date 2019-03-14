@@ -13603,7 +13603,7 @@ function initClickListeners() {
     if (userInfo.userId === "xxx") {
       header = `
         <h4 class="ui header">
-          <i title="Must be logged in to share" class="red window close outline small icon"></i>
+          <i title="Sign into your account to share this bookmark to FB by email or to copy a link." class="red window close outline small icon"></i>
           <div class="content">
             ${$(this).text()}
           </div>
@@ -30484,7 +30484,7 @@ function shareHandler() {
     if (userInfo.userId === "xxx") {
       header2 = `
         <h4 class="ui left floated header">
-          <i title="Sign in or create and account to share." class="red window close outline small icon"></i>
+          <i title="Sign into your account to share this bookmark to FB by email or to copy a link." class="red window close outline small icon"></i>
           <div class="content">
             ${formData.Comment}
           </div>
@@ -49268,7 +49268,7 @@ var clipboard;
 
 function setEvents(clip) {
   clip.on("success", e => {
-    __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.info("Url Copied to Clipboard");
+    __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.info("Link Copied to Clipboard");
     e.clearSelection();
   });
 
