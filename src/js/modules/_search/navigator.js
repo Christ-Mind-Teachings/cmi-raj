@@ -165,11 +165,11 @@ function initClickListeners(matches) {
 */
 function findPositions(pid, pageKey, flat) {
   let positions = {
-    current: -1,
-    prev: -1,
-    start: -1,
-    end: -1,
-    next: -1
+    current: -1,    //current para with search match
+    prev: -1,       //previous page with search match
+    start: -1,      //first para with match on page
+    end: -1,        //last para with match on page
+    next: -1        //next page with search match
   };
 
   let found = false;
@@ -180,17 +180,23 @@ function findPositions(pid, pageKey, flat) {
         positions.current = i;
       }
       if (!found) {
+        //first match on page
         positions.start = i;
         positions.end = i;
         found = true;
 
         if (i > 0) {
+          //the previous page with a match
           positions.prev = i - 1;
         }
       }
+      else {
+        //more than one match on the page
+        positions.end = i;
+      }
     }
     else if (found) {
-      positions.end = i - 1;
+      //positions.end = i - 1;
       positions.next = i;
       break;
     }
