@@ -1,8 +1,8 @@
 {
   "bid": "sg2002",
-  "base": "/sg2002",
+  "base": "/raj/sg2002",
   "title": "ACIM Study Group: 2002",
-  "image": "/public/img/raj/sg2002-toc.jpg",
+  "image": "/raj/public/img/raj/sg2002-toc.jpg",
   "contents": [
     {
       "desc": "T31.II Walking with Christ",

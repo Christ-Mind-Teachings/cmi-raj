@@ -13,10 +13,11 @@ const SOURCE_ID = "nwffacim";
 
 //mp3 and audio timing base directories
 const audioBase = `https://s3.amazonaws.com/${AWS_BUCKET}/${SOURCE_ID}/audio`;
-const timingBase = "/public/timing";
+const timingBase = "/raj/public/timing";
 
 //location of configuration files
-const configUrl = "/public/config";
+const configUrl = "/raj/public/config";
+const configStore = "config.raj.";
 
 //the current configuration, initially null, assigned by getConfig()
 let config;
@@ -87,7 +88,7 @@ export function fetchTimingData(url) {
 */
 export function getConfig(book, assign = true) {
   return new Promise((resolve, reject) => {
-    let cfg = store.get(`config-${book}`);
+    let cfg = store.get(`${configStore}${book}`);
     let url;
 
     //if config in local storage check if we need to get a freash copy
@@ -105,7 +106,7 @@ export function getConfig(book, assign = true) {
       .then((response) => {
         //add save date before storing
         response.data.saveDate = status[response.data.bid];
-        store.set(`config-${book}`, response.data);
+        store.set(`${configStore}${book}`, response.data);
         if (assign) {
           config = response.data;
         }
@@ -136,7 +137,7 @@ export function loadConfig(book) {
       resolve(0);
       return;
     }
-    let cfg = store.get(`config-${book}`);
+    let cfg = store.get(`${configStore}${book}`);
     let url;
 
     //if config in local storage check if we need to get a freash copy
@@ -152,7 +153,7 @@ export function loadConfig(book) {
       .then((response) => {
         //add save date before storing
         response.data.saveDate = status[response.data.bid];
-        store.set(`config-${book}`, response.data);
+        store.set(`${configStore}${book}`, response.data);
         config = response.data;
         resolve("config fetched from server");
       })
@@ -187,20 +188,20 @@ export function getAudioInfo(url) {
   let idx = url.split("/");
 
   //check the correct configuration file is loaded
-  if (config.bid !== idx[0]) {
-    throw new Error("Unexpected config file loaded; expecting %s but %s is loaded.", idx[0], config.bid);
+  if (config.bid !== idx[1]) {
+    throw new Error("Unexpected config file loaded; expecting %s but %s is loaded.", idx[1], config.bid);
   }
 
   let audioInfo = {};
   let cIdx;
 
-  switch(idx[0]) {
+  switch(idx[1]) {
     //these don't have audio
     case "grad":
     case "yaa":
       break;
     default:
-      cIdx = transcript.getUnitId(idx[0], idx[1]);
+      cIdx = transcript.getUnitId(idx[1], idx[2]);
       audioInfo = _getAudioInfo(cIdx);
       break;
   }

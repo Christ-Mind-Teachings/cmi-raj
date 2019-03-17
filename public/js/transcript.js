@@ -1821,11 +1821,11 @@ function genPageKey(url = location.pathname) {
   let parts = splitUrl(url);
 
   //key.bid = indexOf(bookIds, parts[0]);
-  key.bid = bookIds.indexOf(parts[0]);
+  key.bid = bookIds.indexOf(parts[1]);
   if (key.bid === -1) {
     return -1;
   }
-  key.uid = getUnitId(parts[0], parts[1]);
+  key.uid = getUnitId(parts[1], parts[2]);
   if (key.bid === -1) {
     return -1;
   }
@@ -1896,7 +1896,7 @@ function decodeKey(key) {
   let bid = parseInt(pageKeyString.substr(2, 2), 10);
   decodedKey.bookId = bookIds[bid];
 
-  //substract 1 from key value to get index
+  //subtract 1 from key value to get index
   decodedKey.uid = parseInt(pageKeyString.substr(4, 3), 10) - 1;
 
   return decodedKey;
@@ -5437,10 +5437,11 @@ const SOURCE_ID = "nwffacim";
 
 //mp3 and audio timing base directories
 const audioBase = `https://s3.amazonaws.com/${AWS_BUCKET}/${SOURCE_ID}/audio`;
-const timingBase = "/public/timing";
+const timingBase = "/raj/public/timing";
 
 //location of configuration files
-const configUrl = "/public/config";
+const configUrl = "/raj/public/config";
+const configStore = "config.raj.";
 
 //the current configuration, initially null, assigned by getConfig()
 let config;
@@ -5508,7 +5509,7 @@ function fetchTimingData(url) {
 */
 function getConfig(book, assign = true) {
   return new Promise((resolve, reject) => {
-    let cfg = __WEBPACK_IMPORTED_MODULE_0_store___default.a.get(`config-${book}`);
+    let cfg = __WEBPACK_IMPORTED_MODULE_0_store___default.a.get(`${configStore}${book}`);
     let url;
 
     //if config in local storage check if we need to get a freash copy
@@ -5525,7 +5526,7 @@ function getConfig(book, assign = true) {
     requestConfiguration(url).then(response => {
       //add save date before storing
       response.data.saveDate = __WEBPACK_IMPORTED_MODULE_2__status__["a" /* status */][response.data.bid];
-      __WEBPACK_IMPORTED_MODULE_0_store___default.a.set(`config-${book}`, response.data);
+      __WEBPACK_IMPORTED_MODULE_0_store___default.a.set(`${configStore}${book}`, response.data);
       if (assign) {
         config = response.data;
       }
@@ -5555,7 +5556,7 @@ function loadConfig(book) {
       resolve(0);
       return;
     }
-    let cfg = __WEBPACK_IMPORTED_MODULE_0_store___default.a.get(`config-${book}`);
+    let cfg = __WEBPACK_IMPORTED_MODULE_0_store___default.a.get(`${configStore}${book}`);
     let url;
 
     //if config in local storage check if we need to get a freash copy
@@ -5570,7 +5571,7 @@ function loadConfig(book) {
     requestConfiguration(url).then(response => {
       //add save date before storing
       response.data.saveDate = __WEBPACK_IMPORTED_MODULE_2__status__["a" /* status */][response.data.bid];
-      __WEBPACK_IMPORTED_MODULE_0_store___default.a.set(`config-${book}`, response.data);
+      __WEBPACK_IMPORTED_MODULE_0_store___default.a.set(`${configStore}${book}`, response.data);
       config = response.data;
       resolve("config fetched from server");
     }).catch(error => {
@@ -5604,20 +5605,20 @@ function getAudioInfo(url) {
   let idx = url.split("/");
 
   //check the correct configuration file is loaded
-  if (config.bid !== idx[0]) {
-    throw new Error("Unexpected config file loaded; expecting %s but %s is loaded.", idx[0], config.bid);
+  if (config.bid !== idx[1]) {
+    throw new Error("Unexpected config file loaded; expecting %s but %s is loaded.", idx[1], config.bid);
   }
 
   let audioInfo = {};
   let cIdx;
 
-  switch (idx[0]) {
+  switch (idx[1]) {
     //these don't have audio
     case "grad":
     case "yaa":
       break;
     default:
-      cIdx = transcript.getUnitId(idx[0], idx[1]);
+      cIdx = transcript.getUnitId(idx[1], idx[2]);
       audioInfo = _getAudioInfo(cIdx);
       break;
   }
@@ -37620,7 +37621,6 @@ function createClickHandlers() {
     e.preventDefault();
 
     if ($(this).hasClass("page-tour")) {
-      console.log("pageDriver");
       Object(__WEBPACK_IMPORTED_MODULE_0__util_driver__["a" /* pageDriver */])();
     }
 
@@ -37639,35 +37639,19 @@ function createClickHandlers() {
     }
 
     if ($(this).hasClass("read-documentation")) {
-      if (location.hostname === "localhost") {
-        location.href = "http://localhost:9999/acq/quick/";
-      } else {
-        location.href = "https://www.christmind.info/acq/quick/";
-      }
+      location.href = "/acq/quick/";
     }
 
     if ($(this).hasClass("view-documentation")) {
-      if (location.hostname === "localhost") {
-        location.href = "http://localhost:9999/acq/video/";
-      } else {
-        location.href = "https://www.christmind.info/acq/video/";
-      }
+      location.href = "/acq/video/";
     }
 
     if ($(this).hasClass("contact-me")) {
-      if (location.hostname === "localhost") {
-        location.href = "http://localhost:9999/acq/contact/";
-      } else {
-        location.href = "https://www.christmind.info/acq/contact/";
-      }
+      location.href = "/acq/contact/";
     }
 
     if ($(this).hasClass("profile-management")) {
-      if (location.hostname === "localhost") {
-        location.href = "http://localhost:9999/profile/email/";
-      } else {
-        location.href = "https://www.christmind.info/profile/email/";
-      }
+      location.href = "/profile/email/";
     }
   });
 

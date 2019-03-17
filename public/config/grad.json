@@ -1,7 +1,7 @@
 {
   "bid": "grad",
-  "base": "/grad",
-  "image": "/public/img/raj/grad-toc.jpg",
+  "base": "/raj/grad",
+  "image": "/raj/public/img/raj/grad-toc.jpg",
   "title": "Graduation: The End of Illusion",
   "contents": [
     {

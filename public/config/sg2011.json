@@ -1,7 +1,7 @@
 {
   "bid": "sg2011",
-  "base": "/sg2011",
-  "image": "/public/img/raj/sg2011-toc.jpg",
+  "base": "/raj/sg2011",
+  "image": "/raj/public/img/raj/sg2011-toc.jpg",
   "title": "ACIM Study Group: 2011",
   "contents": [
     {

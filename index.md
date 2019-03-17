@@ -18,7 +18,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
 <div id="page-contents" class="ui three cards">
   <div class="card">
     <a href="#" data-book="acq" class="toc-modal-open image">
-      <img src="/public/img/raj/acq-big.jpg">
+      <img src="/raj/public/img/raj/acq-big.jpg">
     </a>
     <div class="content">
       <div class="description">
@@ -28,7 +28,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="yaa" class="toc-modal-open image">
-      <img src="/public/img/raj/yaa-big.jpg">
+      <img src="/raj/public/img/raj/yaa-big.jpg">
     </a>
     <div class="content">
       <div class="description">
@@ -38,7 +38,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="grad" class="toc-modal-open image">
-      <img src="/public/img/raj/grad-big.jpg">
+      <img src="/raj/public/img/raj/grad-big.jpg">
     </a>
     <div class="content">
       <div class="description">
@@ -54,7 +54,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
 <div id="page-contents2" class="ui three cards">
   <div class="card">
     <a href="#" data-book="sg2002" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2002-big.jpg">
+      <img src="/raj/public/img/raj/sg2002-big.jpg">
     </a>
     <div class="content">
       <div class="header">2002</div>
@@ -65,7 +65,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2003" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2003-big.jpg">
+      <img src="/raj/public/img/raj/sg2003-big.jpg">
     </a>
     <div class="content">
       <div class="header">2003</div>
@@ -76,7 +76,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2004" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2004-big.jpg">
+      <img src="/raj/public/img/raj/sg2004-big.jpg">
     </a>
     <div class="content">
       <div class="header">2004</div>
@@ -87,7 +87,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2005" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2005-big.jpg">
+      <img src="/raj/public/img/raj/sg2005-big.jpg">
     </a>
     <div class="content">
       <div class="header">2005</div>
@@ -98,7 +98,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2006" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2006-big.jpg">
+      <img src="/raj/public/img/raj/sg2006-big.jpg">
     </a>
     <div class="content">
       <div class="header">2006</div>
@@ -109,7 +109,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2007" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2007-big.jpg">
+      <img src="/raj/public/img/raj/sg2007-big.jpg">
     </a>
     <div class="content">
       <div class="header">2007</div>
@@ -120,7 +120,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2008" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2008-big.jpg">
+      <img src="/raj/public/img/raj/sg2008-big.jpg">
     </a>
     <div class="content">
       <div class="header">2008</div>
@@ -131,7 +131,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2009" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2009-big.jpg">
+      <img src="/raj/public/img/raj/sg2009-big.jpg">
     </a>
     <div class="content">
       <div class="header">2009</div>
@@ -142,7 +142,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2010" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2010-big.jpg">
+      <img src="/raj/public/img/raj/sg2010-big.jpg">
     </a>
     <div class="content">
       <div class="header">2010</div>
@@ -153,7 +153,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2011" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2011-big.jpg">
+      <img src="/raj/public/img/raj/sg2011-big.jpg">
     </a>
     <div class="content">
       <div class="header">2011</div>
@@ -164,7 +164,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2012" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2012-big.jpg">
+      <img src="/raj/public/img/raj/sg2012-big.jpg">
     </a>
     <div class="content">
       <div class="header">2012</div>
@@ -175,7 +175,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2013" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2013-big.jpg">
+      <img src="/raj/public/img/raj/sg2013-big.jpg">
     </a>
     <div class="content">
       <div class="header">2013</div>
@@ -186,7 +186,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2014" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2014-big.jpg">
+      <img src="/raj/public/img/raj/sg2014-big.jpg">
     </a>
     <div class="content">
       <div class="header">2014</div>
@@ -197,7 +197,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2015" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2015-big.jpg">
+      <img src="/raj/public/img/raj/sg2015-big.jpg">
     </a>
     <div class="content">
       <div class="header">2015</div>
@@ -208,7 +208,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2016" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2016-big.jpg">
+      <img src="/raj/public/img/raj/sg2016-big.jpg">
     </a>
     <div class="content">
       <div class="header">2016</div>
@@ -219,7 +219,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2017" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2017-big.jpg">
+      <img src="/raj/public/img/raj/sg2017-big.jpg">
     </a>
     <div class="content">
       <div class="header">2017</div>
@@ -230,7 +230,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
   </div>
   <div class="card">
     <a href="#" data-book="sg2018" class="toc-modal-open image">
-      <img src="/public/img/raj/sg2018-big.jpg">
+      <img src="/raj/public/img/raj/sg2018-big.jpg">
     </a>
     <div class="content">
       <div class="header">2018</div>

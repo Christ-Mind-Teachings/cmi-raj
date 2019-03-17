@@ -1,4 +1,6 @@
 # CMI
+destination: "../cmi-www/_site/raj"
+
 sourceId: 13
 cmiTitle: "Teachings of Christ Mind"
 
@@ -6,10 +8,10 @@ cmiTitle: "Teachings of Christ Mind"
 title:        'The Raj Material'
 tagline:      ''
 description:  ''
-url:          'https://raj.christmind.info'
+url:          'https://www.christmind.info/raj'
 baseurl:      ''
 keywords:     "Christ Mind, Jesus, Paul Tuttle, Raj, NWFFACIM, ACIM, ACIM Sparkly Edition"
-src-url:      'https://raj.christmind.info'
+src-url:      'https://www.christmind.info/raj'
 port:         9913
 
 # About/contact
@@ -30,7 +32,6 @@ encoding: utf-8
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - jekyll-sitemap
 
 # Collections for transcripts
@@ -103,7 +104,7 @@ defaults:
     values:
       layout: transcript
       book: "Get Acquainted"
-      image: "/public/img/raj/acq-big.jpg"
+      image: "/raj/public/img/raj/acq-big.jpg"
       image-width: 612
       image-height: 792
       bid: "acq"
@@ -114,7 +115,7 @@ defaults:
     values:
       layout: transcript
       book: "You ARE the Answer"
-      image: "/public/img/raj/yaa-big.jpg"
+      image: "/raj/public/img/raj/yaa-big.jpg"
       image-width: 612
       image-height: 792
       bid: "yaa"
@@ -125,7 +126,7 @@ defaults:
     values:
       layout: transcript
       book: "Graduation"
-      image: "/public/img/raj/grad-big.jpg"
+      image: "/raj/public/img/raj/grad-big.jpg"
       image-width: 612
       image-height: 792
       bid: "grad"
@@ -136,7 +137,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2002"
-      image: "/public/img/raj/sg2002-big.jpg"
+      image: "/raj/public/img/raj/sg2002-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2002"
@@ -146,7 +147,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2003"
-      image: "/public/img/raj/sg2003-big.jpg"
+      image: "/raj/public/img/raj/sg2003-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2003"
@@ -156,7 +157,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2004"
-      image: "/public/img/raj/sg2004-big.jpg"
+      image: "/raj/public/img/raj/sg2004-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2004"
@@ -166,7 +167,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2005"
-      image: "/public/img/raj/sg2005-big.jpg"
+      image: "/raj/public/img/raj/sg2005-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2005"
@@ -176,7 +177,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2006"
-      image: "/public/img/raj/sg2006-big.jpg"
+      image: "/raj/public/img/raj/sg2006-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2006"
@@ -186,7 +187,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2007"
-      image: "/public/img/raj/sg2007-big.jpg"
+      image: "/raj/public/img/raj/sg2007-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2007"
@@ -196,7 +197,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2008"
-      image: "/public/img/raj/sg2008-big.jpg"
+      image: "/raj/public/img/raj/sg2008-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2008"
@@ -206,7 +207,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2009"
-      image: "/public/img/raj/sg2009-big.jpg"
+      image: "/raj/public/img/raj/sg2009-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2009"
@@ -216,7 +217,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2010"
-      image: "/public/img/raj/sg2010-big.jpg"
+      image: "/raj/public/img/raj/sg2010-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2010"
@@ -226,7 +227,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2011"
-      image: "/public/img/raj/sg2011-big.jpg"
+      image: "/raj/public/img/raj/sg2011-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2011"
@@ -236,7 +237,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2012"
-      image: "/public/img/raj/sg2012-big.jpg"
+      image: "/raj/public/img/raj/sg2012-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2012"
@@ -246,7 +247,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2013"
-      image: "/public/img/raj/sg2013-big.jpg"
+      image: "/raj/public/img/raj/sg2013-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2013"
@@ -256,7 +257,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2014"
-      image: "/public/img/raj/sg2014-big.jpg"
+      image: "/raj/public/img/raj/sg2014-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2014"
@@ -266,7 +267,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2015"
-      image: "/public/img/raj/sg2015-big.jpg"
+      image: "/raj/public/img/raj/sg2015-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2015"
@@ -276,7 +277,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2016"
-      image: "/public/img/raj/sg2016-big.jpg"
+      image: "/raj/public/img/raj/sg2016-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2016"
@@ -286,7 +287,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2017"
-      image: "/public/img/raj/sg2017-big.jpg"
+      image: "/raj/public/img/raj/sg2017-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2017"
@@ -296,7 +297,7 @@ defaults:
     values:
       layout: transcript
       book: "ACIM Study Group 2018"
-      image: "/public/img/raj/sg2018-big.jpg"
+      image: "/raj/public/img/raj/sg2018-big.jpg"
       image-width: 612
       image-height: 792
       bid: "sg2018"
