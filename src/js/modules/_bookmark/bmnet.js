@@ -23,6 +23,8 @@ import cloneDeep from "lodash/cloneDeep";
 
 //import {parseKey, getKeyInfo, genPageKey, genParagraphKey } from "../_config/key";
 const transcript = require("../_config/key");
+const bm_list_store = "bm.raj.list";
+const bm_topic_list = "bm.raj.topics";
 
 //Index topics
 const topicsEndPoint = "https://93e93isn03.execute-api.us-east-1.amazonaws.com/latest";
@@ -119,7 +121,7 @@ function queryBookmarks(key) {
     //get bookmarks from server
     if (userInfo) {
       //set if bookmarks are already in local storage
-      let bookmarkList = getBookmarkList(keyInfo);
+      let bookmarkList = getBookmarkList();
 
       //don't query database - just return from local storage
       if (bookmarkList) {
@@ -182,12 +184,12 @@ function queryBookmarks(key) {
   });
 }
 
-function storeBookmarkList(bookmarks, keyInfo) {
-  store.set(`bmList_${keyInfo.sourceId}`, bookmarks);
+function storeBookmarkList(bookmarks) {
+  store.set(bm_list_store, bookmarks);
 }
 
-function getBookmarkList(keyInfo) {
-  return store.get(`bmList_${keyInfo.sourceId}`);
+function getBookmarkList() {
+  return store.get(bm_list_store);
 }
 
 /*
@@ -199,7 +201,7 @@ function getBookmarkList(keyInfo) {
 function buildBookmarkListFromLocalStore(keyInfo) {
 
   //check if the list needs to be rebuilt
-  const list = getBookmarkList(keyInfo);
+  const list = getBookmarkList();
   if (list) {
     if (list.lastBuildDate > 0) {
       return list;
@@ -393,7 +395,7 @@ function getAnnotation(pid, aid) {
 */
 function fetchTopics() {
   const userInfo = getUserInfo();
-  let topics = store.get("topic-list");
+  let topics = store.get(bm_topic_list);
 
   //keep topics in cache for 2 hours
   const retentionTime = 60 * 1000 * 60 * 2;
@@ -407,7 +409,7 @@ function fetchTopics() {
           lastFetchDate: 0,
           topics: []
         };
-        store.set("topic-list", topics);
+        store.set(bm_topic_list, topics);
       }
       resolve(topics);
       return;
@@ -424,9 +426,9 @@ function fetchTopics() {
     //user signed in, we need to get topics from server
     axios.get(`${topicsEndPoint}/user/${userInfo.userId}/topics/${sourceId}`)
       .then((topicInfo) => {
-        console.log("topicInfo.data: ", topicInfo.data);
+        //console.log("topicInfo.data: ", topicInfo.data);
         topicInfo.data.lastFetchDate = Date.now();
-        store.set("topic-list", topicInfo.data);
+        store.set(bm_topic_list, topicInfo.data);
         resolve(topicInfo.data);
       })
       .catch((error) => {
@@ -440,7 +442,7 @@ function fetchTopics() {
   add new topics to topic-list in application store
 */
 function addToTopicList(newTopics) {
-  let topics = store.get("topic-list");
+  let topics = store.get(bm_topic_list);
   let concatTopics = topics.topics.concat(newTopics);
 
   //improve sort
@@ -474,7 +476,7 @@ function addToTopicList(newTopics) {
   });
 
   topics.topics = concatTopics;
-  store.set("topic-list", topics);
+  store.set(bm_topic_list, topics);
 
   //add topics to server if user signed in
   let userInfo = getUserInfo();
@@ -505,10 +507,9 @@ function addToTopicList(newTopics) {
 function inValidateBookmarkList() {
   const keyInfo = transcript.getKeyInfo();
 
-  let bmList = getBookmarkList(keyInfo);
+  let bmList = getBookmarkList();
 
   if (bmList) {
-    console.log("invalidating bmList");
     bmList.lastBuildDate = 0;
     storeBookmarkList(bmList, keyInfo);
   }

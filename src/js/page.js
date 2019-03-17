@@ -6,7 +6,6 @@ import search from "./modules/_search/search";
 import toc from "./modules/_contents/toc";
 import auth from "./modules/_user/netlify";
 import about from "./modules/_about/about";
-import constants from "./constants";
 
 /*
   Fix main menu to top of page when scrolled
@@ -25,7 +24,6 @@ function initStickyMenu() {
 
 $(document).ready(() => {
   initStickyMenu();
-  constants.setLinks();
 
   bookmark.initialize();
   search.initialize();

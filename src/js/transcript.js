@@ -17,7 +17,6 @@ import audio from "./modules/_audio/audio";
 import fb from "./modules/_util/facebook";
 import share from "./modules/_share/share";
 import about from "./modules/_about/about";
-import constants from "./constants";
 
 /*
  * For all transcript paragraphs -
@@ -100,7 +99,6 @@ $(document).ready(() => {
 
   initStickyMenu();
   loadStart();
-  constants.setLinks();
   labelParagraphs();
   createParagraphNumberToggleListener();
   auth.initialize();

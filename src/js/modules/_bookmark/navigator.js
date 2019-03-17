@@ -11,6 +11,8 @@ import clipboard from "./clipboard";
 
 //import {getSourceId, genPageKey} from "../_config/key";
 const transcript = require("../_config/key");
+const bm_modal_store = "bm.raj.modal";
+const bm_list_store = "bm.raj.list";
 
 let shareEventListenerCreated = false;
 let gPageKey;
@@ -222,7 +224,6 @@ function getPrevPageUrl(pos, pageList, filterList, bookmarks) {
 function getNextPrevUrl(pageKey, bookmarks, bmModal) {
   let pages = Object.keys(bookmarks);
   let pos = pages.indexOf("lastFetchDate");
-  let urls = {next: null, prev: null};
 
   if (pos > -1) {
     pages.splice(pos, 1);
@@ -241,7 +242,7 @@ function getNextPrevUrl(pageKey, bookmarks, bmModal) {
 }
 
 /*
-  Given the postion (currentPos) in pageMarks of the current pid, find the previous
+  Given the position (currentPos) in pageMarks of the current pid, find the previous
   one. Return the actualPid or null.
 
   Omit bookmarks that don't have at least one topic found in topics[]. If topics[]
@@ -409,8 +410,8 @@ function getCurrentBookmark(pageKey, actualPid, allBookmarks, bmModal, whoCalled
 function bookmarkManager(actualPid) {
   let sourceId = transcript.getSourceId();
   let pageKey = transcript.genPageKey().toString(10);
-  let bmList = store.get(`bmList_${sourceId}`);
-  let bmModal = store.get(`bmModal_${sourceId}`);
+  let bmList = store.get(`${bm_list_store}`);
+  let bmModal = store.get(`${bm_modal_store}`);
 
   if (bmList) {
     //store globally
@@ -461,7 +462,7 @@ function bookmarkManager(actualPid) {
       });
   }
   else {
-    console.log(`bmList_${sourceId}`);
+    console.log(`${bm_list_store}`);
   }
 }
 
@@ -474,8 +475,8 @@ function bookmarkManager(actualPid) {
 */
 function updateNavigator(pid, update) {
   //console.log("updateNavigator, pid: %s, update: %s", pid, update);
-  let bmList = store.get(`bmList_${transcript.getSourceId()}`);
-  let bmModal = store.get(`bmModal_${transcript.getSourceId()}`);
+  let bmList = store.get(`${bm_list_store}`);
+  let bmModal = store.get(`${bm_modal_store}`);
   getCurrentBookmark(gPageKey, pid, bmList, bmModal, update);
 }
 

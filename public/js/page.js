@@ -5811,6 +5811,8 @@ module.exports = baseUnary;
 
 //import {parseKey, getKeyInfo, genPageKey, genParagraphKey } from "../_config/key";
 const transcript = __webpack_require__(14);
+const bm_list_store = "bm.raj.list";
+const bm_topic_list = "bm.raj.topics";
 
 //Index topics
 const topicsEndPoint = "https://93e93isn03.execute-api.us-east-1.amazonaws.com/latest";
@@ -5904,7 +5906,7 @@ function queryBookmarks(key) {
     //get bookmarks from server
     if (userInfo) {
       //set if bookmarks are already in local storage
-      let bookmarkList = getBookmarkList(keyInfo);
+      let bookmarkList = getBookmarkList();
 
       //don't query database - just return from local storage
       if (bookmarkList) {
@@ -5963,12 +5965,12 @@ function queryBookmarks(key) {
   });
 }
 
-function storeBookmarkList(bookmarks, keyInfo) {
-  __WEBPACK_IMPORTED_MODULE_1_store___default.a.set(`bmList_${keyInfo.sourceId}`, bookmarks);
+function storeBookmarkList(bookmarks) {
+  __WEBPACK_IMPORTED_MODULE_1_store___default.a.set(bm_list_store, bookmarks);
 }
 
-function getBookmarkList(keyInfo) {
-  return __WEBPACK_IMPORTED_MODULE_1_store___default.a.get(`bmList_${keyInfo.sourceId}`);
+function getBookmarkList() {
+  return __WEBPACK_IMPORTED_MODULE_1_store___default.a.get(bm_list_store);
 }
 
 /*
@@ -5980,7 +5982,7 @@ function getBookmarkList(keyInfo) {
 function buildBookmarkListFromLocalStore(keyInfo) {
 
   //check if the list needs to be rebuilt
-  const list = getBookmarkList(keyInfo);
+  const list = getBookmarkList();
   if (list) {
     if (list.lastBuildDate > 0) {
       return list;
@@ -6166,7 +6168,7 @@ function getAnnotation(pid, aid) {
 */
 function fetchTopics() {
   const userInfo = Object(__WEBPACK_IMPORTED_MODULE_3__user_netlify__["b" /* getUserInfo */])();
-  let topics = __WEBPACK_IMPORTED_MODULE_1_store___default.a.get("topic-list");
+  let topics = __WEBPACK_IMPORTED_MODULE_1_store___default.a.get(bm_topic_list);
 
   //keep topics in cache for 2 hours
   const retentionTime = 60 * 1000 * 60 * 2;
@@ -6180,7 +6182,7 @@ function fetchTopics() {
           lastFetchDate: 0,
           topics: []
         };
-        __WEBPACK_IMPORTED_MODULE_1_store___default.a.set("topic-list", topics);
+        __WEBPACK_IMPORTED_MODULE_1_store___default.a.set(bm_topic_list, topics);
       }
       resolve(topics);
       return;
@@ -6196,9 +6198,9 @@ function fetchTopics() {
 
     //user signed in, we need to get topics from server
     __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(`${topicsEndPoint}/user/${userInfo.userId}/topics/${sourceId}`).then(topicInfo => {
-      console.log("topicInfo.data: ", topicInfo.data);
+      //console.log("topicInfo.data: ", topicInfo.data);
       topicInfo.data.lastFetchDate = Date.now();
-      __WEBPACK_IMPORTED_MODULE_1_store___default.a.set("topic-list", topicInfo.data);
+      __WEBPACK_IMPORTED_MODULE_1_store___default.a.set(bm_topic_list, topicInfo.data);
       resolve(topicInfo.data);
     }).catch(error => {
       console.error("Error fetching topicList: ", error);
@@ -6211,7 +6213,7 @@ function fetchTopics() {
   add new topics to topic-list in application store
 */
 function addToTopicList(newTopics) {
-  let topics = __WEBPACK_IMPORTED_MODULE_1_store___default.a.get("topic-list");
+  let topics = __WEBPACK_IMPORTED_MODULE_1_store___default.a.get(bm_topic_list);
   let concatTopics = topics.topics.concat(newTopics);
 
   //improve sort
@@ -6243,7 +6245,7 @@ function addToTopicList(newTopics) {
   });
 
   topics.topics = concatTopics;
-  __WEBPACK_IMPORTED_MODULE_1_store___default.a.set("topic-list", topics);
+  __WEBPACK_IMPORTED_MODULE_1_store___default.a.set(bm_topic_list, topics);
 
   //add topics to server if user signed in
   let userInfo = Object(__WEBPACK_IMPORTED_MODULE_3__user_netlify__["b" /* getUserInfo */])();
@@ -6272,10 +6274,9 @@ function addToTopicList(newTopics) {
 function inValidateBookmarkList() {
   const keyInfo = transcript.getKeyInfo();
 
-  let bmList = getBookmarkList(keyInfo);
+  let bmList = getBookmarkList();
 
   if (bmList) {
-    console.log("invalidating bmList");
     bmList.lastBuildDate = 0;
     storeBookmarkList(bmList, keyInfo);
   }
@@ -12984,6 +12985,8 @@ module.exports = toFinite;
 
 //import {getSourceId, genPageKey} from "../_config/key";
 const transcript = __webpack_require__(14);
+const bm_modal_store = "bm.raj.modal";
+const bm_list_store = "bm.raj.list";
 
 let shareEventListenerCreated = false;
 let gPageKey;
@@ -13188,7 +13191,6 @@ function getPrevPageUrl(pos, pageList, filterList, bookmarks) {
 function getNextPrevUrl(pageKey, bookmarks, bmModal) {
   let pages = Object.keys(bookmarks);
   let pos = pages.indexOf("lastFetchDate");
-  let urls = { next: null, prev: null };
 
   if (pos > -1) {
     pages.splice(pos, 1);
@@ -13207,7 +13209,7 @@ function getNextPrevUrl(pageKey, bookmarks, bmModal) {
 }
 
 /*
-  Given the postion (currentPos) in pageMarks of the current pid, find the previous
+  Given the position (currentPos) in pageMarks of the current pid, find the previous
   one. Return the actualPid or null.
 
   Omit bookmarks that don't have at least one topic found in topics[]. If topics[]
@@ -13371,8 +13373,8 @@ function getCurrentBookmark(pageKey, actualPid, allBookmarks, bmModal, whoCalled
 function bookmarkManager(actualPid) {
   let sourceId = transcript.getSourceId();
   let pageKey = transcript.genPageKey().toString(10);
-  let bmList = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`bmList_${sourceId}`);
-  let bmModal = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`bmModal_${sourceId}`);
+  let bmList = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`${bm_list_store}`);
+  let bmModal = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`${bm_modal_store}`);
 
   if (bmList) {
     //store globally
@@ -13418,7 +13420,7 @@ function bookmarkManager(actualPid) {
       }
     });
   } else {
-    console.log(`bmList_${sourceId}`);
+    console.log(`${bm_list_store}`);
   }
 }
 
@@ -13431,8 +13433,8 @@ function bookmarkManager(actualPid) {
 */
 function updateNavigator(pid, update) {
   //console.log("updateNavigator, pid: %s, update: %s", pid, update);
-  let bmList = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`bmList_${transcript.getSourceId()}`);
-  let bmModal = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`bmModal_${transcript.getSourceId()}`);
+  let bmList = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`${bm_list_store}`);
+  let bmModal = __WEBPACK_IMPORTED_MODULE_2_store___default.a.get(`${bm_modal_store}`);
   getCurrentBookmark(gPageKey, pid, bmList, bmModal, update);
 }
 
@@ -36001,8 +36003,7 @@ const uiOpenBookmarkModal = ".bookmark-modal-open";
 const uiModalOpacity = 0.5;
 
 function bookmarkModalState(option, modalInfo) {
-  let sid = transcript.getSourceId();
-  let name = `bmModal_${sid}`;
+  const name = "bm.raj.modal";
   let info;
 
   switch (option) {
@@ -36162,7 +36163,7 @@ function generateBookmarkList(books) {
         <li>Clicking on the paragraph number, eg: (p21)</li>
       </ul>
       <p>
-        See <a href="https://www.christmind.info/acq/bookmark/">the Bookmark documentation</a> for more information.
+        See <a href="/acq/bookmark/">the Bookmark documentation</a> for more information.
       </p>
     `;
   }
@@ -36842,7 +36843,7 @@ function initSearchModal() {
 
 //this needs to use require because it is also used by a node app and node doesn't support import
 const rajInfo = __webpack_require__(14);
-const queryResultName = "query-result-raj";
+const queryResultName = "search.raj.result";
 
 function getUnitName(pageInfo, unitInfo) {
   return pageInfo[unitInfo.pageKey].title;
@@ -37051,7 +37052,7 @@ function showSavedQuery() {
 
 const page = __webpack_require__(14);
 
-const queryResultName = "query-result-raj";
+const queryResultName = "search.raj.result";
 const SCROLL_INTERVAL = 250;
 
 function scrollComplete(message, type) {
@@ -37276,14 +37277,14 @@ function initControls(pid) {
   }
 
   if (hitPositions.prev > -1) {
-    url = `${lastSearch.flat[hitPositions.prev].url}?srch=${lastSearch.flat[hitPositions.prev].location}`;
+    url = `/raj${lastSearch.flat[hitPositions.prev].url}?srch=${lastSearch.flat[hitPositions.prev].location}`;
     $(".search-navigator .previous-page").attr("href", url);
   } else {
     $(".search-navigator .previous-page").addClass("inactive");
   }
 
   if (hitPositions.next > -1) {
-    url = `${lastSearch.flat[hitPositions.next].url}?srch=${lastSearch.flat[hitPositions.next].location}`;
+    url = `/raj${lastSearch.flat[hitPositions.next].url}?srch=${lastSearch.flat[hitPositions.next].location}`;
     $(".search-navigator .next-page").attr("href", url);
   } else {
     $(".search-navigator .next-page").addClass("inactive");
@@ -38028,9 +38029,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_contents_toc__ = __webpack_require__(400);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_user_netlify__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__modules_about_about__ = __webpack_require__(401);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__constants__ = __webpack_require__(136);
 /* eslint no-console: off */
-
 
 
 
@@ -38056,7 +38055,6 @@ function initStickyMenu() {
 
 $(document).ready(() => {
   initStickyMenu();
-  __WEBPACK_IMPORTED_MODULE_6__constants__["a" /* default */].setLinks();
 
   __WEBPACK_IMPORTED_MODULE_1__modules_bookmark_bookmark__["b" /* default */].initialize();
   __WEBPACK_IMPORTED_MODULE_2__modules_search_search__["a" /* default */].initialize();
