@@ -13,10 +13,10 @@ const SOURCE_ID = "nwffacim";
 
 //mp3 and audio timing base directories
 const audioBase = `https://s3.amazonaws.com/${AWS_BUCKET}/${SOURCE_ID}/audio`;
-const timingBase = "/raj/public/timing";
+const timingBase = "/t/raj/public/timing";
 
 //location of configuration files
-const configUrl = "/raj/public/config";
+const configUrl = "/t/raj/public/config";
 const configStore = "config.raj.";
 
 //the current configuration, initially null, assigned by getConfig()
@@ -188,8 +188,8 @@ export function getAudioInfo(url) {
   let idx = url.split("/");
 
   //check the correct configuration file is loaded
-  if (config.bid !== idx[1]) {
-    throw new Error("Unexpected config file loaded; expecting %s but %s is loaded.", idx[1], config.bid);
+  if (config.bid !== idx[2]) {
+    throw new Error("Unexpected config file loaded; expecting %s but %s is loaded.", idx[2], config.bid);
   }
 
   let audioInfo = {};
@@ -201,7 +201,7 @@ export function getAudioInfo(url) {
     case "yaa":
       break;
     default:
-      cIdx = transcript.getUnitId(idx[1], idx[2]);
+      cIdx = transcript.getUnitId(idx[2], idx[3]);
       audioInfo = _getAudioInfo(cIdx);
       break;
   }

@@ -5,7 +5,7 @@ title: "Sparkly Edition Cross Reference"
 <div class="disable-paragraph-marker ui items">
   <div class="item">
     <a href="#" data-book="acim" class="toc-modal-open combined ui small image" data-tooltip="Cross reference to Sparkly Edition">
-      <img src="/raj/public/img/raj/acim-toc.jpg">
+      <img src="/t/raj/public/img/raj/acim-toc.jpg">
     </a>
     <div class="content">
       <a class="header">Cross Reference to ACIM Sparkly Edition</a>

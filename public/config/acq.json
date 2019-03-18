@@ -1,8 +1,8 @@
 {
   "bid": "acq",
-  "base": "/raj/acq",
+  "base": "/t/raj/acq",
   "title": "Get Acquainted",
-  "image": "/raj/public/img/raj/acq-toc.jpg",
+  "image": "/t/raj/public/img/raj/acq-toc.jpg",
   "contents": [
     {
       "title": "Welcome",

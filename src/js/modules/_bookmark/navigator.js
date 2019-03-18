@@ -13,6 +13,7 @@ import clipboard from "./clipboard";
 const transcript = require("../_config/key");
 const bm_modal_store = "bm.raj.modal";
 const bm_list_store = "bm.raj.list";
+const url_prefix = "/t/raj";
 
 let shareEventListenerCreated = false;
 let gPageKey;
@@ -118,7 +119,7 @@ function getBookmarkUrl(bookmarks, pageKey) {
         }
         else {
           //we have a bookmark with no selected text, have to get the url in another way
-          url = `${transcript.getUrl(pageKey)}?bkmk=${bookmark[prop][0].rangeStart}`;
+          url = `${url_prefix}${transcript.getUrl(pageKey)}?bkmk=${bookmark[prop][0].rangeStart}`;
         }
         break;
       }

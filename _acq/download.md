@@ -10,7 +10,7 @@ You can download ebook versions of *You Are the Answer* and *Graduation* here. C
 <div class="ui items">
   <div class="item">
     <dir class="ui tiny image">
-      <img src="/raj/public/img/raj/yaa-toc.jpg">
+      <img src="/t/raj/public/img/raj/yaa-toc.jpg">
     </dir>
     <div class="content">
       <dir class="header">You Are the Answer</dir>
@@ -42,7 +42,7 @@ You can download ebook versions of *You Are the Answer* and *Graduation* here. C
   </div>
   <div class="item">
     <dir class="ui tiny image">
-      <img src="/raj/public/img/raj/grad-toc.jpg">
+      <img src="/t/raj/public/img/raj/grad-toc.jpg">
     </dir>
     <div class="content">
       <dir class="header">Graduation</dir>
