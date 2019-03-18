@@ -4,6 +4,11 @@
     {% unless include.name == "acim" %}
     <div class="item" data-href="/acim/">ACIM Sparkly Edition</div>
     {% endunless %}
+    {% unless include.name == "acol" %}
+    {% if jekyll.environment == "development" %}
+    <div class="item" data-href="/acol/">A Course Of Love</div>
+    {% endif %}
+    {% endunless %}
     {% unless include.name == "raj" %}
     <div class="item" data-href="/raj/">The Raj Material</div>
     {% endunless %}
