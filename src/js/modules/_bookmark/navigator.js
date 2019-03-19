@@ -529,6 +529,11 @@ export function initShareDialog(source) {
       return;
     }
 
+    let url = $(".selected-annotation-wrapper i[data-clipboard-text]").attr("data-clipboard-text");
+
+    //check for intermittent error in url
+    let pos = url.indexOf("undefined");
+
     let channel;
     if ($(this).hasClass("facebook")) {
       channel = "facebook";
@@ -537,13 +542,18 @@ export function initShareDialog(source) {
       channel = "email";
     }
     else if ($(this).hasClass("linkify")) {
+      if (pos > -1) {
+        //Houston, we've got a problem
+        notify.error("Sorry, there was a problem, an invalid link was copied to the clipboard, refresh the page and try again.");
+        return;
+      }
+
       //work is already done
       channel = "clipboard";
       return;
     }
 
     pid = $(".selected-annotation-wrapper p").attr("id");
-    let url = $(".selected-annotation-wrapper i[data-clipboard-text]").attr("data-clipboard-text");
 
     //no highlighted text so grab the whole paragraph
     if (annotation.length === 0) {
@@ -558,6 +568,12 @@ export function initShareDialog(source) {
     let citation = `~ ${srcTitle}: ${bookTitle}`;
 
     if (channel === "facebook") {
+      if (pos > -1) {
+        //Houston, we've got a problem
+        notify.error("Sorry, there was a problem, refresh the page and try again.");
+        return;
+      }
+
       let options = {
         method: "share",
         hashtag: "#christmind",
@@ -567,6 +583,11 @@ export function initShareDialog(source) {
       FB.ui(options, function(){});
     }
     else if (channel === "email") {
+      if (pos > -1) {
+        //Houston, we've got a problem
+        notify.error("Sorry, there was a problem, refresh the page and try again.");
+        return;
+      }
       shareByEmail(text, citation, url);
     }
   });
