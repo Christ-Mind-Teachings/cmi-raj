@@ -13429,6 +13429,11 @@ function initShareDialog(source) {
     let userInfo;
     let pid, aid, text;
 
+    if ($(this).hasClass("close")) {
+      clearSelectedAnnotation();
+      return;
+    }
+
     userInfo = Object(__WEBPACK_IMPORTED_MODULE_4__user_netlify__["b" /* getUserInfo */])();
     if (!userInfo) {
       __WEBPACK_IMPORTED_MODULE_5_toastr___default.a.info("You must be signed in to share selected text");
@@ -13443,9 +13448,6 @@ function initShareDialog(source) {
     } else if ($(this).hasClass("linkify")) {
       //work is already done
       channel = "clipboard";
-      return;
-    } else if ($(this).hasClass("close")) {
-      clearSelectedAnnotation();
       return;
     }
 
