@@ -42,7 +42,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
     </a>
     <div class="content">
       <div class="description">
-        After nine years with Raj this book is about Paul's continued relatinship with Raj.
+        After nine years with Raj this book is about Paul's continued relationship with Raj.
       </div>
     </div>
   </div>

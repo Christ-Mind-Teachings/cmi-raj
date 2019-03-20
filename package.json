@@ -11,7 +11,8 @@
     "deploy:dev": "npm run p:webpack && npm run d:jekyll",
     "p:webpack": "webpack",
     "p:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config ./_config.prod.yml",
-    "deploy:prod": "npm run p:webpack && npm run p:jekyll"
+    "deploy:prod": "npm run p:webpack && npm run p:jekyll",
+    "deploy:netlify": "bundle exec jekyll s --config ./_config.netlify.yml"
   },
   "keywords": [
     "cmi"

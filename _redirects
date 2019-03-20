@@ -1,0 +1,24 @@
+# Netlify url rewrite file
+
+/                       https://raj.christmind.info/moved/
+/acq/*                  https://www.christmind.info/t/raj/acq/:splat
+/grad/*                 https://www.christmind.info/t/raj/grad/:splat
+/yaa/*                  https://www.christmind.info/t/raj/yaa/:splat
+/sg2002/*               https://www.christmind.info/t/raj/sg2002/:splat
+/sg2003/*               https://www.christmind.info/t/raj/sg2003/:splat
+/sg2004/*               https://www.christmind.info/t/raj/sg2004/:splat
+/sg2005/*               https://www.christmind.info/t/raj/sg2005/:splat
+/sg2006/*               https://www.christmind.info/t/raj/sg2006/:splat
+/sg2007/*               https://www.christmind.info/t/raj/sg2007/:splat
+/sg2008/*               https://www.christmind.info/t/raj/sg2008:splat
+/sg2009/*               https://www.christmind.info/t/raj/sg2009/:splat
+/sg2010/*               https://www.christmind.info/t/raj/sg2010/:splat
+/sg2011/*               https://www.christmind.info/t/raj/sg2011/:splat
+/sg2012/*               https://www.christmind.info/t/raj/sg2012/:splat
+/sg2013/*               https://www.christmind.info/t/raj/sg2013/:splat
+/sg2014/*               https://www.christmind.info/t/raj/sg2014/:splat
+/sg2015/*               https://www.christmind.info/t/raj/sg2015/:splat
+/sg2016/*               https://www.christmind.info/t/raj/sg2016/:splat
+/sg2017/*               https://www.christmind.info/t/raj/sg2017/:splat
+/sg2018/*               https://www.christmind.info/t/raj/sg2018/:splat
+
