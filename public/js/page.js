@@ -4547,7 +4547,8 @@ function getUserInfo(name) {
   if (location.hostname !== "localhost") {
     return prodUserInfo();
   } else {
-    return devUserInfo(name);
+    return null;
+    //return devUserInfo(name);
   }
 }
 
@@ -30187,6 +30188,18 @@ module.exports = bytesToUuid;
 
 
 
+var warningIssued = false;
+function warnNotSignedIn() {
+  let userInfo = Object(__WEBPACK_IMPORTED_MODULE_5__user_netlify__["b" /* getUserInfo */])();
+  if (!userInfo && !warningIssued) {
+    __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.options.timeOut = "10000";
+    __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.success("Cancel, Sign In, and create a new bookmark.");
+    __WEBPACK_IMPORTED_MODULE_1_toastr___default.a.warning("You are not signed in. Bookmarks created when you are not signed in cannot be shared.");
+
+    warningIssued = true;
+  }
+}
+
 const form = `
   <form name="annotation" id="annotation-form" class="ui form">
     <input class="hidden-field" type="text" readonly="" name="creationDate">
@@ -30318,6 +30331,8 @@ function editAnnotation(pid, aid, annotation) {
     $(`#${pid}`).addClass("annotation-edit");
   }
   //console.log("editAnnotation");
+
+  warnNotSignedIn();
 
   $(".annotation-edit").wrapAll(wrapper);
   $(".annotate-wrapper").prepend(form);
@@ -30636,6 +30651,8 @@ function getUserInput(highlight) {
     __WEBPACK_IMPORTED_MODULE_2__bookmark__["a" /* annotation */].cancel({ aid: highlight.id });
     return;
   }
+
+  warnNotSignedIn();
 
   $(`#${highlight.pid}`).addClass("annotation-edit");
   $(".annotation-edit").wrapAll(wrapper);
@@ -37711,7 +37728,7 @@ const cmiPageTitle = {
   element: "#source-homepage",
   popover: {
     title: "Title",
-    description: "This is the homepage for the Sparkly Edition of <em>A Course In Miracles</em> in the Christ Mind Library.<br><br>Click on an image below to see the table of contents. A Course In Miracles include&hellip;",
+    description: "This is the homepage for the The Raj Material in the Christ Mind Library.<br><br>Click on an image below to see the table of contents. The Raj Material include&hellip;",
     position: "bottom"
   }
 };
@@ -37720,43 +37737,43 @@ const cmiPageBanner = {
   element: "#masthead-title",
   popover: {
     title: "Navigation and Features",
-    description: "ACIM is part of the Library of Christ Mind Teachings. On every page you can click on this banner to navigate to the Library's main page and see all available teachings.",
+    description: "The Raj Material is part of the Library of Christ Mind Teachings. On every page you can click on this banner to navigate to the Library's main page and see all available teachings.",
     position: "bottom"
   }
 };
 
-const acimPreface = {
-  element: "[data-book='preface']",
+const rajAcq = {
+  element: "[data-book='acq']",
   popover: {
-    title: "Preface",
-    description: "The Preface to the ACIM Sparkly Edition",
+    title: "Get Acquainted",
+    description: "Learn about Raj the teachings.",
     position: "top"
   }
 };
 
-const acimText = {
-  element: "[data-book='text']",
+const rajYaa = {
+  element: "[data-book='yaa']",
   popover: {
     title: "Text",
-    description: "The Text of ACIM containing thirty one chapters",
+    description: "Paul's first book about his first encounters with Raj.",
     position: "top"
   }
 };
 
-const acimWorkbook = {
-  element: "[data-book='workbook']",
+const rajGrad = {
+  element: "[data-book='grad']",
   popover: {
-    title: "Workbook for Students",
-    description: "The Workbook for Students containing one lesson for each day of the year.",
+    title: "Graduation",
+    description: "Nine years later, Paul's second book about his ongoing relationship with Raj.",
     position: "top"
   }
 };
 
-const acimManual = {
-  element: "[data-book='manual']",
+const acimStudyGroup = {
+  element: "[data-book='sg2003']",
   popover: {
-    title: "Manual for Teachers",
-    description: "Answers common questions and clarifies terms used in ACIM.",
+    title: "ACIM Study Group",
+    description: "Since 2002 Paul and Raj have been offering deep insight into A Course In Miracles. Transcripts and audio from each session are available by year.",
     position: "top"
   }
 };
@@ -37797,6 +37814,15 @@ const pageMenuHelpItem = {
   }
 };
 
+const pageQuickLinksItem = {
+  element: "#quick-links-dropdown-menu",
+  popover: {
+    title: "Navigate to Another Teaching",
+    description: "Quickly jump to one of the other teachings in the Library.",
+    position: "bottom"
+  }
+};
+
 const pageMenuLoginItem = {
   element: ".login-menu-option",
   popover: {
@@ -37807,10 +37833,10 @@ const pageMenuLoginItem = {
 };
 
 const pageMenuTextContents = {
-  element: "[data-book='text']",
+  element: "[data-book='yaa']",
   popover: {
     title: "Display Table of Contents",
-    description: "Click on any image to display and navigate to the volume contents.<br/><br/>Note: The Preface does not have a table of contents.",
+    description: "Click on any image to display and navigate to the volume contents.",
     position: "left"
   }
 };
@@ -37827,8 +37853,8 @@ const cmiTranscriptBanner = {
 const cmiTranscriptSourceTitle = {
   element: "#src-title",
   popover: {
-    title: "A Course In Miracles",
-    description: "This page is part of A Course In Miracles. Click this link to navigate to the ACIM Home page.",
+    title: "The Raj Material",
+    description: "This page is part of The Raj Material. Click this link to navigate to the The Raj Material homepage.",
     position: "bottom"
   }
 };
@@ -37855,7 +37881,7 @@ const transcriptMenuSearchItem = {
   element: ".search-modal-open",
   popover: {
     title: "Search Through All Books",
-    description: "Find topics of interest by searching through all ACIM books.",
+    description: "Find topics of interest by searching through all Raj material.",
     position: "bottom"
   }
 };
@@ -37938,7 +37964,7 @@ function pageDriver() {
     opacity: 0.5
   });
 
-  driver.defineSteps([cmiPageTitle, acimPreface, acimText, acimWorkbook, acimManual]);
+  driver.defineSteps([cmiPageTitle, rajAcq, rajYaa, rajGrad, acimStudyGroup]);
 
   driver.start();
 }
@@ -37949,7 +37975,7 @@ function pageNavigationDriver() {
     opacity: 0.5
   });
 
-  driver.defineSteps([cmiPageBanner, pageMenu, pageMenuBookmarkItem, pageMenuSearchItem, pageMenuHelpItem, pageMenuLoginItem, pageMenuTextContents]);
+  driver.defineSteps([cmiPageBanner, pageMenu, pageMenuBookmarkItem, pageMenuSearchItem, pageQuickLinksItem, pageMenuHelpItem, pageMenuLoginItem, pageMenuTextContents]);
 
   driver.start();
 }
@@ -37981,6 +38007,7 @@ function transcriptDriver() {
     transcriptDriverSteps.push(transcriptMenuNextPageItem);
   }
 
+  transcriptDriverSteps.push(pageQuickLinksItem);
   transcriptDriverSteps.push(transcriptMenuHelpItem);
   transcriptDriverSteps.push(transcriptMenuLoginItem);
 

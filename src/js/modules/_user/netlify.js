@@ -66,7 +66,8 @@ export function getUserInfo(name) {
     return prodUserInfo();
   }
   else {
-    return devUserInfo(name);
+    return null;
+    //return devUserInfo(name);
   }
 }
 

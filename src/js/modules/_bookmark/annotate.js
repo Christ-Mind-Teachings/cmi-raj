@@ -7,6 +7,18 @@ import {initShareDialog} from "./navigator";
 import {getUserInfo} from "../_user/netlify";
 import clipboard from "./clipboard";
 
+var warningIssued = false;
+function warnNotSignedIn() {
+  let userInfo = getUserInfo();
+  if (!userInfo && !warningIssued) {
+    notify.options.timeOut = "10000";
+    notify.success("Cancel, Sign In, and create a new bookmark.");
+    notify.warning("You are not signed in. Bookmarks created when you are not signed in cannot be shared.");
+
+    warningIssued = true;
+  }
+}
+
 const form = `
   <form name="annotation" id="annotation-form" class="ui form">
     <input class="hidden-field" type="text" readonly="" name="creationDate">
@@ -141,6 +153,8 @@ function editAnnotation(pid, aid, annotation) {
     $(`#${pid}`).addClass("annotation-edit");
   }
   //console.log("editAnnotation");
+
+  warnNotSignedIn();
 
   $(".annotation-edit").wrapAll(wrapper);
   $(".annotate-wrapper").prepend(form);
@@ -464,6 +478,8 @@ export function getUserInput(highlight) {
     annotation.cancel({aid: highlight.id});
     return;
   }
+
+  warnNotSignedIn();
 
   $(`#${highlight.pid}`).addClass("annotation-edit");
   $(".annotation-edit").wrapAll(wrapper);
