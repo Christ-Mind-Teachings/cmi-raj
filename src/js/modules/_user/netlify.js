@@ -43,8 +43,6 @@ function devUserInfo() {
     //use rick
     return testUsers["rick"];
   }
-
-  return null;
 }
 
 function prodUserInfo() {
@@ -61,13 +59,12 @@ function prodUserInfo() {
   return null;
 }
 
-export function getUserInfo(name) {
+export function getUserInfo() {
   if (location.hostname !== "localhost") {
     return prodUserInfo();
   }
   else {
-    return null;
-    //return devUserInfo(name);
+    return devUserInfo(name);
   }
 }
 

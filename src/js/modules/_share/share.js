@@ -61,7 +61,7 @@ function wrapRange(annotation) {
     <h4 class="ui header">
       <i title="Close" class="share-annotation-close small window close icon"></i>
       <div class="content">
-        ${annotation.Comment}
+        ${annotation.Comment?annotation.Comment:"No Comment"}
       </div>
     </h4>
   `;

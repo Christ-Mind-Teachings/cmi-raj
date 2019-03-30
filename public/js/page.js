@@ -4525,8 +4525,6 @@ function devUserInfo() {
     //use rick
     return testUsers["rick"];
   }
-
-  return null;
 }
 
 function prodUserInfo() {
@@ -4543,12 +4541,11 @@ function prodUserInfo() {
   return null;
 }
 
-function getUserInfo(name) {
+function getUserInfo() {
   if (location.hostname !== "localhost") {
     return prodUserInfo();
   } else {
-    return null;
-    //return devUserInfo(name);
+    return devUserInfo(name);
   }
 }
 
@@ -13576,29 +13573,16 @@ function initClickListeners() {
 
     let numericRange = rangeArray.map(r => parseInt(r.substr(1), 10));
     let annotationRange = __WEBPACK_IMPORTED_MODULE_1_lodash_range___default()(numericRange[0], numericRange[1] + 1);
-    let header;
-
-    if (userInfo.userId === "xxx") {
-      header = `
-        <h4 class="ui header">
-          <i title="Sign into your account to share this bookmark to FB by email or to copy a link." class="red window close outline small icon"></i>
-          <div class="content">
-            ${$(this).text()}
-          </div>
-        </h4>
-      `;
-    } else {
-      header = `
-        <h4 class="ui header">
-          <i title="Share to Facebook" class="share-annotation facebook small icon"></i>
-          <i title="Share via email" class="share-annotation envelope outline small icon"></i>
-          <i data-clipboard-text="${url}" title="Copy link to clipboard" class="share-annotation linkify small icon"></i>
-          <div class="content">
-            ${$(this).text()}
-          </div>
-        </h4>
-      `;
-    }
+    let header = `
+      <h4 class="ui header">
+        <i title="Share to Facebook" class="share-annotation facebook small icon"></i>
+        <i title="Share via email" class="share-annotation envelope outline small icon"></i>
+        <i data-clipboard-text="${url}" title="Copy link to clipboard" class="share-annotation linkify small icon"></i>
+        <div class="content">
+          ${$(this).text()}
+        </div>
+      </h4>
+    `;
 
     for (let i = 0; i < annotationRange.length; i++) {
       $(`#p${annotationRange[i]}`).addClass("selected-annotation");
