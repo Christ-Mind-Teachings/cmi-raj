@@ -6208,7 +6208,8 @@ function fetchTopics() {
 }
 
 /*
-  add new topics to topic-list in application store
+  add new topics to topic-list in application store and sort
+  write topics to database if user signed in
 */
 function addToTopicList(newTopics) {
   let topics = __WEBPACK_IMPORTED_MODULE_1_store___default.a.get(bm_topic_list);
@@ -6219,17 +6220,9 @@ function addToTopicList(newTopics) {
     let aValue, bValue;
 
     //objects have value and topic keys, sort them by topic
-    if (typeof a === "object") {
-      aValue = a.topic.toLowerCase();
-    } else {
-      aValue = a.toLowerCase();
-    }
-
-    if (typeof b === "object") {
-      bValue = b.topic.toLowerCase();
-    } else {
-      bValue = b.toLowerCase();
-    }
+    // Note: all topics are now objects
+    aValue = a.topic.toLowerCase();
+    bValue = b.topic.toLowerCase();
 
     if (aValue < bValue) {
       return -1;
@@ -6255,9 +6248,9 @@ function addToTopicList(newTopics) {
     };
     console.log("newTopics: %o", newTopics);
     __WEBPACK_IMPORTED_MODULE_0_axios___default.a.post(`${topicsEndPoint}/user/topics`, postBody).then(response => {
-      console.log("addToTopicList: %o", response.data);
+      //console.log("addToTopicList: %o", response.data);
     }).catch(err => {
-      console.error("addToTopicList error: %o", err);
+      //console.error("addToTopicList error: %o", err);
     });
   }
 
@@ -10334,11 +10327,10 @@ function updateSelectionTopicList(annotation) {
   //if annotation.topicList exists convert it to a string
   if (annotation.topicList && annotation.topicList.length > 0) {
     topicList = annotation.topicList.reduce((result, topic) => {
-      if (typeof topic == "object") {
-        return `${result} ${topic.value}`;
-      }
-      return `${result} ${topic}`;
+      return `${result} ${topic.value}`;
     }, "");
+  } else {
+    return;
   }
 
   let topicListArray = [];
@@ -10384,7 +10376,14 @@ function updateSelectionTopicList(annotation) {
     $(`[data-annotation-id="${annotation.aid}"]`).addClass(at);
 
     //track page topics
-    __WEBPACK_IMPORTED_MODULE_4__topics__["a" /* default */].addTopics(addedTopics);
+    //get object topics from annotation
+    let addedObjectTopics = annotation.topicList.filter(topic => {
+      let found = addedTopics.find(item => {
+        return item === topic.value;
+      });
+      return found !== undefined;
+    });
+    __WEBPACK_IMPORTED_MODULE_4__topics__["a" /* default */].addTopics(addedObjectTopics);
   }
 
   //topics.report();
@@ -12495,7 +12494,7 @@ function getPageBookmarks(sharePid) {
 /*
   Clean up form values and prepare to send to API  
 */
-function createAnnotaion(formValues) {
+function createAnnotation(formValues) {
   console.log("createAnnotation");
 
   let annotation = __WEBPACK_IMPORTED_MODULE_3_lodash_cloneDeep___default()(formValues);
@@ -12574,8 +12573,9 @@ function formatNewTopics({ newTopics }) {
   newTopicArray = newTopicArray.map(t => {
     if (/ /.test(t)) {
       return { value: t.replace(/ /g, ""), topic: t };
+    } else {
+      return { value: t, topic: t };
     }
-    return t;
   });
 
   return newTopicArray;
@@ -12591,10 +12591,7 @@ function addToTopicList(newTopics, formValues) {
   __WEBPACK_IMPORTED_MODULE_1__bmnet__["a" /* default */].fetchTopics().then(response => {
     //remove duplicate topics from and return the rest in difference[]
     let newUniqueTopics = __WEBPACK_IMPORTED_MODULE_2_lodash_differenceWith___default()(newTopics, response.topics, (n, t) => {
-      if (typeof t === "object") {
-        return t.value === n;
-      }
-      return t === n;
+      return t.value === n.value;
     });
 
     //these are the new topics
@@ -12609,7 +12606,7 @@ function addToTopicList(newTopics, formValues) {
       formValues.newTopics = newUniqueTopics;
 
       //post the bookmark
-      createAnnotaion(formValues);
+      createAnnotation(formValues);
     }
   }).catch(() => {
     throw new Error("error in removing duplicate topics");
@@ -12667,7 +12664,7 @@ const annotation = {
       addToTopicList(newTopics, formData);
     } else {
       //post the bookmark
-      createAnnotaion(formData);
+      createAnnotation(formData);
     }
 
     //mark paragraph as having bookmark
@@ -13809,11 +13806,16 @@ function formatTopic(topic) {
   Generate html for page topic list and reset listRefreshNeeded indicator
 */
 function makeTopicList(topicMap) {
-  let topics = Array.from(topicMap.keys());
+  let topicKeys = Array.from(topicMap.keys());
+  let topics = topicKeys.map(key => {
+    let t = topicMap.get(key);
+    return t.topic;
+  });
+
   listRefreshNeeded = false;
 
   if (topics.length === 0) {
-    return "<div class='ntf item'>No Topics Found</div>";
+    return "<div class='ntf item'>Page has no topics</div>";
   }
   topics.sort();
   topics.unshift("__reset__");
@@ -13916,7 +13918,7 @@ function updateTopicList() {
       return;
     }
     let found = deletedKeys.reduce((fnd, item) => {
-      if (item === activeFilter) {
+      if (item.topic === activeFilter) {
         return fnd + 1;
       }
       return fnd;
@@ -13936,27 +13938,53 @@ function updateTopicList() {
   }
 }
 
-function increment(key) {
+/*
+  Keep track of topics on the page. If we have a untracted topic add it
+  to 'topic' and set count to 1. If the topic is already tracked just 
+  increment the count
+
+  All topics look like this: {value: "nospaces", topic: "might have spaces"}
+*/
+function increment(newTopic) {
+  let key = newTopic.value;
+
+  //if newTopic is not in topics, add it and set count to 1
   if (!topics.has(key)) {
-    topics.set(key, 1);
+    newTopic.count = 1;
+    topics.set(key, newTopic);
     listRefreshNeeded = true;
   } else {
-    let count = topics.get(key);
-    topics.set(key, count + 1);
+    //otherwise increment the count
+    let savedTopic = topics.get(key);
+    savedTopic.count += 1;
+    topics.set(key, savedTopic);
   }
 }
 
-function decrement(key) {
+/*
+  Decrement count for tracked topic
+*/
+function decrement(trackedTopic) {
+  let key = trackedTopic;
+
+  if (typeof key === "object") {
+    key = key.value;
+  }
+
   if (!topics.has(key)) {
-    throw new Error("Unexpected error: topic %s not found in topic Map", key);
+    throw new Error(`Unexpected error: topic ${key} not found in topic Map`);
   } else {
-    let count = topics.get(key);
-    if (count === 1) {
+    let trackedTopicValue = topics.get(key);
+
+    //no more bookmarks on page with this topic
+    if (trackedTopicValue.count === 1) {
       topics.delete(key);
       listRefreshNeeded = true;
-      deletedKeys.push(key);
+      deletedKeys.push(trackedTopicValue);
     } else {
-      topics.set(key, count - 1);
+      //decrement count and store value
+      trackedTopicValue.count -= 1;
+      topics.set(key, trackedTopicValue);
     }
   }
 }
@@ -30228,7 +30256,7 @@ function generateHorizontalList(listArray) {
   return `
     ${listArray.map(item => `
       <div class="item">
-        <em>${typeof item === "object" ? item.topic : item}</em>
+        <em>${item.topic}</em>
       </div>
     `).join("")}
   `;
@@ -30260,13 +30288,15 @@ function initializeForm(pid, aid, annotation) {
       aid: aid
     });
   } else {
+    let topicSelect = annotation.topicList.map(t => t.value);
+
     form.form("set values", {
       rangeStart: annotation.rangeStart,
       rangeEnd: annotation.rangeEnd,
       aid: annotation.aid,
       creationDate: annotation.creationDate,
       Comment: annotation.Comment,
-      topicList: annotation.topicList
+      topicList: topicSelect
     });
   }
 
@@ -30469,7 +30499,19 @@ function submitHandler() {
   $(".transcript").on("submit", "#annotation-form", function (e) {
     e.preventDefault();
 
+    //1. Create new topic begins here
     let formData = getFormData();
+
+    //topicList contains topic strings but we want the topic object
+    //get it from the select option tag
+    if (formData.topicList.length > 0) {
+      let topicObjectArray = formData.topicList.map(tv => {
+        let topic = $(`#annotation-topic-list > [value='${tv}']`).text();
+        return { value: tv, topic: topic };
+      });
+      formData.topicList = topicObjectArray;
+    }
+
     unwrap();
 
     //remove class "show" added when form was displayed

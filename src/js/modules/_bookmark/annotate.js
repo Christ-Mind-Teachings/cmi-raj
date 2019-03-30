@@ -63,7 +63,7 @@ function generateHorizontalList(listArray) {
   return `
     ${listArray.map((item) => `
       <div class="item">
-        <em>${typeof item === "object"? item.topic: item}</em>
+        <em>${item.topic}</em>
       </div>
     `).join("")}
   `;
@@ -97,13 +97,15 @@ function initializeForm(pid, aid, annotation) {
     });
   }
   else {
+    let topicSelect = annotation.topicList.map(t => t.value);
+
     form.form("set values", {
       rangeStart: annotation.rangeStart,
       rangeEnd: annotation.rangeEnd,
       aid: annotation.aid,
       creationDate: annotation.creationDate,
       Comment: annotation.Comment,
-      topicList: annotation.topicList
+      topicList: topicSelect
     });
   }
 
@@ -309,7 +311,19 @@ function submitHandler() {
   $(".transcript").on("submit", "#annotation-form", function(e) {
     e.preventDefault();
 
+    //1. Create new topic begins here
     let formData = getFormData();
+
+    //topicList contains topic strings but we want the topic object
+    //get it from the select option tag
+    if (formData.topicList.length > 0) {
+      let topicObjectArray = formData.topicList.map(tv => {
+        let topic = $(`#annotation-topic-list > [value='${tv}']`).text();
+        return {value: tv, topic: topic};
+      });
+      formData.topicList = topicObjectArray;
+    }
+
     unwrap();
 
     //remove class "show" added when form was displayed

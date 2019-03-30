@@ -7,11 +7,11 @@ import { showBookmark } from "../_util/url";
 import {initNavigator} from "./navigator";
 import list from "./list";
 import topics from "./topics";
-import { 
-  markSelection, 
-  getSelection, 
-  deleteNewSelection, 
-  deleteSelection, 
+import {
+  markSelection,
+  getSelection,
+  deleteNewSelection,
+  deleteSelection,
   initialize as selectInit,
   updateHighlightColor,
   updateSelectionTopicList
@@ -82,7 +82,7 @@ function getPageBookmarks(sharePid) {
 /*
   Clean up form values and prepare to send to API  
 */
-function createAnnotaion(formValues) {
+function createAnnotation(formValues) {
   console.log("createAnnotation");
 
   let annotation = cloneDeep(formValues);
@@ -163,7 +163,9 @@ function formatNewTopics({newTopics}) {
     if (/ /.test(t)) {
       return {value: t.replace(/ /g, ""), topic: t};
     }
-    return t;
+    else {
+      return { value: t, topic: t};
+    }
   });
 
   return newTopicArray;
@@ -180,10 +182,7 @@ function addToTopicList(newTopics, formValues) {
     .then((response) => {
       //remove duplicate topics from and return the rest in difference[]
       let newUniqueTopics = differenceWith(newTopics, response.topics, (n,t) => {
-        if (typeof t === "object") {
-          return t.value === n;
-        }
-        return t === n;
+        return t.value === n.value;
       });
 
       //these are the new topics
@@ -198,7 +197,7 @@ function addToTopicList(newTopics, formValues) {
         formValues.newTopics = newUniqueTopics;
 
         //post the bookmark
-        createAnnotaion(formValues);
+        createAnnotation(formValues);
       }
     })
     .catch(() => {
@@ -259,7 +258,7 @@ export const annotation = {
     }
     else {
       //post the bookmark
-      createAnnotaion(formData);
+      createAnnotation(formData);
     }
 
     //mark paragraph as having bookmark

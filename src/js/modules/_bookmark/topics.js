@@ -25,11 +25,16 @@ function formatTopic(topic) {
   Generate html for page topic list and reset listRefreshNeeded indicator
 */
 function makeTopicList(topicMap) {
-  let topics = Array.from(topicMap.keys());
+  let topicKeys = Array.from(topicMap.keys());
+  let topics = topicKeys.map(key => {
+    let t = topicMap.get(key);
+    return t.topic;
+  });
+
   listRefreshNeeded = false;
 
   if (topics.length === 0) {
-    return "<div class='ntf item'>No Topics Found</div>";
+    return "<div class='ntf item'>Page has no topics</div>";
   }
   topics.sort();
   topics.unshift("__reset__");
@@ -132,7 +137,7 @@ function updateTopicList() {
       return;
     }
     let found = deletedKeys.reduce((fnd, item) => {
-      if (item === activeFilter) {
+      if (item.topic === activeFilter) {
         return fnd + 1;
       }
       return fnd;
@@ -153,30 +158,56 @@ function updateTopicList() {
   }
 }
 
-function increment(key) {
+/*
+  Keep track of topics on the page. If we have a untracted topic add it
+  to 'topic' and set count to 1. If the topic is already tracked just 
+  increment the count
+
+  All topics look like this: {value: "nospaces", topic: "might have spaces"}
+*/
+function increment(newTopic) {
+  let key = newTopic.value;
+
+  //if newTopic is not in topics, add it and set count to 1
   if (!topics.has(key)) {
-    topics.set(key, 1);
+    newTopic.count = 1;
+    topics.set(key, newTopic);
     listRefreshNeeded = true;
   }
   else {
-    let count = topics.get(key);
-    topics.set(key, count + 1);
+    //otherwise increment the count
+    let savedTopic = topics.get(key);
+    savedTopic.count += 1;
+    topics.set(key, savedTopic);
   }
 }
 
-function decrement(key) {
+/*
+  Decrement count for tracked topic
+*/
+function decrement(trackedTopic) {
+  let key = trackedTopic;
+
+  if (typeof key === "object") {
+    key = key.value;
+  }
+
   if (!topics.has(key)) {
-    throw new Error("Unexpected error: topic %s not found in topic Map", key);
+    throw new Error(`Unexpected error: topic ${key} not found in topic Map`);
   }
   else {
-    let count = topics.get(key);
-    if (count === 1) {
+    let trackedTopicValue = topics.get(key);
+
+    //no more bookmarks on page with this topic
+    if (trackedTopicValue.count === 1) {
       topics.delete(key);
       listRefreshNeeded = true;
-      deletedKeys.push(key);
+      deletedKeys.push(trackedTopicValue);
     }
     else {
-      topics.set(key, count - 1);
+      //decrement count and store value
+      trackedTopicValue.count -= 1;
+      topics.set(key, trackedTopicValue);
     }
   }
 }
