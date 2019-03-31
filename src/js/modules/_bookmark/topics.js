@@ -109,6 +109,12 @@ function topicSelectHandler() {
 
     //add class .show to each highlight containing the selected topic
     let topic = $(this).text();
+
+    //check for multi-word topic and remove spaces
+    if (/ /.test(topic)) {
+      topic = topic.replace(/ /g, "");
+    }
+
     $(`mark.bookmark-selected-text.${topic}`).addClass("show");
 
     //mark menu option as having an active filter
