@@ -114,3 +114,7 @@ body {
   color: green;
 }
 
+.gsap-hover {
+  box-shadow: 1rem 1rem 1rem;
+}
+

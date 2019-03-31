@@ -1,6 +1,7 @@
 const webpack = require("webpack");
 const path = require("path");
-const etp = require("extract-text-webpack-plugin");
+//const etp = require("extract-text-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   devtool: "source-map",
@@ -24,6 +25,11 @@ module.exports = {
     publicPath: "/public/js",
     filename: "[name].js"
   },
+  optimization: {
+    splitChunks: {
+      chunks: "all",
+    }
+  },
   module: {
     rules: [
       {
@@ -38,16 +44,12 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: etp.extract({
-          fallback: 'style-loader',
-          use: 'css-loader'
-        })
+        use: [ "style-loader", MiniCssExtractPlugin.loader, "css-loader"]
       }
-
     ]
   },
   plugins: [
-    new etp('me-styles.css'),
+    new MiniCssExtractPlugin({filename: 'me-styles.css'}),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery"

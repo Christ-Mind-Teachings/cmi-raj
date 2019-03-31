@@ -6,6 +6,31 @@ import search from "./modules/_search/search";
 import toc from "./modules/_contents/toc";
 import auth from "./modules/_user/netlify";
 import about from "./modules/_about/about";
+import {TweenMax} from "gsap";
+
+function initAnimation() {
+  let delay = 0.2;
+  $("#page-contents").on("mouseover", "[data-book]", function(e) {
+    console.log("mouse over");
+    TweenMax.to($(this), delay, {className: "+=gsap-hover"});
+    TweenMax.to($(this), delay, {scale: "1.1"});
+  });
+  $("#page-contents").on("mouseout", "[data-book]", function(e) {
+    console.log("mouse over");
+    TweenMax.to($(this), delay, {className: "-=gsap-hover"});
+    TweenMax.to($(this), delay, {scale: "1.0"});
+  });
+  $("#page-contents2").on("mouseover", "[data-book]", function(e) {
+    console.log("mouse over");
+    TweenMax.to($(this), delay, {className: "+=gsap-hover"});
+    TweenMax.to($(this), delay, {scale: "1.1"});
+  });
+  $("#page-contents2").on("mouseout", "[data-book]", function(e) {
+    console.log("mouse over");
+    TweenMax.to($(this), delay, {className: "-=gsap-hover"});
+    TweenMax.to($(this), delay, {scale: "1.0"});
+  });
+}
 
 /*
   Fix main menu to top of page when scrolled
@@ -31,5 +56,6 @@ $(document).ready(() => {
   toc.initialize("page");
   about.initialize();
 
+  initAnimation();
 });
 
