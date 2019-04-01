@@ -5,7 +5,7 @@
   --signed-in-color: green;
   --signed-in-background: #f1f1f7;
 }
-<!-- 
+
 body {
   color: #454545;
   background-color: #fff;
@@ -87,6 +87,12 @@ body {
   cursor: default!important;
   border-radius: 5px;
 }
+
+/*
+.toc.ui.modal {
+  overflow: hidden;
+}
+*/
 
 /* add margin so the navigator does not hide a bookmark or search result */
 .transcript.ui.text.container.bookmark-navigator-active,
