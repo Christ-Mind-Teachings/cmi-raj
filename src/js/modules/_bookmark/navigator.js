@@ -411,8 +411,8 @@ function getCurrentBookmark(pageKey, actualPid, allBookmarks, bmModal, whoCalled
 function bookmarkManager(actualPid) {
   let sourceId = transcript.getSourceId();
   let pageKey = transcript.genPageKey().toString(10);
-  let bmList = store.get(`${bm_list_store}`);
-  let bmModal = store.get(`${bm_modal_store}`);
+  let bmList = store.get(bm_list_store);
+  let bmModal = store.get(bm_modal_store);
 
   if (bmList) {
     //store globally
@@ -463,7 +463,7 @@ function bookmarkManager(actualPid) {
       });
   }
   else {
-    console.log(`${bm_list_store}`);
+    console.log(bm_list_store);
   }
 }
 
@@ -476,16 +476,34 @@ function bookmarkManager(actualPid) {
 */
 function updateNavigator(pid, update) {
   //console.log("updateNavigator, pid: %s, update: %s", pid, update);
-  let bmList = store.get(`${bm_list_store}`);
-  let bmModal = store.get(`${bm_modal_store}`);
+  let bmList = store.get(bm_list_store);
+  let bmModal = store.get(bm_modal_store);
   getCurrentBookmark(gPageKey, pid, bmList, bmModal, update);
 }
 
+/*
+  An annotation is selected and the user can choose from sharing options. This dialog
+  is set up by adding the .selected-annotation class.
+
+  It is cleared here thus removing the share dialog
+*/
 function clearSelectedAnnotation() {
-  $(".selected-annotation-wrapper > .header").remove();
-  $(".selected-annotation").unwrap();
-  $(".selected-annotation").removeClass("selected-annotation");
-  $(".bookmark-selected-text.show").removeClass("show");
+  let selected = $(".selected-annotation");
+
+  //remove dialog
+  if (selected.length > 0) {
+    $(".selected-annotation-wrapper > .header").remove();
+    selected.unwrap().removeClass("selected-annotation");
+    $(".bookmark-selected-text.show").removeClass("show");
+
+    //clear text selection guard applied whey bookmark is edited
+    // if .user exists then guard is user initiated and we don't clear it
+    let guard = $("div.transcript.ui.disable-selection:not(.user)");
+    if (guard.length > 0) {
+      console.log("removing selection guard");
+      guard.removeClass("disable-selection");
+    }
+  }
 }
 
 function scrollComplete(message, type) {

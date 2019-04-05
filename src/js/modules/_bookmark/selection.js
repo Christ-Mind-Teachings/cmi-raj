@@ -256,6 +256,7 @@ function getSelectedText(range, fromNode = document.body) {
 
   var selectedText = {
     type: "Annotation",
+    title: $("#book-title").text(),
     url: location.pathname,
     pid: range.startContainer.parentNode.id,
     id: uuid(),
@@ -279,22 +280,29 @@ export function initialize() {
   $("div.transcript.ui").on("mouseup", function(e) {
     e.preventDefault();
 
+    //ignore text selection when disabled by user or when annotation is 
+    //being created
+    if ($(this).hasClass("disable-selection")) {
+      console.log("selection prevented by selection guard");
+      return;
+    }
+
     if (document.getSelection().isCollapsed) {
       return;
     }
 
     let selObj = document.getSelection(); 
-    console.log("selection: %o", selObj);
+    //console.log("selection: %o", selObj);
 
     //Safari calls this function twice for each selection, the second time
     //rangeCount === 0 and type == "None"
     if (selObj.rangeCount === 0) {
-      console.log("selObj.rangeCount === 0)");
+      //console.log("selObj.rangeCount === 0)");
       return;
     }
 
     if (selObj.getRangeAt(0).collapsed) {
-      console.log("range collapsed");
+      //console.log("range collapsed");
       return;
     }
 
@@ -310,7 +318,7 @@ export function initialize() {
   create annotation from selected text
 */
 function processSelection(range) {
-  console.log("range: %o", range);
+  //console.log("range: %o", range);
 
   //check for overlap with other highlighted text
   let startParent = range.startContainer.parentElement.localName;

@@ -1,4 +1,5 @@
 import notify from "toastr";
+import store from "store";
 import net, {getBookmark}  from "./bmnet";
 import differenceWith from "lodash/differenceWith";
 import cloneDeep from "lodash/cloneDeep";
@@ -6,6 +7,7 @@ import startCase from "lodash/startCase";
 import { showBookmark } from "../_util/url";
 import {initNavigator} from "./navigator";
 import list from "./list";
+//const topicsEndPoint = "https://s3.amazonaws.com/assets.christmind.info/wom/topics.json";
 import topics from "./topics";
 import {
   markSelection,
@@ -16,6 +18,8 @@ import {
   updateHighlightColor,
   updateSelectionTopicList
 } from "./selection";
+
+const bm_creation_state = "bm.raj.creation";
 
 //add bookmark topics to bookmark selected text to support 
 //selective display of hightlight based on topic
@@ -223,6 +227,45 @@ function highlightHandler() {
 }
 
 /*
+ * Turn off/on bookmark creation feature. When feature is enabled users cannot select
+ * and copy text from transcript
+ */
+function bookmarkFeatureHandler() {
+  $("#bookmark-toggle-disable-selection").on("click", function(e) {
+    e.preventDefault();
+
+    let el = $(".transcript");
+
+    if (el.hasClass("disable-selection") && el.hasClass("user")) {
+      console.log("removing selection guard - user initiated")
+      el.removeClass("disable-selection user");
+      $(".toggle-bookmark-selection").text("Disable Bookmark Creation");
+      store.set(bm_creation_state, "enabled");
+    }
+    else {
+      console.log("adding selection guard - user initiated")
+      el.addClass("disable-selection user");
+      $(".toggle-bookmark-selection").text("Enable Bookmark Creation");
+      store.set(bm_creation_state, "disabled");
+    }
+  });
+}
+
+/*
+ * The bookmark feature is initially enabled. Check local storage to see if
+ * it has been disabled by the user. If so, disable it on page load.
+ */
+function initializeBookmarkFeatureState() {
+  let state = store.get(bm_creation_state);
+
+  if (state && state === "disabled") {
+    console.log("triggering selection guard disable");
+    $("#bookmark-toggle-disable-selection").trigger("click");
+    //$(".toggle-bookmark-selection").trigger("click");
+  }
+}
+
+/*
   initialize transcript page
 */
 function initTranscriptPage(sharePid) {
@@ -235,6 +278,10 @@ function initTranscriptPage(sharePid) {
 
   //show/hide bookmark highlights
   highlightHandler();
+
+  //disable/enable bookmark creation feature
+  bookmarkFeatureHandler();
+  initializeBookmarkFeatureState();
 
   //setup bookmark navigator if requested
   let pid = showBookmark();

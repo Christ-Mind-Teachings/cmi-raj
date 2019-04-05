@@ -97,7 +97,11 @@ function initializeForm(pid, aid, annotation) {
     });
   }
   else {
-    let topicSelect = annotation.topicList.map(t => t.value);
+    let topicSelect = [];
+
+    if (annotation.topicList) {
+      topicSelect = annotation.topicList.map(t => t.value);
+    }
 
     form.form("set values", {
       rangeStart: annotation.rangeStart,
@@ -158,6 +162,9 @@ function editAnnotation(pid, aid, annotation) {
 
   warnNotSignedIn();
 
+  //.disable-selection will prevent text selection during annotation creation/edit
+  addSelectionGuard();
+
   $(".annotation-edit").wrapAll(wrapper);
   $(".annotate-wrapper").prepend(form);
   $(".annotation-delete.disabled").removeClass("disabled");
@@ -189,6 +196,9 @@ function noteHandler() {
         return;
       }
     }
+
+    //disable text selection while annotation form is open
+    addSelectionGuard();
 
     //new note for paragraph
     $(`#${pid}`).addClass("annotation-edit annotation-note");
@@ -307,9 +317,36 @@ function editHandler() {
   });
 }
 
+/*
+ * Enable text selection by removing .disable-selection unless
+ * .user is present. This means user has explicitly disabled
+ * text selection.
+ */
+function removeSelectionGuard() {
+  let guard = $("div.transcript.ui.disable-selection:not(.user)");
+  if (guard.length > 0) {
+    console.log("removing selection guard");
+    guard.removeClass("disable-selection");
+  }
+}
+
+/*
+ * Disable text selection when annotation form is open
+ */
+function addSelectionGuard() {
+  let guard = $("div.transcript.ui");
+  if (!guard.hasClass("disable-selection")) {
+    console.log("adding selection guard");
+    guard.addClass("disable-selection");
+  }
+}
+
 function submitHandler() {
   $(".transcript").on("submit", "#annotation-form", function(e) {
     e.preventDefault();
+
+    //enable text selection, disabled when annotation form open
+    removeSelectionGuard();
 
     //1. Create new topic begins here
     let formData = getFormData();
@@ -346,6 +383,9 @@ function cancelHandler() {
   $(".transcript").on("click", "#annotation-form .annotation-cancel", function(e) {
     e.preventDefault();
 
+    //enable text selection, disabled when annotation form open
+    removeSelectionGuard();
+
     let formData = getFormData();
     unwrap();
 
@@ -372,9 +412,6 @@ function shareHandler() {
 
     annotation.cancel(formData);
     $(".transcript .annotation-edit").removeClass("annotation-edit");
-
-    //now, wrap annotation for display
-    //console.log("share formData: %o", formData);
 
     let userInfo = getUserInfo();
     if (!userInfo) {
@@ -458,6 +495,9 @@ function deleteHandler() {
   $(".transcript").on("click", "#annotation-form .annotation-delete", function(e) {
     e.preventDefault();
 
+    //enable text selection, disabled when annotation form open
+    removeSelectionGuard();
+
     let formData = getFormData();
     unwrap();
 
@@ -492,6 +532,9 @@ export function getUserInput(highlight) {
     annotation.cancel({aid: highlight.id});
     return;
   }
+
+  //.disable-selection will prevent text selection during annotation creation/edit
+  addSelectionGuard();
 
   warnNotSignedIn();
 
