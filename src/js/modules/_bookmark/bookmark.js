@@ -103,6 +103,10 @@ function createAnnotation(formValues) {
     delete annotation.Comment;
   }
 
+  if (annotation.Note === "") {
+    delete annotation.Note;
+  }
+
   if (annotation.creationDate === "") {
     delete annotation.creationDate;
   }

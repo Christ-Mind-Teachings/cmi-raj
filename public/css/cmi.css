@@ -124,3 +124,11 @@ body {
   box-shadow: 1rem 1rem 1rem;
 }
 
+.note-and-links.hide {
+  display: none;
+}
+
+.note-and-links {
+  margin-bottom: 20px;
+}
+

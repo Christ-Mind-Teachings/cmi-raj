@@ -31,8 +31,11 @@ const form = `
       <div id="available-topics" class="twelve wide field"></div>
       </div>
     </div>
-    <div class="inline field">
+    <div class="field">
+      <!--
       <textarea name="Comment" placeholder="Comment" rows="1"></textarea>
+      -->
+      <input type="text" name="Comment" placeholder="Comment">
     </div>
     <div class="field">
       <input type="text" name="newTopics" placeholder="New topics? Comma delimited list">
@@ -41,12 +44,35 @@ const form = `
       <button class="annotation-submit ui green button" type="submit">Submit</button>
       <button class="annotation-cancel ui red basic button">Cancel</button>
       <button class="annotation-share ui green disabled basic button">Share</button>
+      <button class="annotation-note ui blue basic button">Note</button>
       <div class="twelve wide field">
         <button class="annotation-delete ui red disabled right floated button">Delete</button>
       </div>
     </div>
+    <div class="note-and-links hide">
+      <div class="field">
+        <textarea name="Note" placeholder="Additional Notes" rows="3"></textarea>
+      </div>
+    </div>
   </form>
   `;
+
+function noteToggle() {
+  $(".transcript").on("click", "#annotation-form .annotation-note", function(e) {
+    e.preventDefault();
+    console.log("note button clicked");
+
+    let nal = $(".note-and-links");
+
+    if (nal.hasClass("hide")) {
+      nal.removeClass("hide");
+    }
+    else {
+      nal.addClass("hide");
+    }
+  });
+}
+
 
 const wrapper = `
   <div class="annotate-wrapper ui raised segment"></div>`;
@@ -109,6 +135,7 @@ function initializeForm(pid, aid, annotation) {
       aid: annotation.aid,
       creationDate: annotation.creationDate,
       Comment: annotation.Comment,
+      Note: annotation.Note,
       topicList: topicSelect
     });
   }
@@ -517,6 +544,7 @@ export function initialize() {
   editHandler();
   noteHandler();
   hoverHandler();
+  noteToggle();
 }
 
 /*
