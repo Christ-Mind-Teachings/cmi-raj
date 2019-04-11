@@ -212,7 +212,7 @@ function updateTopicList() {
 }
 
 /*
-  Keep track of topics on the page. If we have a untracted topic add it
+  Keep track of topics on the page. If we have a un-tracked topic add it
   to 'topic' and set count to 1. If the topic is already tracked just 
   increment the count
 
@@ -316,6 +316,17 @@ export default {
     //init click handler
     topicSelectHandler();
     */
+  },
+
+  //given a topic value return the topic.topic
+  getTopic(value) {
+    let t = topics.get(value);
+
+    if (t) {
+      return t.topic;
+    }
+
+    return null;
   },
 
   report() {

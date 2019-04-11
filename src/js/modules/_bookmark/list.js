@@ -368,10 +368,15 @@ function filterSubmitHandler() {
     //keep track of the state of the bookmark Modal
     let bookmarkModalInfo = bookmarkModalState("get");
 
+    let fullTopic = topics.map((t) => {
+      return {value: t, topic: $(`#bookmark-topic-list > [value='${t}']`).text()};
+    });
+
     //if we have data we're initializing and so we don't need to save state
     if (!data) {
       bookmarkModalInfo["modal"].filter = true;
       bookmarkModalInfo["modal"].topics = topics;
+      bookmarkModalInfo["modal"].fullTopic = fullTopic;
       bookmarkModalState("set", bookmarkModalInfo);
     }
 

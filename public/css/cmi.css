@@ -132,3 +132,7 @@ body {
   margin-bottom: 20px;
 }
 
+#filter-topics-section.hide {
+  display: none;
+}
+
