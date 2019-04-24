@@ -29,7 +29,7 @@
 import CaptureData from "./captureData";
 import notify from "toastr";
 import store from "store";
-import {getUserInfo} from "../_user/netlify";
+import {getUserInfo} from "www/modules/_user/netlify";
 import scroll from "scroll-into-view";
 import {disableScroll} from "./focus";
 

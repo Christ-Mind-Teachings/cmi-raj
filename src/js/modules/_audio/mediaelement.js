@@ -28,7 +28,7 @@ import "me-plugin/capture/capture";
 
 import notify from "toastr";
 import focus, {switchToParagraph, togglePlayFromHere} from "./focus";
-import {getUserInfo} from "../_user/netlify";
+import {getUserInfo} from "www/modules/_user/netlify";
 import {getReservation} from "../_config/config";
 
 import timeCapture from "./capture";
