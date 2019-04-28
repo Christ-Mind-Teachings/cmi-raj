@@ -10,6 +10,7 @@ const AWS_BUCKET = "assets.christmind.info";
 
 //this is the id used on aws s3 to store audio files
 const SOURCE_ID = "nwffacim";
+const SOURCE = "The Raj Material";
 
 //mp3 and audio timing base directories
 const audioBase = `https://s3.amazonaws.com/${AWS_BUCKET}/${SOURCE_ID}/audio`;
@@ -234,7 +235,7 @@ export function getReservation(url) {
 */
 export function getPageInfo(pageKey, data = false) {
   let decodedKey = transcript.decodeKey(pageKey);
-  let info = {pageKey: pageKey, bookId: decodedKey.bookId};
+  let info = {pageKey: pageKey, source: SOURCE, bookId: decodedKey.bookId};
 
   if (data) {
     info.data = data;

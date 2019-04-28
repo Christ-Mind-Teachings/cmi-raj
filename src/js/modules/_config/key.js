@@ -28,6 +28,8 @@ const sprintf = require("sprintf-js").sprintf;
 //RAJ = 13
 const sourceId = 13;
 const sid = "raj";
+const prefix = "/t/raj";
+
 
 //length of pageKey excluding decimal portion
 const keyLength = 7;
@@ -375,6 +377,28 @@ function getNumberOfUnits(bid) {
 /*
  * Convert page key to url
  */
+function getUrl(key, withPrefix = false) {
+  let decodedKey = decodeKey(key, false);
+  let unit = "invalid";
+
+  if (decodedKey.error) {
+    return "/invalid/key/";
+  }
+
+  if (contents[decodedKey.bookId]) {
+    unit = contents[decodedKey.bookId][decodedKey.uid + 1];
+  }
+
+  if (withPrefix) {
+    return `${prefix}/${decodedKey.bookId}/${unit}/`;
+  }
+  else {
+    return `/${decodedKey.bookId}/${unit}/`;
+  }
+}
+
+/*
+ * Convert page key to url
 function getUrl(key) {
   let decodedKey = decodeKey(key);
   let unit = "invalid";
@@ -389,6 +413,7 @@ function getUrl(key) {
 
   return `/${decodedKey.bookId}/${unit}/`;
 }
+ */
 
 /*
   Describe key in terms of source:book:unit:p
@@ -404,7 +429,7 @@ function describeKey(key) {
     key: key,
     source: sid,
     book: decodedKey.bookId,
-    unit: contents[decodedKey.bookId][decodedKey.uid]
+    unit: contents[decodedKey.bookId][decodedKey.uid + 1]
   };
 
   if (decodedKey.pid > -1) {
