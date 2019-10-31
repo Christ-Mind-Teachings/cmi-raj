@@ -2,9 +2,10 @@
 const searchEndpoint = "https://d9lsdwxpfg.execute-api.us-east-1.amazonaws.com/latest/raj";
 import axios from "axios";
 import { showSavedQuery, showSearchResults } from "./show";
-import {showSearchMatch} from "www/modules/_util/url"; 
+import {showSearchMatch} from "www/modules/_util/url";
 import { initNavigator } from "./navigator";
 import notify from "toastr";
+import {searchAudit} from "www/modules/_audit/audit";
 
 //search modal
 const uiSearchModal = ".search.ui.modal";
@@ -94,11 +95,13 @@ function search(query) {
       else {
         notify.info(`Search for ${query} didn't find any matches`);
       }
+      searchAudit("RAJ", searchBody.query, response.data.count);
       document.getElementById("search-input-field").focus();
     })
     .catch((error) => {
       console.error("search error: %o", error);
       displaySearchMessage(SEARCH_ERROR, error.message);
+      searchAudit("RAJ", searchBody.query, 0, error.message);
     });
 }
 
