@@ -119,7 +119,7 @@ function setEventListeners(player, userStatus, haveTimingData) {
     player.media.addEventListener("ptoggle", function() {
       if (togglePlayFromHere()) {
         $(".mejs__ptoggle").addClass("mejs-ptoggle-visible").removeClass("mejs-ptoggle-hidden");
-      }      
+      }
       else {
         $(".mejs__ptoggle").addClass("mejs-ptoggle-hidden").removeClass("mejs-ptoggle-visible");
       }
@@ -186,7 +186,7 @@ function getUserStatus() {
 
   //no reservation, the user is a timer
   if (!reservation) {
-    return "TIMER";  
+    return "TIMER";
   }
 
   //check if reservation is for the user
@@ -213,10 +213,10 @@ function assignPlayerFeatures(timingData) {
 
   if (info.status === "LISTENER") {
     if (timingData) {
-      info.features = ["playpause", "current", "duration", "prevp", "nextp", "ptoggle"];
+      info.features = ["playpause", "current", "duration", "prevp", "nextp", "ptoggle", "speed"];
     }
     else {
-      info.features = ["playpause", "current", "duration", "skipback", "jumpforward"];
+      info.features = ["playpause", "current", "duration", "skipback", "jumpforward", "speed"];
     }
 
   }

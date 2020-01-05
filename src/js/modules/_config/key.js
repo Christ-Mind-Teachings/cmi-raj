@@ -14,7 +14,7 @@
         uuu: unit Id
         ppp: paragraph number - not positional
 
-  NOTE: This module is used by code running in the browser and Node so the 
+  NOTE: This module is used by code running in the browser and Node so the
         common.js module system is used
 */
 
@@ -42,7 +42,7 @@ const books = [
 ];
 
 const bookIds = ["xxx", ...books];
-const acq = ["xxx", "welcome", "raj", "download", "acim", "web"];
+const acq = ["xxx", "welcome", "raj", "download", "web"];
 const grad = [
   "xxx", "g000002", "g000003", "g010491", "g010591", "g011491", "g011591", "g011691", "g011891",
   "g012091", "g012591", "g012791", "g020291", "g020591", "g020691", "g021291", "g021391", "g021491",
@@ -185,13 +185,16 @@ const contents = {
   sg2018: sg2018
 };
 
-
 function splitUrl(url) {
   let u = url;
 
-  //remove leading and trailing "/"
+  //remove leading "/"
   u = url.substr(1);
-  u = u.substr(0, u.length - 1);
+
+  //remove trailing '/' if it exists
+  if (u[u.length-1] === "/") {
+    u = u.substr(0, u.length - 1);
+  }
 
   return u.split("/");
 }
@@ -290,8 +293,8 @@ function genPageKey(url = location.pathname) {
   return numericKey;
 }
 
-/* 
-  genParagraphKey(paragraphId, key: url || pageKey) 
+/*
+  genParagraphKey(paragraphId, key: url || pageKey)
 
   args:
     pid: a string representing a transcript paragraph, starts as "p0"..."pnnn"
@@ -362,7 +365,7 @@ function getBooks() {
 }
 
 /*
-  Return the number of chapters in the book (bid). 
+  Return the number of chapters in the book (bid).
   Subtract one from length because of 'xxx' (fake chapter)
 */
 function getNumberOfUnits(bid) {
