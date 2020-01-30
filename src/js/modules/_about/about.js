@@ -40,6 +40,11 @@ function createClickHandlers() {
     if ($(this).hasClass("profile-management")) {
       location.href = "/profile/email/";
     }
+
+    if ($(this).hasClass("topic-management")) {
+      location.href = "/profile/topicMgt/";
+    }
+
   });
 
   //quick links
