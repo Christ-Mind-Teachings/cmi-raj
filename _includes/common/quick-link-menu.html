@@ -1,8 +1,8 @@
 <a id="quick-links-dropdown-menu" href="#" class="ui dropdown item">
   <i class="book icon"></i>
   <div id="quick-links" class="menu">
-    {% unless include.name == "acim" %}
-    <div class="item" data-href="/t/acim/">ACIM Sparkly Edition</div>
+    {% unless include.name == "acimoe" %}
+    <div class="item" data-href="/t/acimoe/">ACIM Original Edition</div>
     {% endunless %}
     {% unless include.name == "acol" %}
     <div class="item" data-href="/t/acol/">A Course Of Love</div>
@@ -15,6 +15,9 @@
     {% endunless %}
     {% unless include.name == "jsb" %}
     <div class="item" data-href="/t/jsb/">The Impersonal Life</div>
+    {% endunless %}
+    {% unless include.name == "acim" %}
+    <div class="item" data-href="/t/acim/">ACIM Sparkly Edition</div>
     {% endunless %}
   </div>
 </a>
