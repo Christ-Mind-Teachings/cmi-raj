@@ -10,8 +10,12 @@ import search from "./modules/_search/search";
 import toc from "./modules/_contents/toc";
 import about from "./modules/_about/about";
 
+import {setLanguage} from "www/modules/_language/lang";
+import constants from "./constants";
+
 $(document).ready(() => {
   initStickyMenu();
+  setLanguage(constants);
 
   bookmarkStart("page");
   search.initialize();
