@@ -7,7 +7,7 @@ footer:
   donate: true
   source: "nwffacim"
   id: "CMI-RAJ"
-  repohref: "https://github.com/rmercer33/cmi-raj"
+  repohref: "https://github.com/Christ-Mind-Teachings/cmi-raj"
 ---
 
 ## Welcome to The Raj Material
