@@ -109,6 +109,7 @@ defaults:
       image-height: 792
       bid: "acq"
       audio: false
+      pnumToggle: false
   - scope:
       path: ""
       type: yaa

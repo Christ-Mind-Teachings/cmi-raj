@@ -39,11 +39,6 @@ $(document).ready(() => {
       }
       showParagraph();
       bookmarkStart("transcript");
-
-      if ($(".disable-paragraph-marker").length > 0) {
-        console.log("disable paragraph markers");
-        $(".toggle-paragraph-markers").eq(0).trigger("click");
-      }
     })
     .catch((error) => {
       //report error to the user - somehow
