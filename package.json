@@ -4,16 +4,13 @@
   "description": "Teachings of Christ Mind: The Raj Material",
   "scripts": {
     "test": "jest",
+    "base:dev:webpack": "webpack --mode development",
+    "base:dev:jekyll": "JEKYLL_ENV=development bundle exec jekyll build --config ./_config.prod.yml",
+    "base:prod:webpack": "webpack --mode production",
+    "base:prod:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config ./_config.prod.yml",
     "watch": "webpack --mode development --watch",
     "jekyll": "bundle exec jekyll s",
-    "start": "npm run jekyll & npm run watch",
-    "d:jekyll": "JEKYLL_ENV=development bundle exec jekyll build --config ./_config.prod.yml",
-    "deploy:dev": "npm run d:webpack && npm run d:jekyll",
-    "p:webpack": "webpack --mode production",
-    "d:webpack": "webpack --mode development",
-    "p:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config ./_config.prod.yml",
-    "deploy:prod": "npm run p:webpack && npm run p:jekyll",
-    "deploy:netlify": "bundle exec jekyll s --config ./_config.netlify.yml"
+    "start": "npm run jekyll & npm run watch"
   },
   "keywords": [
     "cmi"

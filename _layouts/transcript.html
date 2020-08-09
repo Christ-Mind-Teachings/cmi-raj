@@ -76,10 +76,19 @@
   <script src="/public/vendor/jquery/jquery.min.js"></script>
   <script src="/public/vendor/semantic/semantic.min.js"></script>
 
-  <script src="/t/raj/public/js/vendors~page~transcript.js"></script>
-  <script src="/t/raj/public/js/vendors~transcript.js"></script>
-  <script src="/t/raj/public/js/page~transcript.js"></script>
-  <script src="/t/raj/public/js/transcript.js"></script>
+  {% if jekyll.environment == "production" %}
+    <!-- RAJ transcript Webpack production -->
+    <script src="/t/raj/public/js/vendors~page~transcript.js"></script>
+    <script src="/t/raj/public/js/vendors~transcript.js"></script>
+    <script src="/t/raj/public/js/transcript.js"></script>
+  {% else %}
+    <!-- RAJ transcript Webpack development -->
+    <script src="/t/raj/public/js/vendors~page~transcript.js"></script>
+    <script src="/t/raj/public/js/vendors~transcript.js"></script>
+    <script src="/t/raj/public/js/page~transcript.js"></script>
+    <script src="/t/raj/public/js/transcript.js"></script>
+  {% endif %}
+
 </body>
 
 </html>
