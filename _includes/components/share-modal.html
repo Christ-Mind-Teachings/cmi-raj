@@ -1,0 +1,26 @@
+<div id="share-modal" class="ui small modal quote-coupled">
+  <div id="share-modal-header" class="center header">Share By Email</div>
+  <div id="share-modal-content" class="content">
+    <div class="ui info message">
+      <p class="message" >
+        Select recipients from the dropdown list and/or enter email addresses in the field below.
+      </p>
+    </div>
+    <form name="emailmodalshare" id="email-modal-share-form" class="ui form">
+      <div id="maillist-modal-select" class="field"></div>
+      <div class="field">
+        <label>Enter Email Address(es)</label>
+        <input type="text" name="emailAddresses" placeholder="Comma delimited list">
+      </div>
+      <div class="field">
+        <label>Add a message to send with the quote.</label>
+        <textarea type="text" rows="2" name="emailMessage" placeholder="Your message. (optional)"></textarea>
+      </div>
+    </form>
+
+  </div>
+  <div class="actions">
+    <div id="share-modal-share" class="ok ui blue button">Send Mail</div>
+    <div id="share-modal-more" class="cancel ui blue button">Cancel</div>
+  </div>
+</div>

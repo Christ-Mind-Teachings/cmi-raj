@@ -9,7 +9,7 @@
     "base:prod:webpack": "webpack --mode production",
     "base:prod:jekyll": "JEKYLL_ENV=production bundle exec jekyll build --config ./_config.prod.yml",
     "watch": "webpack --mode development --watch",
-    "jekyll": "bundle exec jekyll s",
+    "jekyll": "JEKYLL_ENV=development bundle exec jekyll s",
     "start": "npm run jekyll & npm run watch"
   },
   "keywords": [

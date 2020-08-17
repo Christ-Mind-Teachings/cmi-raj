@@ -1,4 +1,5 @@
 /* eslint no-console: off */
+import {storeInit} from "www/modules/_util/store";
 
 //common modules
 import {showParagraph} from "www/modules/_util/url";
@@ -18,30 +19,20 @@ import {setLanguage} from "www/modules/_language/lang";
 import constants from "./constants";
 
 $(document).ready(() => {
-
+  storeInit(constants);
   setLanguage(constants);
-  initTranscriptPage();
+  initTranscriptPage("pnDisplay");
   auth.initialize();
   fb.initialize();
   about.initialize();
 
-  loadConfig(getBookId())
-    .then((result) => {
-      search.initialize();
-
-      /*
-        result of 0 indicates no contents config found
-        - toc, and audio depend on config file
-      */
-      if (result !== 0) {
-        toc.initialize("transcript");
-        audio.initialize();
-      }
-      showParagraph();
-      bookmarkStart("transcript");
-    })
-    .catch((error) => {
-      //report error to the user - somehow
-      console.error(error);
-    });
+  loadConfig(getBookId()).then((result) => {
+    search.initialize();
+    toc.initialize("transcript");
+    audio.initialize();
+    showParagraph();
+    bookmarkStart("transcript");
+  }).catch((error) => {
+    console.error(error);
+  });
 });

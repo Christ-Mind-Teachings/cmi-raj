@@ -15,7 +15,9 @@ import { getPageInfo } from "../_config/config";
 export function bookmarkStart(page) {
   let pid;
   if (page === "transcript") {
-    pid = share.initialize(constants);
+    share.initialize(constants).then((pid) => {
+      bookmark.initialize(pid, constants);
+    });
 
     //get page info and set as heading under '?' menu option
     let key = constants.keyInfo.genPageKey();
@@ -32,6 +34,9 @@ export function bookmarkStart(page) {
         $("#transcript-page-info").html(title);
       });
   }
-  bookmark.initialize(pid, constants);
+  //init bookmark for non-transcript pages.
+  else {
+    bookmark.initialize(pid, constants);
+  }
   initShareByEmail(constants);
 }

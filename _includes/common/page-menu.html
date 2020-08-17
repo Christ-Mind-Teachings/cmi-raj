@@ -1,6 +1,6 @@
 <div class="ui borderless main menu">
   <div id="page-menu" class="ui text container">
-    <a href="#" class="bookmark-modal-open ui dropdown item">
+    <a href="#" class="bookmark-modal-open requires-signin hide ui dropdown item">
       <span data-position="bottom center" data-tooltip="Show Bookmarks">
         <i class="red bookmark icon"></i>
       </span>
@@ -19,14 +19,23 @@
         <div class="read-documentation item">Read Documentation</div>
         <div class="view-documentation item">Watch Video Instruction</div>
         <div class="contact-me item">Get In Touch</div>
-        <div class="divider"></div>
-        <div class="hide profile-management item">User Profile</div>
       </div>
     </a>
-    <a href="#" class="login-menu-option ui right floated item">
+    <a href="#" class="login-menu-option-guest ui right floated item">
       <span data-position="bottom center" data-tooltip="Sign In">
         <i class="red sign in icon"></i>
       </span>
+    </a>
+    <a href="#" class="login-menu-option-account hide dropdown ui right floated item">
+      <span data-xposition="left center" data-xtooltip="Show/Set Bookmarks">
+        <i class="green sign out icon"></i>
+      </span>
+      <div class="menu">
+        <div class="account-signout-option item">Sign Out</div>
+        <div class="divider"></div>
+        <div class="profile-management item">Manage Email List</div>
+        <div class="topic-management item">Manage Topics</div>
+      </div>
     </a>
   </div>
 </div>

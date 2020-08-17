@@ -1,25 +1,22 @@
 <!-- _includes/common/transcript-menu.html -->
 <div class="ui borderless main menu">
   <div id="transcript-menu" class="ui text container">
-    <a id="bookmark-dropdown-menu" href="#" class="ui dropdown item">
+    <a id="bookmark-dropdown-menu" href="#" class="requires-signin hide ui dropdown item">
       <span data-xposition="left center" data-xtooltip="Show/Set Bookmarks">
-        <i class="red bookmark icon"></i>
+        <i class="icons">
+          <i class="bookmark-icon green bookmark icon"></i>
+          <i class="bookmark-corner-icon hide corner close icon"></i>
+        </i>
       </span>
       <div class="menu">
         <div id="bookmark-modal-open" class="bookmark-modal-open item">Show Bookmarks</div>
         <div id="bookmark-toggle-disable-selection" class="toggle-bookmark-selection item">Disable Bookmark Creation</div>
         <div id="bookmark-toggle-highlight" class="toggle-bookmark-highlight item">Hide Highlighted Text</div>
-        <div class="divider"></div>
-        <div id="current-topic-filter" data-filter="none" class="header">Topic Filter: None</div>
-        <div id="page-topics-modal-open" class="page-topics-modal-open item">Filter Bookmarks</div>
-        <!--
-        <div id="topic-menu-item" class="item">
-          <i class="dropdown icon"></i>
-          Page Topic List
-          <div id="topic-menu-select" class="menu transition hidden">
-          </div>
+        <div id="bookmark-filter-wrapper" class="hide">
+          <div class="divider"></div>
+          <div id="current-topic-filter" data-filter="none" class="item header">Topic Filter: None</div>
+          <div id="page-topics-modal-open" class="page-topics-modal-open item">Filter Bookmarks</div>
         </div>
-        -->
       </div>
     </a>
     <a href="#" id="search-modal-open" class="item search-modal-open">
@@ -72,14 +69,23 @@
         <div class="view-documentation item">Watch Video Instruction</div>
         <div class="copy-page-key item">Copy Page Key</div>
         <div class="contact-me item">Get In Touch</div>
-        <div class="divider"></div>
-        <div class="hide profile-management item">User Profile</div>
       </div>
     </a>
-    <a href="#" class="login-menu-option ui right floated item">
+    <a href="#" class="login-menu-option-guest ui right floated item">
       <span data-position="bottom center" data-tooltip="Sign In">
         <i class="red sign in icon"></i>
       </span>
+    </a>
+    <a href="#" class="login-menu-option-account hide dropdown ui right floated item">
+      <span data-position="left center" data-tooltip="Sign Out">
+        <i class="green sign out icon"></i>
+      </span>
+      <div class="menu">
+        <div class="account-signout-option item">Sign Out</div>
+        <div class="divider"></div>
+        <div class="profile-management item">Manage Email List</div>
+        <div class="topic-management item">Manage Topics</div>
+      </div>
     </a>
   </div>
 </div>

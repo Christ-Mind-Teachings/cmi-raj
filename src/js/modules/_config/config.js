@@ -1,4 +1,4 @@
-import store from "store";
+import {fetchConfiguration} from "www/modules/_util/cmi";
 import axios from "axios";
 import {status} from "./status";
 
@@ -18,48 +18,9 @@ const timingBase = "/t/raj/public/timing";
 
 //location of configuration files
 const configUrl = "/t/raj/public/config";
-const configStore = "config.raj.";
 
 //the current configuration, initially null, assigned by getConfig()
 let config;
-
-/*
-  The status constains the save date for each config file. We compare that to the saveDate
-  in the locally stored config file. If it's different or doesn't exist we need to get
-  a new version.
-
-  return: true - get a new version
-          false - use the one we've got
-*/
-function refreshNeeded(cfg) {
-  let saveDate = status[cfg.bid];
-
-  if (!cfg.saveDate) {
-    cfg.saveDate = saveDate;
-
-    //we don't use this anymore
-    if (cfg.lastFetchDate) {
-      delete cfg.lastFetchDate;
-    }
-    console.log("%s needs to be refreshed", cfg.bid);
-    return true; //refresh needed
-  }
-
-  if (cfg.saveDate === saveDate) {
-    //no refresh needed
-    return false;
-  }
-  else {
-    //config file has changed, refresh needed
-    cfg.saveDate = saveDate;
-    console.log("%s needs to be refreshed", cfg.bid);
-    return true;
-  }
-}
-
-function requestConfiguration(url) {
-  return axios.get(url);
-}
 
 /*
   Fetch audio timing data
@@ -76,91 +37,58 @@ export function fetchTimingData(url) {
   });
 }
 
-/*
-  We use book level configuration that is loaded by request via AJAX. Once
-  loaded the config is persisted in local storage. A check is made for
-  configuration data loaded from storage to determine if the data needs to
-  be reloaded. This is indicated using Define-webpack-plugin to set the timestamp
-  of configurations that have changed.
-
-  args:
-    book: the book identifier, woh, wot, etc
-    assign: when true, assign global variable 'config' to retrieved data
-*/
+/**
+ * Get the configuration file for 'book'. If it's not found in
+ * the cache (local storage) then get it from the server and 
+ * save it in cache.
+ *
+ * @param {string} book - the book identifier
+ * @param {boolean} assign - true if the config is to be assigned to global config variable
+ * @returns {promise}
+ */
 export function getConfig(book, assign = true) {
+  let lsKey = `cfg${book}`;
+  let url = `${configUrl}/${book}.json`;
+
   return new Promise((resolve, reject) => {
-    let cfg = store.get(`${configStore}${book}`);
-    let url;
-
-    //if config in local storage check if we need to get a freash copy
-    if (cfg && !refreshNeeded(cfg)) {
+    fetchConfiguration(url, lsKey, status).then((resp) => {
       if (assign) {
-        config = cfg;
+        config = resp;
       }
-      resolve(cfg);
-      return;
-    }
-
-    //get config from server
-    url = `${configUrl}/${book}.json`;
-    requestConfiguration(url)
-      .then((response) => {
-        //add save date before storing
-        response.data.saveDate = status[response.data.bid];
-        store.set(`${configStore}${book}`, response.data);
-        if (assign) {
-          config = response.data;
-        }
-        resolve(response.data);
-      })
-      .catch(() => {
-        config = null;
-        reject(`Config file: ${url} is not valid JSON`);
-      });
+      resolve(resp);
+    }).catch((err) => {
+      reject(err);
+    });
   });
 }
 
-/*
-  For transcript pages; load the configuration file.
-  For non-transcript pages; configuration is loaded by getConfig()
-
-  This is the same as getConfig() except it doesn't resolve passing the data
-  but a message indicating source of the configuration file
-
-  loadConfig resolves with:
-    0: no ${book}.json file found
-    1: config loaded from local store
-    2: config loaded from server
-*/
+/**
+ * Load the configuration file for 'book'. If it's not found in
+ * the cache (local storage) then get it from the server and 
+ * save it in cache.
+ *
+ * @param {string} book - the book identifier
+ * @returns {promise}
+ */
 export function loadConfig(book) {
+  let lsKey = `cfg${book}`;
+  let url = `${configUrl}/${book}.json`;
+
+  //"book" is a single page, no configuration
+  if (!book) {
+    return Promise.resolve(false);
+  }
+
   return new Promise((resolve, reject) => {
-    if (typeof book === "undefined") {
-      resolve(0);
-      return;
-    }
-    let cfg = store.get(`${configStore}${book}`);
-    let url;
-
-    //if config in local storage check if we need to get a freash copy
-    if (cfg && !refreshNeeded(cfg)) {
-      config = cfg;
-      resolve("config read from cache");
-      return;
-    }
-
-    //get config from server
-    url = `${configUrl}/${book}.json`;
-    requestConfiguration(url)
-      .then((response) => {
-        //add save date before storing
-        response.data.saveDate = status[response.data.bid];
-        store.set(`${configStore}${book}`, response.data);
-        config = response.data;
-        resolve("config fetched from server");
+    fetchConfiguration(url, lsKey, status)
+      .then((resp) => {
+        config = resp;
+        resolve(true);
       })
       .catch((error) => {
         config = null;
-        reject(`Config file: ${url} is not valid JSON`);
+        console.error(error);
+        reject(error);
       });
   });
 }

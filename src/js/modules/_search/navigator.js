@@ -3,7 +3,7 @@
 */
 
 import scroll from "scroll-into-view";
-import store from "store";
+import {storeGet} from "www/modules/_util/store";
 import notify from "toastr";
 const page = require("../_config/key");
 
@@ -209,7 +209,7 @@ function findPositions(pid, pageKey, flat) {
 }
 
 function initControls(pid) {
-  let lastSearch = store.get(queryResultName);
+  let lastSearch = storeGet("srchResults");
 
   if (!lastSearch) {
     notify.warning("There are no search results to show.");
