@@ -21,6 +21,7 @@ export default {
     srchResults: "srch.results",
     pnDisplay: "pn.display",
     cfgacq: "cfg.acq",
+    cfgacim: "cfg.acim",
     cfggrad: "cfg.grad",
     cfgyaa: "cfg.yaa",
     cfgsg2002: "cfg.sg2002",
