@@ -368,9 +368,6 @@ export default {
     times
   */
   initialize: function(player, timingData) {
-
-    console.log("capture.init");
-
     //if we support time capture and we already have timing data, mark paragraphs
     //with a clock instead of the bullseye to indicate that we do have data
     if (timingData) {
