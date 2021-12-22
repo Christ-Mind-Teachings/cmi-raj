@@ -10,6 +10,7 @@ import {bookmarkStart} from "./modules/_bookmark/start";
 import search from "./modules/_search/search";
 import toc from "./modules/_contents/toc";
 import about from "./modules/_about/about";
+import {initQuoteDisplay} from "www/modules/_topics/events";
 
 import {setLanguage} from "www/modules/_language/lang";
 import constants from "./constants";
@@ -24,6 +25,7 @@ $(document).ready(() => {
   auth.initialize();
   toc.initialize("page");
   about.initialize();
+  initQuoteDisplay("#show-quote-button", constants);
 
   initAnimation();
 });

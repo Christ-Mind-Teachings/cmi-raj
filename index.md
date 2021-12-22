@@ -16,6 +16,49 @@ footer:
 Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the ground approach to living *A Course In Miracles*. For over 15 years Raj patiently explains the meaning of the Course through the *ACIM Study Group*.
 
 <div id="page-contents">
+  <div class="ui equal width grid source-acq-section">
+    <div class="five wide column">
+      <div class="ui card">
+        <a href="#" data-book="acq" class="toc-modal-open image">
+          <img src="/t/raj/public/img/raj/acq-big.jpg">
+        </a>
+        <div class="content">
+          <div class="description">
+            Learn about Paul Tuttle and <em>The Raj Material</em>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column source-features">
+      <div class="ui top attached tabular menu">
+        <a class="active item" data-tab="first">News</a>
+        <a class="item" data-tab="second">Quotes</a>
+      </div>
+      <div id="news-tab-content" class="ui bottom attached active tab segment" data-tab="first">
+        <div class="box">
+          <p>
+            New! Discover Quotes.
+          </p>
+        </div>
+      </div>
+      <div id="quote-tab-content" class="ui bottom attached tab segment" data-tab="second">
+        <div class="ui form">
+          <div class="fields">
+            <div class="field">
+              <label>Get Inspired</label>
+              <button id="show-quote-button" class="ui primary button">
+                <i class="quote left icon"></i>
+                Read Quotes
+              </button> 
+            </div>
+            <div id="user-quote-select" class="field"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--
   <div class="ui three cards">
     <div class="card">
       <a href="#" data-book="acq" class="toc-modal-open image">
@@ -28,6 +71,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
       </div>
     </div>
   </div>
+  -->
   <div class="ui three cards">
     <div class="card">
       <a href="#" data-book="yaa" class="toc-modal-open image">

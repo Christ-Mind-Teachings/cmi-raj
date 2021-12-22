@@ -10,6 +10,8 @@ export default {
   env: "integration",
   lang: "en",
   sourceId: 13,
+  quoteManagerId: "05399539cca9ac38db6db36f5c770ff1",
+  quoteManagerName: "CMI",
   url_prefix: "/t/raj",
   getPageInfo: getPageInfo,              //list
   keyInfo: keyInfo,                      //list, bmnet

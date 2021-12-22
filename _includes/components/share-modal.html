@@ -1,26 +1,27 @@
 <div id="share-modal" class="ui small modal quote-coupled">
-  <div id="share-modal-header" class="center header">Share By Email</div>
+  <div id="share-modal-header" class="center header">{{site.data.lang.quotes.q1}}</div>
   <div id="share-modal-content" class="content">
+
     <div class="ui info message">
       <p class="message" >
-        Select recipients from the dropdown list and/or enter email addresses in the field below.
+        {{site.data.lang.share.s1}}        
       </p>
     </div>
     <form name="emailmodalshare" id="email-modal-share-form" class="ui form">
       <div id="maillist-modal-select" class="field"></div>
       <div class="field">
-        <label>Enter Email Address(es)</label>
-        <input type="text" name="emailAddresses" placeholder="Comma delimited list">
+        <label>{{site.data.lang.share.s2}}</label>
+        <input type="text" name="emailAddresses" placeholder="{{site.data.lang.share.s3}}">
       </div>
       <div class="field">
-        <label>Add a message to send with the quote.</label>
-        <textarea type="text" rows="2" name="emailMessage" placeholder="Your message. (optional)"></textarea>
+        <label>{{site.data.lang.share.s8}}</label>
+        <textarea type="text" rows="2" name="emailMessage" placeholder="{{site.data.lang.share.s9}}"></textarea>
       </div>
     </form>
 
   </div>
   <div class="actions">
-    <div id="share-modal-share" class="ok ui blue button">Send Mail</div>
-    <div id="share-modal-more" class="cancel ui blue button">Cancel</div>
+    <div id="share-modal-share" class="ok ui blue button">{{site.data.lang.quotes.q5}}</div>
+    <div id="share-modal-more" class="cancel ui blue button">{{site.data.lang.form.f2}}</div>
   </div>
 </div>
