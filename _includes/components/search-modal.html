@@ -2,7 +2,7 @@
 <div class="search ui modal">
   <i class="close icon"></i>
   <div class="ui large header">
-    Search the The Raj Material<br/>
+    Search {{site.title}}<br/>
     <small>
       <a href="/acq/search/">See Documentation</a>
     </small>
@@ -15,23 +15,46 @@
       <div class="ui search positive message">
         <div class="content">
           <div class="search-message header">
-            Welcome to the Raj Material Search&hellip;
+            Welcome to {{site.title}} Search&hellip;
           </div>
           <div class="search-message-body">
             <p>Enter your search and press enter to begin.</p>
           </div>
         </div>
       </div>
-      <form id="search" class="">
+      <form id="search" class="ui form">
         <div class="field">
           <!-- <div class="ui right labeled left icon input"> -->
+          <label>Enter Search</label>
           <div class="ui icon fluid input">
-            <input id="search-input-field" type="search" placeholder="Enter search">
+            <input id="search-input-field" name="query" type="search" placeholder="Enter search">
             <i class="inverted circular search link icon"></i>
           </div>
         </div>
-        <div class="field">
-          <button class="ui button" type="submit">Search</button>
+        <div class="two fields">
+          <div class="twelve wide field">
+            <label>Or Select Saved Search</label>
+            <div id="saved-search-select" class="ui clearable disabled selection dropdown">
+              <input type="hidden" name="savedSearch" value="">
+              <i class="dropdown icon"></i>
+              <div class="default text">Select Saved Search</div>
+              <div class="menu"></div>
+            </div>
+          </div>
+          <div class="four wide field">
+            <button class="show-desc ui mini primary disabled button">Show Description</button>
+          </div>
+        </div>
+        <div class="inline fields">
+          <div class="field">
+            <button class="ui button" type="submit">Search</button>
+          </div>
+          <div class="field">
+            <div class="ui checkbox exact">
+              <input type="checkbox" name="exact" tabindex="0" class="hidden">
+              <label>Find Exact Matches Only</label>
+            </div>
+          </div>
         </div>
       </form>
       <h4 class="ui horizontal divider header">

@@ -1,6 +1,9 @@
 <div class="hide-search-navigator search-navigator-wrapper">
   <div class="search-navigator ui raised padded red segment">
     <h4 class="ui header">
+      <button class="ui mini right floated disabled primary save-changes button">
+        Save Changes
+      </button>
       <i class="book icon"></i>
       <div class="content search-navigator-header-book"></div>
     </h4>
@@ -10,7 +13,7 @@
       <div class="content search-navigator-header-query"></div>
     </h4>
     <div class="ui horizontal list">
-      <a class="previous-page item">
+      <a class="previous-page item remove-hit-check">
         <i class="left arrow icon"></i>
         Previous Page
       </a>
@@ -26,13 +29,17 @@
         <i class="down arrow icon"></i>
         Next
       </a>
-      <a class="next-page item">
+      <a class="next-page item remove-hit-check">
         <i class="right arrow icon"></i>
         Next Page
       </a>
       <a class="close-window item">
         <i class="window close outline icon"></i>
         Close
+      </a>
+      <a class="remove-match item">
+        <i class="trash green icon"></i>
+        Remove
       </a>
     </div>
     <div id="search-content"></div>
