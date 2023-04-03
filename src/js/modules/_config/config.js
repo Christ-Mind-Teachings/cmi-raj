@@ -1,4 +1,5 @@
-import {fetchConfiguration} from "www/modules/_util/cmi";
+//import {fetchConfiguration} from "www/modules/_util/cmi";
+import {fetchConfiguration} from "www/modules/_ajax/config";
 import axios from "axios";
 import {status} from "./status";
 
