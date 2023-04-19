@@ -13,8 +13,18 @@
   {% include common/load-open-graph.html %}
 
   <link rel="stylesheet" href="/public/css/{{site.semantic}}/semantic.css">
-  <link rel="stylesheet" href="/t/raj/public/js/vendors~transcript.me-styles.css">
-  <link rel="stylesheet" href="/t/raj/public/js/me-styles.css">
+  {% if page.audio != false %}
+    <!-- include audio css support -->
+    <link rel="stylesheet" href="/public/vendor/audio/css/mediaelementplayer.css"></script>
+    <link rel="stylesheet" href="/public/vendor/audio/css/capture.css"></script>
+    <link rel="stylesheet" href="/public/vendor/audio/css/jump-forward.css"></script>
+    <link rel="stylesheet" href="/public/vendor/audio/css/nextp.css"></script>
+    <link rel="stylesheet" href="/public/vendor/audio/css/prevp.css"></script>
+    <link rel="stylesheet" href="/public/vendor/audio/css/ptoggle.css"></script>
+    <link rel="stylesheet" href="/public/vendor/audio/css/skip-back.css"></script>
+    <link rel="stylesheet" href="/public/vendor/audio/css/speed.css"></script>
+  {% endif %}
+
   <link rel="stylesheet" href="/public/css/toastr.css">
   <link rel="stylesheet" href="/public/css/cmi.css">
   <link rel="stylesheet" href="/public/css/transcript.css">
@@ -56,12 +66,6 @@
     {% include components/search-desc-modal.html %}
     {% include components/search-navigator.html %}
   {% endif %}
-  {% if page.audio != false %}
-    <!-- include audio support -->
-    {% include components/audio-player.html %}
-    {% include components/timecapture-modal.html %}
-    {% include components/time-edit-modal.html %}
-  {% endif %}
   {% if page.bookmark != false %}
     <!-- include bookmark support -->
     {% include components/bookmark-modal.html %}
@@ -74,19 +78,25 @@
 
   {% include common/javascript.html %}
 
+  <script src="/public/vendor/jquery/jquery.min.js"></script>
+  <script src="/public/vendor/{{site.semantic}}/semantic.min.js"></script>
+  {% if page.audio != false %}
+    <script src="/public/vendor/audio/js/mediaelement-and-player.min.js"></script>
+    <script src="/public/vendor/audio/js/capture.js"></script>
+    <script src="/public/vendor/audio/js/jump-forward.js"></script>
+    <script src="/public/vendor/audio/js/nextp.js"></script>
+    <script src="/public/vendor/audio/js/prevp.js"></script>
+    <script src="/public/vendor/audio/js/ptoggle.js"></script>
+    <script src="/public/vendor/audio/js/skip-back.js"></script>
+    <script src="/public/vendor/audio/js/speed.js"></script>
+  {% endif %}
   {% if jekyll.environment == "production" %}
     <!-- RAJ transcript Webpack production ({{site.semantic}})  -->
-    <script src="/public/vendor/jquery/jquery.min.js"></script>
-    <script src="/public/vendor/{{site.semantic}}/semantic.min.js"></script>
-
     <script src="/t/raj/public/js/vendors~page~transcript.js"></script>
     <script src="/t/raj/public/js/vendors~transcript.js"></script>
     <script src="/t/raj/public/js/transcript.js"></script>
   {% else %}
     <!-- RAJ transcript Webpack development ({{site.semantic}})  -->
-    <script src="/public/vendor/jquery/jquery.js"></script>
-    <script src="/public/vendor/{{site.semantic}}/semantic.js"></script>
-
     <script src="/t/raj/public/js/vendors~page~transcript.js"></script>
     <script src="/t/raj/public/js/vendors~transcript.js"></script>
     <script src="/t/raj/public/js/page~transcript.js"></script>

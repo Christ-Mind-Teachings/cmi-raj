@@ -17,14 +17,11 @@ port:         9913
 # About/contact
 author:
   name:              Rick Mercer
-  url:               https://twitter.com/rmercer33
-  email:             rmercer33@gmail.com
+  url:               https://rickmercer.us
+  email:             rmercer33@christmind.info
 
 fb-appId:     448658485318107
 semantic:     fui292
-#semantic:     fui286
-#semantic:     sui231
-#semantic:     sui241
 
 # Permalinks
 permalink: pretty

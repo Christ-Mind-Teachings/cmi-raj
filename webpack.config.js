@@ -1,7 +1,5 @@
 const webpack = require("webpack");
 const path = require("path");
-//const etp = require("extract-text-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   devtool: "source-map",
@@ -11,20 +9,7 @@ module.exports = {
 
   resolve: {
     alias: {
-      /*
-      "semantic": "../vendor/semantic",
-      "acim": path.resolve(__dirname, "../cmi-acim/src/js"),
-      "oe": path.resolve(__dirname, "../cmi-oe/src/js"),
-      "acol": path.resolve(__dirname, "../cmi-acol/src/js"),
-      "col": path.resolve(__dirname, "../cmi-col/src/js"),
-      "ftcm": path.resolve(__dirname, "../cmi-ftcm/src/js"),
-      "jsb": path.resolve(__dirname, "../cmi-jsb/src/js"),
-      "raj": path.resolve(__dirname, "../cmi-raj/src/js"),
-      "wom": path.resolve(__dirname, "../cmi-wom/src/js"),
-      "pwom": path.resolve(__dirname, "../cmi-pwom/src/js"),
-     */
-      "me-plugin": path.resolve(__dirname, "../cmi-audio/dist"),
-      "www": path.resolve(__dirname, "../cmi-www/src/js")
+      "common": path.resolve(__dirname, "../cmi-common/src/js")
     }
   },
 
@@ -53,22 +38,9 @@ module.exports = {
         loader: "babel-loader",
         exclude: /node_modules/,
         query: {cacheDirectory: true}
-      },
-      {
-        test: /\.css$/,
-        use: [ "style-loader", MiniCssExtractPlugin.loader, "css-loader"]
       }
     ]
   },
-  plugins: [
-    new MiniCssExtractPlugin({filename: 'me-styles.css'})
-    /*
-    new MiniCssExtractPlugin({filename: 'me-styles.css'}),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
-    })
-    */
-  ]
+  plugins: [ ]
 };
 

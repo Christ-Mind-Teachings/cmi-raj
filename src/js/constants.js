@@ -3,18 +3,32 @@
 */
 
 const keyInfo = require("./modules/_config/key");
-import {getPageInfo} from "./modules/_config/config";
+import {getReservation, getAudioInfo, getPageInfo} from "./modules/_config/config";
+
+const env = "integration";
+const sid = "raj";
+const lang = "en";
+const title = "The Raj Material";
+const HOME_URI = `/t/${sid}`;
 
 export default {
-  sid: "raj",
-  env: "integration",
-  lang: "en",
+  sid: sid,
+  env: env,
+  lang: lang,
+  title: title,
+  url_prefix: HOME_URI,
+  configUrl: `${HOME_URI}/public/config`,
   sourceId: 13,
   quoteManagerId: "05399539cca9ac38db6db36f5c770ff1",
   quoteManagerName: "CMI",
-  url_prefix: "/t/raj",
-  getPageInfo: getPageInfo,              //list
-  keyInfo: keyInfo,                      //list, bmnet
+  getPageInfo: getPageInfo,
+  keyInfo: keyInfo,
+  audio: {
+    audioBase: `https://s3.amazonaws.com/assets.christmind.info/nwffacim/audio`,
+    timingBase: `${HOME_URI}/public/timing`,
+    getReservation: getReservation,
+    getAudioInfo: getAudioInfo
+  },
   store: {
     bmList: "bm.list",
     bmCreation: "bm.creation",

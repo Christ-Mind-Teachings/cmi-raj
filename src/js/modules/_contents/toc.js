@@ -1,11 +1,11 @@
 import scroll from "scroll-into-view";
+
 import {getConfig} from "../_config/config";
 import keyInfo from "../_config/key";
 
 const uiTocModal = ".toc.ui.modal";
 const uiOpenTocModal = ".toc-modal-open";
 const uiModalOpacity = 0.5;
-
 
 /*
   format links to Raj ACIM Sessions
