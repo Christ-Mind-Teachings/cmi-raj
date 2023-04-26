@@ -1,46 +1,30 @@
+/**
+ * CMI sources use the same webpack config file with few exceptions. The shared
+ * config file is found in the cmi-common project. Any changes affecting all
+ * sources should be made there.
+ *
+ * Source specific changes should be made here and added to the config file.
+ */
+const cfg = require("../cmi-common/webpack/config.js");
+
 const webpack = require("webpack");
 const path = require("path");
 
-module.exports = {
-  devtool: "source-map",
-  stats: {
-    colors: true
-  },
+module.exports = (env, argv) => {
 
-  resolve: {
-    alias: {
-      "common": path.resolve(__dirname, "../cmi-common/src/js")
-    }
-  },
+  //write output to public/js
+  cfg.output.path = path.join(__dirname, "public/js");
 
-  entry: {
-    transcript: ["./src/js/transcript.js"],
-    page: ["./src/js/page.js"]
-  },
-  output: {
-    path: path.join(__dirname, "public/js"),
-    publicPath: "/public/js",
-    filename: "[name].js"
-  },
-  optimization: {
-    splitChunks: {
-      chunks: "all",
-    }
-  },
-  module: {
-    rules: [
-      {
-        test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader?name=/[hash].[ext]"
-      },
-      {
-        test: /\.js?$/,
-        loader: "babel-loader",
-        exclude: /node_modules/,
-        query: {cacheDirectory: true}
-      }
-    ]
-  },
-  plugins: [ ]
+  //dev specific directives
+  if (argv.mode === "development") {
+    cfg.devtool = "source-map";
+  }
+
+  if (argv.mode === "production") {
+  }
+
+  //console.log("cfg %o", cfg);
+
+  return cfg;
 };
 

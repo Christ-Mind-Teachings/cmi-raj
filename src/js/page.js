@@ -1,18 +1,14 @@
 /* eslint no-console: off */
 
 import {SourceStore, storeInit} from "common/modules/_util/store";
+import {initHomePage} from "common/modules/_page/startup";
 import search from "common/modules/_search/search";
-import auth from "common/modules/_user/netlify";
-import {initStickyMenu, initAnimation} from "common/modules/_page/startup";
 import {showSearch, showQuotes, showTOC} from "common/modules/_util/url";
 import {initQuoteDisplay} from "common/modules/_topics/events";
-import fb from "common/modules/_util/facebook";
 
 //teaching specific modules
-import {searchInit} from "./modules/_search/search";
-import {bookmarkStart} from "./modules/_bookmark/start";
 import toc from "./modules/_contents/toc";
-import about from "./modules/_about/about";
+import {pageDriver} from "./modules/_util/driver";
 import {setEnv} from "./modules/_config/config";
 
 import constants from "./constants";
@@ -20,18 +16,14 @@ import constants from "./constants";
 $(document).ready(() => {
   const store = new SourceStore(constants);
   storeInit(constants);
-  initStickyMenu();
 
-  auth.initialize();
   setEnv(store);
 
-  bookmarkStart("page", store);
-  search.initialize(searchInit(store));
+  initHomePage(store, pageDriver);
+  search.initialize(store);
   toc.initialize("page");
-  about.initialize();
 
   initQuoteDisplay("#show-quote-button", store);
-  initAnimation();
 
   //if url contains ?tocbook=[ack | book1 | book2] then show TOC on page load
   showTOC();
