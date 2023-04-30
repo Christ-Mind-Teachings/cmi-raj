@@ -1,0 +1,33 @@
+<!-- _includes/common/quick-link-menu-mobile.html -->
+<button id="quick-links-dropdown-menu" class="ui dropdown button">
+  <i class="book icon"></i>
+  <div id="quick-links" class="menu quick-links">
+    {% unless include.name == "acimoe" %}
+    <div class="item" data-href="/t/acimoe/">ACIM Original Edition</div>
+    {% endunless %}
+    {% unless include.name == "acol" %}
+    <div class="item" data-href="/t/acol/">A Course Of Love</div>
+    {% endunless %}
+    {% unless include.name == "col" %}
+    <div class="item" data-href="/t/col/">Choose Only Love</div>
+    {% endunless %}
+    {% unless include.name == "raj" %}
+    <div class="item" data-href="/t/raj/">The Raj Material</div>
+    {% endunless %}
+    {% unless include.name == "wom" %}
+    <div class="item" data-href="/t/wom/">The Way of Mastery</div>
+    {% endunless %}
+    {% unless include.name == "ftcm" %}
+    <div class="item" data-href="/t/ftcm/">From the Christ Mind</div>
+    {% endunless %}
+    {% unless include.name == "pwom" %}
+    <div class="item" data-href="/t/pwom/">Droga Mistrzostwa</div>
+    {% endunless %}
+    {% unless include.name == "jsb" %}
+    <div class="item" data-href="/t/jsb/">The Impersonal Life</div>
+    {% endunless %}
+    {% unless include.name == "acim" %}
+    <div class="item" data-href="/t/acim/">ACIM Sparkly Edition</div>
+    {% endunless %}
+  </div>
+</button>

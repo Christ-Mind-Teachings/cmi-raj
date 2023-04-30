@@ -36,7 +36,16 @@
 </head>
 <body sourceId="{{site.sourceId}}">
   {% include common/masthead.html %}
-  {% include common/transcript-menu.html %}
+
+  <!-- for non mobile devices -->
+  <div id="transcript-menu-large">
+    {% include common/transcript-menu.html %}
+  </div>
+
+  <!-- for mobile devices -->
+  <div id="transcript-menu-mobile">
+    {% include common/transcript-menu-mobile.html %}
+  </div>
 
   <div id="transcript-page-loading" class="ui dimmer">
     <div class="ui text loader">
@@ -65,6 +74,12 @@
     {% include components/search-modal.html %}
     {% include components/search-desc-modal.html %}
     {% include components/search-navigator.html %}
+  {% endif %}
+  {% if page.audio != false %}
+    <!-- include audio js support -->
+    {% include components/audio-player.html %}
+    {% include components/timecapture-modal.html %}
+    {% include components/time-edit-modal.html %}
   {% endif %}
   {% if page.bookmark != false %}
     <!-- include bookmark support -->

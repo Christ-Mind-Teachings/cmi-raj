@@ -1,0 +1,97 @@
+<!-- _includes/common/transcript-menu-mobile.html -->
+
+<div id="transcript-top-bar" class="ui buttons large">
+
+
+  {% unless page.restricted-menu %}
+  <a id="toc-previous-page" href="#" class="ui icon button toc-previous-page">
+    <i class="left chevron icon"></i>
+  </a>
+  <button id="contents-modal-open" data-book="{{page.bid | downcase}}" class="ui align justify icon button toc-modal-open">
+    <i class="align justify icon"></i>
+    Contents
+  </button>
+  <a id="toc-next-page" href="#" class="ui right icon button toc-next-page">
+    <i class="right chevron icon"></i>
+  </a>
+  {% endunless %}
+
+
+  <button id="search-modal-open" class="ui right icon button search-modal-open">
+    <i class="search icon"></i>
+    Search
+  </button>
+
+  <button id="login-account-menu-option" class="login-menu-option-account hide dropdown ui right button">
+    <i class="green user icon"></i>
+    <div class="menu">
+      <div class="account-signout-option item">Sign Out</div>
+      <div class="divider"></div>
+      <div class="profile-management item">Manage Email List</div>
+      <div class="topic-management item">Manage Topics</div>
+    </div>
+  </button>
+
+  <button id="login-guest-menu-option" class="login-menu-option-guest ui right button">
+    <i class="red user icon"></i>
+  </button>
+</div>
+
+<div id="transcript-bottom-bar" class="ui buttons large">
+
+  <button id="audio-player-menu-option" class="audio-player-toggle hide ui button" >
+    <i class="volume up icon"></i>
+  </button>
+
+  <button id="bookmark-dropdown-menu" class="requires-signin hide ui dropdown button">
+    <span>
+      <i class="icons">
+        <i class="bookmark-icon green bookmark icon"></i>
+        <i class="bookmark-corner-icon hide corner close icon"></i>
+      </i>
+    </span>
+    <div class="menu">
+      <div id="bookmark-modal-open" class="bookmark-modal-open item">Show Bookmarks</div>
+      <div id="bookmark-toggle-disable-selection" class="toggle-bookmark-selection item">Disable Bookmark Creation</div>
+      <div id="bookmark-toggle-highlight" class="toggle-bookmark-highlight item">Hide Highlighted Text</div>
+      <div id="bookmark-filter-wrapper" class="hide">
+        <div class="divider"></div>
+        <div id="current-topic-filter" data-filter="none" class="item header">Topic Filter: None</div>
+        <div id="page-topics-modal-open" class="page-topics-modal-open item">Filter Bookmarks</div>
+      </div>
+    </div>
+  </button>
+
+  {% unless page.pnumToggle == false %}
+  <button id="pnum-toggle-menu-option" class="toggle-paragraph-markers button ui">
+    <span>
+      <i class="icons">
+        <i class="paragraph icon"></i>
+        <i class="paragraph-corner-icon hide corner close icon"></i>
+      </i>
+    </span>
+  </button>
+  {% endunless %}
+
+  <a id="jump-to-top-menu-option" href="#masthead-title" class="top-of-page button ui">
+    <i class="level up icon"></i>
+    Top
+  </a>
+
+  {% include common/quick-link-menu-mobile.html name="raj" %}
+
+
+  <button id="about-dropdown-menu" class="dropdown button ui">
+    <i class="question icon"></i>
+    <div id="help-menu" class="menu help-menu">
+      <div id="transcript-page-info" class="header"></div>
+      <div class="divider"></div>
+      <div class="transcript-tour item">Tour the Page</div>
+      <div class="read-documentation item">Read Documentation</div>
+      <div class="view-documentation item">Watch Video Instruction</div>
+      <div class="contact-me item">Get In Touch</div>
+      <div class="divider"></div>
+      <div class="copy-page-key item">Copy Page Key</div>
+    </div>
+  </button>
+</div>
