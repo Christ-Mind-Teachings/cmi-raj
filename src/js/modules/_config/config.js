@@ -132,8 +132,22 @@ export function getReservation(url) {
     pageKey: a key uniuely identifying a transcript page
     data: optional, data that will be added to the result, used for convenience
 */
-export function getPageInfo(pageKey, data = false) {
-  let decodedKey = transcript.decodeKey(pageKey);
+export function getPageInfo(page, data = false) {
+
+  let decodedKey;
+  let pageKey;
+
+  /*
+   * Convert arg: page to pageKey if it is passed in as a url
+   */
+  if (typeof page === "string" && page.startsWith("/t/")) {
+    pageKey = transcript.genPageKey(page);
+  }
+  else {
+    pageKey = page;
+  }
+
+  decodedKey = transcript.decodeKey(pageKey);
   let info = {pageKey: pageKey, source: g_sourceInfo.title, bookId: decodedKey.bookId};
 
   if (data) {
@@ -148,6 +162,11 @@ export function getPageInfo(pageKey, data = false) {
         info.bookTitle = data.title;
         info.title = data.contents[decodedKey.uid].title;
         info.url = `${data.base}${data.contents[decodedKey.uid].url}`;
+
+        //Rick added Feb 24, 2025
+        info.audio = data.contents[decodedKey.uid].audio;
+        info.timing = data.contents[decodedKey.uid].timing;
+        info.audioBase = g_sourceInfo.audioBase;
 
         resolve(info);
       })

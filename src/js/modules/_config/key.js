@@ -42,7 +42,7 @@ const books = [
 ];
 
 const bookIds = ["xxx", ...books];
-const acq = ["xxx", "welcome", "raj", "download", "web"];
+const acq = ["xxx", "welcome", "raj", "download"];
 const grad = [
   "xxx", "g000002", "g000003", "g010491", "g010591", "g011491", "g011591", "g011691", "g011891",
   "g012091", "g012591", "g012791", "g020291", "g020591", "g020691", "g021291", "g021391", "g021491",
