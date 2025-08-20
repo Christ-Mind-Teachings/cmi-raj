@@ -79,6 +79,16 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
         </div>
       </div>
     </div>
+    <div class="card">
+      <a href="#" data-book="shorts" animate class="toc-modal-open image">
+        <img src="/t/raj/public/img/raj/audioshorts.jpg">
+      </a>
+      <div class="content">
+        <div class="description">
+          Audio shorts...
+        </div>
+      </div>
+    </div>
   </div>
   <h2 class="ui header">A Course In Miracles Study Group with Raj</h2>
   <p>

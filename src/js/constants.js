@@ -56,6 +56,7 @@ export default {
     cfgsg2015: "cfg.sg2015",
     cfgsg2016: "cfg.sg2016",
     cfgsg2017: "cfg.sg2017",
-    cfgsg2018: "cfg.sg2018"
+    cfgsg2018: "cfg.sg2018",
+    cfgshorts: "cfg.shorts"
   }
 };
