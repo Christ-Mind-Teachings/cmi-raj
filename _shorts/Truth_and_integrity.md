@@ -5,3 +5,6 @@
 
 ## {{page.title}}
 
+Truth and integrity are not something that blow in the breeze. Truth and
+integrity. Simply are. And they are. Unyieldingly.
+
