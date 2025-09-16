@@ -95,6 +95,9 @@ collections:
   sg2018:
     output: true
     title: "ACIM Study Group: 2018"
+  shorts:
+    output: true
+    title: "Audio Gems from Raj & Paul"
 
 defaults:
   - scope:
@@ -309,6 +312,16 @@ defaults:
       image-width: 612
       image-height: 792
       bid: "sg2018"
+  - scope:
+      path: ""
+      type: shorts
+    values:
+      layout: transcript
+      book: "Audio Gems"
+      image: "/t/raj/public/img/raj/shorts-big2.jpg"
+      image-width: 612
+      image-height: 792
+      bid: "shorts"
 
 exclude: [
   moved.html, deploy, LICENSE, README.md, Gemfile, Gemfile.lock, package.json, package-lock.json, node_modules, webpack.config.js, src, project

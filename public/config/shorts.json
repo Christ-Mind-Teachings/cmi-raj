@@ -1,19 +1,21 @@
 {
   "bid": "shorts",
   "base": "/t/raj/shorts",
-  "image": "/t/raj/public/img/raj/audioshorts.jpg",
+  "image": "/t/raj/public/img/raj/shorts-toc.jpg",
   "title": "Audio Gems from Raj and Paul",
   "contents": [
     {
       "url": "/Abandoning_Thinking_1/",
       "desc": "Abandoning Thinking 1",
       "audio": "/shorts/Abandoning_Thinking_1.mp3",
+      "timing": "/shorts/Abandoning_Thinking_1.json",
       "title": "Abandoning Thinking 1"
     },
     {
       "url": "/Abandoning_Thinking_2/",
       "desc": "Abandoning Thinking 2",
       "audio": "/shorts/Abandoning_Thinking_2.mp3",
+      "timing": "/shorts/Abandoning_Thinking_2.json",
       "title": "Abandoning Thinking 2"
     },
     {

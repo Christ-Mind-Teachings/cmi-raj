@@ -310,7 +310,7 @@ defaults:
     values:
       layout: transcript
       book: "Audio Gems"
-      image: "/t/raj/public/img/raj/audioshorts.jpg"
+      image: "/t/raj/public/img/raj/shorts-big3.jpg"
       image-width: 612
       image-height: 792
       bid: "shorts"

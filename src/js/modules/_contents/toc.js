@@ -37,9 +37,9 @@ function makeRajContents(contents) {
   return (`
     <div class="ui relaxed list">
       ${contents.map((unit, cidx) => `
-        <div class="item"> 
+        <div class="item">
           <div class="header">Chapter ${unit.id}: ${unit.title}</div>
-          ${unit.sections ? renderRajSections(unit.base, unit.sections, cidx) : "" } 
+          ${unit.sections ? renderRajSections(unit.base, unit.sections, cidx) : "" }
         </div>
       `).join("")}
     </div>
@@ -53,7 +53,7 @@ function makeContents(base, contents) {
   return (`
     <div class="ui relaxed ordered list">
       ${contents.map((content, pidx) => `
-        <a data-lid="${pidx+1}" class="item" href="${base}${content.url}">${content.title}</a>`).join("")}
+        <a data-lid="${pidx+1}" class="item" href="${base}${content.url}">&nbsp;&nbsp;&nbsp;${content.title}</a>`).join("")}
     </div>
   `);
 }
