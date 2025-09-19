@@ -10,7 +10,7 @@ with me and help me be in this place. Help me not suddenly slip and
 abandon you. Let me not forget about being joined with you. So that when
 apparent challenges come my way I will stay with you and look at it
 from this peace which is inseparable from our joining. So that I might
-live through what comes up in ways that identify Peace and fulfillment
+live through what comes up in ways that identify peace and fulfillment
 and nothing else. Because I really want to exist differently than the
 way I have been existing.
 
@@ -18,7 +18,7 @@ Above all else I want to see differently. I want to see minus my
 conditioned responses to what I see. I want to see beyond my best
 judgments about everything. I want to see everything through your
 vision. I want to see everything through your vision, Jesus, which is
-your gift to me from God. Now, this is A little bit more intimate and
+your gift to me from God. Now, this is a little bit more intimate and
 personal expression Of what you find in the book of John and the Bible.
 That says, "Let that mind be in you which was also in Christ Jesus."
 It's more intimate and personal because you're saying to Jesus, I want
@@ -43,12 +43,14 @@ inharmony will end.
 
 And I will be quiet now as you continued.
 
-This is The divine event embodying the fullness of
+[soft music]
+
+This is the divine event embodying the fullness of
 the perfection of the love that God is being. That it is an awesome
 event, that will be far from dull. That will be more satisfying than the
 word satisfaction has ever meant to you before.
 
-I love you. You are all Mightily supported. In your experience of the
+I love you. You are all Mightily supported in your experience of the
 atonement. Don't go through this week feeling that you're doing it all
 by yourself. Let the experience of being actively loved, *In.*
 
