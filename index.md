@@ -85,7 +85,11 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
       </a>
       <div class="content">
         <div class="description">
-          Audio shorts
+          <p>Audio shorts</p>
+
+          <p><em>Sept 25, 2025 Note: </em>This section needs volunteers. If you'd like to
+          help please contact <a href="/acq/contact/">Rick.</a>
+          </p>
         </div>
       </div>
     </div>
