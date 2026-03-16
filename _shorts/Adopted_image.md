@@ -21,7 +21,7 @@ has adopted the picture. And the you that has adopted the picture is
 still the son or daughter of God, still the direct expression of God in
 this very moment. It's the you that has the real ear right in the middle
 of the kingdom of heaven hearing me right in the middle of the kingdom
-of heaven speaking to you. Even though What you're hearing is getting
+of heaven speaking to you. Even though what you're hearing is getting
 translated into the dream you're currently dreaming.
 
 Everything that you think is what doesn't matter and I can take care of
@@ -29,7 +29,7 @@ that. All the definitions that you have given to everything that have
 biased your perception of what it truly is, I can take care of, if you
 shall choose exactly.
 
-First of all, what does matter? is creation itself. What does matter is
+First of all, what does matter is creation itself. What does matter is
 what is really going on. My control can take over everything that does
 not matter while my guidance can direct everything that does.  What do
 you think my guidance is? My guidance is what the father is saying to
