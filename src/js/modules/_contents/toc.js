@@ -47,8 +47,27 @@ function makeRajContents(contents) {
 }
 
 /*
-  generate toc html for flat config file
+* Mark shorts as incomplete if they don't have timing
 */
+function getStatus(content) {
+  if (content.timing) {
+    return "&nbsp;".concat(content.title);
+  }
+  return '<i class="genderless red icon"></i>'.concat(content.title);
+}
+
+/*
+  generate toc html for Raj shorts
+*/
+function makeContentsShorts(base, contents) {
+    return (`
+      <div class="ui relaxed ordered list">
+        ${contents.map((content, pidx) => `
+          <a data-lid="${pidx+1}" class="item" href="${base}${content.url}">&nbsp;&nbsp;${getStatus(content)}</a>`).join("")}
+      </div>
+    `);
+  }
+
 function makeContents(base, contents) {
   return (`
     <div class="ui relaxed ordered list">
@@ -178,9 +197,15 @@ function loadTOC(toc) {
 
       switch(contents.bid) {
         case "acim":
+          $(".toc-message").html("");
           toc.html = makeRajContents(contents.contents);
           break;
+        case "shorts":
+          $(".toc-message").html('<i class="genderless red icon"></i>: indicates item needs formatting and you can help!');
+          toc.html = makeContentsShorts(contents.base, contents.contents);
+          break;
         default:
+          $(".toc-message").html("");
           toc.html = makeContents(contents.base, contents.contents);
           break;
       }
@@ -255,9 +280,15 @@ export default {
 
             switch(contents.bid) {
               case "acim":
+                $(".toc-message").html("");
                 $(".toc-list").html(makeRajContents(contents.contents));
                 break;
+              case "shorts":
+                $(".toc-message").html('<i class="genderless red icon"></i>: indicates item needs formatting and you can help!');
+                $(".toc-list").html(makeContentsShorts(contents.base, contents.contents));
+                break;
               default:
+                $(".toc-message").html("");
                 $(".toc-list").html(makeContents(contents.base, contents.contents));
                 break;
             }
