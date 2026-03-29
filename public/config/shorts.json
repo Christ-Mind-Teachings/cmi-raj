@@ -3,6 +3,7 @@
   "base": "/t/raj/shorts",
   "image": "/t/raj/public/img/raj/shorts-toc.jpg",
   "title": "Audio Gems from Raj and Paul",
+  "message": "<i class=\"genderless red icon\"></i>: indicates item needs formatting, you can help!",
   "contents": [
     {
       "url": "/Abandoning_Thinking_1/",
@@ -2389,72 +2390,84 @@
       "url": "/You_are_a_thought_of_God/",
       "desc": "You are a thought of God",
       "audio": "/shorts/You_are_a_thought_of_God.mp3",
+      "timing": "/shorts/You_are_a_thought_of_God.json",
       "title": "You are a thought of God"
     },
     {
       "url": "/You_are_a_verb/",
       "desc": "You are a verb",
       "audio": "/shorts/You_are_a_verb.mp3",
+      "timing": "/shorts/You_are_a_verb.json",
       "title": "You are a verb"
     },
     {
       "url": "/You_are_confronted_with_reality/",
       "desc": "You are confronted with reality",
       "audio": "/shorts/You_are_confronted_with_reality.mp3",
+      "timing": "/shorts/You_are_confronted_with_reality.json",
       "title": "You are confronted with reality"
     },
     {
       "url": "/You_are_consciousness/",
       "desc": "You are consciousness",
       "audio": "/shorts/You_are_consciousness.mp3",
+      "timing": "/shorts/You_are_consciousness.json",
       "title": "You are consciousness"
     },
     {
       "url": "/You_are_Mind/",
       "desc": "You are Mind",
       "audio": "/shorts/You_are_Mind.mp3",
+      "timing": "/shorts/You_are_Mind.json",
       "title": "You are Mind"
     },
     {
       "url": "/You_are_not_in_charge/",
       "desc": "You are not in charge",
       "audio": "/shorts/You_are_not_in_charge.mp3",
+      "timing": "/shorts/You_are_not_in_charge.json",
       "title": "You are not in charge"
     },
     {
       "url": "/You_are_salvation/",
       "desc": "You are salvation",
       "audio": "/shorts/You_are_salvation.mp3",
+      "timing": "/shorts/You_are_salvation.json",
       "title": "You are salvation"
     },
     {
       "url": "/You_are_what_you_BE/",
       "desc": "You are what you BE",
       "audio": "/shorts/You_are_what_you_BE.mp3",
+      "timing": "/shorts/You_are_what_you_BE.json",
       "title": "You are what you BE"
     },
     {
       "url": "/You_cant_do_it_on_your_own/",
       "desc": "You cant do it on your own",
       "audio": "/shorts/You_cant_do_it_on_your_own.mp3",
+      "timing": "/shorts/You_cant_do_it_on_your_own.json",
       "title": "You cant do it on your own"
     },
     {
       "url": "/You_need_each_other/",
       "desc": "You need each other",
       "audio": "/shorts/You_need_each_other.mp3",
+      "timing": "/shorts/You_need_each_other.json",
       "title": "You need each other"
     },
     {
       "url": "/You_receive_as_much_as_you_let_in/",
       "desc": "You receive as much as you let in",
       "audio": "/shorts/You_receive_as_much_as_you_let_in.mp3",
+      "timing": "/shorts/You_receive_as_much_as_you_let_in.json",
       "title": "You receive as much as you let in"
     },
     {
       "url": "/Your_function/",
       "desc": "Your function",
       "audio": "/shorts/Your_function.mp3",
+      "timing": "/shorts/Your_function.json",
       "title": "Your function"
     }
   ]

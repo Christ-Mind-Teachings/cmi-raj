@@ -191,21 +191,19 @@ function loadTOC(toc) {
     .then((contents) => {
       $(".toc-image").attr("src", `${contents.image}`);
       $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
+      $(".toc-message").html(contents.message?contents.message:"");
       toc["image"] = contents.image;
       toc["title"] = contents.title;
       toc["bid"] = contents.bid;
 
       switch(contents.bid) {
         case "acim":
-          $(".toc-message").html("");
           toc.html = makeRajContents(contents.contents);
           break;
         case "shorts":
-          $(".toc-message").html('<i class="genderless red icon"></i>: indicates item needs formatting and you can help!');
           toc.html = makeContentsShorts(contents.base, contents.contents);
           break;
         default:
-          $(".toc-message").html("");
           toc.html = makeContents(contents.base, contents.contents);
           break;
       }
@@ -276,19 +274,16 @@ export default {
           .then((contents) => {
             $(".toc-image").attr("src", `${contents.image}`);
             $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
-            //$(".toc-list").html(makeContents(contents.base, contents.contents));
+            $(".toc-message").html(contents.message?contents.message:"");
 
             switch(contents.bid) {
               case "acim":
-                $(".toc-message").html("");
                 $(".toc-list").html(makeRajContents(contents.contents));
                 break;
               case "shorts":
-                $(".toc-message").html('<i class="genderless red icon"></i>: indicates item needs formatting and you can help!');
                 $(".toc-list").html(makeContentsShorts(contents.base, contents.contents));
                 break;
               default:
-                $(".toc-message").html("");
                 $(".toc-list").html(makeContents(contents.base, contents.contents));
                 break;
             }

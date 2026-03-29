@@ -1,6 +1,7 @@
 ---
  title: Your function
  audiofn: Your_function
+ formatted: true
 ---
 
 ## {{page.title}}

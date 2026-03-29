@@ -1,13 +1,14 @@
 ---
  title: You are Mind
  audiofn: You_are_Mind
+ formatted: true
 ---
 
 ## {{page.title}}
 
-You are mind And mind has no limits. Mind is and always has been
-boundaryless. That means there can only be one mind, doesn't it? You're
-not a what, you're a presence. The presence of mind. The presence of
+You are Mind and Mind has no limits. Mind is and always has been
+boundaryless. That means there can only be one Mind, doesn't it? You're
+not a what, you're a presence, the presence of Mind. The presence of
 that in which all conscious experience is occurring infinitely. The
-function of mind. is to know
+function of Mind is to know.
 
