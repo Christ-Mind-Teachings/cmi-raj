@@ -128,60 +128,70 @@
       "url": "/Arena_for_Love/",
       "desc": "Arena for Love",
       "audio": "/shorts/Arena_for_Love.mp3",
+      "timing": "/shorts/Arena_for_Love.json",
       "title": "Arena for Love"
     },
     {
       "url": "/Ascension/",
       "desc": "Ascension",
       "audio": "/shorts/Ascension.mp3",
+      "timing": "/shorts/Ascension.json",
       "title": "Ascension"
     },
     {
       "url": "/Ask_Ask_Ask/",
       "desc": "Ask Ask Ask",
       "audio": "/shorts/Ask_Ask_Ask.mp3",
+      "timing": "/shorts/Ask_Ask_Ask.json",
       "title": "Ask Ask Ask"
     },
     {
       "url": "/Ask_for_healing/",
       "desc": "Ask for healing",
       "audio": "/shorts/Ask_for_healing.mp3",
+      "timing": "/shorts/Ask_for_healing.json",
       "title": "Ask for healing"
     },
     {
       "url": "/Ask_Our_Father/",
       "desc": "Ask Our Father",
       "audio": "/shorts/Ask_Our_Father.mp3",
+      "timing": "/shorts/Ask_Our_Father.json",
       "title": "Ask Our Father"
     },
     {
       "url": "/Asking_for_help_1/",
       "desc": "Asking for help 1",
       "audio": "/shorts/Asking_for_help_1.mp3",
+      "timing": "/shorts/Asking_for_help_1.json",
       "title": "Asking for help 1"
     },
     {
       "url": "/Asking_for_help/",
       "desc": "Asking for help",
       "audio": "/shorts/Asking_for_help.mp3",
+      "timing": "/shorts/Asking_for_help.json",
       "title": "Asking for help"
     },
     {
       "url": "/Asking_in_the_silence/",
       "desc": "Asking in the silence",
       "audio": "/shorts/Asking_in_the_silence.mp3",
+      "timing": "/shorts/Asking_in_the_silence.json",
       "title": "Asking in the silence"
     },
     {
       "url": "/Asking_out_of_devotion/",
       "desc": "Asking out of devotion",
       "audio": "/shorts/Asking_out_of_devotion.mp3",
+      "timing": "/shorts/Asking_out_of_devotion.json",
       "title": "Asking out of devotion"
     },
     {
       "url": "/Atonement/",
       "desc": "Atonement",
       "audio": "/shorts/Atonement.mp3",
+      "timing": "/shorts/Atonement.json",
       "title": "Atonement"
     },
     {
@@ -1520,6 +1530,7 @@
       "url": "/No_crucifixion/",
       "desc": "No crucifixion",
       "audio": "/shorts/No_crucifixion.mp3",
+      "timing": "/shorts/No_crucifixion.json",
       "title": "No crucifixion"
     },
     {

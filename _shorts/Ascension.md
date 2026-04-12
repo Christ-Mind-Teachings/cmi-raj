@@ -39,4 +39,5 @@ Love one another, love everything. Be willing to be present with it no matter
 how inconsequential it might be. Be curious, want the experience of truth, not
 the knowledge of it, not the idea of it, but the direct experience and do it
 with every moment of your day. Blow my mind to God. Become defenseless against
-Increasing clarity.
+increasing clarity.
+
