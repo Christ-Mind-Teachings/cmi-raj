@@ -201,7 +201,7 @@ const shorts = [
   "Bearing_witness_privately",
   "Bearing_witness_publicly",
   "BEing",
-  "Belief,_believer_or_Christ",
+  "Belief_believer_or_Christ",
   "Beware_of_teachers",
   "Biasing_the_Kingdom",
   "Body_density",

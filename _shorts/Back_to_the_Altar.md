@@ -5,120 +5,24 @@
 
 ## {{page.title}}
 
-ty. Of the temple that the altar is in. And that in so doing one Causes
-the altar to recede in one's mind until it becomes forgotten. But there
-is another thing you all do with the temple. That isn't so beautiful.
-And that is that. Because you have your back turned to the altar. And
-because you are experiencing Separateness aloneness. Which isn't natural
-to you to be feeling. The unnaturalness that you feel you identify as
-fear. And Then Out of fear, you Transform the temple into a fortress. A
-defense A defense against Whatever is out there. That is responsible for
-your being afraid, you see. And if you find the fortress not protecting
-you well. You strengthen it, you develop it, you find a bigger and
-better way to be safe. And all the time your back is turned to the
-altar. Now You must understand that The altar is the presence of God.
-That is the very presence of you. And there is an effulgence to it, an
-illumination to it, a glow, if you will. And the glow. Is what you might
-call the temple that surrounds the illumination of the presence of God.
-That is the Actual center and circumference of you. When you imagine
-that you can step back. From the light That is you And observe it. You
-find that um you can also imagine a capacity to turn your back on it.
-And notice the glow without seeing the altar, without seeing the source
-of the glow. And then you can become preoccupied with it because it is
-the only thing in your view. And so you can beautify it or you can
-strengthen it or you can Do whatever your imagination can come up with.
-Except That because your back is turned on your essential being and you
-cannot avoid but feel the unnaturalness of that stance. Everything you
-do, whether it's beautifying. The temple Or creating a fortress out of
-it. Will be done out of fear. And as a defense. Now Your body Is the
-visibility and tangibility of your individuality. Your individuality. is
-spirit Not matter. Not solid form. Therefore, the visibility and
-tangibility of you has to also be Utter spirit. Not tangible matter. But
-The moment you begin to use the temple. As a means of defense. You
-densify it, you tighten it up. Indeed, um I know that almost all of you
-At this particular time. With all of the Invitations you have through
-the media. To feel fear are experiencing physical tension. are generally
-not feeling at ease in your body. And the reason is because you are
-Preparing it. To defend yourself. Now I'm going to ask you a trick
-question. Which came first. The invitation to fear. Or the physical
-sensation of fear. Well, What came first wasn't. The call for fear Or
-The uneasy feeling within you. What came first was turning your back on
-the altar. If this is clear to you, Then you will be able to understand
-easily and clearly. That the answer To the call for fear and The
-physical sensation of uneasiness. I To give your attention back to the
-altar. So that you don't engage in defense beautifully or. By having a
-strong fortress. Oh. Let's defend ourselves through reason and
-compassion. Let's defend ourselves through Prayer Let's defend ourselves
-through a positive attitude. Let's defend ourselves by consciously
-embracing our enemy. With love You see, that's a That's a beautiful way
-of defending yourself, but it's still defense. You've got to stop
-keeping your back to the altar. You've got to abandon. Looking at
-effects. And turn within. To the place where your piece is available to
-you. And you must choose for your peace first before you look out there.
-So that when you access your piece, You may feel The presence of God's
-love that is there. Growing brighter and illuminating you with the gift
-of love. So that all you are impelled to do. Or B I The uncomplicated
-presence of love. That sees what God would have you see. Where you had
-seen an enemy. that you needed to defend yourself against. And that is
-the only thing that is going to transform. Whatever situation you're
-confronted by that seems to be a justifiable call for fear. Now I want
-you to understand also that as long as you engage in the habit of using
-your body as a shield. As a fortress As a As a presence of that which
-has the capacity to exert force. You will find yourself. Experiencing
-your body. Trying to accommodate. Your intent to use it as a defense.
-And you will be. Uncomfortable you will become ill. You will find this
-eases. Simply because Your decision To act and be A forceful presence.
-For your defense. Causes you To use The glow Of the altar As a means of
-being unconscious of the altar. And Your ever present sanity with a
-capital S. does not allow you. To become more powerful as an independent
-agent for change. Without your experiencing an equal amount of distress.
-Your sanity, the ever present balance of being. Causes every single one
-of you. When you are attempting to act at odds with being. To be met
-with an equal force in the opposite direction, you might say. In other
-words, if you try to stretch. Into a position. Or a shape That God
-didn't give you the ability to move into. Your attempt. will be met with
-an awareness that you can't do it. And it will also be met with an
-awareness of The unnaturalness of it. Because even though you try to act
-and think insanely, you haven't been given the capacity to do it. And so
-you say. I am going to protect myself against my enemy. And I am going
-to use my body because it's the only thing I have to use. As The
-fortress and the weapon. And I am going to do whatever I have to do. To
-protect myself no matter how aggressive my enemy gets. And the more
-intense you become, The more at odds with the nature of the temple. Of
-the glow of the altar you become. And You squeeze the life, you squeeze
-the glow, you squeeze the light out of it. Not that you can actually do
-that, but you squeeze it out of your range of vision. So when you attack
-your enemy, You're attacking yourself. Because the whole scenario has
-arisen out of a fantastic imagination. That you could actually turn your
-back on the light of your being. The altar that is in the very center of
-you. And engage in anything beautiful or ugly. Loving or hateful.
-Healing or killing. Without being connected with your source. You're
-getting constant invitations to feel vulnerable these days. And it's
-very easy for whatever vulnerability you activate within yourself to rub
-off. Or color your experience of everyone else and anyone and everyone.
-can become the object of your Suspicion And very creative imaginative
-ideas about just how they are being. Terrible. And operating. To your
-detriment. So this is really a time to remember what your function is.
-Which is to be the presence of love. And to remember that The atonement
-principle. Because atonement is what this is all about. The atonement
-principle is love, and the atonement is an act of love. And as long as
-your attention is on the temple. I'll put it this way, as long as your
-attention is on the glow from the altar. And whether you make it into a
-temple or a fortress. You're ultimately Going to have to realize. That
-the answer To any form of defense. is to turn around. So that your back
-isn't to the altar. So that you can see the altar. And in your imagined
-distance from it. Feel Yourself being loved. By the love that is really
-you. That is really God being the presence that is you. So that Your
-decision to stand apart from it and observe it might. Knelt in the
-presence of that love. And uh You will find yourself. Slipping back into
-being it rather than standing apart from it. And observing it And
-apparently giving yourself a vantage point. Where you can turn your back
-on it. And look out there. And see a world that you must be defended
-against. Even the glow. From the altar. That you look at Which is really
-the temple. But what you look at With your back turned to the altar. Can
-become that which you have to defend yourself against. And so Here you
-are. Using your body as a defense against it. Further compounding. The
-densifying of pure light. Pure glow. The pure energy of spirit. That
-never was matter. And never was governed by The laws of matter. The laws
-of physics.
+We discussed the tendency when one has attempted to function independent of the Father to become. preoccupied with the beauty of the temple that the altar is in. And that in so doing one causes the altar to recede in one’s mind until it becomes forgotten. But there is another thing you all do with the temple that isn’t so beautiful, and that is that because you have your back turned to the altar, and because you are experiencing separateness, aloneness, which isn’t natural to you to be feeling, the unnaturalness that you feel you identify as fear, and then out of fear, you transform the temple into a fortress. A defense. A defense against whatever is out there that is responsible for your being afraid, you see. And if you find the fortress not protecting you well, you strengthen it, you develop it, you find a bigger and better way to be safe, and all the time your back is turned to the altar.
 
+Now you must understand that the altar is the presence of God that is the very presence of you, and there is an effulgence to it, an illumination to it, a glow, if you will. And the glow is what you might call the temple that surrounds the illumination of the presence of God that is the actual center and circumference of you. When you imagine that you can step back from the light that is you, and observe it, you find that um you can also imagine a capacity to turn your back on it, and notice the glow without seeing the altar, without seeing the source of the glow, and then you can become preoccupied with it because it is the only thing in your view. And so you can beautify it or you can strengthen it or you can do whatever your imagination can come up with except that because your back is turned on your essential being and you cannot avoid but feel the unnaturalness of that stance. Everything you do, whether it’s beautifying the temple or creating a fortress out of it will be done out of fear, and as a defense.
+
+Now, your body is the visibility and tangibility of your individuality. Your individuality is Spirit, not matter. Not solid form. Therefore, the visibility and tangibility of you has to also be utter Spirit, not tangible matter. But, the moment you begin to use the temple as a means of defense, you densify it, you tighten it up. Indeed, um I know that almost all of you at this particular time with all of the invitations you have through the media to feel fear are experiencing physical tension, are generally not feeling at ease in your body. And the reason is because you are preparing it to defend yourself.
+
+Now I’m going to ask you a trick question, which came first, the invitation to fear, or the physical sensation of fear. Well, what came first wasn’t the call for fear or the uneasy feeling within you. What came first was turning your back on the altar. If this is clear to you then you will be able to understand easily and clearly that the answer to the call for fear, and the physical sensation of uneasiness is to give your attention back to the altar so that you don’t engage in defense beautifully or by having a strong fortress. Oh, let’s defend ourselves through reason and compassion. Let’s defend ourselves through prayer. Let’s defend ourselves through a positive attitude. Let’s defend ourselves by consciously embracing our enemy with love. You see, that’s a that’s a beautiful way of defending yourself, but it’s still defense.
+
+You’ve got to stop keeping your back to the altar. You’ve got to abandon looking at effects, and turn within to the place where your peace is available to you, and you must choose for your peace first before you look out there. So that when you access your peace, you may feel the presence of God’s love that is there growing brighter, and illuminating you with the gift of love so that all you are impelled to do or be is the uncomplicated presence of love that sees what God would have you see where you had seen an enemy that you needed to defend yourself against. And that is the only thing that is going to transform whatever situation you’re confronted by that seems to be a justifiable call for fear.
+
+Now I want you to understand also that as long as you engage in the habit of using your body as a shield as a fortress, as a as a presence of that which has the capacity to exert force, you will find yourself experiencing your body trying to accommodate your intent to use it as a defense, and you will be uncomfortable, you will become ill, you will find dis eases simply because your decision to act, and be a forceful presence for your defense causes you to use the glow of the altar as a means of being unconscious of the altar. And your ever present sanity with a capital S does not allow you to become more powerful as an independent agent for change without your experiencing an equal amount of distress.
+
+Your sanity, the ever present balance of being causes every single one of you when you are attempting to act at odds with being to be met with an equal force in the opposite direction, you might say. In other words, if you try to stretch into a position or a shape that God didn’t give you the ability to move into, your attempt will be met with an awareness that you can’t do it, and it will also be met with an awareness of the unnaturalness of it because even though you try to act and think insanely, you haven’t been given the capacity to do it. And so you say, I am going to protect myself against my enemy, and I am going to use my body because it’s the only thing I have to use as the fortress and the weapon. And I am going to do whatever I have to do to protect myself no matter how aggressive my enemy gets. And the more intense you become, the more at odds with the nature of the temple of the glow of the altar you become, and you squeeze the life, you squeeze the glow, you squeeze the light out of it. Not that you can actually do that, but you squeeze it out of your range of vision.
+
+So when you attack your enemy, you’re attacking yourself. Because the whole scenario has arisen out of a fantastic imagination that you could actually turn your back on the light of your being, the altar that is in the very center of you, and engage in anything beautiful or ugly, loving or hateful, healing or killing, without being connected with your source.
+
+You’re getting constant invitations to feel vulnerable these days. And it’s very easy for whatever vulnerability you activate within yourself to rub off, or color your experience of everyone else and anyone and everyone can become the object of your suspicion, and very creative imaginative ideas about just how they are being terrible, and operating to your detriment.
+
+So this is really a time to remember what your function is which is to be the presence of love, and to remember that the atonement principle because atonement is what this is all about. The atonement principle is love, and the atonement is an act of love. And as long as your attention is on the temple, I’ll put it this way, as long as your attention is on the glow from the altar, and whether you make it into a temple or a fortress, you’re ultimately going to have to realize that the answer to any form of defense is to turn around so that your back isn’t to the altar. So that you can see the altar. And in your imagined distance from it and feel yourself being loved, by the love that is really you that is really God being the presence that is you. So that your decision to stand apart from it and observe it might melt in the presence of that love. And uh you will find yourself slipping back into being it rather than standing apart from it, and observing it, and apparently giving yourself a vantage point, where you can turn your back on it, and look out there, and see a world that you must be defended against. Even the glow from the altar that you look at which is really the temple, but what you look at with your back turned to the altar can become that which you have to defend yourself against.
+
+And so here you are using your body as a defense against it, further compounding the densifying of pure light, pure glow, the pure energy of Spirit that never was matter, and never was governed by the laws of matter, the laws of physics.
