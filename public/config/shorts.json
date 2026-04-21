@@ -282,72 +282,84 @@
       "url": "/Biasing_the_Kingdom/",
       "desc": "Biasing the Kingdom",
       "audio": "/shorts/Biasing_the_Kingdom.mp3",
+      "timing": "/shorts/Biasing_the_Kingdom.json",
       "title": "Biasing the Kingdom"
     },
     {
       "url": "/Body_density/",
       "desc": "Body density",
       "audio": "/shorts/Body_density.mp3",
+      "timing": "/shorts/Body_density.json",
       "title": "Body density"
     },
     {
       "url": "/Body_meditation/",
       "desc": "Body meditation",
       "audio": "/shorts/Body_meditation.mp3",
+      "timing": "/shorts/Body_meditation.json",
       "title": "Body meditation"
     },
     {
       "url": "/Bottom_line/",
       "desc": "Bottom line",
       "audio": "/shorts/Bottom_line.mp3",
+      "timing": "/shorts/Bottom_line.json",
       "title": "Bottom line"
     },
     {
       "url": "/Bottom_of_the_barrel/",
       "desc": "Bottom of the barrel",
       "audio": "/shorts/Bottom_of_the_barrel.mp3",
+      "timing": "/shorts/Bottom_of_the_barrel.json",
       "title": "Bottom of the barrel"
     },
     {
       "url": "/Breaking_willful_isolation/",
       "desc": "Breaking willful isolation",
       "audio": "/shorts/Breaking_willful_isolation.mp3",
+      "timing": "/shorts/Breaking_willful_isolation.json",
       "title": "Breaking willful isolation"
     },
     {
       "url": "/Call_for_judgment/",
       "desc": "Call for judgment",
       "audio": "/shorts/Call_for_judgment.mp3",
+      "timing": "/shorts/Call_for_judgment.json",
       "title": "Call for judgment"
     },
     {
       "url": "/Call_for_Love/",
       "desc": "Call for Love",
       "audio": "/shorts/Call_for_Love.mp3",
+      "timing": "/shorts/Call_for_Love.json",
       "title": "Call for Love"
     },
     {
       "url": "/Chain_of_atonement/",
       "desc": "Chain of atonement",
       "audio": "/shorts/Chain_of_atonement.mp3",
+      "timing": "/shorts/Chain_of_atonement.json",
       "title": "Chain of atonement"
     },
     {
       "url": "/Change_your_mind/",
       "desc": "Change your mind",
       "audio": "/shorts/Change_your_mind.mp3",
+      "timing": "/shorts/Change_your_mind.json",
       "title": "Change your mind"
     },
     {
       "url": "/Changing_the_system/",
       "desc": "Changing the system",
       "audio": "/shorts/Changing_the_system.mp3",
+      "timing": "/shorts/Changing_the_system.json",
       "title": "Changing the system"
     },
     {
       "url": "/Charity/",
       "desc": "Charity",
       "audio": "/shorts/Charity.mp3",
+      "timing": "/shorts/Charity.json",
       "title": "Charity"
     },
     {
