@@ -160,18 +160,18 @@
       "title": "Ask Our Father"
     },
     {
-      "url": "/Asking_for_help_1/",
-      "desc": "Asking for help 1",
-      "audio": "/shorts/Asking_for_help_1.mp3",
-      "timing": "/shorts/Asking_for_help_1.json",
-      "title": "Asking for help 1"
-    },
-    {
       "url": "/Asking_for_help/",
       "desc": "Asking for help",
       "audio": "/shorts/Asking_for_help.mp3",
       "timing": "/shorts/Asking_for_help.json",
       "title": "Asking for help"
+    },
+    {
+      "url": "/Asking_for_help_1/",
+      "desc": "Asking for help 1",
+      "audio": "/shorts/Asking_for_help_1.mp3",
+      "timing": "/shorts/Asking_for_help_1.json",
+      "title": "Asking for help 1"
     },
     {
       "url": "/Asking_in_the_silence/",
@@ -366,271 +366,316 @@
       "url": "/Choice_and_circumstance/",
       "desc": "Choice and circumstance",
       "audio": "/shorts/Choice_and_circumstance.mp3",
+      "timing": "/shorts/Choice_and_circumstance.json",
       "title": "Choice and circumstance"
     },
     {
       "url": "/Choose_Joy/",
       "desc": "Choose Joy",
       "audio": "/shorts/Choose_Joy.mp3",
+      "timing": "/shorts/Choose_Joy.json",
       "title": "Choose Joy"
     },
     {
       "url": "/Christhood/",
       "desc": "Christhood",
       "audio": "/shorts/Christhood.mp3",
+      "timing": "/shorts/Christhood.json",
       "title": "Christhood"
     },
     {
       "url": "/Clear_mind/",
       "desc": "Clear mind",
       "audio": "/shorts/Clear_mind.mp3",
+      "timing": "/shorts/Clear_mind.json",
       "title": "Clear mind"
     },
     {
       "url": "/Closing_Smile/",
       "desc": "Closing Smile",
       "audio": "/shorts/Closing_Smile.mp3",
+      "timing": "/shorts/Closing_Smile.json",
       "title": "Closing Smile"
     },
     {
       "url": "/Co_creation/",
       "desc": "Co creation",
       "audio": "/shorts/Co_creation.mp3",
+      "timing": "/shorts/Co_creation.json",
       "title": "Co creation"
     },
     {
       "url": "/Come_out_of_the_closet/",
       "desc": "Come out of the closet",
       "audio": "/shorts/Come_out_of_the_closet.mp3",
+      "timing": "/shorts/Come_out_of_the_closet.json",
       "title": "Come out of the closet"
     },
     {
       "url": "/Comfortable_ignorance/",
       "desc": "Comfortable ignorance",
       "audio": "/shorts/Comfortable_ignorance.mp3",
+      "timing": "/shorts/Comfortable_ignorance.json",
       "title": "Comfortable ignorance"
     },
     {
       "url": "/Coming_home/",
       "desc": "Coming home",
       "audio": "/shorts/Coming_home.mp3",
+      "timing": "/shorts/Coming_home.json",
       "title": "Coming home"
     },
     {
       "url": "/Committed_involvement/",
       "desc": "Committed involvement",
       "audio": "/shorts/Committed_involvement.mp3",
+      "timing": "/shorts/Committed_involvement.json",
       "title": "Committed involvement"
     },
     {
       "url": "/Commonality/",
       "desc": "Commonality",
       "audio": "/shorts/Commonality.mp3",
+      "timing": "/shorts/Commonality.json",
       "title": "Commonality"
     },
     {
       "url": "/Communion/",
       "desc": "Communion",
       "audio": "/shorts/Communion.mp3",
+      "timing": "/shorts/Communion.json",
       "title": "Communion"
     },
     {
       "url": "/Compassionate_embrace/",
       "desc": "Compassionate embrace",
       "audio": "/shorts/Compassionate_embrace.mp3",
+      "timing": "/shorts/Compassionate_embrace.json",
       "title": "Compassionate embrace"
     },
     {
       "url": "/Complete_the_circuit/",
       "desc": "Complete the circuit",
       "audio": "/shorts/Complete_the_circuit.mp3",
+      "timing": "/shorts/Complete_the_circuit.json",
       "title": "Complete the circuit"
     },
     {
       "url": "/Completed_unity_and_communion/",
       "desc": "Completed unity and communion",
       "audio": "/shorts/Completed_unity_and_communion.mp3",
+      "timing": "/shorts/Completed_unity_and_communion.json",
       "title": "Completed unity and communion"
     },
     {
       "url": "/Conscious_experience_of_Eternity/",
       "desc": "Conscious experience of Eternity",
       "audio": "/shorts/Conscious_experience_of_Eternity.mp3",
+      "timing": "/shorts/Conscious_experience_of_Eternity.json",
       "title": "Conscious experience of Eternity"
     },
     {
       "url": "/Conscious_judgment/",
       "desc": "Conscious judgment",
       "audio": "/shorts/Conscious_judgment.mp3",
+      "timing": "/shorts/Conscious_judgment.json",
       "title": "Conscious judgment"
     },
     {
       "url": "/Continuity_of_Consciousness/",
       "desc": "Continuity of Consciousness",
       "audio": "/shorts/Continuity_of_Consciousness.mp3",
+      "timing": "/shorts/Continuity_of_Consciousness.json",
       "title": "Continuity of Consciousness"
     },
     {
       "url": "/Cornerstone/",
       "desc": "Cornerstone",
       "audio": "/shorts/Cornerstone.mp3",
+      "timing": "/shorts/Cornerstone.json",
       "title": "Cornerstone"
     },
     {
       "url": "/Correcting_another/",
       "desc": "Correcting another",
       "audio": "/shorts/Correcting_another.mp3",
+      "timing": "/shorts/Correcting_another.json",
       "title": "Correcting another"
     },
     {
       "url": "/Correcting_problems/",
       "desc": "Correcting problems",
       "audio": "/shorts/Correcting_problems.mp3",
+      "timing": "/shorts/Correcting_problems.json",
       "title": "Correcting problems"
     },
     {
       "url": "/Corrective_learning/",
       "desc": "Corrective learning",
       "audio": "/shorts/Corrective_learning.mp3",
+      "timing": "/shorts/Corrective_learning.json",
       "title": "Corrective learning"
     },
     {
       "url": "/Creation/",
       "desc": "Creation",
       "audio": "/shorts/Creation.mp3",
+      "timing": "/shorts/Creation.json",
       "title": "Creation"
     },
     {
       "url": "/Daily_bread/",
       "desc": "Daily bread",
       "audio": "/shorts/Daily_bread.mp3",
+      "timing": "/shorts/Daily_bread.json",
       "title": "Daily bread"
     },
     {
       "url": "/Death_is_a_Sacrifice/",
       "desc": "Death is a Sacrifice",
       "audio": "/shorts/Death_is_a_Sacrifice.mp3",
+      "timing": "/shorts/Death_is_a_Sacrifice.json",
       "title": "Death is a Sacrifice"
     },
     {
       "url": "/Decide_for_the_Altar/",
       "desc": "Decide for the Altar",
       "audio": "/shorts/Decide_for_the_Altar.mp3",
+      "timing": "/shorts/Decide_for_the_Altar.json",
       "title": "Decide for the Altar"
     },
     {
       "url": "/Decloak_Christ/",
       "desc": "Decloak Christ",
       "audio": "/shorts/Decloak_Christ.mp3",
+      "timing": "/shorts/Decloak_Christ.json",
       "title": "Decloak Christ"
     },
     {
       "url": "/Denial_of_Reality/",
       "desc": "Denial of Reality",
       "audio": "/shorts/Denial_of_Reality.mp3",
+      "timing": "/shorts/Denial_of_Reality.json",
       "title": "Denial of Reality"
     },
     {
       "url": "/Direct_relationship/",
       "desc": "Direct relationship",
       "audio": "/shorts/Direct_relationship.mp3",
+      "timing": "/shorts/Direct_relationship.json",
       "title": "Direct relationship"
     },
     {
       "url": "/Direction_of_awakening/",
       "desc": "Direction of awakening",
       "audio": "/shorts/Direction_of_awakening.mp3",
+      "timing": "/shorts/Direction_of_awakening.json",
       "title": "Direction of awakening"
     },
     {
       "url": "/Direction_of_miracles/",
       "desc": "Direction of miracles",
       "audio": "/shorts/Direction_of_miracles.mp3",
+      "timing": "/shorts/Direction_of_miracles.json",
       "title": "Direction of miracles"
     },
     {
       "url": "/Discerning_reality/",
       "desc": "Discerning reality",
       "audio": "/shorts/Discerning_reality.mp3",
+      "timing": "/shorts/Discerning_reality.json",
       "title": "Discerning reality"
     },
     {
       "url": "/Disciples_for_Love/",
       "desc": "Disciples for Love",
       "audio": "/shorts/Disciples_for_Love.mp3",
+      "timing": "/shorts/Disciples_for_Love.json",
       "title": "Disciples for Love"
     },
     {
       "url": "/Disciplined_thinking/",
       "desc": "Disciplined thinking",
       "audio": "/shorts/Disciplined_thinking.mp3",
+      "timing": "/shorts/Disciplined_thinking.json",
       "title": "Disciplined thinking"
     },
     {
       "url": "/Disconnect/",
       "desc": "Disconnect",
       "audio": "/shorts/Disconnect.mp3",
+      "timing": "/shorts/Disconnect.json",
       "title": "Disconnect"
     },
     {
       "url": "/Disconnected_perspective/",
       "desc": "Disconnected perspective",
       "audio": "/shorts/Disconnected_perspective.mp3",
+      "timing": "/shorts/Disconnected_perspective.json",
       "title": "Disconnected perspective"
     },
     {
       "url": "/Discovering_willfullness_in_the_silence/",
       "desc": "Discovering willfullness in the silence",
       "audio": "/shorts/Discovering_willfullness_in_the_silence.mp3",
+      "timing": "/shorts/Discovering_willfullness_in_the_silence.json",
       "title": "Discovering willfullness in the silence"
     },
     {
       "url": "/Disputing_your_worth/",
       "desc": "Disputing your worth",
       "audio": "/shorts/Disputing_your_worth.mp3",
+      "timing": "/shorts/Disputing_your_worth.json",
       "title": "Disputing your worth"
     },
     {
       "url": "/Dissolve_beliefs/",
       "desc": "Dissolve beliefs",
       "audio": "/shorts/Dissolve_beliefs.mp3",
+      "timing": "/shorts/Dissolve_beliefs.json",
       "title": "Dissolve beliefs"
     },
     {
       "url": "/Distancing_communion_through_fear/",
       "desc": "Distancing communion through fear",
       "audio": "/shorts/Distancing_communion_through_fear.mp3",
+      "timing": "/shorts/Distancing_communion_through_fear.json",
       "title": "Distancing communion through fear"
     },
     {
       "url": "/Divine_Beings/",
       "desc": "Divine Beings",
       "audio": "/shorts/Divine_Beings.mp3",
+      "timing": "/shorts/Divine_Beings.json",
       "title": "Divine Beings"
     },
     {
       "url": "/Divine_Love_embodied/",
       "desc": "Divine Love embodied",
       "audio": "/shorts/Divine_Love_embodied.mp3",
+      "timing": "/shorts/Divine_Love_embodied.json",
       "title": "Divine Love embodied"
     },
     {
       "url": "/Divinity_of_BEing/",
       "desc": "Divinity of BEing",
       "audio": "/shorts/Divinity_of_BEing.mp3",
+      "timing": "/shorts/Divinity_of_BEing.json",
       "title": "Divinity of BEing"
-    },
-    {
-      "url": "/Do_you_Believe_in_Healing__Part_2/",
-      "desc": "Do you Believe in Healing  Part 2",
-      "audio": "/shorts/Do_you_Believe_in_Healing__Part_2.mp3",
-      "title": "Do you Believe in Healing  Part 2"
     },
     {
       "url": "/Do_you_Believe_in_Healing/",
       "desc": "Do you Believe in Healing",
       "audio": "/shorts/Do_you_Believe_in_Healing.mp3",
+      "timing": "/shorts/Do_you_Believe_in_Healing.json",
       "title": "Do you Believe in Healing"
+    },
+    {
+      "url": "/Do_you_Believe_in_Healing__Part_2/",
+      "desc": "Do you Believe in Healing  Part 2",
+      "audio": "/shorts/Do_you_Believe_in_Healing__Part_2.mp3",
+      "timing": "/shorts/Do_you_Believe_in_Healing__Part_2.json",
+      "title": "Do you Believe in Healing  Part 2"
     },
     {
       "url": "/Dreaming_from_Home/",
