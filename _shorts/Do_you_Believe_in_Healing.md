@@ -9,7 +9,7 @@ OK. Tonight, we will not be reading from the book. And so before we begin, let�
 
 Good evening. And welcome to everyone who is joining us on the internet.
 
-I’m going to ask a question. After all of the gatherings we’ve had, after all of the Course in Miracles Study Groups … do you believe in healing? Do you believe in Healing?
+After all of the gatherings we’ve had, after all of the Course in Miracles Study Groups &hellip; do you believe in healing? Do you believe in Healing?
 
 Well, what do I mean by healing? I mean the return of a situation or a condition to its spiritual original – its original divine status.
 

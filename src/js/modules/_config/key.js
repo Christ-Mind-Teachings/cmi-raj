@@ -775,7 +775,6 @@ const shorts = [
   "Do_you_Believe_in_Healing__Part_2",
   "Dreaming_from_Home",
   "Ego_costume_and_Coming_Out",
-  "Ego_costume",
   "Ego_exploits",
   "ego_thought_system",
   "Embodiment_time",

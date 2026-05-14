@@ -1,0 +1,41 @@
+{
+  "base": "/t/raj/shorts/ego_thought_system/",
+  "time": [
+    {
+      "id": "p0",
+      "seconds": 0
+    },
+    {
+      "id": "p1",
+      "seconds": 42.626822
+    },
+    {
+      "id": "p2",
+      "seconds": 98.140805
+    },
+    {
+      "id": "p3",
+      "seconds": 139.007245
+    },
+    {
+      "id": "p4",
+      "seconds": 199.039027
+    },
+    {
+      "id": "p5",
+      "seconds": 260.397965
+    },
+    {
+      "id": "p6",
+      "seconds": 315.382199
+    },
+    {
+      "id": "p7",
+      "seconds": 367.147266
+    },
+    {
+      "id": "p8",
+      "seconds": 398.225012
+    }
+  ]
+}
