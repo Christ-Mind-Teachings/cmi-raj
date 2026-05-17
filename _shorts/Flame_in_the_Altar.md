@@ -5,7 +5,6 @@
 
 ## {{page.title}}
 
-The flame in the altar is already perfect, and the flame in the altar.
-Is you. The flame in the altar is God being you there. The flame in the
-altar is God being God there.
-
+The flame in the Altar is already perfect, and the flame in the Altar is you.
+The flame in the Altar is God being you there. The flame in the Altar is God
+being God there.
