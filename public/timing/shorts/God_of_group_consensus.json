@@ -1,0 +1,54 @@
+{
+  "base": "/t/raj/shorts/God_of_group_consensus/",
+  "time": [
+    {
+      "id": "p0",
+      "seconds": 0
+    },
+    {
+      "id": "p1",
+      "seconds": 103.408675
+    },
+    {
+      "id": "p2",
+      "seconds": 252.585985
+    },
+    {
+      "id": "p3",
+      "seconds": 304.232662
+    },
+    {
+      "id": "p4",
+      "seconds": 440.339909
+    },
+    {
+      "id": "p5",
+      "seconds": 526.712458
+    },
+    {
+      "id": "p6",
+      "seconds": 588.235948
+    },
+    {
+      "id": "p7",
+      "seconds": 645.603522
+    },
+    {
+      "id": "p8",
+      "seconds": 695.327646
+    },
+    {
+      "id": "p9",
+      "seconds": 804.950529
+    },
+    {
+      "id": "p10",
+      "seconds": 913.246971
+    },
+    {
+      "id": "p11",
+      "seconds": 1019.594922
+    }
+  ]
+}
+

@@ -842,516 +842,602 @@
       "url": "/Feng_Shui/",
       "desc": "Feng Shui",
       "audio": "/shorts/Feng_Shui.mp3",
+      "timing": "/shorts/Feng_Shui.json",
       "title": "Feng Shui"
     },
     {
       "url": "/Fill_me/",
       "desc": "Fill me",
       "audio": "/shorts/Fill_me.mp3",
+      "timing": "/shorts/Fill_me.json",
       "title": "Fill me"
     },
     {
       "url": "/Find_someone_to_Love/",
       "desc": "Find someone to Love",
       "audio": "/shorts/Find_someone_to_Love.mp3",
+      "timing": "/shorts/Find_someone_to_Love.json",
       "title": "Find someone to Love"
     },
     {
       "url": "/Finessing_the_mind/",
       "desc": "Finessing the mind",
       "audio": "/shorts/Finessing_the_mind.mp3",
+      "timing": "/shorts/Finessing_the_mind.json",
       "title": "Finessing the mind"
     },
     {
       "url": "/Flame_in_the_Altar/",
       "desc": "Flame in the Altar",
       "audio": "/shorts/Flame_in_the_Altar.mp3",
+      "timing": "/shorts/Flame_in_the_Altar.json",
       "title": "Flame in the Altar"
     },
     {
       "url": "/Focal_point_of_creation/",
       "desc": "Focal point of creation",
       "audio": "/shorts/Focal_point_of_creation.mp3",
+      "timing": "/shorts/Focal_point_of_creation.json",
       "title": "Focal point of creation"
     },
     {
       "url": "/Forgiveness_of_definitions/",
       "desc": "Forgiveness of definitions",
       "audio": "/shorts/Forgiveness_of_definitions.mp3",
+      "timing": "/shorts/Forgiveness_of_definitions.json",
       "title": "Forgiveness of definitions"
     },
     {
       "url": "/Forgiving/",
       "desc": "Forgiving",
       "audio": "/shorts/Forgiving.mp3",
+      "timing": "/shorts/Forgiving.json",
       "title": "Forgiving"
     },
     {
       "url": "/Fragile_dream/",
       "desc": "Fragile dream",
       "audio": "/shorts/Fragile_dream.mp3",
+      "timing": "/shorts/Fragile_dream.json",
       "title": "Fragile dream"
     },
     {
       "url": "/Free_to_cooperate/",
       "desc": "Free to cooperate",
       "audio": "/shorts/Free_to_cooperate.mp3",
+      "timing": "/shorts/Free_to_cooperate.json",
       "title": "Free to cooperate"
     },
     {
       "url": "/Fresh_ears/",
       "desc": "Fresh ears",
       "audio": "/shorts/Fresh_ears.mp3",
+      "timing": "/shorts/Fresh_ears.json",
       "title": "Fresh ears"
     },
     {
       "url": "/Frightening_imagination/",
       "desc": "Frightening imagination",
       "audio": "/shorts/Frightening_imagination.mp3",
+      "timing": "/shorts/Frightening_imagination.json",
       "title": "Frightening imagination"
     },
     {
       "url": "/Fulfilling_purpose/",
       "desc": "Fulfilling purpose",
       "audio": "/shorts/Fulfilling_purpose.mp3",
+      "timing": "/shorts/Fulfilling_purpose.json",
       "title": "Fulfilling purpose"
     },
     {
       "url": "/Full_fledged_brother/",
       "desc": "Full fledged brother",
       "audio": "/shorts/Full_fledged_brother.mp3",
+      "timing": "/shorts/Full_fledged_brother.json",
       "title": "Full fledged brother"
     },
     {
       "url": "/Fundamental_lesson/",
       "desc": "Fundamental lesson",
       "audio": "/shorts/Fundamental_lesson.mp3",
+      "timing": "/shorts/Fundamental_lesson.json",
       "title": "Fundamental lesson"
     },
     {
       "url": "/Getting_it_fresh/",
       "desc": "Getting it fresh",
       "audio": "/shorts/Getting_it_fresh.mp3",
+      "timing": "/shorts/Getting_it_fresh.json",
       "title": "Getting it fresh"
     },
     {
       "url": "/Gift_I_gave/",
       "desc": "Gift I gave",
       "audio": "/shorts/Gift_I_gave.mp3",
+      "timing": "/shorts/Gift_I_gave.json",
       "title": "Gift I gave"
     },
     {
       "url": "/Gift_no_thinking/",
       "desc": "Gift no thinking",
       "audio": "/shorts/Gift_no_thinking.mp3",
+      "timing": "/shorts/Gift_no_thinking.json",
       "title": "Gift no thinking"
     },
     {
       "url": "/Give_It_away/",
       "desc": "Give It away",
       "audio": "/shorts/Give_It_away.mp3",
+      "timing": "/shorts/Give_It_away.json",
       "title": "Give It away"
     },
     {
       "url": "/Give_permission/",
       "desc": "Give permission",
       "audio": "/shorts/Give_permission.mp3",
+      "timing": "/shorts/Give_permission.json",
       "title": "Give permission"
     },
     {
       "url": "/Given_Creation/",
       "desc": "Given Creation",
       "audio": "/shorts/Given_Creation.mp3",
+      "timing": "/shorts/Given_Creation.json",
       "title": "Given Creation"
     },
     {
       "url": "/Given_everything/",
       "desc": "Given everything",
       "audio": "/shorts/Given_everything.mp3",
+      "timing": "/shorts/Given_everything.json",
       "title": "Given everything"
     },
     {
       "url": "/Global_community/",
       "desc": "Global community",
       "audio": "/shorts/Global_community.mp3",
+      "timing": "/shorts/Global_community.json",
       "title": "Global community"
     },
     {
       "url": "/Global_roll_call/",
       "desc": "Global roll call",
       "audio": "/shorts/Global_roll_call.mp3",
+      "timing": "/shorts/Global_roll_call.json",
       "title": "Global roll call"
     },
     {
       "url": "/Glorifying_God/",
       "desc": "Glorifying God",
       "audio": "/shorts/Glorifying_God.mp3",
+      "timing": "/shorts/Glorifying_God.json",
       "title": "Glorifying God"
     },
     {
       "url": "/Go_within_and_ask/",
       "desc": "Go within and ask",
       "audio": "/shorts/Go_within_and_ask.mp3",
+      "timing": "/shorts/Go_within_and_ask.json",
       "title": "Go within and ask"
     },
     {
       "url": "/Goal_of_guidance/",
       "desc": "Goal of guidance",
       "audio": "/shorts/Goal_of_guidance.mp3",
+      "timing": "/shorts/Goal_of_guidance.json",
       "title": "Goal of guidance"
     },
     {
       "url": "/God_derived/",
       "desc": "God derived",
       "audio": "/shorts/God_derived.mp3",
+      "timing": "/shorts/God_derived.json",
       "title": "God derived"
     },
     {
       "url": "/God_extensions/",
       "desc": "God extensions",
       "audio": "/shorts/God_extensions.mp3",
+      "timing": "/shorts/God_extensions.json",
       "title": "God extensions"
     },
     {
       "url": "/God_is_all_there_is/",
       "desc": "God is all there is",
       "audio": "/shorts/God_is_all_there_is.mp3",
+      "timing": "/shorts/God_is_all_there_is.json",
       "title": "God is all there is"
     },
     {
       "url": "/God_of_group_consensus/",
       "desc": "God of group consensus",
       "audio": "/shorts/God_of_group_consensus.mp3",
+      "timing": "/shorts/God_of_group_consensus.json",
       "title": "God of group consensus"
     },
     {
       "url": "/Godness_or_pretender/",
       "desc": "Godness or pretender",
       "audio": "/shorts/Godness_or_pretender.mp3",
+      "timing": "/shorts/Godness_or_pretender.json",
       "title": "Godness or pretender"
     },
     {
       "url": "/Gods_opportunity/",
       "desc": "Gods opportunity",
       "audio": "/shorts/Gods_opportunity.mp3",
+      "timing": "/shorts/Gods_opportunity.json",
       "title": "Gods opportunity"
     },
     {
       "url": "/Gods_puppet/",
       "desc": "Gods puppet",
       "audio": "/shorts/Gods_puppet.mp3",
+      "timing": "/shorts/Gods_puppet.json",
       "title": "Gods puppet"
     },
     {
       "url": "/Graceful_changes/",
       "desc": "Graceful changes",
       "audio": "/shorts/Graceful_changes.mp3",
+      "timing": "/shorts/Graceful_changes.json",
       "title": "Graceful changes"
     },
     {
       "url": "/Gratitude_diet/",
       "desc": "Gratitude diet",
       "audio": "/shorts/Gratitude_diet.mp3",
+      "timing": "/shorts/Gratitude_diet.json",
       "title": "Gratitude diet"
     },
     {
       "url": "/Group_hallucination/",
       "desc": "Group hallucination",
       "audio": "/shorts/Group_hallucination.mp3",
+      "timing": "/shorts/Group_hallucination.json",
       "title": "Group hallucination"
     },
     {
       "url": "/Guidance/",
       "desc": "Guidance",
       "audio": "/shorts/Guidance.mp3",
+      "timing": "/shorts/Guidance.json",
       "title": "Guidance"
     },
     {
       "url": "/Haha_impossible/",
       "desc": "Haha impossible",
       "audio": "/shorts/Haha_impossible.mp3",
+      "timing": "/shorts/Haha_impossible.json",
       "title": "Haha impossible"
     },
     {
       "url": "/Happy_dream/",
       "desc": "Happy dream",
       "audio": "/shorts/Happy_dream.mp3",
+      "timing": "/shorts/Happy_dream.json",
       "title": "Happy dream"
     },
     {
       "url": "/He_goes_me_there/",
       "desc": "He goes me there",
       "audio": "/shorts/He_goes_me_there.mp3",
+      "timing": "/shorts/He_goes_me_there.json",
       "title": "He goes me there"
     },
     {
       "url": "/Healing_at_the_Altar/",
       "desc": "Healing at the Altar",
       "audio": "/shorts/Healing_at_the_Altar.mp3",
+      "timing": "/shorts/Healing_at_the_Altar.json",
       "title": "Healing at the Altar"
     },
     {
       "url": "/Healing_dominance/",
       "desc": "Healing dominance",
       "audio": "/shorts/Healing_dominance.mp3",
+      "timing": "/shorts/Healing_dominance.json",
       "title": "Healing dominance"
     },
     {
       "url": "/Healing_meditation/",
       "desc": "Healing meditation",
       "audio": "/shorts/Healing_meditation.mp3",
+      "timing": "/shorts/Healing_meditation.json",
       "title": "Healing meditation"
     },
     {
       "url": "/Healing_pure_energy/",
       "desc": "Healing pure energy",
       "audio": "/shorts/Healing_pure_energy.mp3",
+      "timing": "/shorts/Healing_pure_energy.json",
       "title": "Healing pure energy"
     },
     {
       "url": "/Healing_the_separation/",
       "desc": "Healing the separation",
       "audio": "/shorts/Healing_the_separation.mp3",
+      "timing": "/shorts/Healing_the_separation.json",
       "title": "Healing the separation"
     },
     {
       "url": "/Hearing_the_Voice/",
       "desc": "Hearing the Voice",
       "audio": "/shorts/Hearing_the_Voice.mp3",
+      "timing": "/shorts/Hearing_the_Voice.json",
       "title": "Hearing the Voice"
     },
     {
       "url": "/Heaven_and_earth/",
       "desc": "Heaven and earth",
       "audio": "/shorts/Heaven_and_earth.mp3",
+      "timing": "/shorts/Heaven_and_earth.json",
       "title": "Heaven and earth"
     },
     {
       "url": "/Helped_through_hate/",
       "desc": "Helped through hate",
       "audio": "/shorts/Helped_through_hate.mp3",
+      "timing": "/shorts/Helped_through_hate.json",
       "title": "Helped through hate"
     },
     {
       "url": "/Holy_Instant_Threshold_to_Awakening/",
       "desc": "Holy Instant Threshold to Awakening",
       "audio": "/shorts/Holy_Instant_Threshold_to_Awakening.mp3",
+      "timing": "/shorts/Holy_Instant_Threshold_to_Awakening.json",
       "title": "Holy Instant Threshold to Awakening"
     },
     {
       "url": "/Holy_Spirit_conspiring/",
       "desc": "Holy Spirit conspiring",
       "audio": "/shorts/Holy_Spirit_conspiring.mp3",
+      "timing": "/shorts/Holy_Spirit_conspiring.json",
       "title": "Holy Spirit conspiring"
     },
     {
       "url": "/Holy_Spirit_is_you/",
       "desc": "Holy Spirit is you",
       "audio": "/shorts/Holy_Spirit_is_you.mp3",
+      "timing": "/shorts/Holy_Spirit_is_you.json",
       "title": "Holy Spirit is you"
     },
     {
       "url": "/Holy_Spirit/",
       "desc": "Holy Spirit",
       "audio": "/shorts/Holy_Spirit.mp3",
+      "timing": "/shorts/Holy_Spirit.json",
       "title": "Holy Spirit"
     },
     {
       "url": "/Homing_in/",
       "desc": "Homing in",
       "audio": "/shorts/Homing_in.mp3",
+      "timing": "/shorts/Homing_in.json",
       "title": "Homing in"
     },
     {
       "url": "/How_much_I_love_you/",
       "desc": "How much I love you",
       "audio": "/shorts/How_much_I_love_you.mp3",
+      "timing": "/shorts/How_much_I_love_you.json",
       "title": "How much I love you"
     },
     {
       "url": "/Humility/",
       "desc": "Humility",
       "audio": "/shorts/Humility.mp3",
+      "timing": "/shorts/Humility.json",
       "title": "Humility"
     },
     {
       "url": "/I_Authorize_My_Body/",
       "desc": "I Authorize My Body",
       "audio": "/shorts/I_Authorize_My_Body.mp3",
+      "timing": "/shorts/I_Authorize_My_Body.json",
       "title": "I Authorize My Body"
     },
     {
       "url": "/I_thank_you/",
       "desc": "I thank you",
       "audio": "/shorts/I_thank_you.mp3",
+      "timing": "/shorts/I_thank_you.json",
       "title": "I thank you"
     },
     {
       "url": "/I_will_fit_in/",
       "desc": "I will fit in",
       "audio": "/shorts/I_will_fit_in.mp3",
+      "timing": "/shorts/I_will_fit_in.json",
       "title": "I will fit in"
     },
     {
       "url": "/Illegitimacy_of_disease/",
       "desc": "Illegitimacy of disease",
       "audio": "/shorts/Illegitimacy_of_disease.mp3",
+      "timing": "/shorts/Illegitimacy_of_disease.json",
       "title": "Illegitimacy of disease"
     },
     {
       "url": "/Illumination/",
       "desc": "Illumination",
       "audio": "/shorts/Illumination.mp3",
+      "timing": "/shorts/Illumination.json",
       "title": "Illumination"
     },
     {
       "url": "/Im_available_to_you/",
       "desc": "Im available to you",
       "audio": "/shorts/Im_available_to_you.mp3",
+      "timing": "/shorts/Im_available_to_you.json",
       "title": "Im available to you"
     },
     {
       "url": "/Im_here_to_help/",
       "desc": "Im here to help",
       "audio": "/shorts/Im_here_to_help.mp3",
+      "timing": "/shorts/Im_here_to_help.json",
       "title": "Im here to help"
     },
     {
       "url": "/Im_just_waiting/",
       "desc": "Im just waiting",
       "audio": "/shorts/Im_just_waiting.mp3",
+      "timing": "/shorts/Im_just_waiting.json",
       "title": "Im just waiting"
     },
     {
       "url": "/Impersonal_miracle/",
       "desc": "Impersonal miracle",
       "audio": "/shorts/Impersonal_miracle.mp3",
+      "timing": "/shorts/Impersonal_miracle.json",
       "title": "Impersonal miracle"
     },
     {
       "url": "/In_charge_of_Sonship/",
       "desc": "In charge of Sonship",
       "audio": "/shorts/In_charge_of_Sonship.mp3",
+      "timing": "/shorts/In_charge_of_Sonship.json",
       "title": "In charge of Sonship"
     },
     {
       "url": "/In_sync/",
       "desc": "In sync",
       "audio": "/shorts/In_sync.mp3",
+      "timing": "/shorts/In_sync.json",
       "title": "In sync"
     },
     {
       "url": "/In_th_middle_of_the_ultimate/",
-      "desc": "In th middle of the ultimate",
+      "desc": "In the Middle of the Ultimate",
       "audio": "/shorts/In_th_middle_of_the_ultimate.mp3",
-      "title": "In th middle of the ultimate"
+      "timing": "/shorts/In_th_middle_of_the_ultimate.json",
+      "title": "In the Middle of the Ultimate"
     },
     {
       "url": "/In_touch/",
       "desc": "In touch",
       "audio": "/shorts/In_touch.mp3",
+      "timing": "/shorts/In_touch.json",
       "title": "In touch"
     },
     {
       "url": "/Incompetence/",
       "desc": "Incompetence",
       "audio": "/shorts/Incompetence.mp3",
+      "timing": "/shorts/Incompetence.json",
       "title": "Incompetence"
     },
     {
       "url": "/Increased_sensitivity/",
       "desc": "Increased sensitivity",
       "audio": "/shorts/Increased_sensitivity.mp3",
+      "timing": "/shorts/Increased_sensitivity.json",
       "title": "Increased sensitivity"
     },
     {
       "url": "/Independence/",
       "desc": "Independence",
       "audio": "/shorts/Independence.mp3",
+      "timing": "/shorts/Independence.json",
       "title": "Independence"
     },
     {
       "url": "/Individual_and_Universal/",
       "desc": "Individual and Universal",
       "audio": "/shorts/Individual_and_Universal.mp3",
+      "timing": "/shorts/Individual_and_Universal.json",
       "title": "Individual and Universal"
     },
     {
       "url": "/Inevitable_connect/",
       "desc": "Inevitable connect",
       "audio": "/shorts/Inevitable_connect.mp3",
+      "timing": "/shorts/Inevitable_connect.json",
       "title": "Inevitable connect"
     },
     {
       "url": "/Infinite_and_specific/",
       "desc": "Infinite and specific",
       "audio": "/shorts/Infinite_and_specific.mp3",
+      "timing": "/shorts/Infinite_and_specific.json",
       "title": "Infinite and specific"
     },
     {
       "url": "/Infinite_intimacy/",
       "desc": "Infinite intimacy",
       "audio": "/shorts/Infinite_intimacy.mp3",
+      "timing": "/shorts/Infinite_intimacy.json",
       "title": "Infinite intimacy"
     },
     {
       "url": "/Inflicted_good/",
       "desc": "Inflicted good",
       "audio": "/shorts/Inflicted_good.mp3",
+      "timing": "/shorts/Inflicted_good.json",
       "title": "Inflicted good"
     },
     {
       "url": "/Inhale_inspiration/",
       "desc": "Inhale inspiration",
       "audio": "/shorts/Inhale_inspiration.mp3",
+      "timing": "/shorts/Inhale_inspiration.json",
       "title": "Inhale inspiration"
     },
     {
       "url": "/Inspired_expression/",
       "desc": "Inspired expression",
       "audio": "/shorts/Inspired_expression.mp3",
+      "timing": "/shorts/Inspired_expression.json",
       "title": "Inspired expression"
     },
     {
       "url": "/Invitation_to_God/",
       "desc": "Invitation to God",
       "audio": "/shorts/Invitation_to_God.mp3",
+      "timing": "/shorts/Invitation_to_God.json",
       "title": "Invitation to God"
     },
     {
       "url": "/involvement/",
       "desc": "involvement",
       "audio": "/shorts/involvement.mp3",
+      "timing": "/shorts/involvement.json",
       "title": "involvement"
     },
     {
       "url": "/Invulnerability/",
       "desc": "Invulnerability",
       "audio": "/shorts/Invulnerability.mp3",
+      "timing": "/shorts/Invulnerability.json",
       "title": "Invulnerability"
     },
     {
       "url": "/It_really_feels_good/",
       "desc": "It really feels good",
       "audio": "/shorts/It_really_feels_good.mp3",
+      "timing": "/shorts/It_really_feels_good.json",
       "title": "It really feels good"
     },
     {
       "url": "/It_worked/",
       "desc": "It worked",
       "audio": "/shorts/It_worked.mp3",
+      "timing": "/shorts/It_worked.json",
       "title": "It worked"
     },
     {
       "url": "/Its_all_about_Gift/",
       "desc": "Its all about Gift",
       "audio": "/shorts/Its_all_about_Gift.mp3",
+      "timing": "/shorts/Its_all_about_Gift.json",
       "title": "Its all about Gift"
     },
     {
       "url": "/Its_not_up_to_you/",
       "desc": "Its not up to you",
       "audio": "/shorts/Its_not_up_to_you.mp3",
+      "timing": "/shorts/Its_not_up_to_you.json",
       "title": "Its not up to you"
     },
     {

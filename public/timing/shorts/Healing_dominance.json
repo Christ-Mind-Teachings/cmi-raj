@@ -1,0 +1,34 @@
+{
+  "base": "/t/raj/shorts/Healing_dominance/",
+  "time": [
+    {
+      "id": "p0",
+      "seconds": 0
+    },
+    {
+      "id": "p1",
+      "seconds": 64.265605
+    },
+    {
+      "id": "p2",
+      "seconds": 88.812129
+    },
+    {
+      "id": "p3",
+      "seconds": 130.572772
+    },
+    {
+      "id": "p4",
+      "seconds": 178.70967
+    },
+    {
+      "id": "p5",
+      "seconds": 240.856742
+    },
+    {
+      "id": "p6",
+      "seconds": 290.260246
+    }
+  ]
+}
+

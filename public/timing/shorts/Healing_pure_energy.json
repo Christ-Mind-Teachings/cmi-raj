@@ -1,0 +1,49 @@
+{
+  "base": "/t/raj/shorts/Healing_pure_energy/",
+  "time": [
+    {
+      "id": "p0",
+      "seconds": 0
+    },
+    {
+      "id": "p1",
+      "seconds": 70.648584
+    },
+    {
+      "id": "p2",
+      "seconds": 117.708391
+    },
+    {
+      "id": "p3",
+      "seconds": 192.759466
+    },
+    {
+      "id": "p4",
+      "seconds": 242.004259
+    },
+    {
+      "id": "p5",
+      "seconds": 308.30187
+    },
+    {
+      "id": "p6",
+      "seconds": 374.750547
+    },
+    {
+      "id": "p7",
+      "seconds": 426.53936
+    },
+    {
+      "id": "p8",
+      "seconds": 500.821015
+    },
+    {
+      "id": "p9",
+      "seconds": 565.524546
+    },
+    {
+      "id": "p10",
+      "seconds": 630.868018
+    }
+  ]
+}

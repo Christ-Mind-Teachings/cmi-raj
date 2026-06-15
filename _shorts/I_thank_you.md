@@ -1,6 +1,7 @@
 ---
  title: I thank you
  audiofn: I_thank_you
+ formatted: true
 ---
 
 ## {{page.title}}

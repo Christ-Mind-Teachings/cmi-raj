@@ -1,0 +1,46 @@
+{
+  "base": "/t/raj/shorts/Healing_meditation/",
+  "time": [
+    {
+      "id": "p0",
+      "seconds": 0
+    },
+    {
+      "id": "p1",
+      "seconds": 42.255622
+    },
+    {
+      "id": "p2",
+      "seconds": 110.797246
+    },
+    {
+      "id": "p3",
+      "seconds": 179.316165
+    },
+    {
+      "id": "p4",
+      "seconds": 216.301034
+    },
+    {
+      "id": "p5",
+      "seconds": 275.911161
+    },
+    {
+      "id": "p6",
+      "seconds": 348.576251
+    },
+    {
+      "id": "p7",
+      "seconds": 396.886268
+    },
+    {
+      "id": "p8",
+      "seconds": 449.953735
+    },
+    {
+      "id": "p9",
+      "seconds": 531.869698
+    }
+  ]
+}
+

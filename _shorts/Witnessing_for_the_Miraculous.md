@@ -1,23 +1,27 @@
 ---
  title: Witnessing for the Miraculous
  audiofn: Witnessing_for_the_Miraculous
+ formatted: partial
 ---
 
 ## {{page.title}}
 
-We read last week that as you stepped lightly across the bridge to
-timelessness. Uphel by timelessness You are directed straight to the
-heart of God. At its center and only there you are safe forever because
-you are complete forever. Let's pay attention to what the words say. The
-words say that when you're there you are complete forever. Do you think
-you have never been At the center of the heart of God. Do you think that
-you were never ever? The holy Son or daughter of God without any
-ignorance of your Divinity of your wholeness of your completeness. Do
-you think that God created you imperfect, with a capacity to become
-perfect? Then the simple fact is that You could never step lightly
-across the bridge upheld by timelessness. And find yourself directed
-straight to the heart of God. And at its center and only there find
-yourself complete forever forever means. Forever It means before and now
+We read last week that as you step lightly across the bridge to
+timelessness. Upheld by timelessness you are directed straight to the
+Heart of God. At Its center, and only there, you are safe forever because
+you are complete forever.
+
+Let's pay attention to what the words say. The words say that when you're
+there you are complete forever. Do you think you have never been at the center
+of the Heart of God? Do you think that you were never ever the holy Son or
+Daughter of God without any ignorance of your divinity, of your wholeness, of
+your completeness? Do you think that God created you imperfect, with a
+capacity to become perfect? Then the simple fact is that you could never step
+lightly across the bridge upheld by timelessness and find yourself directed
+straight to the Heart of God.
+
+And at Its center, and only there, find
+yourself complete forever. Forever means **forever**. It means before and now
 after without any of it being divided up, it's forever. It's always,
 it's immutably unchangeably the fact of being. And if you can at some
 point step into the conscious experience of your completeness forever,
