@@ -5,6 +5,5 @@
 
 ## {{page.title}}
 
-Let every moment be the occasion. For the willingness to recognize God
-being you and The events you're in the middle of.
-
+Let every moment be the occasion for the willingness to recognize God being
+you and the events you’re in the middle of.

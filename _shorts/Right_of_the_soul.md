@@ -5,8 +5,7 @@
 
 ## {{page.title}}
 
-The kingdom of heaven is the right of the soul. Whose beauty and dignity
-are far beyond doubt, beyond perception. And stand forever. As the mark
-of the love of God for His creations. The mark of the love of God for
-you.
+The Kingdom of Heaven is the right of the soul. Whose beauty and dignity are
+far beyond doubt, beyond perception. And stand forever. As the mark of the
+love of God for His creations. The mark of the love of God for you.
 
