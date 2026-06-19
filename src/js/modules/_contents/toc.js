@@ -1,6 +1,6 @@
 import scroll from "scroll-into-view";
 
-import {getConfig} from "../_config/config";
+import { getConfig } from "../_config/config";
 import keyInfo from "../_config/key";
 
 const uiTocModal = ".toc.ui.modal";
@@ -13,7 +13,7 @@ const uiModalOpacity = 0.5;
 function renderRaj(links) {
   return `
     <div class="list raj-list hide">
-      ${links.map(l => `<a class="item" href="${l.url}">${l.title}</a>`).join("")}
+      ${links.map((l) => `<a class="item" href="${l.url}">${l.title}</a>`).join("")}
     </div>
   `;
 }
@@ -24,34 +24,51 @@ function renderRaj(links) {
 function renderRajSections(base, sections, cidx) {
   return `
     <div id="chapter${cidx + 1}" data-sections="${sections.length - 1}" class="list">
-      ${sections.map((q, qidx) => `
-        <div class="item">${q.ref?q.ref+" ":""}${q.title}</div>
+      ${sections
+        .map(
+          (q, qidx) => `
+        <div class="item">${q.ref ? q.ref + " " : ""}${q.title}</div>
         ${q.nwffacim ? renderRaj(q.nwffacim) : ""}
-      `).join("")}
+      `,
+        )
+        .join("")}
     </div>
   `;
 }
 
 //generate html for TOC for Raj Cross Reference
 function makeRajContents(contents) {
-  return (`
+  return `
     <div class="ui relaxed list">
-      ${contents.map((unit, cidx) => `
+      ${contents
+        .map(
+          (unit, cidx) => `
         <div class="item">
           <div class="header">Chapter ${unit.id}: ${unit.title}</div>
-          ${unit.sections ? renderRajSections(unit.base, unit.sections, cidx) : "" }
+          ${unit.sections ? renderRajSections(unit.base, unit.sections, cidx) : ""}
         </div>
-      `).join("")}
+      `,
+        )
+        .join("")}
     </div>
-  `);
+  `;
 }
 
 /*
-* Mark shorts as incomplete if they don't have timing
-*/
+ * Mark shorts as incomplete if they don't have timing
+ */
 function getStatus(content) {
   if (content.timing) {
     return "&nbsp;".concat(content.title);
+  }
+
+  if (content.timer) {
+    if (content.timer == "niebank.sarah@icloud.com") {
+      return '<i class="bullseye green icon"></i>'.concat(content.title);
+    }
+    if (content.timer == "rmercer33+demo@gmail.com") {
+      return '<i class="fish blue icon"></i>'.concat(content.title);
+    }
   }
   return '<i class="genderless red icon"></i>'.concat(content.title);
 }
@@ -60,21 +77,29 @@ function getStatus(content) {
   generate toc html for Raj shorts
 */
 function makeContentsShorts(base, contents) {
-    return (`
+  return `
       <div class="ui relaxed ordered list">
-        ${contents.map((content, pidx) => `
-          <a data-lid="${pidx+1}" class="item" href="${base}${content.url}">&nbsp;&nbsp;${getStatus(content)}</a>`).join("")}
+        ${contents
+          .map(
+            (content, pidx) => `
+          <a data-lid="${pidx + 1}" class="item" href="${base}${content.url}">&nbsp;&nbsp;${getStatus(content)}</a>`,
+          )
+          .join("")}
       </div>
-    `);
-  }
+    `;
+}
 
 function makeContents(base, contents) {
-  return (`
+  return `
     <div class="ui relaxed ordered list">
-      ${contents.map((content, pidx) => `
-        <a data-lid="${pidx+1}" class="item" href="${base}${content.url}">&nbsp;&nbsp;&nbsp;${content.title}</a>`).join("")}
+      ${contents
+        .map(
+          (content, pidx) => `
+        <a data-lid="${pidx + 1}" class="item" href="${base}${content.url}">&nbsp;&nbsp;&nbsp;${content.title}</a>`,
+        )
+        .join("")}
     </div>
-  `);
+  `;
 }
 
 /*
@@ -82,15 +107,17 @@ function makeContents(base, contents) {
 */
 function nextPrev(bid, $el) {
   var LAST_ID = keyInfo.getNumberOfUnits(bid);
-  let prevId = -1, nextId = -1, href, text;
+  let prevId = -1,
+    nextId = -1,
+    href,
+    text;
   let lid = $el.attr("data-lid");
   let lessonId = parseInt(lid, 10);
 
   //disable prev control
   if (lessonId === 1) {
     $("#toc-previous-page").addClass("disabled");
-  }
-  else {
+  } else {
     $("#toc-previous-page").removeClass("disabled");
     prevId = lessonId - 1;
   }
@@ -98,8 +125,7 @@ function nextPrev(bid, $el) {
   //disable next control
   if (lessonId === LAST_ID) {
     $("#toc-next-page").addClass("disabled");
-  }
-  else {
+  } else {
     $("#toc-next-page").removeClass("disabled");
     nextId = lessonId + 1;
   }
@@ -124,7 +150,7 @@ function nextPrev(bid, $el) {
 }
 
 /*
-  If we're on a transcript page, highlight the 
+  If we're on a transcript page, highlight the
   current transcript in the list and calc prev and next
   links
 
@@ -145,7 +171,7 @@ function highlightCurrentTranscript(bid, setNextPrev = true) {
       return;
     }
 
-    switch(bid) {
+    switch (bid) {
       case "vol":
       case "vol2":
         break;
@@ -165,7 +191,6 @@ function highlightCurrentTranscript(bid, setNextPrev = true) {
   .toc-modal-open must also have .combined, otherwise the toc will get messed up.
 */
 function loadTOC(toc) {
-
   //check if previously initialized
   if (toc.init) {
     //toc refresh not needed if not combined
@@ -191,12 +216,12 @@ function loadTOC(toc) {
     .then((contents) => {
       $(".toc-image").attr("src", `${contents.image}`);
       $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
-      $(".toc-message").html(contents.message?contents.message:"");
+      $(".toc-message").html(contents.message ? contents.message : "");
       toc["image"] = contents.image;
       toc["title"] = contents.title;
       toc["bid"] = contents.bid;
 
-      switch(contents.bid) {
+      switch (contents.bid) {
         case "acim":
           toc.html = makeRajContents(contents.contents);
           break;
@@ -229,26 +254,28 @@ export function getBookId() {
 }
 
 export default {
-
   /*
-   * Init the modal dialog with data from JSON file 
+   * Init the modal dialog with data from JSON file
    * or local storage
    */
-  initialize: function(env) {
-    let toc = {init: false, book: "", html: ""};
+  initialize: function (env) {
+    let toc = { init: false, book: "", html: "" };
 
     //modal dialog settings
     $(uiTocModal).modal({
-      dimmerSettings: {opacity: uiModalOpacity},
+      dimmerSettings: { opacity: uiModalOpacity },
       observeChanges: true,
-      onVisible: function() {
+      onVisible: function () {
         let $el = $(".toc-list a.current-unit");
         scroll($el.get(0), {
-          isScrollable: function(target, defaultIsScrollable) {
-            return defaultIsScrollable(target) || target.className.includes('scrolling');
-          }
+          isScrollable: function (target, defaultIsScrollable) {
+            return (
+              defaultIsScrollable(target) ||
+              target.className.includes("scrolling")
+            );
+          },
         });
-      }
+      },
     });
 
     //load toc once for transcript pages
@@ -259,7 +286,7 @@ export default {
     /*
      * TOC populated by JSON file from AJAX call if not found
      * in local storage.
-     * 
+     *
      * Read value of data-book attribute to identify name of file
      * with contents.
      */
@@ -273,18 +300,24 @@ export default {
         getConfig(book)
           .then((contents) => {
             $(".toc-image").attr("src", `${contents.image}`);
-            $(".toc-title").html(`Table of Contents: <em>${contents.title}</em>`);
-            $(".toc-message").html(contents.message?contents.message:"");
+            $(".toc-title").html(
+              `Table of Contents: <em>${contents.title}</em>`,
+            );
+            $(".toc-message").html(contents.message ? contents.message : "");
 
-            switch(contents.bid) {
+            switch (contents.bid) {
               case "acim":
                 $(".toc-list").html(makeRajContents(contents.contents));
                 break;
               case "shorts":
-                $(".toc-list").html(makeContentsShorts(contents.base, contents.contents));
+                $(".toc-list").html(
+                  makeContentsShorts(contents.base, contents.contents),
+                );
                 break;
               default:
-                $(".toc-list").html(makeContents(contents.base, contents.contents));
+                $(".toc-list").html(
+                  makeContents(contents.base, contents.contents),
+                );
                 break;
             }
 
@@ -302,11 +335,10 @@ export default {
             $(".toc-list").html(`<p>Error: ${error.message}</p>`);
             $(uiTocModal).modal("show");
           });
-      }
-      else {
+      } else {
         loadTOC(toc);
         $(uiTocModal).modal("show");
       }
     });
-  }
+  },
 };

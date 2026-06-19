@@ -1,6 +1,6 @@
-import {fetchConfiguration} from "common/modules/_ajax/config";
+import { fetchConfiguration } from "common/modules/_ajax/config";
 
-import {status} from "./status";
+import { status } from "./status";
 
 //import {decodeKey, parseKey, genKey} from "./key";
 const transcript = require("./key");
@@ -22,20 +22,22 @@ export function getConfig(book, assign = true) {
   let url = `${g_sourceInfo.configUrl}/${book}.json`;
 
   return new Promise((resolve, reject) => {
-    fetchConfiguration(url, lsKey, status).then((resp) => {
-      if (assign) {
-        config = resp;
-      }
-      resolve(resp);
-    }).catch((err) => {
-      reject(err);
-    });
+    fetchConfiguration(url, lsKey, status)
+      .then((resp) => {
+        if (assign) {
+          config = resp;
+        }
+        resolve(resp);
+      })
+      .catch((err) => {
+        reject(err);
+      });
   });
 }
 
 /**
  * Load the configuration file for 'book'. If it's not found in
- * the cache (local storage) then get it from the server and 
+ * the cache (local storage) then get it from the server and
  * save it in cache.
  *
  * @param {string} book - the book identifier
@@ -72,7 +74,7 @@ function _getAudioInfo(cIdx) {
 
   //subtract 1 because value comes from the key which is plus 1
   audioInfo = config.contents[cIdx - 1];
-  return audioInfo ? audioInfo: {};
+  return audioInfo ? audioInfo : {};
 }
 
 export function getAudioInfo(url) {
@@ -89,13 +91,17 @@ export function getAudioInfo(url) {
 
   //check the correct configuration file is loaded
   if (config.bid !== idx[2]) {
-    throw new Error("Unexpected config file loaded; expecting %s but %s is loaded.", idx[2], config.bid);
+    throw new Error(
+      "Unexpected config file loaded; expecting %s but %s is loaded.",
+      idx[2],
+      config.bid,
+    );
   }
 
   let audioInfo = {};
   let cIdx;
 
-  switch(idx[1]) {
+  switch (idx[1]) {
     //these don't have audio
     case "grad":
     case "yaa":
@@ -133,7 +139,6 @@ export function getReservation(url) {
     data: optional, data that will be added to the result, used for convenience
 */
 export function getPageInfo(page, data = false) {
-
   let decodedKey;
   let pageKey;
 
@@ -142,20 +147,22 @@ export function getPageInfo(page, data = false) {
    */
   if (typeof page === "string" && page.startsWith("/t/")) {
     pageKey = transcript.genPageKey(page);
-  }
-  else {
+  } else {
     pageKey = page;
   }
 
   decodedKey = transcript.decodeKey(pageKey);
-  let info = {pageKey: pageKey, source: g_sourceInfo.title, bookId: decodedKey.bookId};
+  let info = {
+    pageKey: pageKey,
+    source: g_sourceInfo.title,
+    bookId: decodedKey.bookId,
+  };
 
   if (data) {
     info.data = data;
   }
 
   return new Promise((resolve, reject) => {
-
     //get configuration data specific to the bookId
     getConfig(decodedKey.bookId, false)
       .then((data) => {
@@ -167,6 +174,7 @@ export function getPageInfo(page, data = false) {
         info.audio = data.contents[decodedKey.uid].audio;
         info.timing = data.contents[decodedKey.uid].timing;
         info.audioBase = g_sourceInfo.audioBase;
+        info.reservation = data.contents[decodedKey.uid].timer;
 
         resolve(info);
       })
@@ -182,4 +190,3 @@ export function getPageInfo(page, data = false) {
 export function setEnv(si) {
   g_sourceInfo = si;
 }
-
