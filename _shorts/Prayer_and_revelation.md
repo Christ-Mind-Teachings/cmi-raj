@@ -9,6 +9,6 @@ Prayer, as I’ve said before, is you saying, Father, what is your will? It isn�
 
 How do you resist by saying, I should be able to figure this out for myself. Or I should be able to determine the manner in which God will answer me.
 
-Prayer is saying help. Listening, being receptive, letting in so that revelation can occur. And you can more clearly be the conscious presence of God being all there is right there where you are. When you are awake Revelation, God expressing Himself. God expressing His will, God being allwill be your conscious experience of being you.
+Prayer is saying help. Listening, being receptive, letting in so that revelation can occur. And you can more clearly be the conscious presence of God being all there is right there where you are. When you are awake Revelation, God expressing Himself. God expressing His will, God being all will be your conscious experience of being you.
 
 Not of you being all. But of you being God consciously being all there is. Your conscious experience of being will be God’s conscious experience of being all. Revelation will not then seem to come to you. It will be your conscious experience of being, period.

@@ -11,6 +11,6 @@ I have said before that the ego is like the sphere of a soap bubble, fragile, th
 
 But if a mind perceives without love, it perceives an empty shell. It doesn’t perceive that it’s a full shell because it’s preoccupied with the finiteness of the boundary and either protecting itself against it or enlarging the boundary.
 
-And again, if the bubble represents the ego the bubble itself is a defense mechanism. It is the only element in existence. that implies or suggests the need for defense, the existence of defense, when the bubble pops. There is nowhere to be found anything which gives meaning to the word defense.
+And again, if the bubble represents the ego the bubble itself is a defense mechanism. It is the only element in existence that implies or suggests the need for defense, the existence of defense, when the bubble pops. There is nowhere to be found anything which gives meaning to the word defense.
 
 The bubble isn’t even really there.

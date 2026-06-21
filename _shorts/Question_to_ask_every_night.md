@@ -7,7 +7,7 @@
 
 Wondered how can I do this? How can I do? But Raj is saying, it’s my birthright to do, my nature to do. Well, here’s a way to start. Every night when you go to bed. Ask yourselves the question. Who did I bless today as a result of my involvement with them?
 
-And let’s refine that a little bit, make it a little bit less nebulous. How many or who? that I encountered in my day has felt blessed. By his or her encounter with me. You see, it’s important for you not to be giving the definitions. Oh well she had to have felt blessed after what I did for her. He must have felt blessed. Because such wonderful things happened.
+And let’s refine that a little bit, make it a little bit less nebulous. How many or who that I encountered in my day has felt blessed. By his or her encounter with me. You see, it’s important for you not to be giving the definitions. Oh well she had to have felt blessed after what I did for her. He must have felt blessed. Because such wonderful things happened.
 
 No, it isn’t what you determine blessing to be. It’s what the other determines blessing to be. This question if you will discipline yourself enough to ask it every night. And ask it as though it’s a serious question, deserving an honest answer will help to bring your attention to where it needs to be. In order to engage in the act of willingness that causes the holy instant. In which awakening can occur.
 
