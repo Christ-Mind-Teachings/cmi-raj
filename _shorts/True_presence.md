@@ -7,7 +7,7 @@
 
 Your comfort zone, your personal ego comfort zone is not the place where
 insight and inspiration will occur. That’s where the so-called safe zone is.
-Where God does not find expression and you continue to be stuck. Ignorant of.
+Where God does not find expression and you continue to be stuck, ignorant of
 What love is. Ignorant of feeling the love you’re loved by because the center
 and circumference of you is entirely the totality of God. And thereby not
 having the experience of being loved. And experiencing the refreshment. That

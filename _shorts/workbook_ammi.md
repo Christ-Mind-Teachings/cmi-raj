@@ -76,8 +76,8 @@ flame, if you will, that illumination, that is your essential self because
 it's the presence of God being God right there as you because you are part of
 the infiniteness of what God is.
 
-And so you can devote yourself for a year to turning with them turning back
-toward the altar and being taught of it by letting it in. And You might
+And so you can devote yourself for a year to turning within turning back
+toward the altar and being taught of it by letting it in. And you might
 actually make more progress than if you study the workbook for a year. Why?
 Because turning to the flame within you, the divinity within you, that is you
 causes an intimate involvement between you, as you presently perceive and

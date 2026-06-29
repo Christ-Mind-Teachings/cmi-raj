@@ -71,7 +71,7 @@ by holding on to your limitations. So utterly irrelevant.
 Because the fulfillment that would replace it would be so utterly meaningful
 and so outside of the scope of the petty small mindedness of the orphan
 mindset. I’m going to be pushing for you not to be satisfied with no
-particular change occurring but a capacity you have. to somehow be halfway
+particular change occurring but a capacity you have to somehow be halfway
 happy in spite of the lack of change. I’m going to push for you not to miss
 the point. If change is supposed to occur if transformation is the promise
 then demand the transformation. Demand to have the evidence and don’t put it

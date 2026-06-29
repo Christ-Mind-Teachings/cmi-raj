@@ -3,7 +3,7 @@
   "base": "/t/raj/shorts",
   "image": "/t/raj/public/img/raj/shorts-toc.jpg",
   "title": "Audio Gems from Raj and Paul",
-  "message": "<i class=\"genderless red icon\"></i>: indicates item needs formatting, you can help!",
+  "message": "",
   "contents": [
     {
       "url": "/Abandoning_Thinking_1/",
@@ -2171,6 +2171,7 @@
       "url": "/Reinforcing_egos/",
       "desc": "Reinforcing egos",
       "audio": "/shorts/Reinforcing_egos.mp3",
+      "timing": "/shorts/Reinforcing_egos.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Reinforcing egos"
     },
@@ -2178,6 +2179,7 @@
       "url": "/Releasing_the_hostages/",
       "desc": "Releasing the hostages",
       "audio": "/shorts/Releasing_the_hostages.mp3",
+      "timing": "/shorts/Releasing_the_hostages.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Releasing the hostages"
     },
@@ -2185,6 +2187,7 @@
       "url": "/Resentment/",
       "desc": "Resentment",
       "audio": "/shorts/Resentment.mp3",
+      "timing": "/shorts/Resentment.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Resentment"
     },
@@ -2192,6 +2195,7 @@
       "url": "/Resisting_change/",
       "desc": "Resisting change",
       "audio": "/shorts/Resisting_change.mp3",
+      "timing": "/shorts/Resisting_change.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Resisting change"
     },
@@ -2199,6 +2203,7 @@
       "url": "/Resisting_Reality/",
       "desc": "Resisting Reality",
       "audio": "/shorts/Resisting_Reality.mp3",
+      "timing": "/shorts/Resisting_Reality.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Resisting Reality"
     },
@@ -2206,6 +2211,7 @@
       "url": "/Response_to_perception/",
       "desc": "Response to perception",
       "audio": "/shorts/Response_to_perception.mp3",
+      "timing": "/shorts/Response_to_perception.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Response to perception"
     },
@@ -2213,6 +2219,7 @@
       "url": "/Return_to_sanity/",
       "desc": "Return to sanity",
       "audio": "/shorts/Return_to_sanity.mp3",
+      "timing": "/shorts/Return_to_sanity.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Return to sanity"
     },
@@ -2220,6 +2227,7 @@
       "url": "/Rhythm_of_God/",
       "desc": "Rhythm of God",
       "audio": "/shorts/Rhythm_of_God.mp3",
+      "timing": "/shorts/Rhythm_of_God.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Rhythm of God"
     },
@@ -2227,6 +2235,7 @@
       "url": "/Right_in_your_face/",
       "desc": "Right in your face",
       "audio": "/shorts/Right_in_your_face.mp3",
+      "timing": "/shorts/Right_in_your_face.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Right in your face"
     },
@@ -2234,6 +2243,7 @@
       "url": "/Right_of_the_soul/",
       "desc": "Right of the soul",
       "audio": "/shorts/Right_of_the_soul.mp3",
+      "timing": "/shorts/Right_of_the_soul.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Right of the soul"
     },
@@ -2241,6 +2251,7 @@
       "url": "/Ripple_effect/",
       "desc": "Ripple effect",
       "audio": "/shorts/Ripple_effect.mp3",
+      "timing": "/shorts/Ripple_effect.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Ripple effect"
     },
@@ -2248,6 +2259,7 @@
       "url": "/Same_mental_error/",
       "desc": "Same mental error",
       "audio": "/shorts/Same_mental_error.mp3",
+      "timing": "/shorts/Same_mental_error.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Same mental error"
     },
@@ -2255,6 +2267,7 @@
       "url": "/Seeing_Spirit/",
       "desc": "Seeing Spirit",
       "audio": "/shorts/Seeing_Spirit.mp3",
+      "timing": "/shorts/Seeing_Spirit.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Seeing Spirit"
     },
@@ -2262,6 +2275,7 @@
       "url": "/Sending_out_messengers/",
       "desc": "Sending out messengers",
       "audio": "/shorts/Sending_out_messengers.mp3",
+      "timing": "/shorts/Sending_out_messengers.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Sending out messengers"
     },
@@ -2269,6 +2283,7 @@
       "url": "/Serving_transformationally/",
       "desc": "Serving transformationally",
       "audio": "/shorts/Serving_transformationally.mp3",
+      "timing": "/shorts/Serving_transformationally.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Serving transformationally"
     },
@@ -2276,6 +2291,7 @@
       "url": "/Shake_on_the_shoulder/",
       "desc": "Shake on the shoulder",
       "audio": "/shorts/Shake_on_the_shoulder.mp3",
+      "timing": "/shorts/Shake_on_the_shoulder.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Shake on the shoulder"
     },
@@ -2283,6 +2299,7 @@
       "url": "/Share_the_learning/",
       "desc": "Share the learning",
       "audio": "/shorts/Share_the_learning.mp3",
+      "timing": "/shorts/Share_the_learning.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Share the learning"
     },
@@ -2290,6 +2307,7 @@
       "url": "/Shared_clarity/",
       "desc": "Shared clarity",
       "audio": "/shorts/Shared_clarity.mp3",
+      "timing": "/shorts/Shared_clarity.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Shared clarity"
     },
@@ -2297,6 +2315,7 @@
       "url": "/Shift_from_get_to_give/",
       "desc": "Shift from get to give",
       "audio": "/shorts/Shift_from_get_to_give.mp3",
+      "timing": "/shorts/Shift_from_get_to_give.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Shift from get to give"
     },
@@ -2304,6 +2323,7 @@
       "url": "/Simple_involvement/",
       "desc": "Simple involvement",
       "audio": "/shorts/Simple_involvement.mp3",
+      "timing": "/shorts/Simple_involvement.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Simple involvement"
     },
@@ -2311,6 +2331,7 @@
       "url": "/Singlemindedness/",
       "desc": "Singlemindedness",
       "audio": "/shorts/Singlemindedness.mp3",
+      "timing": "/shorts/Singlemindedness.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Singlemindedness"
     },
@@ -2318,6 +2339,7 @@
       "url": "/So_and_so/",
       "desc": "So and so",
       "audio": "/shorts/So_and_so.mp3",
+      "timing": "/shorts/So_and_so.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "So and so"
     },
@@ -2325,6 +2347,7 @@
       "url": "/Soul_meaning/",
       "desc": "Soul meaning",
       "audio": "/shorts/Soul_meaning.mp3",
+      "timing": "/shorts/Soul_meaning.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Soul meaning"
     },
@@ -2332,6 +2355,7 @@
       "url": "/Spontaneous_shift/",
       "desc": "Spontaneous shift",
       "audio": "/shorts/Spontaneous_shift.mp3",
+      "timing": "/shorts/Spontaneous_shift.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Spontaneous shift"
     },
@@ -2339,6 +2363,7 @@
       "url": "/Squinched_eyes/",
       "desc": "Squinched eyes",
       "audio": "/shorts/Squinched_eyes.mp3",
+      "timing": "/shorts/Squinched_eyes.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Squinched eyes"
     },
@@ -2346,6 +2371,7 @@
       "url": "/Stuckness_in_the_dream/",
       "desc": "Stuckness in the dream",
       "audio": "/shorts/Stuckness_in_the_dream.mp3",
+      "timing": "/shorts/Stuckness_in_the_dream.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Stuckness in the dream"
     },
@@ -2353,6 +2379,7 @@
       "url": "/Sublim_Healing_1/",
       "desc": "Sublim Healing 1",
       "audio": "/shorts/Sublim_Healing_1.mp3",
+      "timing": "/shorts/Sublim_Healing_1.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Sublim Healing 1"
     },
@@ -2360,6 +2387,7 @@
       "url": "/Sublim_Healing_2/",
       "desc": "Sublim Healing 2",
       "audio": "/shorts/Sublim_Healing_2.mp3",
+      "timing": "/shorts/Sublim_Healing_2.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Sublim Healing 2"
     },
@@ -2367,6 +2395,7 @@
       "url": "/Sublim_Healing_3/",
       "desc": "Sublim Healing 3",
       "audio": "/shorts/Sublim_Healing_3.mp3",
+      "timing": "/shorts/Sublim_Healing_3.json",
       "timer": "niebank.sarah@icloud.com",
       "title": "Sublim Healing 3"
     },
@@ -2374,102 +2403,136 @@
       "url": "/Talk_to_me/",
       "desc": "Talk to me",
       "audio": "/shorts/Talk_to_me.mp3",
+      "timing": "/shorts/Talk_to_me.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Talk to me"
     },
     {
       "url": "/Tares_and_wheat/",
       "desc": "Tares and wheat",
       "audio": "/shorts/Tares_and_wheat.mp3",
+      "timing": "/shorts/Tares_and_wheat.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Tares and wheat"
     },
     {
       "url": "/Taste_of_heaven/",
       "desc": "Taste of heaven",
       "audio": "/shorts/Taste_of_heaven.mp3",
+      "timing": "/shorts/Taste_of_heaven.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Taste of heaven"
     },
     {
       "url": "/Teachers_as_BEers/",
       "desc": "Teachers as BEers",
       "audio": "/shorts/Teachers_as_BEers.mp3",
+      "timing": "/shorts/Teachers_as_BEers.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Teachers as BEers"
     },
     {
       "url": "/Thank_you/",
       "desc": "Thank you",
       "audio": "/shorts/Thank_you.mp3",
+      "timing": "/shorts/Thank_you.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Thank you"
     },
     {
       "url": "/The_Answer_in_you/",
       "desc": "The Answer in you",
       "audio": "/shorts/The_Answer_in_you.mp3",
+      "timing": "/shorts/The_Answer_in_you.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The Answer in you"
     },
     {
       "url": "/The_answer/",
       "desc": "The answer",
       "audio": "/shorts/The_answer.mp3",
+      "timing": "/shorts/The_answer.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The answer"
     },
     {
       "url": "/The_Currents_of_good_pleasure/",
       "desc": "The Currents of good pleasure",
       "audio": "/shorts/The_Currents_of_good_pleasure.mp3",
+      "timing": "/shorts/The_Currents_of_good_pleasure.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The Currents of good pleasure"
     },
     {
       "url": "/The_Father/",
       "desc": "The Father",
       "audio": "/shorts/The_Father.mp3",
+      "timing": "/shorts/The_Father.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The Father"
     },
     {
       "url": "/The_gift_you_cant_hold_in/",
       "desc": "The gift you cant hold in",
       "audio": "/shorts/The_gift_you_cant_hold_in.mp3",
+      "timing": "/shorts/The_gift_you_cant_hold_in.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The gift you cant hold in"
     },
     {
       "url": "/The_impossibility_of_being_lost/",
       "desc": "The impossibility of being lost",
       "audio": "/shorts/The_impossibility_of_being_lost.mp3",
+      "timing": "/shorts/The_impossibility_of_being_lost.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The impossibility of being lost"
     },
     {
       "url": "/The_Living_Christ/",
       "desc": "The Living Christ",
       "audio": "/shorts/The_Living_Christ.mp3",
+      "timing": "/shorts/The_Living_Christ.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The Living Christ"
     },
     {
       "url": "/The_need/",
       "desc": "The need",
       "audio": "/shorts/The_need.mp3",
+      "timing": "/shorts/The_need.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The need"
     },
     {
       "url": "/The_nothing_place/",
       "desc": "The nothing place",
       "audio": "/shorts/The_nothing_place.mp3",
+      "timing": "/shorts/The_nothing_place.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The nothing place"
     },
     {
       "url": "/The_one_you_divinely_are/",
       "desc": "The one you divinely are",
       "audio": "/shorts/The_one_you_divinely_are.mp3",
+      "timing": "/shorts/The_one_you_divinely_are.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The one you divinely are"
     },
     {
       "url": "/The_place_of_Excellence/",
       "desc": "The place of Excellence",
       "audio": "/shorts/The_place_of_Excellence.mp3",
+      "timing": "/shorts/The_place_of_Excellence.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The place of Excellence"
     },
     {
       "url": "/The_Plan_of_Atonement/",
       "desc": "The Plan of Atonement",
       "audio": "/shorts/The_Plan_of_Atonement.mp3",
+      "timing": "/shorts/The_Plan_of_Atonement.json",
+      "timer": "niebank.sarah@icloud.com",
       "timer": "rmercer33+demo@gmail.com",
       "title": "The Plan of Atonement"
     },
@@ -2477,312 +2540,415 @@
       "url": "/The_temple_and_the_Altar/",
       "desc": "The temple and the Altar",
       "audio": "/shorts/The_temple_and_the_Altar.mp3",
+      "timing": "/shorts/The_temple_and_the_Altar.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The temple and the Altar"
     },
     {
       "url": "/The_Ultimate_Healing/",
       "desc": "The Ultimate Healing",
       "audio": "/shorts/The_Ultimate_Healing.mp3",
+      "timing": "/shorts/The_Ultimate_Healing.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The Ultimate Healing"
     },
     {
       "url": "/The_Voice_for_Truth/",
       "desc": "The Voice for Truth",
       "audio": "/shorts/The_Voice_for_Truth.mp3",
+      "timing": "/shorts/The_Voice_for_Truth.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The Voice for Truth"
     },
     {
       "url": "/The_world_as_the_Kingdom_of_Heaven/",
       "desc": "The world as the Kingdom of Heaven",
       "audio": "/shorts/The_world_as_the_Kingdom_of_Heaven.mp3",
+      "timing": "/shorts/The_world_as_the_Kingdom_of_Heaven.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "The world as the Kingdom of Heaven"
     },
     {
       "url": "/Thought_adjuster/",
       "desc": "Thought adjuster",
       "audio": "/shorts/Thought_adjuster.mp3",
+      "timing": "/shorts/Thought_adjuster.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Thought adjuster"
     },
     {
       "url": "/Thoughts_govern_experience/",
       "desc": "Thoughts govern experience",
       "audio": "/shorts/Thoughts_govern_experience.mp3",
+      "timing": "/shorts/Thoughts_govern_experience.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Thoughts govern experience"
     },
     {
       "url": "/Threshold_of_discovery/",
       "desc": "Threshold of discovery",
       "audio": "/shorts/Threshold_of_discovery.mp3",
+      "timing": "/shorts/Threshold_of_discovery.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Threshold of discovery"
     },
     {
       "url": "/Time_collapse/",
       "desc": "Time collapse",
       "audio": "/shorts/Time_collapse.mp3",
+      "timing": "/shorts/Time_collapse.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Time collapse"
     },
     {
       "url": "/Tinkling_brass/",
       "desc": "Tinkling brass",
       "audio": "/shorts/Tinkling_brass.mp3",
+      "timing": "/shorts/Tinkling_brass.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Tinkling brass"
     },
     {
       "url": "/To_be_grounded/",
       "desc": "To be grounded",
       "audio": "/shorts/To_be_grounded.mp3",
+      "timing": "/shorts/To_be_grounded.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "To be grounded"
     },
     {
       "url": "/Totality_of_you/",
       "desc": "Totality of you",
       "audio": "/shorts/Totality_of_you.mp3",
+      "timing": "/shorts/Totality_of_you.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Totality of you"
     },
     {
       "url": "/Touching_integrity/",
       "desc": "Touching integrity",
       "audio": "/shorts/Touching_integrity.mp3",
+      "timing": "/shorts/Touching_integrity.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Touching integrity"
     },
     {
       "url": "/Transfer_value/",
       "desc": "Transfer value",
       "audio": "/shorts/Transfer_value.mp3",
+      "timing": "/shorts/Transfer_value.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Transfer value"
     },
     {
       "url": "/Transformational_ripple/",
       "desc": "Transformational ripple",
       "audio": "/shorts/Transformational_ripple.mp3",
+      "timing": "/shorts/Transformational_ripple.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Transformational ripple"
     },
     {
       "url": "/True_prayer/",
       "desc": "True prayer",
       "audio": "/shorts/True_prayer.mp3",
+      "timing": "/shorts/True_prayer.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "True prayer"
     },
     {
       "url": "/True_presence/",
       "desc": "True presence",
       "audio": "/shorts/True_presence.mp3",
+      "timing": "/shorts/True_presence.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "True presence"
     },
     {
       "url": "/True_Reflection/",
       "desc": "True Reflection",
       "audio": "/shorts/True_Reflection.mp3",
+      "timing": "/shorts/True_Reflection.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "True Reflection"
     },
     {
       "url": "/Truth_and_integrity/",
       "desc": "Truth and integrity",
       "audio": "/shorts/Truth_and_integrity.mp3",
+      "timing": "/shorts/Truth_and_integrity.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Truth and integrity"
     },
     {
       "url": "/Truth/",
       "desc": "Truth",
       "audio": "/shorts/Truth.mp3",
+      "timing": "/shorts/Truth.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Truth"
     },
     {
       "url": "/Turn_and_inquire/",
       "desc": "Turn and inquire",
       "audio": "/shorts/Turn_and_inquire.mp3",
+      "timing": "/shorts/Turn_and_inquire.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Turn and inquire"
     },
     {
       "url": "/Turn_around_again/",
       "desc": "Turn around again",
       "audio": "/shorts/Turn_around_again.mp3",
+      "timing": "/shorts/Turn_around_again.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Turn around again"
     },
     {
       "url": "/Undefended_charity/",
       "desc": "Undefended charity",
       "audio": "/shorts/Undefended_charity.mp3",
+      "timing": "/shorts/Undefended_charity.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Undefended charity"
     },
     {
       "url": "/Under_my_guidance/",
       "desc": "Under my guidance",
       "audio": "/shorts/Under_my_guidance.mp3",
+      "timing": "/shorts/Under_my_guidance.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Under my guidance"
     },
     {
       "url": "/Undercurrent_calling/",
       "desc": "Undercurrent calling",
       "audio": "/shorts/Undercurrent_calling.mp3",
+      "timing": "/shorts/Undercurrent_calling.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Undercurrent calling"
     },
     {
       "url": "/Undivided_desire/",
       "desc": "Undivided desire",
       "audio": "/shorts/Undivided_desire.mp3",
+      "timing": "/shorts/Undivided_desire.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Undivided desire"
     },
     {
       "url": "/Undo_the_dream/",
       "desc": "Undo the dream",
       "audio": "/shorts/Undo_the_dream.mp3",
+      "timing": "/shorts/Undo_the_dream.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Undo the dream"
     },
     {
       "url": "/Undoing_the_act_of_independence/",
       "desc": "Undoing the act of independence",
       "audio": "/shorts/Undoing_the_act_of_independence.mp3",
+      "timing": "/shorts/Undoing_the_act_of_independence.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Undoing the act of independence"
     },
     {
       "url": "/Unguarded_penetration_of_divinity/",
       "desc": "Unguarded penetration of divinity",
       "audio": "/shorts/Unguarded_penetration_of_divinity.mp3",
+      "timing": "/shorts/Unguarded_penetration_of_divinity.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Unguarded penetration of divinity"
     },
     {
       "url": "/Unlearning/",
       "desc": "Unlearning",
       "audio": "/shorts/Unlearning.mp3",
+      "timing": "/shorts/Unlearning.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Unlearning"
     },
     {
       "url": "/Valuing_wholesomeness/",
       "desc": "Valuing wholesomeness",
       "audio": "/shorts/Valuing_wholesomeness.mp3",
+      "timing": "/shorts/Valuing_wholesomeness.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Valuing wholesomeness"
     },
     {
       "url": "/Venetian_blind/",
       "desc": "Venetian blind",
       "audio": "/shorts/Venetian_blind.mp3",
+      "timing": "/shorts/Venetian_blind.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Venetian blind"
     },
     {
       "url": "/Waging_peace/",
       "desc": "Waging peace",
       "audio": "/shorts/Waging_peace.mp3",
+      "timing": "/shorts/Waging_peace.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Waging peace"
     },
     {
       "url": "/Wailing/",
       "desc": "Wailing",
       "audio": "/shorts/Wailing.mp3",
+      "timing": "/shorts/Wailing.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Wailing"
     },
     {
       "url": "/Waiting_upon_God/",
       "desc": "Waiting upon God",
       "audio": "/shorts/Waiting_upon_God.mp3",
+      "timing": "/shorts/Waiting_upon_God.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Waiting upon God"
     },
     {
       "url": "/Walking_through_the_wall_of_fear/",
       "desc": "Walking through the wall of fear",
       "audio": "/shorts/Walking_through_the_wall_of_fear.mp3",
+      "timing": "/shorts/Walking_through_the_wall_of_fear.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Walking through the wall of fear"
     },
     {
       "url": "/We_feel_your_absence/",
       "desc": "We feel your absence",
       "audio": "/shorts/We_feel_your_absence.mp3",
+      "timing": "/shorts/We_feel_your_absence.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "We feel your absence"
     },
     {
       "url": "/Weakening_the_bubble/",
       "desc": "Weakening the bubble",
       "audio": "/shorts/Weakening_the_bubble.mp3",
+      "timing": "/shorts/Weakening_the_bubble.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Weakening the bubble"
     },
     {
       "url": "/Weakening_time/",
       "desc": "Weakening time",
       "audio": "/shorts/Weakening_time.mp3",
+      "timing": "/shorts/Weakening_time.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Weakening time"
     },
     {
       "url": "/Weight_Is_Not_the_Issue/",
       "desc": "Weight Is Not the Issue",
       "audio": "/shorts/Weight_Is_Not_the_Issue.mp3",
+      "timing": "/shorts/Weight_Is_Not_the_Issue.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Weight Is Not the Issue"
     },
     {
       "url": "/What_do_you_treasure/",
       "desc": "What do you treasure",
       "audio": "/shorts/What_do_you_treasure.mp3",
+      "timing": "/shorts/What_do_you_treasure.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "What do you treasure"
     },
     {
       "url": "/What_is_the_holy_instant/",
       "desc": "What is the holy instant",
       "audio": "/shorts/What_is_the_holy_instant.mp3",
+      "timing": "/shorts/What_is_the_holy_instant.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "What is the holy instant"
     },
     {
       "url": "/Where_its_at/",
       "desc": "Where its at",
       "audio": "/shorts/Where_its_at.mp3",
+      "timing": "/shorts/Where_its_at.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Where its at"
     },
     {
       "url": "/Will_ye_first_seek_the_Kingdom/",
       "desc": "Will ye first seek the Kingdom",
       "audio": "/shorts/Will_ye_first_seek_the_Kingdom.mp3",
+      "timing": "/shorts/Will_ye_first_seek_the_Kingdom.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Will ye first seek the Kingdom"
     },
     {
       "url": "/Willingness_to_persist/",
       "desc": "Willingness to persist",
       "audio": "/shorts/Willingness_to_persist.mp3",
+      "timing": "/shorts/Willingness_to_persist.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Willingness to persist"
     },
     {
       "url": "/Witnessing_for_another/",
       "desc": "Witnessing for another",
       "audio": "/shorts/Witnessing_for_another.mp3",
+      "timing": "/shorts/Witnessing_for_another.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Witnessing for another"
     },
     {
       "url": "/Witnessing_for_the_Miraculous/",
       "desc": "Witnessing for the Miraculous",
       "audio": "/shorts/Witnessing_for_the_Miraculous.mp3",
+      "timing": "/shorts/Witnessing_for_the_Miraculous.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Witnessing for the Miraculous"
     },
     {
       "url": "/Wonder_of_life/",
       "desc": "Wonder of life",
       "audio": "/shorts/Wonder_of_life.mp3",
+      "timing": "/shorts/Wonder_of_life.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Wonder of life"
     },
     {
       "url": "/workbook_ammi/",
       "desc": "workbook ammi",
       "audio": "/shorts/workbook_ammi.mp3",
+      "timing": "/shorts/workbook_ammi.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "workbook ammi"
     },
     {
       "url": "/Yield_to_GodMind/",
       "desc": "Yield to GodMind",
       "audio": "/shorts/Yield_to_GodMind.mp3",
+      "timing": "/shorts/Yield_to_GodMind.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Yield to GodMind"
     },
     {
       "url": "/Yield_to_the_Fathers_Will/",
       "desc": "Yield to the Fathers Will",
       "audio": "/shorts/Yield_to_the_Fathers_Will.mp3",
+      "timing": "/shorts/Yield_to_the_Fathers_Will.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Yield to the Fathers Will"
     },
     {
       "url": "/Yielding_to_the_river/",
       "desc": "Yielding to the river",
       "audio": "/shorts/Yielding_to_the_river.mp3",
+      "timing": "/shorts/Yielding_to_the_river.json",
+      "timer": "niebank.sarah@icloud.com",
       "title": "Yielding to the river"
     },
     {
       "url": "/You_are_a_thought_of_God/",
       "desc": "You are a thought of God",
       "audio": "/shorts/You_are_a_thought_of_God.mp3",
+      "timer": "niebank.sarah@icloud.com",
       "timing": "/shorts/You_are_a_thought_of_God.json",
       "title": "You are a thought of God"
     },

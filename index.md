@@ -37,7 +37,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
       <div id="news-tab-content" class="ui bottom attached active tab segment" data-tab="first">
         <div class="box">
           <p>
-            New! Discover Quotes.
+            New! Audio Shorts, completed June 23, 2026. Thank you Sarah!!
           </p>
         </div>
       </div>
@@ -49,7 +49,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
               <button id="show-quote-button" class="ui primary button">
                 <i class="quote left icon"></i>
                 Read Quotes
-              </button> 
+              </button>
             </div>
             <div id="user-quote-select" class="field"></div>
           </div>
@@ -87,9 +87,7 @@ Through Paul Tuttle, Raj offers a very practical, down to earth, feet on the gro
         <div class="description">
           <p>Audio shorts</p>
 
-          <p><em>Sept 25, 2025 Note: </em>This section needs volunteers. If you'd like to
-          help please contact <a href="/acq/contact/">Rick.</a>
-          </p>
+          <p>Newly Complete: A treasure of insight into ACIM.</p>
         </div>
       </div>
     </div>

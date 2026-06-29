@@ -20,7 +20,7 @@ held as fact for yourself that caused a distorted experience of what could not
 at any moment have become distorted.
 
 You create distortion by modifying reality in your experience. And then you
-say, it could take 10 years. For me to get past the experience of this
-distortion. You see. And you thereby add to the uh You add to the um
+say, it could take 10 years for me to get past the experience of this
+distortion. You see? And you thereby add to the uh you add to the um
 difficulty of there being a time collapse.
 

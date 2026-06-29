@@ -14,7 +14,7 @@ fashion or not, it is the life divine. It is the only life there is.
 And if you cannot start where you are in respecting the life you are
 experiencing as you are experiencing it, you will not be capable of having or
 experiencing an expansion of your of your experience of life with a capital L.
-You will not be able to experience transformation of it.You have to start
+You will not be able to experience transformation of it. You have to start
 right where you are, right in your limited perception at this moment. Because
 it is whatever small part of the life divine that you are experiencing. It is
 not an illusory life.

@@ -33,7 +33,7 @@ system based on those ego perceptions. And you have great commitment to
 ensuring your safety. Through the maintenance of that security system.
 
 And in your process of awakening, that security system will be dismantled. And
-you will dismantle it peace by peace. P E A C E P E A C E. Little by little,
+you will dismantle it peace by peace. P E A C E by P E A C E. Little by little,
 you will increase your peace by dismantling another piece of your defense
 system, your defense mechanism, which is what the ego is. And as you do it,
 you will find moments where you are dismantling a part of your defense system.

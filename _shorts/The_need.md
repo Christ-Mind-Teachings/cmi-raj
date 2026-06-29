@@ -12,7 +12,7 @@ may put it that way, every one of you is an integral aspect of each of you.
 When you are not experiencing the unity, the oneness. Your oneness with
 everyone and their oneness with you because you’re claiming private authority
 private self-created existence. Then you are denying yourself. Because you’ve
-excluded the awareness of everyone else’s being art of you.
+excluded the awareness of everyone else’s being part of you.
 
 And when you’re in that state, in that frame of mind where you’re holding
 yourself to be autonomous and separate from everyone else and are in denial of

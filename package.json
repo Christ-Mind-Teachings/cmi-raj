@@ -30,5 +30,8 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.47.0",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1693.0"
   }
 }

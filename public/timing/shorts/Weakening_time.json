@@ -1,0 +1,22 @@
+{
+  "base": "/t/raj/shorts/Weakening_time/",
+  "time": [
+    {
+      "id": "p0",
+      "seconds": 0
+    },
+    {
+      "id": "p1",
+      "seconds": 42.729652975998135
+    },
+    {
+      "id": "p2",
+      "seconds": 58.483356874999096
+    },
+    {
+      "id": "p3",
+      "seconds": 79.36160542839933
+    }
+  ]
+}
+

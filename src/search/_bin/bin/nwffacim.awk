@@ -230,9 +230,10 @@ $1 ~ /##/ {
   if (l > -1) {
     len = length(lines)
     discard = 0
-    if (len == 1) {
-      discard = discardParagraph(lines[0])
-    }
+    # for shorts don't discard
+    # if (len == 1) {
+    #   discard = discardParagraph(lines[0])
+    # }
     printf "  %s{\n", needComma == "y" ? "," : ""
     printf "    \"discard\": %u,\n", discard
     printf "    \"pid\": %s,\n", p
@@ -248,11 +249,11 @@ $1 ~ /##/ {
       gsub(/\&rdquo;/, "", raw)
       gsub(/\&lsquo;/, "", raw)
       gsub(/\&rsquo;/, "", raw)
-      # remove <br/> 
+      # remove <br/>
       gsub(/<br\/>/,"",raw)
-      # remove <p></p> 
+      # remove <p></p>
       gsub(/<\/?p[^>]*>/,"",raw)
-      # remove <span></span> 
+      # remove <span></span>
       gsub(/<\/?span[^>]*>/,"",raw)
       # remove punctuation
       gsub(/[\[\])(*>.,!?;:…‘’'"“”/\\]/,"",raw)
@@ -260,7 +261,7 @@ $1 ~ /##/ {
       gsub(/ /,"",raw)
       #remove 0x09
       gsub(/	/,"",raw)
-      # convert dash to space 
+      # convert dash to space
       gsub(/[-—]/," ",raw)
       # remove footnotes: [^1]
       gsub(/\^[[:digit:]]/, "", raw)

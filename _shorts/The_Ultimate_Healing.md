@@ -51,7 +51,7 @@ visit to Australia or England, you’re going to have to pay attention
 constantly.
 
 Just like I’m asking you to engage in the holy instant constantly, why?
-Because If you stay conscious while you’re in Australia or England, you won’t
+Because if you stay conscious while you’re in Australia or England, you won’t
 have any collisions. You will have a comfortable, enjoyable time. Likewise, if
 you will engage in the holy instant, you will have a comfortable, enjoyable
 time.

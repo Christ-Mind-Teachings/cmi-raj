@@ -5,7 +5,7 @@
 
 ## {{page.title}}
 
-The ego’s habit is to gather.a sense of who you are from the way everybody
+The ego’s habit is to gather a sense of who you are from the way everybody
 else thinks about you. Well, if that’s the truth, then you be the everyone
 else who reflects back something the ego isn’t expecting. Care and concern
 and love because those that you extend that to. Because they’re in the

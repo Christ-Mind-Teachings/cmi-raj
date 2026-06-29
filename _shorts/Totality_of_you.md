@@ -5,7 +5,7 @@
 
 ## {{page.title}}
 
-You in your totality.are always totally present. Whether you’re ignoring part
+You in your totality are always totally present. Whether you’re ignoring part
 of yourself or not. And it’s important to understand this so that you or your
 ego does not project a picture in front of you. Of a great distance to go full
 of difficulty before you can attain enlightenment.

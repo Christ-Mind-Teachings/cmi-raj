@@ -1,22 +1,22 @@
 var AWS = require("aws-sdk");
-var fs = require('fs');
+var fs = require("fs");
 var program = require("commander");
-const key = require("../../../js/modules/_config/key");
+const key = require("/Users/rmercer/Projects/cmi/site/cmi-sources/cmi-raj/src/js/modules/_config/key");
 
 var local = "http://localhost:8000";
 var remote = "https://dynamodb.us-east-1.amazonaws.com";
 
-var table = "raj";
+var table = "cmiSearch";
 
 var awsConfig = {
-  region: "us-east-1"
+  region: "us-east-1",
 };
 
 program
-  .version('0.0.1')
-  .usage('[options] <file ...>')
-  .option('-e, --endpoint <dblocation>', "Db location, either local or remote")
-  .option('-v, --verify', 'Verify input files but don\'t load')
+  .version("0.0.1")
+  .usage("[options] <file ...>")
+  .option("-e, --endpoint <dblocation>", "Db location, either local or remote")
+  .option("-v, --verify", "Verify input files but don't load")
   .parse(process.argv);
 
 if (!program.directory && program.args.length == 0) {
@@ -31,19 +31,18 @@ if (!program.endpoint) {
 
 if (program.endpoint === "remote") {
   awsConfig.endpoint = remote;
-}
-else {
+} else {
   awsConfig.endpoint = local;
 }
 
 AWS.config.update(awsConfig);
 var docClient = new AWS.DynamoDB.DocumentClient();
 
-program.args.forEach(function(fn) {
+program.args.forEach(function (fn) {
   if (fn.indexOf(".json") === -1) {
     fn = fn + ".json";
   }
-  load(table, fn, program.verify?true:false);
+  load(table, fn, program.verify ? true : false);
 });
 
 function load(table, fileName, verify) {
@@ -53,17 +52,24 @@ function load(table, fileName, verify) {
     console.log("Verifying: %s", fileName);
   }
 
-  let data = JSON.parse(fs.readFileSync(fileName, 'utf8'));
+  let data = JSON.parse(fs.readFileSync(fileName, "utf8"));
 
   if (verify) {
     return;
   }
 
-  let url = `/${data.book}/${data.unit}/`;
+  let url = `/t/raj/${data.book}/${data.unit}/`;
   let pageKey = key.genPageKey(url);
 
   data.paragraph.forEach((p) => {
-    discarded += loadParagraph(pageKey, p, data.book, data.unit, fileName);
+    discarded += loadParagraph(
+      pageKey,
+      p,
+      data.book,
+      data.unit,
+      fileName,
+      data.source,
+    );
   });
 
   let fne = fileName.substr(fileName.lastIndexOf("/") + 1);
@@ -71,31 +77,30 @@ function load(table, fileName, verify) {
   console.log("+%s:%s:%s:%s", fn, pageKey, data.paragraph.length, discarded);
 }
 
-function loadParagraph(pageKey, p, book, unit, fn) {
+function loadParagraph(pageKey, p, book, unit, fn, source) {
   let discard = p.discard ? p.discard : 0;
   let paraKey = key.genParagraphKey(p.pid, pageKey);
 
   let params = {
-      TableName: table,
-      Item: {
-          "parakey": paraKey.toString(10),
-          "book": book,
-          "unit": unit,
-          "pid":  p.pid,
-          "text": p.text
-      }
+    TableName: table,
+    Item: {
+      source: source,
+      parakey: paraKey.toString(10),
+      book: book,
+      unit: unit,
+      pid: p.pid,
+      text: p.text,
+    },
   };
 
   //we discard one line paragraphs that are often repeated
   if (discard === 1) {
     return 1;
-  }
-  else {
-    docClient.put(params, function(err) {
+  } else {
+    docClient.put(params, function (err) {
       if (err) {
         console.log("error:%s:%s", params.Item.parakey, fn);
-      }
-      else {
+      } else {
         console.log("ok: %s", params.Item.parakey);
       }
     });
@@ -103,5 +108,3 @@ function loadParagraph(pageKey, p, book, unit, fn) {
     return 0;
   }
 }
-
-

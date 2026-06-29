@@ -6,7 +6,7 @@
 
 ## {{page.title}}
 
-The yielding to the river symbolizes yielding to the father's
+The yielding to the river symbolizes yielding to the Father's
 perspective. Which means that you want to look at everything joined
 with the better perspective so that you might have the opportunity to
 see the truth of what is going on and so that as long as the truth of

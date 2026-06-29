@@ -8,7 +8,7 @@
 
 Now I’ve said before, that when you chose to make up your own definitions,
 when you chose to “think for yourself”, independent of the Father and in so
-doing, denied your identity, denied that you were as the direct expression and
+doing, denied your identity, denied what you were as the direct expression and
 presence of God, you couldn’t alter what you divinely are. And so the part of
 you that you denied remained in place unaltered but ignored by you and at that
 moment the Holy Spirit came into existence. And I’ve said that the Holy Spirit

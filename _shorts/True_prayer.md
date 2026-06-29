@@ -43,7 +43,7 @@ mind. When it happens in your mind and your mind is not imbued with a sense of
 personal private independent authority, the authority of God is what is
 embodied. And therefore God is not blocked from expression.
 
-I would encourage all of you. At least once a day. To sit down To love your
+I would encourage all of you. At least once a day. To sit down to love your
 world. To want to know the truth about it. So that you might say yes to God.
 And have the embodiment of his will objectively manifested in the world.
 Because when you bring your undivided willingness to him, that is what

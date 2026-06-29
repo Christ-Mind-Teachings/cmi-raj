@@ -34,7 +34,7 @@ will find it not changing, and that’s where you will find yourself able to
 feel it without it being. Blown about, disturbed. By everyone else’s opinions,
 thoughts, comments, gossip to the contrary, you see.
 
-The hard part of awakening and the hard part of facing the truth is In
+The hard part of awakening and the hard part of facing the truth is in
 realizing that you’re getting your sense of your well-being from the wrong
 places. But if you don’t find out that you’re getting it from the wrong
 places, you will go along blindly. And unconscious. Of the integrity of your
